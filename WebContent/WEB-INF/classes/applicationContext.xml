@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="     
+          http://www.springframework.org/schema/beans     
+          http://www.springframework.org/schema/beans/spring-beans-3.1.xsd     
+          http://www.springframework.org/schema/tx     
+          http://www.springframework.org/schema/tx/spring-tx-3.1.xsd    
+          http://www.springframework.org/schema/context     
+          http://www.springframework.org/schema/context/spring-context-3.1.xsd     
+          http://www.springframework.org/schema/aop     
+          http://www.springframework.org/schema/aop/spring-aop-3.1.xsd"
+	default-autowire="byName">
+	<bean class="com.rimi.ctibet.common.util.ApplicationContextHolder" />
+	<!-- JDBC参数配置 -->
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+		lazy-init="true">
+		<property name="systemPropertiesModeName"
+			value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+		<property name="ignoreResourceNotFound" value="true" />
+		<property name="locations">
+			<list>
+				<value>classpath:/jdbc.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 数据源配置 -->
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+		init-method="init" destroy-method="close">
+		<!-- 基本属性 url、user、password -->
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+
+		<!-- 配置初始化大小、最小、最大 -->
+		<property name="initialSize" value="10" />
+		<property name="minIdle" value="10" />
+		<property name="maxActive" value="50" />
+
+		<!-- 配置获取连接等待超时的时间 -->
+		<property name="maxWait" value="60000" />
+
+		<!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+		<property name="timeBetweenEvictionRunsMillis" value="60000" />
+
+		<!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+		<property name="minEvictableIdleTimeMillis" value="300000" />
+
+		<property name="validationQuery" value="SELECT 'x'" />
+		<property name="testWhileIdle" value="true" />
+		<property name="testOnBorrow" value="false" />
+		<property name="testOnReturn" value="false" />
+
+		<!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+		<property name="poolPreparedStatements" value="false" />
+		<property name="maxPoolPreparedStatementPerConnectionSize"
+			value="20" />
+
+		<!-- 配置监控统计拦截的filters -->
+		<property name="filters" value="stat" />
+	</bean>
+    
+    <!-- JDBC注解 -->
+    <bean id="JDBCUtilConnection" class="com.rimi.ctibet.common.util.jdbc.JDBCConnectionUtil">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+	</bean>
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource">
+			<ref local="dataSource" />
+		</property>
+	</bean>
+	
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean" >
+		
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<value>
+				<!-- 设置数据库方言 -->
+				hibernate.dialect=${hibernate.dialect}
+				<!-- 设置自动创建|更新|验证数据库表结构-->
+					hibernate.hbm2ddl.auto=${hibernate.auto} 
+				<!-- 输出SQL语句到控制台 -->
+				hibernate.show_sql=${hibernate.show_sql}
+				<!-- 格式化输出到控制台的SQL语句 -->
+				hibernate.format_sql=${hibernate.format_sql}
+				<!-- 是否开启二级缓存 -->
+				hibernate.cache.use_second_level_cache=false
+				<!-- 配置二级缓存产品 -->
+				hibernate.cache.provider_class=org.hibernate.cache.OSCacheProvider
+				<!-- 是否开启查询缓存 -->
+				hibernate.cache.use_query_cache=false
+				<!-- 自动连接 -->
+				hibernate.autoReconnect=true
+				<!-- 数据库批量查询数 -->
+				hibernate.jdbc.fetch_size=50
+				<!-- 数据库批量更新数 -->
+				hibernate.jdbc.batch_size=30
+			</value>
+		</property>
+	  <!--
+		<property name="mappingLocations"
+			value="classpath:com/rimi/ctibet/domain/*.hbm.xml">
+		</property>
+	   -->
+	<property name="mappingLocations"
+			value="classpath:com/rimi/ctibet/domain/*.hbm.xml">
+		</property>
+	</bean>
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<!--<aop:config>
+		<aop:pointcut id="crudMethos"
+			expression="execution(* com.rimi.ctibet.*.*.service.impl.*ServiceImpl.*(..))" />
+		 第一个*号代表可以是任意返回类型,第二个*代表包下的所有类,第三个*代表类下的所有方法,之后的(..)代表任意的参数 
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="crudMethos" />
+	</aop:config>
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="add*" propagation="REQUIRED"
+				rollback-for="java.lang.Throwable" />
+			<tx:method name="edit*" propagation="REQUIRED"
+				rollback-for="java.lang.Throwable" />
+			<tx:method name="delete*" propagation="REQUIRED"
+				rollback-for="java.lang.Throwable" />
+			<tx:method name="save*" propagation="REQUIRED"
+				rollback-for="java.lang.Throwable" />
+			<tx:method name="update*" propagation="REQUIRED"
+				rollback-for="java.lang.Throwable" />
+			<tx:method name="batch*" propagation="REQUIRED"
+				rollback-for="java.lang.Throwable" />
+			<tx:method name="get*" read-only="true" />
+			<tx:method name="find*" read-only="true" />
+			<tx:method name="list*" read-only="true" />
+			<tx:method name="check*" read-only="true" />
+			<tx:method name="*" propagation="REQUIRED"
+				rollback-for="java.lang.Throwable"/>
+		</tx:attributes>
+	</tx:advice>
+	-->
+	  <context:component-scan base-package="com.rimi.citibet">
+		<context:exclude-filter type="regex" expression=".*.*.controller.*" />
+	</context:component-scan>
+	<tx:annotation-driven transaction-manager="transactionManager"  />
+	
+	<!-- 自动扫描组件，需要把controller去掉，否则影响事务管理 -->
+<!--	<context:component-scan base-package="com.rimi.ctibet">-->
+<!--		<context:exclude-filter type="regex" expression=".*.*.service" />-->
+<!--	</context:component-scan>-->
+
+	<!--<bean id="platformSolver" class="com.rimi.ctibet.common.solver.PlatformSolver">  
+       <property name="locations">  
+           <list>  
+               <value>classpath:platform-setting.xml</value>  
+           </list>  
+       </property>  
+   </bean>
+   --><bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" >
+        <property name="defaultEncoding" value="UTF-8"/>  
+        <!-- 指定所上传文件的总大小不能超过200KB。注意maxUploadSize属性的限制不是针对单个文件，而是所有文件的容量之和 -->  
+        <!--  <property name="maxUploadSize" value="200000"/>  -->
+   </bean>   
+  
+</beans>

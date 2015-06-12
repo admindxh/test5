@@ -1,0 +1,107 @@
+.xz-heading h2.duxz{
+	width: 280px;
+	background: #fff url(../icon/icon_duxz.png) 0 0 no-repeat;
+}
+.xb-one{
+	background: #eeeeee;
+	border-radius: 6px;
+	width: 410px;
+	overflow: hidden;
+}
+.xbo-img{
+	width: 200px;
+	height: 390px;
+	float: left;
+}
+.xbo-img img{
+	max-width: 100%;
+	height: 390px;
+}
+.xbo-bd{
+	width: 205px;
+	height: 390px;
+	float: right;
+	padding: 15px 10px 0 10px;
+}
+.xbo-bd h4{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 14px;
+	/*font-weight: 700;*/
+}
+.xbo-bd h4 a{
+	color: #333;
+
+}
+.xbo-bd p{
+	margin-top: 20px;
+	color: #898989;
+	font-size: 12px;
+	line-height: 20px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.read-box{
+	width: 280px;
+}
+.read-bd{
+	position: relative;
+	margin-top: 25px;
+	border-radius: 6px;
+	overflow: hidden;
+	background: #eeeeee;
+}
+.read-box .read-hd{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 14px;
+	color: #333;
+    padding-left: 20px;
+    background: url(../icon/min-icon.png) 0 center no-repeat;
+}
+.read-adjust{
+	margin-top: 45px;
+}
+.read-bd-img{
+	width: 120px;
+	height: 130px;
+	float: left;
+}
+.read-bd-img img {
+	max-width: 100%;
+	height: 130px;
+}
+.ellipsis{
+	color: #333333;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.read-bd-list{
+	width: 150px;
+	height: 110px;
+	float: right;
+	overflow: hidden;
+}
+.read-bd-list a{
+	margin-top: 15px;
+	font-size: 14px;
+	display: block;
+}
+.read-bd-list .el-info{
+	height: 52px;
+	padding-right: 10px;
+	color: #898989;
+	font-size: 12px;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+.read-more{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 40px;
+	height: 20px;
+	background: url(../icon/lmore.png) 0 0 no-repeat;
+}

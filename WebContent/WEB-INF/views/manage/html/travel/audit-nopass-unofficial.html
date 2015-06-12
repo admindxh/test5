@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <title>游西藏-攻略管理-待审核的攻略-非官方攻略审核</title>
+    <link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css" />
+    <link rel="stylesheet" href="../../resources/css/base.css" />
+	<script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../../resources/css/travel/formWeb.css" />
+    <!-- 网页文本编辑器插件 -->
+    <script src="../../resources/plugin/ckeditor/ckeditor.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- main { -->
+    <div class="main">
+		<form id="" name="">
+			<!-- 页面位置-->
+			<div class="location">
+				<label>您当前位置为:</label>
+				<span><a>游西藏</a> -</span>
+				<span><a>攻略管理</a> -</span>
+				<span><a href="audit-nopass.html" target="_self">待审核的攻略</a> -</span>
+				<span><a href="#" target="_self">非官方攻略审核</a></span>
+			</div>
+
+			<!-- 模块管理 { -->
+			<div class="muduleManage details filament_solid_ddd">
+				<div class="formLine">
+					<label>上传时间:</label>
+					<span class="dataVal">2014-12-1</span>
+				</div>
+				<div class="formLine">
+					<label>攻略标题:</label>
+					<span class="dataVal">拉萨自驾游</span>
+				</div>
+				<div class="formLine">
+					<label>所属板块:</label>
+					<span class="dataVal">自驾游</span>
+				</div>
+				<div class="formLine">
+					<label>会员名:</label>
+					<span class="dataVal">张三</span>
+				</div>
+				<div class="formLine">
+					<label>关联目的地:</label>
+					<span class="dataVal">拉萨地区</span>
+					<span class="dataVal">阿里地区</span>
+				</div>
+				<div class="formLine">
+					<label>关联景点:</label>
+					<span class="dataVal">景点1</span>
+					<span class="dataVal">景点2</span>
+				</div>
+				<!-- 网页文本编辑器 -->
+				<div class="formLine">
+					<label>攻略详细介绍:</label>
+					<span class="dataVal va_t">
+						<textarea id="editor1" name="editor1" cols="80" rows="10" class="ckeditor" style="display:inline-block"></textarea>
+					</span>
+				</div>
+				<div class="formLine">
+					<label>是否审核通过:</label>
+					<input id="audit-pass" type="radio" name="audit" class="ml10" checked>
+					<label for="audit-pass" class="lbl_check">是</label>
+					<input id="audit-nopass" type="radio" name="audit" class="ml20">
+					<label for="audit-nopass" class="lbl_check">否</label>
+				</div>
+				
+				<!-- 确认按钮 -->
+				<div class="formLine saveOper">
+					<button type="button" class="btn-base mr30">确认</button>
+					<button type="button" class="btn-base">取消</button>
+				</div>
+				
+			</div><!-- } 模块管理 -->
+    	</form>
+    </div><!-- } main -->
+
+    <!-- JS引用部分 -->
+    <script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+    <script src="../../resources/js/base.js" type="text/javascript"></script>
+    
+    <!-- 利用空闲时间预加载指定页面 -->
+    <link rel="prefetch"> <!-- IE10+ -->
+    <link rel="next"> <!-- Firefox -->
+	<link rel="prerender"> <!-- Chrome -->
+</body>
+</html>

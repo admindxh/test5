@@ -1,0 +1,81 @@
+body,div,p{
+    margin: 0;
+    padding: 0;
+}
+body{    font-family: 'microsoft yahei';font-size: 13px;}
+.historicalData{
+    width: 900px;
+    border: 1px solid #aaa;
+}
+.historicalData .header{
+    border-bottom: 1px solid #aaa;
+    padding: 2px 5px;
+}
+.header .currentLocation{
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.content{
+    height: 400px;
+    padding: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.content .filter{
+    width: 800px;
+    margin: 0 auto;
+}
+.content .filter input{
+    width: 130px;
+    padding-left: 5px;
+    color: #aaa;
+    outline: none;
+}
+.content .filter .startTime{
+    margin: 0 20px 0 10px;
+}
+.content .filter .endTime{
+    margin: 0 15px 0 10px;
+}
+.content .filter button{
+    width: 80px;
+}
+.content .filter select{
+    float: right;
+}
+.content table{
+    border-collapse: collapse;
+    width: 800px;
+    margin: 10px auto;
+    text-align: center;
+}
+.content table th,td{
+    border: 1px solid #aaa;
+}
+.content table th{
+    height: 30px;
+    font-weight: 100;
+    background-color: #e8e8e6;
+}
+.content table td{
+    height: 25px;
+}
+.page{
+    width: 800px;
+    margin: 0 auto;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.page button{
+    outline: none;
+}
+.page .homePage{
+    margin-left: 120px;
+}
+.page input{
+    width: 27px;
+    padding-left: 3px;
+    outline: none;
+}

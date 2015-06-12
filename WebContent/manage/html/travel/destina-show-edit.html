@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <title>游西藏-目的地首页显示-推荐目的地展示区列表-推荐目的地展示区修改</title>
+    <link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css" />
+    <link rel="stylesheet" href="../../resources/css/base.css" />     <script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../../resources/css/travel/formWeb.css" />
+</head>
+<body>
+<!-- main { -->
+<div class="main">
+    <!-- 页面位置-->
+    <div class="location">
+        <label>您当前位置为:</label>
+        <span>
+            <a>游西藏</a> -
+            <a href="destination.html" target="_self">目的地首页显示</a> -
+            <a href="destina-show.html" target="_self">推荐目的地展示区列表</a> -
+            <a href="#" target="_self">推荐目的地展示区修改</a>
+        </span>
+    </div>
+
+    <!-- 模块管理 { -->
+    <div class="muduleManage filament_solid_ddd ov-au">
+        <div class="formLine mt15">
+            <label class="w_auto">目的地名称:</label>
+            <input type="text" class="w-320">
+        </div>
+
+        <div class="formLine mt15">
+            <label class="w_auto">目的地图片:</label>
+            <input type="text" class="w-320"/><button class="btn-base ml20" type="button">点击上传图片</button>
+            <span class="txt-suggest ml20">必须是1000*200尺寸的jpg/png格式</span>
+        </div>
+
+        <div class="formLine mt15">
+            <label class="w_auto">目的地链接:</label>
+            <input type="text" class="w-320">
+        </div>
+
+        <div class="formLine mt15">
+            <label class="w_auto">目的地排序:</label>
+            <input type="text" class="w-100">
+            <span class="txt-suggest ml20">必须是大于0的整数，数字越小，排序越在前面</span>
+        </div>
+
+        <div class="formLine mt40 txt-ac">
+            <button type="button" class="btn-sure">保存</button>
+            <button type="button" class="btn-sure ml40">取消</button>
+        </div>
+    </div><!-- } 模块管理 -->
+</div><!-- } main -->
+
+<!-- JS引用部分 -->
+<script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+<script src="../../resources/js/base.js" type="text/javascript"></script>
+
+<!-- 利用空闲时间预加载指定页面 -->
+<link rel="prefetch"> <!-- IE10+ -->
+<link rel="next"> <!-- Firefox -->
+<link rel="prerender"> <!-- Chrome -->
+</body>
+</html>

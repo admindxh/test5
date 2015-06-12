@@ -1,0 +1,151 @@
+.driving{
+    width: 1200px;
+    font-family: "Microsoft Yahei";
+    margin-top: 60px;
+    padding: 0;
+}
+.driving .row{
+    margin: 0;
+}
+.driving-left{
+    width: 870px;
+    padding: 0;
+}
+.driving-right{
+    width: 310px;
+    padding: 0;
+    margin-left: 20px;
+}
+.driving .header{
+    margin-bottom: 15px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #fff url("../../icon/line.png") repeat-x 0 15px;
+}
+.driving .header .left{
+    width: 350px;
+    height: 29px;
+    background: #fff url("../../icon/self_driving.png") no-repeat;
+}
+.driving .header .right{
+    width: 90px;
+    height: 29px;
+    line-height: 29px;
+    text-align: right;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.right a{
+    color: #333;
+}
+.driving-left-img-top .img-top-left{
+    width: 518px;
+    height: 233px;
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.img-top-left .info{
+    width: 518px;
+    height: 60px;
+    color: #fff;
+    background: url("../../icon/mc1_yxz.png") no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.info p{
+    margin: 10px 0 5px 15px;
+}
+.info div{
+    font-size: 12px;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+}
+.info div span{
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.driving-left-img-top .img-top-right{
+    width: 342px;
+    height: 233px;
+    float: right;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.img-top-right .info{
+    width: 342px;
+    height: 60px;
+    color: #fff;
+    background: url("../../icon/mc2_yxz.png") no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.driving .driving-left-img-footer{
+    margin-top: 10px;
+}
+.driving-left-img-footer .img-footer-left{
+    float: left;
+}
+.driving-left-img-footer .img-footer-right{
+    float: right;
+}
+.driving .header-right .left{
+    width: 155px;
+    height: 29px;
+    background: #fff url("../../icon/food.png") no-repeat;
+}
+.driving .header-right .right{
+    width: 80px;
+}
+.driving .content a{
+    padding-right: 20px;
+    outline: none;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.driving .content p{
+    width: 156px;
+    font-size: 12px;
+    color: #898989;
+    margin-bottom: 0;
+}
+.driving .line{
+    width: 100%;
+    height: 10px;
+    background: #fff url("../../icon/line.png") repeat-x 0 9px;
+}
+.driving .content .message{
+    margin-top: 11px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.driving .content .loving{
+    width: 55px;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.driving .content .loving label{
+    display: block;
+    margin: 5px 0 0 0;
+}
+.content-mart{
+    margin-top: 18px;
+}
+.content .ctibet{
+    position: absolute;
+    right: 6px;
+    bottom: 0;
+}

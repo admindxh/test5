@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.rimi.ctibet.domain.Praise" table="praise">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" length="40" />
+            <generator class="native" />
+        </id>
+        <property name="code">
+            <column name="code"/>
+        </property>
+        
+        <property name="contentCode" column="contentcode" type="java.lang.String">
+        </property>
+        
+        <property name="truePraise" column="truepraise" 			 type="java.lang.Integer"></property>
+        <property name="falsePraise" column="falsepraise" 			 type="java.lang.Integer"></property>
+        <property name="viewCount" column="viewcount" 				 type="java.lang.Integer"></property>
+        <property name="falseViewcount" column="falseViewcount" 	 type="java.lang.Integer"></property>
+        <property name="favoriteNum" column="favoriteNum" 			 type="java.lang.Integer"></property>
+        <property name="falseFavoriteNum" column="falseFavoriteNum"  type="java.lang.Integer"></property>
+        <property name="replyNum" column="replyNum" 				 type="java.lang.Integer"></property>
+        <property name="falseReplyNum" column="falseReplyNum" 		 type="java.lang.Integer"></property>
+        
+        
+        
+        <property name="createTime">
+            <column name="createTime"/>
+        </property>
+        <property name="lastEditTime">
+            <column name="lastEditTime"/>
+        </property>
+        <property name="avaliable">
+            <column name="available"/>
+        </property>
+       
+    </class>
+</hibernate-mapping>

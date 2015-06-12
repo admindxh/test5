@@ -1,0 +1,174 @@
+body,div,ul,li{
+    margin: 0;
+    padding: 0;
+}
+body{font-family: "Microsoft Yahei";font-size: 12px;color: #333;}
+.tusxz{
+    width: 1200px;
+    overflow: hidden;
+    margin-top: 60px;
+}
+.tusxz img{
+    max-width: 100%;
+}
+/*====== 左边 =======*/
+.tusxz .header{
+    margin-bottom: 15px;
+}
+.left .bg-title{
+    background: #fff url("../../assets/icon/picture_bg.png") no-repeat;
+    width: 220px;
+    height: 29px;
+}
+.more{
+    line-height: 29px;
+}
+.more a{
+    font-size: 14px;
+    color: #333;
+}
+.tusxz .more{
+    width: 90px;
+    text-align: right;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.img-lunbo{
+    width: 870px;
+    height: 400px;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.img-lunbo .img-thumb img{
+    max-width: 100%;
+    height: auto;
+}
+.lunbo-title{
+    position: absolute;
+    top: 35px;
+    right: 78px;
+    color: #fff;
+}
+.lunbo-title span{
+    font-weight: 900;
+    font-size: 14px;
+}
+.lunbo-title p{
+    font-size: 20px;
+}
+.lunbo-control{
+    width: 870px;
+    height: 132px;
+    position: absolute;
+    left: 0;
+    top: 236px;
+    background: url("../icon/lunbc.png") no-repeat;
+    z-index: 999999;
+}
+.lunbo-control ul{
+    width: 735px;
+    height: 132px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+    z-index: 999;
+    opacity: 1;
+}
+.lunbo-control ul li{
+    float: left;
+    width: 107px;
+    height: 89px;
+    margin: 20px 0 0 14px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+.lunbo-control ul li.active{
+    border-color: #fff;
+}
+/* .lunbo-control ul li:first-child{
+    margin-left: 67px;
+    border-color: #fff;
+} */
+/*====== 左边 end =======*/
+/*====== 右边 =======*/
+.right .header .more{
+    width: 70px;
+}
+.right .bg-title{
+    background: #fff url("../icon/video_bg.png") no-repeat;
+    width: 170px;
+    height: 29px;
+}
+.right-content{
+    color: #898989;
+}
+.right-content .video-top{
+    margin-bottom: 10px;
+}
+.right-content .video-top div{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.right-content .video-top div div{
+    background: url("../icon/play.png") no-repeat;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: 130px;
+    left: 220px;
+    cursor: pointer;
+}
+.right-content .video-top p{
+    margin: 10px 0 0 12px;
+}
+.right-content .video-top p a{
+    color: #898989;
+}
+.right-content .video-conter{
+    margin-bottom: 9px;
+    overflow: hidden;
+}
+.video-conter>div{
+    float: left;
+    margin-left: 8px;
+}
+.video-conter>div>div{
+    width: 98px;
+}
+.video-conter .video-conter-left{
+    margin-left: 0;
+}
+
+.video-conter-all>div{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.video-conter-all>div>div{
+    background: url("../icon/play_min.png") no-repeat;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: 24px;
+    left: 53px;
+    cursor: pointer;
+}
+.video-conter-all>p{
+    margin: 5px 0 0 10px;
+}
+.video-conter-all>p>a{
+    color: #898989;
+}
+.video-conter-all>p>a:active{
+    color:#898989;
+}
+.right-content .video-footer{
+    margin-bottom: 0;
+}
+/*====== 右边 end =======*/

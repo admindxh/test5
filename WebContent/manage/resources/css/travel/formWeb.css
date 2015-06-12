@@ -1,0 +1,314 @@
+/**
+* 功能：表单类页面样式设置
+* 日期：2014年12月1日
+* 作者：weiye
+**/
+
+/**** 样式集体声明 ****/
+/* 手型按钮 */
+.formLine label.lbl_check, .formLine input[type='checkbox'], .formLine input[type='radio'], .formEleGroup-squad, .btn-delete { cursor: pointer }
+
+/* 统一单选，复选框样式 */
+.formLine input[type='checkbox'], .formLine input[type='radio'] { background-color: transparent; box-shadow: 0 0 0 transparent; outline: none }
+
+/* 行内块 */
+.formLine .dataVal, .saveOper .btn-base, .formEleGroup-squad, .formLine-large-group, .formLine-middle-group , .formLine-small-group, .otherMudle, .formGroup .right, .formGroup .group_inBlock, .group_inBlock label, .group_inBlock span, .datepicker .prev i, .datepicker .next i { display: inline-block }
+
+/* 以单元格形式显示 */
+.formLine-small-group .region, .formLine-small-group .scenic { display: table-cell;}
+
+/* 垂直居中 */
+.formEleGroup-squad, .formLine-small-group .region, .group_inBlock label, .group_inBlock span { vertical-align: middle;}
+
+/**** 元素设置 ****/
+/* 内容分类 */
+.contClassify { width: 100%; height: auto; border-top: 1px solid #ddd; padding-bottom: 20px; overflow: visible; }
+.contClassify.bt-n { border-top: none;}
+.contClassify h2.title { width: 100px; height: 34px; background-color: #990000; text-align: center; font: normal 14px/34px "微软雅黑"; color: #fff; margin-bottom: 20px;}
+.contClassify h2.title.w-140 { width: 120px; }
+
+/* 内容为表单 */
+.formCont .formLine { padding-top: 8px; padding-bottom: 8px;}
+
+/* 内容为详情 */
+.details .formLine { padding-top: 10px; padding-bottom: 10px;}
+.details .formLine.saveOper { margin-left: 500px;}
+/* 不换行的表单行 */
+.formLine.nowrap { white-space: nowrap;}
+/* 长段内容 */
+.formLine .dataDetail.article { width: 86%; line-height: 140%; white-space: normal; vertical-align: top;}
+
+/* 表单内容行、组 */
+.formLine, .formGroup { padding-top: 12px; padding-bottom: 12px; display: block;}
+.formGroup { overflow: hidden;}
+/**** 表单元素 ****/
+/* label */
+.formLine label { width: 120px; text-align: right;}
+/* label——特殊宽度 */
+.formLine label.w-auto { width: auto }
+.formLine label.w-140 { width: 140px }
+.formLine label.w-160 { width: 160px }
+.formLine label.w-180 { width: 180px }
+/* label——定位偏移 */
+.formLine label.pos_r_t5 { position: relative; top: 5px;}
+.formLine label.pos_r_t10 { position: relative; top: 10px;}
+/* 输入框 */
+.formLine input[type='text'], .formLine input[type='password'], .base-inputTxt { width: 140px; padding: 8px 6px; border:1px solid #bcbcbc; font-size: 15px; color: #888;}
+.formLine input[type='text']:focus, .formLine input[type='password']:focus, .formLine textarea:focus, .base-inputTxt:focus { border:1px solid #615353;}
+/* 输入框——特殊宽度 */
+.formLine input.w-100 { width: 100px;}
+.formLine input.w-160 { width: 160px;}
+.formLine input.w-200 { width: 200px;}
+.formLine input.w-260 { width: 260px;}
+.formLine input.w-320 { width: 320px;}
+.formLine input.w-640 { width: 640px;}
+/* 文本域 */
+.formLine textarea { width: auto; height: auto; padding: 6px 4px; border: 1px solid #bcbcbc; font-size: 15px; color: #888; line-height: 140%; vertical-align: top; resize: none; }
+.formLine textarea.w-464 { width: 464px;}
+.formLine textarea.h-124 { height: 124px;}
+/* 表单内容大型组 */
+.formLine-large-group { max-width: 1440px; white-space: normal; word-break: break-all; vertical-align: top;}
+
+/* 表单内容中型组 */
+.formLine-middle-group { max-width: 1440px; white-space: normal; word-break: break-all; vertical-align: top;}
+
+/* 表单内容小型组 */
+.formLine-small-group { background-color: #f6f8fc; border: 1px solid #949cb4; border-radius: 3px; vertical-align: top; margin-right: 20px; margin-bottom: 20px;}
+.formLine-small-group.hide { display: none;}
+/* 表单内容组——组所属label  */
+.formLine-small-group-lbl { position: relative; top: 6px;}
+/* 表单内容组——组内元素  */
+.formLine-small-group .region { width: 100px; padding: 8px; border-right: 1px solid #949cb4; text-align: center;}
+.formLine-small-group .scenic { max-width: 330px; white-space: normal;}
+.formLine-small-group .scenic .formEleGroup-squad { line-height: 30px;}
+
+/* 表单选择按钮组 */
+.formEleGroup-squad { padding: 0 6px;}
+
+/* 详情的数据值 */
+.formLine .dataVal { padding-right: 16px; color: #9d857a; vertical-align: middle;}
+.formLine .dataVal.va_t { vertical-align: top;}
+.formLine .dataVal a { color: #ae4f4f; text-decoration: none; }
+.formLine .dataVal a:hover { text-decoration: underline }
+.formLine .dataVal.large { font-size: 20px; font-weight: bold; position: relative; top: -1px;}
+/* 详情的数据值——最大长度限制 */
+.formLine .dataVal.maxW600 { max-width: 600px;}
+.formLine .dataVal.maxW900 { max-width: 900px;}
+/* 详情数据组 */
+.searchDetail .formGroup { line-height: 50px;}
+.formGroup.detail .dataDetail, .formGroup.detail label { font-family: "微软雅黑"; }
+.formGroup.detail { padding: 12px 20px; font-size: 16px; }
+.formGroup.detail .dataDetail { font-size: 20px; font-weight: bold; }
+.formGroup.detail .dataDetail.number { font-size: 22px;}
+
+/* 单选，复选框的表单标签 */
+.formLine label.lbl_check { width: auto; }
+.formEleGroup-squad:hover .lbl_check { color: #aa9f9f;}
+
+/* 模块标题 */
+.mudle-title { width: 80px; height: 34px; background-color: #958787; text-align: center; font: normal 14px/34px "微软雅黑"; color: #fff; margin-bottom: 20px;}
+
+/* 保存按钮 */
+.saveOper { text-align: left;}
+.formLine .saveOper { text-align: center;}
+.saveOper .btn-base { height: 38px; padding: 0 36px; background-color: #990000; border: none; border-bottom: 4px solid #5f0000; font: normal 16px/38px "微软雅黑"; letter-spacing: 0.1em; color: #fff; }
+.saveOper .btn-base:hover { background-color: #c91212;}
+.saveOper .btn-base:active { background-color: #860303; border-bottom: 2px solid #4a0202; color: #999;}
+
+/**** 其他模块内的内容布局 ****/
+.otherMudle { width: 1150px; height: auto; border: 1px solid #dcdcdc; position: relative;}
+/* top位设置 */
+.otherMudle .top { width: 100%; background-color: #514545; color: #fff; }
+.otherMudle .top .btn-add { position: absolute; right: 16px; top: 16px;}
+.otherMudle .top input { color: #514545;}
+/* 大行 */
+.otherMudle .formGroup { border-top: 1px solid #dcdcdc; position: relative;}
+
+/* 大行——横向布局 */
+.contClassify .formGroup .left, .contClassify .formGroup .center, .contClassify .formGroup .right  { vertical-align: top;}
+/* 其他模块的left和right设置 */
+.otherMudle .left, .otherMudle .right { padding: 20px 0; float: left; overflow: hidden;}
+.otherMudle .left { width: 760px; float: left; overflow: hidden;}
+.otherMudle .right { width: auto; position: relative;}
+/* 添加和删除按钮 */
+.otherMudle .btn-add, .otherMudle .btn-delete { position: absolute; z-index: 1;}
+.otherMudle .btn-add { top: 16px; right: 16px;}
+.otherMudle .btn-delete { top: 5px; right: 16px;}
+
+/**** 个别页面特殊样式 ****/
+
+/* 活动&专题-新建活动——“报名付费”复选项 */
+.activModule .applyPay { color: #bcbcbc; }
+/* 系统设置-支付内容管理-支付渠道管理——支付渠道信息行 */
+.paySourceLine { line-height: 36px; border-bottom: 1px solid #dcdcdc; }
+.paySourceName { width: 300px;}
+/* 系统设置-账单管理-支付内容管理-订单管理-编辑订单 */
+.formGroup .group_inBlock { width: 320px; white-space: nowrap;}
+.formGroup .group_inBlock.w-auto { width: auto;}
+.group_inBlock .dataDetail { max-width: 234px;}
+
+/* 活动&专题-活动&专题信息管理-新建专题 */
+#preImg { width: 880px; height: 240px;}
+
+/* 系统设置-账单管理-支付内容管理-订单管理-查看订单 */
+.popupImg .imgContent_layer { width: auto; height: auto; max-width: 1024px; max-height: 720px; }
+
+/* 天上社区-论坛版块管理-新建论坛版块*/
+#imgshow1.forumPlateImg {width: 595px; height: 140px; margin-top: 20px; margin-left: 126px;}
+
+/**** 页面定位 ****/
+/* 右上角 */
+.posi_t10_r0, .posi_t20_r20, .posi_t30_r20 { position: absolute }
+.posi_t10_r0 { top: 10px; right: 0;}
+.posi_t20_r20 { top: 20px; right: 20px;}
+.posi_t30_r20 { top: 30px; right: 20px;}
+
+/* 日期选择翻页按钮 */
+.datepicker .prev i, .datepicker .next i { width: 12px; height: 12px; position: relative; left: 2px; top: 0px;}
+.datepicker .prev i.icon-arrow-left { background-position: -291px -32px;}
+.datepicker .prev i.icon-arrow-left:hover { background-position: -344px -32px;}
+.datepicker .next i.icon-arrow-right{ background-position: -319px -32px;}
+.datepicker .next i.icon-arrow-right:hover { background-position: -372px -32px;}
+
+/**** 弹出层(非遮罩层内容) ****/
+.lookupUploadCont { width: auto; height: auto;}
+
+/**** 原子类 ****/
+/* 换行 */
+.wrap { word-break: break-all; white-space: normal;}
+/* 不换行 */
+.nowrap { word-break: normal; white-space: nowrap;}
+/**** 特殊页面设置 ****/
+#bannerPreId { width: 880px; height:auto;}
+/* 游西藏——目的地修改 */
+.contClassify .lblScenName { width: 90px; display: inline-block; text-align: right;}
+/* 天上社区-帖子&回复管理-已审核的帖子&回复 */
+.bbs-operaForum {}
+.bbs-forumList { position: relative;}
+/* 用户头像 */
+.bbs-userpic {width: 64px; height: 64px; border-radius: 5px; margin-left: 5px; margin-bottom: 5px;}
+
+/*******************************************************
+					  响应式设计
+*******************************************************/
+
+/* 页面水平像素小于839(iframe带滚动条，屏幕像素1024) */
+@media screen and (max-width: 1024px) {
+    /* label默认标签设置 */
+    .formLine label { width: 96px;}
+    /* 文本框设置 */
+    .formLine input[type='text'], .formLine input[type='password'], .base-inputTxt { width: 96px; padding: 7px 6px; font-size: 13px;}
+    /* 自定义文本框宽度 */
+    .formLine input.w-100 {width: 70px;}
+    .formLine input.w-200 {width: 160px;}
+    .formLine input.w-220 {width: 220px;}
+    .formLine input.w-260 {width: 180px;}
+    .formLine input.w-320 {width: 240px;}
+    #member-add .formLine input.w-320 {width: 251px;}
+    .formLine input.w-640 {width: 420px;}
+    /* 内容分类标题 */
+    .contClassify h2.title { height: 30px; font: normal 14px/30px "微软雅黑";}
+
+    /**** 特殊页面设置 ****/
+    #bannerPreId { width: 600px; height: auto;}
+    .contClassify .lblScenName { width: 48px;}
+    .contClassify .float_r.mt10.mr150 { margin-right: 0;}
+    /* 游西藏 */
+    #preDiv img {width: 600px;}
+    /* 新建活动（添加模块） */
+    .contClassify .otherMudle {width: 740px;}
+    .contClassify .otherMudle .left {width: 720px;}
+    .contClassify .otherMudle .formGroup .right {margin-left: 54px; margin-top: -24px;}
+    /* 新建专题 */
+    #preImg {width: 600px; height: auto;}
+    #imgshow1.forumPlateImg {margin-left: 100px;}
+    /* 天上社区-新建论坛版块 */
+    .bbs-operaForum { position: absolute; top: 38px; right: 10px}
+    .bbs-forumList .w80 {width: 60px;}
+    /* 系统设置 */
+    .formGroup.detail {font-size: 14px;}
+    .formGroup.detail .dataDetail.number {font-size: 18px;}
+    .formGroup.detail .dataDetail {font-size: 16px;}
+    .paySourceName {width: 200px;}
+    .formLine .dataVal.maxW900 {width: 280px;}
+    .formGroup .group_inBlock {width: 200px;}
+    .group_inBlock .dataDetail {max-width: 116px; font: normal 12px "宋体";}
+    .popupImg .imgContent_layer { width: auto; height: auto; max-width: 560px; max-height: 420px; }
+    /* 读西藏-读西藏信息显示管理 */
+    .readInfoDisp .formLine input.w-260 {width: 120px;}
+    .readInfoDisp .formLine input.w-200 {width: 100px;}
+    /* 游西藏目的地主信息管理图缩略图 */
+    .desImg{width: 600px !important;height: 180px !important;}
+    /* 游西藏景点主图 */
+    .scenImg{width: 600px !important;height: 216px !important;}
+    /* 报名渠道链接 */
+    .maxInfo{max-width: 210px !important;}
+    .channelName{max-width: 50px !important;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+    /* 活动信息管理banner主图 */
+    #bannerPreId,#preImg{width: 570px !important;height: 150px !important;}
+}
+/* 页面水平像素840-1095(iframe带滚动条，屏幕像素1025-1280) */
+@media screen and (min-width: 1025px) and (max-width: 1095px) {
+    /* 自定义文本框宽度 */
+    .formLine input.w-100 {width: 80px;}
+    .formLine input.w-200 {width: 180px;}
+    .formLine input.w-260 {width: 200px;}
+    .formLine input.w-320 {width: 260px;}
+    #member-add .formLine input.w-320 {width: 292px;}
+    #admin-add .formLine input.w-320 {width: 306px;}
+    .formLine input.w-640 {width: 480px;}
+    .bbs-operaForum { position: absolute; top: 38px; right: 10px}
+    .bbs-forumList .w80 {width: 60px;}
+    #bannerPreId { width: 820px; height: auto;}
+    .contClassify .otherMudle {width: 946px;}
+    .contClassify .otherMudle .left {width: 668px;}
+    #preImg {width: 820px; height: auto;}
+    /* 游西藏 */
+    #preDiv img {width: 820px;}
+    .formLine label {width: 96px; font-size: 12px;}
+    .formLine .dataVal {font-size: 12px;}
+    .formLine .dataVal.maxW600 {width: 380px;}
+    /* 读西藏-读西藏信息显示管理 */
+    .readInfoDisp .formLine input.w-260 {width: 160px;}
+    .readInfoDisp .formLine input.w-200 {width: 140px;}
+    .tableManage.w-1024 {width: 820px;}
+    /* 系统设置 */
+    .paySourceName { width: 220px;}
+    .formLine .dataVal.maxW900 {width: 420px;}
+    .formGroup .group_inBlock { width: 252px;}
+    .popupImg .imgContent_layer { width: auto; height: auto; max-width: 660px; max-height: 480px; }
+    /* 游西藏目的地主信息管理图缩略图 */
+    .desImg{width: 660px !important;height: 198px !important;}
+    /* 游西藏景点主图 */
+    .scenImg{width: 800px !important;height: 288px !important;}
+    /* 活动信息管理banner主图 */
+    #bannerPreId,#preImg{width: 761px !important;height: 200px !important;}
+    /* 天上社区 - 论坛版块管理 - 板块列表页 - 新建论坛版块 */
+    #imgshow1.forumPlateImg { margin-left: 104px;}
+}
+/* 页面水平像素1096-1219(屏幕像素1281-1440) */
+@media screen and (min-width: 1096px) and (max-width: 1440px) {
+    #member-add .formLine input.w-320 {width: 292px;}
+    #admin-add .formLine input.w-320 {width: 306px;}
+    .details .formLine.saveOper { margin-left: 400px;}
+    .tableManage.w-1024 { width: 880px;}
+    .otherMudle { width: 1044px;}
+    .formGroup .group_inBlock { width: 300px;}
+    /* 游西藏 */
+    #preDiv img {width: 820px;}
+    /* 读西藏-读西藏信息显示管理 */
+    .readInfoDisp .formLine input.w-260 {width: 190px;}
+    .readInfoDisp .formLine input.w-200 {width: 150px;}
+    /* 系统设置 */
+    .paySourceName { width: 260px;}
+    .formLine .dataVal.maxW900 {width: 420px;}
+    .popupImg .imgContent_layer { width: auto; height: auto; max-width: 980px; max-height: 480px; }
+    /* 游西藏目的地主信息管理图缩略图 */
+    .desImg{width: 840px !important;height: 252px !important;}
+    /* 游西藏景点主图 */
+    .scenImg{width: 900px !important;height: 324px !important;}
+    /* 报名渠道链接 */
+    .maxInfo{max-width: 420px !important;}
+    /* 活动信息管理banner主图 */
+    #bannerPreId,#preImg{width: 951px !important;height: 250px !important;}
+}

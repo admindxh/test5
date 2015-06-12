@@ -1,0 +1,324 @@
+html{font-size: 62.5%;} /*10 ÷ 16 × 100% = 62.5%*/
+body{margin: 0;font-family: "Microsoft Yahei";font-size: 1.6rem;} /*1.4 × 10px = 14px */
+h1,h2,h3,h4,h5,h6{margin: 0;}
+ul{margin: 0;padding: 0;}
+p{margin: 0;}
+.navbar-dark {
+    background-color: #161c2f;
+    border: none;
+    margin-bottom: 0;
+}
+.container {
+    position: relative;
+}
+.login-and-share{
+    line-height: 5rem;
+}
+.login-and-share a{
+    display: inline-block;
+    width: 50px;
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.login-and-share a.share {
+    width: 29px;
+    height: 29px;
+    font-size: 12px;
+    background: url(../../icon/share.png) no-repeat;
+    text-indent: -9999px;
+    margin-left: 10px;
+}
+.login-and-share a.weixin {
+    margin-left: 0;
+    background-position: 0 0;
+}
+.login-and-share a.weibo {
+    background-position: -45px 0;
+}
+.login-and-share a.qzone {
+    background-position: -90px 0;
+}
+.content{
+	padding-bottom: 80px;
+}
+.header{
+    background-color: #d7e782;
+}
+.qx-logo{
+    text-align: center;
+}
+.qx-logo img{
+    width: 100%;
+    max-width: 750px;
+}
+.header h2{
+    margin-top: 15px;
+    color: #0089d0;
+    font-size: 2.2rem;
+    text-align: center;
+    text-shadow: 0 0 0.1rem #f4ee9b;
+}
+.header .act-time{
+    width: 80%;
+    margin: 15px auto;
+    padding: 5px 10px;
+    color: #ffffff;
+    font-size: 1.6rem;
+    background-color: #ff397d;
+    text-align: center;
+    -webkit-transform: skewX(30deg);
+    -moz-transform: skewX(30deg);
+    -ms-transform: skewX(30deg);
+    -o-transform: skewX(30deg);
+    transform: skewX(30deg);
+}
+.act-time p{
+    -webkit-transform: skewX(-30deg);
+    -moz-transform: skewX(-30deg);
+    -ms-transform: skewX(-30deg);
+    -o-transform: skewX(-30deg);
+    transform: skewX(-30deg);
+}
+.header strong{
+    font-weight: normal;
+}
+.qx-intro{
+    width: 80%;
+    margin: 30px auto;
+    color: #0089d0;
+    font-size: 1.6rem;
+    background-color: #d7e782;
+}
+.sponsor{
+    margin-top: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.sponsor img{
+    width: 100px;
+    margin-right: 10%;
+}
+.sponsor img:last-child{
+    margin-right: 0;
+}
+.content{
+    width: 100%;
+    background: #0089d0 url(../../icon/head-foot.png) center 0 repeat-x;
+}
+.organizers{
+    height: 260px;
+    padding-top: 20px;
+    text-align: center;
+}
+.organizers h3{
+    color: #0089d0;
+    font-size: 1.6rem;
+    text-shadow: 0 0 0.1rem #f4ee9b;
+    margin-bottom: 5px;
+}
+.qx-info{
+    margin-top: 100px;
+}
+/* 内容标题设置 */
+.qx-info h4 {
+	font-size: 1.8rem;
+	margin-top: 40px;
+}
+/* 内容段落设置 */
+.qx-info section {
+	width: 92%;
+	margin: 10px auto;
+}
+/* 内容段落设置——字体设置 */
+.qx-info section.fc_fff {
+	color: #fff;
+}
+.qx-info section p {
+	font-size: 1.6rem;
+	margin: 20px 0;
+}
+.qx-info section p.mt-30 {
+	margin-top: 30px;
+}
+.qx-info section em {
+	background-color: transparent;
+	font-size: 2rem;
+	color: #fcff00;
+}
+/* 内容段落设置——说明注释 */
+.qx-info section mark {
+	background-color: transparent;
+	display: block;
+	text-align: right;
+	color: #fcff00;
+	font-size: 1.4rem;
+}
+.qx-info section mark.txt-a_l {
+	text-align: left;
+}
+/* 内容段落设置——表格 */
+.qx-info section table{
+	width: 100%;
+	border: 1px solid #fff;
+	border-collapse: collapse;
+}
+.qx-info section table th {
+	font-size: 1.8rem;
+}
+.qx-info section table th span.smart {
+	font-size: 1rem;
+}
+.qx-info section table td {
+	padding: 10px;
+	font-size: 1.6rem;
+}
+.qx-info section table.col3 td:first-child {
+	width: 22%;
+	text-align: center;
+}
+.qx-info section table.col3  td:nth-child(2) {
+	width: 18%;
+	text-align: center;
+}
+.qx-info section table.col3  td:last-child {
+	text-align: left;
+}
+/* 活动关注 */
+.ac-att{
+    color: #ffffff;
+    text-align: center;
+}
+.ac-att div{
+    display: inline-block;
+}
+.ac-att div:first-child{
+    margin-left: 0;
+}
+.ac-att a{
+    display: block;
+    margin-bottom: 20px;
+    color: inherit;
+    text-decoration: none;
+}
+.ac-att a:hover{
+    text-decoration: underline;
+}
+.qx-info .ac-att p{
+    margin: 0;
+}
+.ac-att img{
+    width: 70%;
+    max-width: 130px;
+}
+.ac-qq{
+    text-align: center;
+    color: #ffffff;
+}
+.ac-qq p{
+    margin-top: 10px !important;
+    margin-bottom: 0 !important;
+}
+/* 官方合作伙伴 */
+.partner{
+    text-align: center;
+}
+.partner img{
+    margin: 10px;
+}
+/* 内容段落设置——布局设置 */
+.qx-info section table.mt-30 {
+	margin-top: 30px;
+}
+.qx-info section p.mt-30 {
+	margin-top: 30px
+}
+.info-title{
+    margin-left: 15px;
+    padding: 5px 10px;
+    color: #0089d0;
+    font-size: 1.6rem;
+    background-color: #d8e682;
+    -webkit-transform: skewX(10deg);
+    -moz-transform: skewX(10deg);
+    -ms-transform: skewX(10deg);
+    -o-transform: skewX(10deg);
+    transform: skewX(10deg);
+    -webkit-box-shadow: 0 0 10px 10px #006ca2;
+    -moz-box-shadow: 0 0 10px 10px #006ca2;
+    box-shadow: 10px 7px 0 #006ca2;
+}
+.info-title img{
+    -webkit-transform: skewX(-10deg);
+    -moz-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    -o-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+    position: absolute;
+    left: 5px;
+    bottom: 2px;
+}
+.info-title span{
+    display: block;
+    -webkit-transform: skewX(-10deg);
+    -moz-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    -o-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+}
+.act-req{
+    width: auto;
+	display: inline-block;
+}
+.act-req.mt-40 {
+	margin-top: 40px;
+}
+.act-req.mt-60 {
+	margin-top: 60px;
+}
+.act-req span{
+    margin-left: 75px;
+}
+/* footer */
+.footer {
+	background-color: #fff;
+	padding: 30px 4% 100px;
+}
+.footer h2 {
+	font-size: 2.2rem;
+	color: #333;
+}
+.footer h2 .enTitle {
+	color: #a0a0a0;
+}
+.footer h3 {
+	font-size: 2rem;
+	color: #444;
+	margin-top: 30px;
+}
+.footer ul {
+	margin-left: 30px;
+	margin-top: 10px;
+}
+.footer ul li {
+	line-height: 146%;
+	font-size: 1.8rem;
+	color: #666;
+	margin: 10px auto;
+}
+.footer ul li.red {
+	color: #cf1423;
+}
+.repllyBtn {
+	width: 240px;
+    height: 60px;
+	background: url(../../icon/goto_bm.png) no-repeat;
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -120px;
+}

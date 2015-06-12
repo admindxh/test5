@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+    <title>系统设置-会员管理-会员信息修改</title>
+    <link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css"/>
+    <link rel="stylesheet" href="../../resources/css/base.css"/>
+    <link rel="stylesheet" href="../../resources/css/travel/formWeb.css"/>
+    <style type="text/css">
+		.avatar { position: absolute; left: 296px; top: 46px;}
+	</style>
+    <script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!-- main { -->
+<div class="main">
+    <!-- 页面位置-->
+    <div class="location">
+        <label>您当前位置为:</label>
+    		<span><a>系统设置</a> -</span>
+    		<span><a href="member-manage.html" target="_self">会员管理</a> -</span>
+    		<span><a>会员信息修改</a></span>
+    </div>
+
+    <!-- 模块管理 { -->
+    <form id="member-add-form">
+        <!-- 会员信息 { -->
+		<div class="filament_solid_ddd pos-rela mt30">
+
+			<div class="formLine mt20">
+				<label>性别:</label>
+				<input id="male" name="sex" type="radio" class="ml10" checked /><label for="male" class="w-auto pointer ml10">男</label>
+				<input id="female" name="sex" type="radio" class="ml25" /><label for="female" class="w-auto pointer ml10">女</label>
+			</div>
+
+			<div class="formLine mt30 mb40">
+				<label>头像:</label>
+				<button type="button" class="btn-base uploadImg">点击上传图片</button>
+			</div>
+			<div class="avatar">
+				<img src="../../resources/img/ele/avatar_default_128.jpg" alt="用户头像" />
+			</div>
+			
+			<div class="formLine">
+				<label>邮箱:</label>
+				<input id="email" type="text" class="w-320" />
+				<span class="reqItem">*</span>
+			</div>
+			
+			<div class="formLine">
+				<label>手机:</label>
+				<input id="mobile" type="text" class="w-320" />
+				<span class="reqItem">*</span>
+			</div>
+			
+			<div class="formLine">
+				<label>昵称:</label>
+				<input id="niceName" type="text" class="w-320" />
+				<span class="reqItem">*</span>
+			</div>
+			
+			<div class="formLine">
+				<label>密码:</label>
+				<input id="pwd" type="text" class="w-320" />
+				<span class="reqItem">*</span>
+			</div>
+			
+			<div class="formLine">
+				<label>确认密码:</label>
+				<input id="repwd" type="text" class="w-320" />
+				<span class="reqItem">*</span>
+			</div>
+			
+			<div class="formLine">
+				<label>生日:</label>
+				<input id="birthday" type="text" class="w-320" />
+				<span class="reqItem">*</span>
+			</div>
+			
+			<div class="formLine">
+				<label>所在地:</label>
+				<div id="province" class="select-base">
+					<input id="" name="" type="hidden" value="" />
+					<i class="w-140">请选择所在省份</i>
+					<dl>
+						<dt name="">省份1</dt>
+						<dt name="">省份2</dt>
+						<dt name="">省份3</dt>
+						<dt name="">省份4</dt>
+						<dt name="">省份5</dt>
+					</dl>
+				</div>
+				<div id="city" class="select-base ml5">
+					<input id="" name="" type="hidden" value="" />
+					<i class="w-140">请选择所在城市</i>
+					<dl>
+						<dt name="">城市1</dt>
+						<dt name="">城市2</dt>
+						<dt name="">城市3</dt>
+						<dt name="">城市4</dt>
+						<dt name="">城市5</dt>
+					</dl>
+				</div>
+				<span class="reqItem">*</span>
+			</div>
+			
+			<div class="formLine">
+				<label>积分:</label>
+				<input id="score" type="text" class="w-320" />
+				<span class="reqItem">*</span>
+			</div>
+			
+			<!-- 按钮 -->
+			<div class="ml140 mt40 mb30">
+				<button class="btn-sure sureModif" type="button">修改</button>
+				<a class="btn-anchor ml20 mr40" type="button">取消</a>
+			</div>
+
+		</div><!-- } 会员信息 -->
+    </form>
+    <!-- } 模块管理 -->
+</div>
+<!-- } main -->
+
+<!-- JS引用部分 -->
+<script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+<script src="../../resources/js/base.js" type="text/javascript"></script>
+<script src="../../resources/plugin/jquery.rimi.validation.js" type="text/javascript"></script>
+<script src="../../resources/js/dataValidation.js" type="text/javascript"></script>
+
+<!-- 利用空闲时间预加载指定页面 -->
+<link rel="prefetch">
+<!-- IE10+ -->
+<link rel="next">
+<!-- Firefox -->
+<link rel="prerender">
+<!-- Chrome -->
+</body>
+
+</html>

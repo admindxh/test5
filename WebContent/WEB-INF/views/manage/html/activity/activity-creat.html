@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+	<title>活动&专题-活动&专题信息管理-新建活动</title>
+	<link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css" />
+	<link rel="stylesheet" href="../../resources/css/base.css" />
+	<link rel="stylesheet" href="../../resources/css/travel/formWeb.css" />
+	<link rel="stylesheet" href="../../resources/plugin/datepicker.css" />
+    <script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+	<!-- 网页文本编辑器插件 -->
+	<script src="../../resources/plugin/ckeditor/ckeditor.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<!-- main { -->
+	<div class="main">
+		<form id="" name="">
+			<!-- 页面位置-->
+			<div class="location">
+				<label>您当前位置为:</label>
+				<span><a>活动&专题</a> -</span>
+				<span><a>活动&专题信息管理</a> -</span>
+				<span><a href="activ-info.html" target="_self">活动信息管理</a> -</span>
+				<span><a href="#" target="_self">新建活动</a></span>
+			</div>
+
+			<!-- 数据操作 -->
+			<div class="searchManage">
+				<button type="button" class="btn-sure">预览</button>
+				<button type="button" class="btn-sure">发布</button>
+			</div>
+
+			<!-- 模块管理 { -->
+			<div class="muduleManage details filament_solid_ddd">
+				<!-- 活动类型 { -->
+				<div class="contClassify bt-n">
+					<!--<h2 class="title">活动类型</h2>-->
+
+					<div class="formLine">
+						<label>类型选择:</label>
+						<div class="select-base">
+							<i class="w-140">请选择活动类型</i>
+							<dl>
+								<dt>活动</dt>
+								<dt>专题</dt>
+							</dl>
+						</div>
+						<span class="reqItem">*</span>
+						<!-- 选择显示版块 -->
+						<div class="activModule formLine-middle-group" style="vertical-align:middle; margin-left:20px;">
+							<span class="formEleGroup-squad">
+								<input name="activity" type="checkbox">
+								<label class="lbl_check">上传</label>
+							</span>
+							<span class="formEleGroup-squad">
+								<input name="activity" type="checkbox">
+								<label class="lbl_check">投票</label>
+							</span>
+							<span class="formEleGroup-squad">
+								<input name="activity" type="checkbox">
+								<label class="lbl_check">支付</label>
+							</span>
+							<span class="formEleGroup-squad">
+								<input name="activity" type="checkbox">
+								<label class="lbl_check"l>报名</label>
+							</span>
+							<span class="formEleGroup-squad">
+								<input name="activity" type="checkbox">
+								<label class="lbl_check">报名付费</label>
+							</span>
+						</div>
+					</div>
+
+				</div>
+				<!-- } 活动类型 -->
+
+				<!-- 基本信息 { -->
+				<div class="contClassify">
+					<h2 class="title">基本信息</h2>
+
+					<div class="formLine">
+						<label>活动名称:</label>
+						<input type="text" maxlength="30" class="w-260">
+						<span class="reqItem">*</span>
+
+						<label>序号:</label>
+						<input type="text" maxlength="5">
+						<span class="reqItem">*</span>
+					</div>
+
+					<div class="formLine">
+						<label class="pos_r_t5">活动简介:</label>
+						<span class="dataVal va_t">
+							<textarea id="editor1" name="editor1" cols="80" rows="10" class="ckeditor" style="display:inline-block"></textarea>
+						</span>
+					</div>
+
+					<div class="formLine mt20">
+						<label>Banner图:</label>
+						<button type="button" class="btn-base uploadImg">点击上传图片</button>
+						<span class="txt-suggest ml20">推荐尺寸：1140 * 420</span>
+					</div>
+
+					<div class="formLine">
+						<label class="pos_r_t5">缩略图：</label>
+						<img src="../../resources/img/ele/loadImg_default_a.jpg" title="缩略图名称" alt="请上传图片" class="va_t">
+					</div>
+
+					<div class="formLine mt20">
+						<label>开始时间:</label>
+						<input id="startDate" type="text" maxlength="10">
+						<span class="reqItem">*</span>
+						
+						<label>截止时间:</label>
+						<input id="endDate" type="text" maxlength="10">
+						<span class="reqItem">*</span>
+					</div>
+
+				</div><!-- } 基本信息 -->
+				
+				<!-- 投票相关 { -->
+				<div class="contClassify">
+					<h2 class="title">投票相关</h2>
+					
+					<div class="formLine">
+						<label>投票名称:</label>
+						<input type="text" maxlength="5" class="w-110">
+						<span class="reqItem">*</span>
+					</div>
+					
+					<div class="formLine">
+						<label>新建选项:</label>
+						<div class="optionChoose select-base">
+							<i class="w-100">选项个数</i>
+							<dl>
+								<dt>1</dt>
+								<dt>2</dt>
+								<dt>3</dt>
+								<dt>4</dt>
+								<dt>5</dt>
+								<dt>6</dt>
+								<dt>7</dt>
+								<dt>8</dt>
+							</dl>
+						</div>
+					</div>
+					
+					<!--对应显示的选项数-->
+					<div class="optionSet formLine" style="margin-left:62px"></div>
+					
+					<div class="formLine">
+						<label class="pos_r_t5">投票简介:</label>
+						<span class="dataVal va_t">
+							<textarea id="editor2" name="editor2" cols="80" rows="10" class="ckeditor" style="display:inline-block"></textarea>
+						</span>
+					</div>
+					
+				</div><!-- } 投票相关 -->
+
+				<!-- 报名相关 { -->
+				<div class="contClassify">
+					<h2 class="title">报名相关</h2>
+					
+					<div class="formLine">报名须知:</div>
+					
+					<div class="formLine">
+						<h3 class="mudle-title">模块一</h3>
+						<label>名称:</label>
+						<input type="text" maxlength="15" class="w-200">
+						<span class="reqItem">*</span>
+					</div>
+					
+					<div class="formLine">
+						<label class="pos_r_t5">内容:</label>
+						<span class="dataVal va_t">
+							<textarea id="apply1" name="apply1" cols="80" rows="10" class="ckeditor" style="display:inline-block"></textarea>
+						</span>
+					</div>
+					
+					<div class="formLine">
+						<h3 class="mudle-title">模块二</h3>
+						<label>名称:</label>
+						<input type="text" maxlength="15" class="w-200">
+						<span class="reqItem">*</span>
+					</div>
+					
+					<div class="formLine">
+						<label class="pos_r_t5">内容:</label>
+						<span class="dataVal va_t">
+							<textarea id="apply1" name="apply1" cols="80" rows="10" class="ckeditor" style="display:inline-block"></textarea>
+						</span>
+					</div>
+					
+					<div class="formLine">
+						<h3 class="mudle-title">模块三</h3>
+						<label class="pos_r_t5">名称:</label>
+						<input type="text" maxlength="15" class="w-200">
+						<span class="reqItem">*</span>
+					</div>
+					
+					<div class="formLine">
+						<label>内容:</label>
+						<span class="dataVal va_t">
+							<textarea id="apply1" name="apply1" cols="80" rows="10" class="ckeditor" style="display:inline-block"></textarea>
+						</span>
+					</div>
+					
+					<div class="formLine mt20">
+						<label class="pos_r_t5">报名表单:</label>
+						<div class="formLine-middle-group tableManage w-1024">
+							<table id="" border="0" cellpadding="0" cellspacing="0" class="dataTable applyList">
+								<thead>
+									<tr>
+										<th>字段编号</th>
+										<th>字段名称</th>
+										<th>字段类型</th>
+										<th>操作</th>
+										<th class="w-24">
+											<button id="addApply" type="button" title="添加" class="btn-add"></button>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>真实姓名</td>
+										<td>文本</td>
+										<td>
+											<a class="applyInfo_edit">编辑</a>
+											<a class="applyInfo_dele">删除</a>
+										</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>身份证正面图</td>
+										<td>图片上传</td>
+										<td>
+											<a class="applyInfo_edit">编辑</a>
+											<a class="applyInfo_dele">删除</a>
+										</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>资产证明</td>
+										<td>文档上传</td>
+										<td>
+											<a class="applyInfo_edit">编辑</a>
+											<a class="applyInfo_dele">删除</a>
+										</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					
+				</div><!-- } 报名相关 -->
+			
+				<!-- SEO信息 { -->
+				<div class="contClassify">
+					<h2 class="title">SEO信息</h2>
+
+					<div class="formLine">
+						<label class="w-160">&lt;Keywords&gt;标签:</label>
+						<input type="text" maxlength="" class="w-320">
+					</div>
+				</div>
+				<!-- } SEO信息 -->
+				
+				<!-- 其他模块 { -->
+				<div class="contClassify">
+					<h2 class="title">其他模块</h2>
+					
+					<div class="otherMudle mt20">
+						<!-- 添加按钮 -->
+						<button id="addMudle" type="button" title="添加" class="btn-add"></button>
+						
+						<!-- 顶部模块名称 -->
+						<div class="top">
+							<div class="formLine">
+								<label>模块名称:</label>
+								<input id="mudleName-0" name="mudleName-0" type="text" class="w-320">
+								<span class="reqItem">*</span>
+								
+							</div>
+						</div>
+						
+						<!-- 模块1 { -->
+						<div class="formGroup">
+							<!-- 删除按钮 -->
+							<button id="delMudle-0" type="button" title="删除" class="btn-delete"></button>
+							<!-- 左侧设置 -->
+							<div class="left">
+
+								<div class="formLine">
+									<label>图片1:</label>
+									<button id="mud_upImg-0" type="button" class="btn-base uploadImg">点击上传图片</button>
+									<span class="reqItem">*</span>
+									<span class="txt-suggest">推荐尺寸为大于188*188的正方形</span>
+								</div>
+
+								<div class="formLine">
+									<label>名称:</label>
+									<input id="mud_name-0" name="mud_name-0" type="text" class="w-320">
+									<span class="reqItem">*</span>
+								</div>
+
+								<div class="formLine">
+									<label>连接:</label>
+									<input id="mud_link-0" name="mud_link-0" type="text" class="w-320">
+								</div>
+							</div>
+
+							<!-- 右侧缩略图 -->
+							<div class="right">
+								<label>缩略图:</label>
+								<img id="mud_img-0" src="../../resources/img/ele/loadImg_default_c.jpg" title="缩略图名称" alt="请上传图片" class="va_m">
+							</div>
+						</div><!-- } 模块1 -->
+					</div>
+
+				</div>
+				<!-- } 其他模块 -->
+
+
+				<!-- 确认按钮 -->
+				<div class="formLine saveOper">
+					<button type="button" class="btn-base mr30">发布</button>
+					<button type="button" class="btn-base">取消</button>
+				</div>
+
+			</div>
+			<!-- } 模块管理 -->
+		</form>
+	</div>
+	<!-- } main -->
+	
+	<!-- JS引用部分 -->
+	<script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+	<script src="../../resources/js/base.js" type="text/javascript"></script>
+	<script src="../../resources/plugin/bootstrap-datepicker.js" type="text/javascript"></script>
+	<script src="../../resources/js/base-form.js"></script>
+	<script src="../../resources/js/activity/activity-creat.js" type="text/javascript"></script>
+
+	<!-- 利用空闲时间预加载指定页面 -->
+	<link rel="prefetch">
+	<!-- IE10+ -->
+	<link rel="next">
+	<!-- Firefox -->
+	<link rel="prerender">
+	<!-- Chrome -->
+</body>
+
+</html>

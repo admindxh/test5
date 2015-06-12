@@ -1,0 +1,265 @@
+/* banner */
+#banner{
+    height: 360px;
+    margin-bottom: 30px;
+}
+#banner .banner-item{
+    width: 100%;
+    height: 360px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.banner-content{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 360px;
+}
+.banner-left{
+    position: absolute;
+    left: 150px;
+    bottom: 70px;
+}
+.banner-right{
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+.banner-right .secondary-menu{
+    width: 310px;
+    height: 320px;
+}
+.secondary-menu ul{
+    list-style-type: none;
+}
+.secondary-menu ul li{
+    width: 310px;
+    height: 64px;
+    cursor: pointer;
+}
+.secondary-menu ul li>div {
+    float: left;
+    height: inherit;
+}
+/* 左边图标DIV */
+.secondary-menu ul li .menu-icon {
+    width: 92px;
+    position: relative;
+}
+/* 图标DIV>DIV 高度 */
+.secondary-menu ul li .menu-icon div{
+    height: inherit;
+}
+/* 图标偏移50% */
+.secondary-menu ul li .menu-icon img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+/* 右边文字DIV */
+.secondary-menu ul li .menu-info{
+    width: 218px;
+    font-size: 15px;
+    line-height: 64px;
+    text-align: center;
+    position: relative;
+}
+/* 文字DIV>DIV */
+.secondary-menu ul li .menu-info div{
+    height: inherit;
+}
+/* 文字对齐 .menu-info 左上角 */
+.secondary-menu ul li .menu-info span{
+    width: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 热门景点hover */
+.location-hover{
+    /*background-image: url(../../icon/hot-sicen.png);*/
+}
+.location-hover .menu-icon>div{
+    background-color: #b61600;
+    opacity: 0.7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+.location-hover .menu-icon img{
+    margin-left: -10px;
+    margin-top: -12px;
+}
+.location-hover .menu-info div{
+    background-color: #ffffff;
+    opacity: 0.6;
+    -ms-filter: alpha(opacity=60);
+    filter: alpha(opacity=60);
+}
+.location-hover:hover .menu-info{
+    color: #ffffff;
+}
+.location-hover:hover .menu-info div{
+    /*background-image: url(../../icon/hot-sicen_hover.png);*/
+    background-color: #b61600;
+    opacity: 0.7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+/* 综合攻略hover */
+.bookmark-hover{
+    /*background-image: url(../../icon/zonghe.png);*/
+}
+.bookmark-hover .menu-icon>div{
+    background-color: #da1800;
+    opacity: 0.7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+.bookmark-hover .menu-icon img{
+    margin-left: -11px;
+    margin-top: -11px;
+}
+.bookmark-hover .menu-info div{
+    background-color: #ffffff;
+    opacity: 0.6;
+    -ms-filter: alpha(opacity=60);
+    filter: alpha(opacity=60);
+}
+.bookmark-hover:hover .menu-info{
+    color: #ffffff;
+}
+.bookmark-hover:hover .menu-info div{
+    /*background-image: url(../../icon/zonghe_hover.png);*/
+    background-color: #da1800;
+    opacity: 0.7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+/* 自驾游攻略hover */
+.car-hover{
+    /*background-image: url(../../icon/self.png);*/
+}
+.car-hover .menu-icon>div{
+    background-color: #f53400;
+    opacity: 0.7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+.car-hover .menu-icon img{
+    margin-left: -16px;
+    margin-top: -10px;
+}
+.car-hover .menu-info div{
+    background-color: #ffffff;
+    opacity: 0.6;
+    -ms-filter: alpha(opacity=60);
+    filter: alpha(opacity=60);
+}
+.car-hover:hover .menu-info{
+    color: #ffffff;
+}
+.car-hover:hover .menu-info div{
+    /*background-image: url(../../icon/self_hover.png);*/
+    background-color: #f53400;
+    opacity: 0.7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+/* 骑行攻略hover */
+.bicyle-hover{
+    /*background-image: url(../../icon/bicyle.png);*/
+}
+.bicyle-hover .menu-icon>div{
+    background-color: #ff5b00;
+    opacity: 0.7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+.bicyle-hover .menu-icon img{
+    margin-left: -16px;
+    margin-top: -10px;
+}
+.bicyle-hover .menu-info div{
+    background-color: #ffffff;
+    opacity: 0.6;
+    -ms-filter: alpha(opacity=60);
+    filter: alpha(opacity=60);
+}
+.bicyle-hover:hover .menu-info{
+    color: #ffffff;
+}
+.bicyle-hover:hover .menu-info div{
+    /*background-image: url(../../icon/bicyle_hover.png);*/
+    background-color: #ff5b00;
+    opacity: 0.7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+/* 商户hover */
+.store-hover{
+    /*background-image: url(../../icon/sh.png);*/
+}
+.store-hover .menu-icon>div{
+    background-color: #ff8900;
+    opacity: 0.7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+.store-hover .menu-icon img{
+    margin-left: -13px;
+    margin-top: -13px;
+}
+.store-hover .menu-info div{
+    background-color: #ffffff;
+    opacity: 0.6;
+    -ms-filter: alpha(opacity=60);
+    filter: alpha(opacity=60);
+}
+.store-hover:hover .menu-info{
+    color: #ffffff;
+}
+.store-hover:hover .menu-info div{
+    /*background-image: url(../../icon/sh_hover.png);*/
+    background-color: #ff8900;
+    opacity: 0.7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+/* end banner */
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.index-more{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 29px;
+    line-height: 29px;
+    background: #fff;
+    text-align: right;
+}
+.index-more a{
+    font-size: 14px;
+    color: #333;
+}
+
+.xz-box{
+    margin-top: 60px;
+}
+.xz-heading{
+    position: relative;
+    margin-bottom: 15px;
+    height: 29px;
+    background: #fff url(../../icon/line.png) left center repeat-x;
+}
+.xz-heading h2{
+    position: relative;
+    margin: 0;
+    height: 29px;
+}

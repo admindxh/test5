@@ -1,0 +1,84 @@
+#tags .tags-mark{
+    background-color: transparent;
+}
+#tags .container{
+    background-color: #cf1423;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+/* == banner == */
+#banner{
+    height: 300px !important;
+}
+#banner .banner{
+    width: 1200px;
+    height: 300px;
+}
+.banner-left{
+    height: 170px;
+    position: absolute;
+    top: 100px !important;
+    left: 85px !important;
+}
+.banner-left img{
+    display: block;}
+
+.banner-left button{
+    width: auto;
+    height: 45px;
+    border: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #ce1623;
+    color: #fff;
+    outline: none;
+    padding: 10px 5px;
+}
+.ml20{
+    margin-left: 20px;
+}
+
+/* banner-right */
+.banner-right{
+    position: absolute;
+    top: 40px !important;
+    right: 0 !important;
+}
+.banner-right .secondary-menu{
+    width: 310px;
+    height: 260px;
+    background: url("../../icon/list_bg.png");
+}
+.secondary-menu ul{
+    list-style-type: none;
+}
+.secondary-menu ul li div{
+    float: left;
+}
+.secondary-menu .location-pin{
+    width: 92px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    background: url("../../icon/location_bg.png");
+}
+.secondary-menu .bookmark-bg{
+    background: url("../../icon/book_bg.png");
+}
+.secondary-menu .car-bg{
+    background: url("../../icon/car_bg.png");
+}
+.secondary-menu .bicyle-bg{
+    background: url("../../icon/culture_menu_bg13.png");
+}
+.secondary-menu .location-pin-write{
+    width: 218px;
+    height: 65px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* == banner End == */

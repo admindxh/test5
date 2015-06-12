@@ -1,0 +1,139 @@
+.drop-down{
+    float: left;
+}
+.drop-down>label{
+    display: inline;
+}
+.drop-down .dropdown{
+    display: inline-block;
+}
+.drop-down button{
+    border: 0;
+    padding: 0;
+    outline: none;
+    text-align: left;
+    background-color: transparent;
+    width: 125px;
+}
+.drop-down button label{
+    width: 88px;
+    border: 1px solid #dcdcdc;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.drop-down span{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    background: #cf1423 url("../../icon/drop-down.png") no-repeat center;
+}
+label{
+    margin-bottom: 0;
+    font-weight: normal;
+    vertical-align: middle;
+}
+.filtrate{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: none;
+}
+.filtrate>button{
+    width: 111px;
+    height: 26px;
+    padding: 0;
+    border: 0;
+    outline: none;
+    text-indent: -9999px;
+    float: right;
+    background: url("../../icon/post_invitation.png") 0 0 no-repeat;
+}
+.glclass{
+    margin-left: 5px;
+}
+.current-state{
+    margin-left: 30px;
+}
+.bd .dis-show{
+    display: block;
+}
+.tabs-content{
+    display: none;
+}
+.mygl a{
+    display: block;
+    width: 500px;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    color: #333333;
+    text-decoration: underline;
+    overflow: hidden;
+}
+.h-edit{
+    width: 18px;
+    height: 18px;
+    background: url(../../icon/edit.png) 0 0 no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 55px;
+    vertical-align: middle;
+}
+.mygl .h-trash{
+    vertical-align: middle;
+}
+.mygl .table th{
+    text-align: center;
+    padding: 0 0 10px 0;
+    background-color: transparent;
+    border: none !important;
+}
+.mygl .table th div{
+    height: 30px;
+    line-height: 30px;
+    background-color: #f1f1f1;
+}
+.mygl .table th:first-child div{
+    text-align: left;
+    padding-left: 185px;
+}
+.mygl tbody td{
+    height: 35px;
+    line-height: 35px !important;
+}
+.mygl tbody tr:first-child{
+    border-top: 1px solid #fff;
+}
+.map-wrap .other-footprint{
+    background: url(../../icon/footprint_other.png) 0 0 no-repeat;
+}
+.map-wrap .other-footprint:active {
+    background: url(../../icon/footprint_other_active.png) 0 0 no-repeat;
+}
+.black{
+    color: #333333;
+}
+.black:hover{
+    color: #333333;
+}
+.my-strategy>button{
+    background: url("../../icon/upload_strategy.png") 0 0 no-repeat;
+}
+.my-activity .h-edit{
+    width: 24px;
+    height: 13px;
+    background: url("../../icon/eye_about.png") 0 0 no-repeat;
+}
+.my-activity .paid{
+    width: 26px;
+    height: 18px;
+    background: url("../../icon/money.png") 0 0 no-repeat;
+}
+.my-activity .see-about{
+    width: 24px;
+    height: 13px;
+    background: url("../../icon/eye_about.png") 0 0 no-repeat;
+}

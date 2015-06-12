@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>路</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/video.css"/>
+    <script type="text/javascript" src="js/jquery-1.9.0.js"></script>
+</head>
+<body>
+<div class="video-info">
+    <div class="video-info-img"><img src="img/lu.jpg"></div>
+    <div class="video-Introduction">
+        <h1>路<i>（剧情/记录）</i></h1>
+        <ol>
+            <li><strong>主演：</strong>拉巴次仁 扎西次旦<strong>出演：</strong>松多吉 嘎玛 </li>
+            <li><strong>制片人：</strong> 梅建海 <strong>导演：</strong>刘士杨<strong>编剧：</strong>小六<strong>出品人：</strong>朱航 梅建海
+            </li>
+            <li><strong>摄影：</strong>李昌林 <strong>声音指导：</strong>梅建海 <strong>剪辑：</strong>大海<strong>后期：</strong>四两<strong>现场制片：</strong>齐浩
+
+            </li>
+            <li><strong>出品方：</strong>北京博瑞藏越文化传媒有限公司 成都海格文化传媒有限公司</li>
+        </ol>
+    </div>
+    <div class="yuan">
+        <ul>
+            <li class="curr">乐视源</li>
+            <li>腾讯源</li>
+        </ul>
+    </div>
+</div>
+<!--乐视云-->
+<div class="letv vy">
+    <iframe marginheight="0"
+            src="http://yuntv.letv.com/bcloud.html?uu=135a01dcc5&amp;vu=62a5464d80&amp;width=750&amp;height=422&amp;auto_play=0"
+            marginwidth="0" frameborder="0" height="422" width="750"></iframe>
+</div>
+<!--腾讯源-->
+<div class="Tencent vy" style="display:none;">
+    <iframe marginheight="0"
+            src="http://static.video.qq.com/TPout.swf?vid=f0155fuokf2&attstart=0&attend=577&exid=k0&showend=1&title=The%20way%20路&"
+            marginwidth="0" frameborder="0" height="422" width="750"></iframe>
+</div>
+<div class="video-info">
+    剧情简介：无
+</div>
+</body>
+<script>
+    $(function () {
+        $(".yuan ul li").on("click", function () {
+            $(this).addClass("curr").siblings().removeClass("curr");
+            $(".vy").css('display','none');
+            $(".vy").eq($(this).index()).css('display','block');
+        })
+    })
+</script>
+</html>

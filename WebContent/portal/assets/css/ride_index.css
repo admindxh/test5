@@ -1,0 +1,435 @@
+.layout-left {
+  float: left;
+  width: 700px;
+  margin-top: 50px;
+}
+
+.layout-right {
+  float: right;
+  width: 280px;
+}
+
+.xz-box {
+  margin-top: 40px;
+}
+
+.slides {
+  width: 700px;
+  height: 360px;
+  overflow: hidden;
+}
+
+.slides {
+  margin-bottom: 0;
+}
+
+.slides .slick-dots {
+  bottom: 10px;
+  margin-bottom: 0;
+}
+
+.w-box {
+  margin-top: 50px;
+  border: 1px solid #f1f1f1;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  padding: 7px 3px 0 3px;
+  overflow: hidden;
+}
+
+.xz-heading .service {
+  background: #fff url(../icon/service.png) 0 0 no-repeat;
+}
+
+.xz-heading .jdgl {
+  background: #fff url(../icon/jdgl.jpg) 0 0 no-repeat;
+}
+
+.xz-heading .past {
+  width: 230px;
+  background: #fff url(../icon/past.jpg) 0 0 no-repeat;
+}
+
+.xz-heading .along {
+  font-size: 14px;
+  line-height: 30px;
+  width: 70px;
+  background-color: #fff;
+}
+
+.pane-intro {
+  margin-bottom: 20px;
+}
+
+.tabs-wrap {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.tabs-line {
+  margin-right: -5px;
+}
+
+.tabs-line a {
+  float: left;
+  width: 230px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.tabs-line a:hover,
+.tabs-line a:focus {
+  text-decoration: none;
+}
+
+.tabs-line a.one {
+  background-color: #ec8f2b;
+}
+
+.tabs-line a.two {
+  background-color: #d15b22;
+}
+
+.tabs-line a.three {
+  background-color: #af401f;
+}
+
+.route-wrap {
+  position: relative;
+  margin: 50px 0 30px 0;
+}
+
+.route-inner,
+.route-dots {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 612px;
+  height: 34px;
+}
+
+.route-inner-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 19px;
+  background: url(../icon/step.png) center top no-repeat;
+}
+
+.route-wrap .arrow {
+  position: absolute;
+  top: 4px;
+  width: 24px;
+  height: 24px;
+}
+
+.arrow.route-prev {
+  left: 0;
+  background: url(../icon/arrow-sl.png) 0 0 no-repeat;
+}
+
+.arrow.route-next {
+  right: 0;
+  background: url(../icon/arrow-sr.png) 0 0 no-repeat;
+}
+.arrow.disable {
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+.route-dots {
+  position: absolute;
+  top: -20px;
+  height: 60px;
+  line-height: 24px;
+  overflow: hidden;
+}
+
+.route-dots ul {
+  margin-bottom: 0;
+  margin-top: 37px;
+}
+
+.route-dot {
+  font-size: 14px;
+  float: left;
+  width: 127px;
+  position: relative;
+}
+
+.route-dot a {
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 12px;
+  margin-top: -15px;
+  padding-top: 15px;
+}
+
+.route-dot a .i-bike {
+  position: absolute;
+  top: -30px;
+  width: 30px;
+  height: 29px;
+  background: white url(../icon/zxc.png) 0 0 no-repeat;
+  z-index: 2;
+  display: none;
+}
+
+.route-dot a.active {
+  font-size: 16px;
+}
+
+.route-dot a.active .i-bike {
+  display: block;
+}
+
+.local {
+  padding-left: 20px;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  background: url(../icon/local_black.png) left center no-repeat;
+}
+
+.st-left img {
+  float: left;
+  display: block;
+  border-radius: 7px;
+}
+
+.st-info {
+  padding: 15px;
+  width: 570px;
+  height: 280px;
+  float: right;
+  border-radius: 7px;
+  background-color: #f1f1f1;
+}
+
+.info-wrap {
+  float: left;
+  width: 290px;
+  height: 140px;
+}
+
+.station {
+  position: relative;
+  width: 290px;
+  height: 160px;
+  border-bottom: 1px dashed #aeaeae;
+}
+
+.station img {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  border-radius: 7px;
+}
+
+.st-info h4,
+.st-info2 h4 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.st-info h4 a,
+.st-info2 h4 a {
+  color: #333;
+  text-decoration: none!important;
+}
+
+.st-info p,
+.st-info2 p {
+  color: #626262;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.station p {
+  width: 130px;
+  margin-top: 15px;
+}
+
+.stg {
+  position: relative;
+  float: right;
+  width: 230px;
+  height: 250px;
+  border-left: 1px dashed #aeaeae;
+  padding-left: 15px;
+}
+
+.pic {
+  float: right;
+  margin-top: 20px;
+}
+
+.pic img {
+  display: block;
+  border-radius: 7px;
+}
+
+.time {
+  float: left;
+  width: 54px;
+  height: 54px;
+  background-color: #fff;
+}
+
+.time p {
+  color: #a1251d;
+  font-size: 12px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.time span {
+  margin-top: 7px;
+  font-size: 18px;
+  display: block;
+  color: #a1251d;
+  text-align: center;
+}
+
+.tg-heading {
+  margin-top: 20px;
+}
+
+.th-info {
+  margin-left: 65px;
+}
+
+.st-info2 {
+  margin-top: 20px;
+  border: none;
+  padding-left: 0;
+  width: 270px;
+  height: 210px;
+}
+
+.st-info2 .time {
+  background-color: #f1f1f1;
+}
+
+.text {
+  line-height: 24px;
+  height: 120px;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.shisu {
+  margin-top: 10px;
+}
+
+.shisu ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: -1px;
+}
+
+.shisu li {
+  float: left;
+  margin-left: -1px;
+  padding-left: 10px;
+  width: 50%;
+  height: 90px;
+  position: relative;
+}
+
+.shisu li span {
+  padding: 2px 5px;
+  background-color: #fff;
+  color: #a1251d;
+  border-radius: 50%;
+}
+
+.shisu li:first-child {
+  border-right: 1px dashed #aeaeae;
+  padding-left: 0;
+}
+
+.shisu li h5 a {
+  color: #333;
+}
+
+.lmore,
+.rmore,
+.lmore2 {
+  position: absolute;
+  left: -14px;
+  bottom: -5px;
+  width: 40px;
+  height: 20px;
+  display: block;
+  background: url(../icon/rmore.png) 0 0 no-repeat;
+  text-indent: -9999px;
+}
+
+.lmore {
+  background: url(../icon/lmore.png) 0 0 no-repeat;
+  left: auto;
+  right: -6px;
+}
+
+.lmore2 {
+  left: auto;
+  right: -15px;
+  bottom: -15px;
+}
+
+.sort-pane {
+  position: relative;
+  height: 30px;
+}
+
+.sort-pane .bd-sort {
+  right: auto;
+  left: 0;
+}
+
+.sort-pane .bd-sort a {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.sort-pane .submit-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 110px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: url(../icon/upload.png) no-repeat;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  text-indent: -9999px;
+}
+
+.ctibet {
+  top: auto;
+  left: auto;
+}
+
+.comment {
+  right: 0;
+}
+
+.post-message label,
+.post-message span {
+  margin-bottom: 0;
+}

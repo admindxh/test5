@@ -1,0 +1,125 @@
+.photo-gallery{
+    width: 1200px;
+    padding: 0;
+}
+.photo-gallery .active{
+    color: #cf1423;
+}
+.photo-gallery .dis-show{
+    display: block;
+}
+/* location */
+.location{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.location a{
+    color: #333;
+}
+/* location End */
+
+/* content */
+.content .header{
+    width: 261px;
+    height: 29px;
+    background: url("../../icon/photo-gallery.png") no-repeat;
+}
+.photo-class{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+.photo-class span{
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.photo-list{
+    margin-left: -16px;
+    display: none;
+}
+.img-list{
+    width: 238px;
+    height: 210px;
+    margin-left: 16px;
+    margin-top: 16px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+.img-list a,
+.img-list a img{
+    width: inherit;
+    height: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    border-radius: inherit;
+}
+.ctibet{
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+}
+.page{
+    margin-top: 90px !important;
+    margin-bottom: 0 !important;
+    background-color: transparent !important;
+}
+.picture{
+    width: inherit !important;
+    height: inherit !important;
+    border-radius: 8px;
+}
+.picture-bg{
+    width: inherit;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: .6;
+    filter:alpha(opacity=60);
+    filter: ;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    z-index: 100;
+}
+.picture-info{
+    width: inherit;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    z-index: 200;
+}
+.picture-info div{
+    margin-left: 10px;
+}
+.picture-info .from{
+    width: 200px;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.picture-info .by{
+    width: 200px;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 12px;
+}
+/* content End */
+
+/* footer */
+.footer{
+    margin-top: 90px !important;
+}

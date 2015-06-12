@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <title>游西藏-攻略管理-已审核的攻略</title>
+    <link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css" />
+    <link rel="stylesheet" href="../../resources/css/base.css" />
+	<script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- main { -->
+    <div class="main">
+		<!-- 页面位置-->
+		<div class="location">
+			<label>您当前位置为:</label>
+			<span><a>游西藏</a> -</span>
+			<span><a>攻略管理</a> -</span>
+			<span><a href="#" target="_self">已审核的攻略</a></span>
+		</div>
+		
+		<!-- 数据操作 -->
+		<div class="searchManage">
+			<a href="audit-pass-creat.html" target="_self" class="btn-anchor">新建攻略</a>
+			<button id="batchRemove" type="button" class="btn-sure">批量删除</button>
+		</div>
+
+		<!-- 模块管理 { -->
+		<div class="tableManage pos-rela">
+			<!-- 搜索查询栏 { -->
+			<div class="searchTools">
+				
+				<!-- 会员名/手机/邮箱/攻略标题 -->
+				<input type="text" placeholder="会员名/手机/邮箱/攻略标题">
+				
+				<!-- 查询 -->
+				<button type="button" class="btn-search"><!--查询--></button>
+				
+				<!-- 快捷查询 { -->
+				<div class="shortcutSearch">
+					<!-- 攻略类型 -->
+					<div class="select-base ml-20">
+						<i class="w-110">攻略类型</i>
+						<dl>
+							<dt>全部类型</dt>
+							<dt>用户上传</dt>
+							<dt>官方发布</dt>
+						</dl>
+					</div>
+
+					<!-- 所属版块 -->
+					<div class="select-base ml-10">
+						<i class="w-110">所属版块</i>
+						<dl>
+							<dt>全部版块</dt>
+							<dt>自驾游</dt>
+							<dt>骑行</dt>
+							<dt>综合</dt>
+						</dl>
+					</div>
+
+					<!-- 相关目的地 -->
+					<div class="select-base ml-10">
+						<i class="w-140">相关目的地</i>
+						<dl>
+							<dt>全部地区</dt>
+							<dt>拉萨地区</dt>
+							<dt>那曲地区</dt>
+							<dt>阿里地区</dt>
+							<dt>日喀则地区</dt>
+							<dt>山南地区</dt>
+							<dt>林芝地区</dt>
+							<dt>昌都地区</dt>
+						</dl>
+					</div>
+
+					<!-- 相关景点 -->
+					<div class="select-base ml-10">
+						<i class="w-140">相关景点</i>
+						<dl>
+							<dt>全部景点</dt>
+							<dt>拉萨市</dt>
+							<dt>布达拉宫</dt>
+							<dt>纳木错</dt>
+						</dl>
+					</div>
+				</div><!-- } 快捷查询 -->
+			</div><!-- } 搜索查询栏 -->
+			
+			<!-- 数据列表 -->
+			<table border="0" cellpadding="0" cellspacing="0" class="dataTable">
+				<thead>
+					<tr>
+						<th>
+							<input type="checkbox" name="dataCheck" class="allCheck">
+							全选
+						</th>
+						<th>排序</th>
+						<th>创建日期</th>
+						<th>攻略类型</th>
+						<th>所属板块</th>
+						<th>攻略标题</th>
+						<th>攻略内容</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<input type="checkbox" name="dataCheck" class="dataCheck">
+						</td>
+						<td>1</td>
+						<td>2014-11-29</td>
+						<td>用户上传</td>
+						<td>自驾游</td>
+						<td>
+							<a href="#">
+								<span class="maxW300">西藏拉萨自驾五日游、西藏纳木错综合三日游</span>
+							</a>
+						</td>
+						<td>
+							<a href="#">
+								<span class="maxW600">随着近年来‘冬游西藏’的推介力度越来越大，‘冬游西藏’的认知度被不断提高。今年春节期间整个广东市场或者是福建市场关于‘冬游西藏’的广告铺天盖地，游客对桃花节充满了向往和期待，这对于‘冬游西藏’也起到了一个很好的推动作用。</span>
+							</a>
+						</td>
+						<td>
+							<a>查看</a>
+							<a>编辑</a>
+							<a class="dele">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" name="dataCheck" class="dataCheck">
+						</td>
+						<td>2</td>
+						<td>2014-11-29</td>
+						<td>官方发布</td>
+						<td>综合</td>
+						<td>
+							<a href="#">
+								<span class="maxW300">布达拉宫一日游</span>
+							</a>
+						</td>
+						<td>
+							<a href="#">
+								<span class="maxW600">敕勒川,阴山下。天似穹庐，笼盖四野。天苍苍，野茫茫，风吹草低见牛羊</span>
+							</a>
+						</td>
+						<td>
+							<a>查看</a>
+							<a>编辑</a>
+							<a>删除</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- 表格分页 -->
+			<div class="paging">
+				<button type="button" class="btn-base_min">首页</button>
+				<button type="button" class="btn-base_min">上一页</button>
+				<button type="button" class="btn-base_min">下一页</button>
+				<button type="button" class="btn-base_min">末页</button>
+			</div>
+				
+		</div><!-- } 模块管理 -->
+    </div><!-- } main -->
+
+    <!-- JS引用部分 -->
+    <script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+    <script src="../../resources/js/base.js" type="text/javascript"></script>
+    <script src="../../resources/js/base-tabel.js" type="text/javascript"></script>
+	<script>
+		//======================================
+		//				删除类别
+		//======================================
+		// 弹出准备删除框
+		$(document).on("click", ".dataTable .dele", function() {
+			var $this = $(this);
+			// 设置删除状态
+			$this.parents("tr").addClass("dele-waiting");
+			// 弹出确认删除框
+			popupLayer(
+					'',
+					'<div style="width: 320px; text-align:center; margin: 0 auto;">删除该版块将删除其下面的全部帖子信息<br>是否删除？</div>',
+					'<button type="button" class="btn-sure sureDele mr15">确定</button>' +
+					'<button type="button" class="btn-sure noDele cancel ml15">取消</button>'
+			);
+		});
+
+		// 确定删除（从视觉界面上删除了这一行）
+		$(document).on("click", ".sureDele", function() {
+			var deleTr = $(".dataTable").find("tr.dele-waiting");
+			// 移除该行
+			deleTr.remove();
+			// 关闭弹出框
+			closePopup();
+		});
+
+		// 取消删除
+		$(document).on("click", ".noDele", function() {
+			var deleTr = $(".dataTable").find("tr.dele-waiting");
+			// 消除删除状态
+			deleTr.removeClass("dele-waiting");
+		});
+
+		// 批量确定删除
+		$(document).on("click",".confirm",function(){
+			var deleTr = $(".dataTable").find("tr.trChecked");
+			deleTr.remove();
+			closePopup();
+		});
+
+		$("#batchRemove").on('click',function(){
+			var trChecked = $('.dataTable').find("tr.trChecked");
+			if(trChecked.length){
+				popupLayer(
+						'',
+						'<div style="width: 320px; text-align:center; margin: 0 auto;">删除该版块将删除其下面的全部帖子信息<br>是否删除？</div>',
+						'<button type="button" class="btn-sure confirm mr15">确定</button>' +
+						'<button type="button" class="btn-sure cancel ml15">取消</button>'
+				);
+			}else{
+				msgBox("请勾选需要删除的板块","info",1000);
+			}
+		})
+	</script>
+    <!-- 利用空闲时间预加载指定页面 -->
+    <link rel="prefetch"> <!-- IE10+ -->
+    <link rel="next"> <!-- Firefox -->
+	<link rel="prerender"> <!-- Chrome -->
+</body>
+</html>

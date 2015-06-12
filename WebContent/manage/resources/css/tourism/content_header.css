@@ -1,0 +1,213 @@
+.content-header{
+    width: 1200px;
+    padding: 0;
+    font-family: 'Microsoft Yahei';
+    margin-top: 30px;
+}
+.content-header .row{
+    margin: 0;
+}
+.content-header .left{
+    width: 870px;
+    padding: 0;
+}
+.content-header .right{
+    width: 310px;
+    padding: 0;
+    margin-left: 20px;
+}
+.img-box>div{
+    float: left;
+}
+.box-left{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.box-info{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+}
+.box-info h5{
+    margin: 0;
+}
+.box-left .box-info{
+    width: 501px;
+    height: 60px;
+    background: url("../../icon/beautiful_mc1.png");
+}
+.box-left .box-info h5{
+    margin-left: 30px;
+}
+.box-left .box-info h5:first-child{
+    margin-top: 15px;
+}
+.box-right{
+    margin-left: 10px;
+}
+.box-right .box-item-1{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.box-right .box-item-1>div{
+    width: 113px;
+    height: 60px;
+    background: url("../../icon/beautiful_mc2.png");
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.box-item-1 .box-info h5{
+    margin-left: 10px;
+}
+.box-info-even h5:first-child{
+    margin-top: 13px;
+}
+.box-item-1 .box-info-odd h5{
+    margin-top: 21px;
+}
+.box-top>div{
+    float: left;
+    margin-left: 10px;
+}
+.box-top>div:first-child{
+    margin-left: 0;
+}
+.box-bottom{
+    margin-top: 10px;
+}
+.box-bottom>div{
+    float: left;
+    margin-left: 10px;
+}
+.box-bottom>div:first-child{
+    margin-left: 0;
+}
+.box-item-2{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.box-item-2>div{
+    width: 236px;
+    height: 60px;
+    background: url("../../icon/beautiful_mc3.png");
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.box-item-2 .box-info h5{
+    margin-left: 10px;
+}
+.left ul{
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+.left ul li{
+    width: 13px;
+    height: 12px;
+    display: inline-block;
+    margin-left: 31px;
+    line-height: 0;
+}
+.left ul li button{
+    width: 13px;
+    height: 12px;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: #fff url("../../icon/dots.png") no-repeat -45px 0;
+}
+.left li.list-dot{
+    margin-left: 0;
+}
+.left li.list-dot button{
+    background: url("../../icon/dots.png");
+}
+.left ul li:hover button{
+    background: url(../../icon/dots.png);
+}
+/*=====================
+         right
+======================*/
+.air-ticket{
+    width: 310px;
+    height: 330px;
+    background-image: url(../../icon/air_ticket_bg.png);
+}
+.air-ticket div.colour-bar{
+    width: 100%;
+    height: 5px;
+    background: url("../../icon/colour_bar.png") repeat-x -5px 0;
+}
+.air-header{
+    width: 310px;
+    height: 60px;
+    line-height: 60px;
+    background: url("../../icon/air_ticket_header.png");
+}
+.air-header>img{
+    margin-left: 10px;
+}
+.air-header h5{
+    display: inline-block;
+    vertical-align: middle ;
+    font-size: 13px;
+    color: #fff;
+}
+.air-ticket .air-header a{
+    float: right;
+    font-size: 13px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+.air-header a span{
+    vertical-align: middle;
+}
+.air-header a img{
+    margin-left: 5px;
+}
+.air-content{
+    margin-top: 25px;
+}
+.air-content>div{
+    margin: 20px 0 0 20px;
+}
+.air-content label{
+    font-weight: 100;
+    margin-bottom: 0;
+}
+.air-content input{
+    width: 200px;
+    height: 25px;
+    line-height: 25px;
+    border: 0;
+    outline: none;
+    margin-left: 20px;
+    padding: 0 5px 0 20px;
+}
+.air-content .bargain-price{
+    margin-left: 20px;
+    font-size: 20px;
+    color: #cf1423;
+}
+.air-content .price-unit{
+    margin-left: 5px;
+    color: #d11622;
+    font-size: 12px;
+}
+.air-content button{
+    width: 276px;
+    height: 40px;
+    border: 0;
+    outline: none;
+    padding: 0;
+    background: url("../../icon/reservation.png");
+    display: block;
+    margin: 25px auto 0;
+}

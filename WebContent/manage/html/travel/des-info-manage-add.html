@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+    <title>游西藏-目的地管理-目的地信息管理-目的地添加</title>
+    <link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css"/>
+    <link rel="stylesheet" href="../../resources/css/base.css"/>
+    <link rel="stylesheet" href="../../resources/css/travel/formWeb.css"/>
+    <script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!-- main { -->
+<div class="main">
+    <!-- 页面位置-->
+    <div class="location">
+        <label>您当前位置为:</label>
+        <span><a>游西藏</a> -</span>
+        <span><a>目的地管理</a> -</span>
+        <span><a href="des-info-manage.html" target="_self">目的地信息管理</a> -</span>
+        <span><a href="#" target="_self">目的地添加</a></span>
+    </div>
+    <!-- 模块管理 { -->
+    <form id="dest-add-form">
+        <!-- 基本信息 { -->
+        <div>
+            <h2 class="mt40">目的地基本信息:</h2>
+
+            <div class="filament_solid_ddd ov-au mt30">
+
+                <div class="formLine mt20">
+                    <label class="w-140">目的地名称:</label>
+                    <input id="destName" type="text" class="w-260" maxlength="30"/>
+                    <span class="reqItem">*</span>
+                </div>
+
+                <div class="formLine">
+                    <label class="w-140">目的地主图:</label>
+                    <button type="button" class="btn-base btn-uploadImg">点击上传图片</button>
+                    <span class="txt-suggest ml20">必须是1000*200尺寸的jpg/png格式,可同时上传多张图片</span>
+                </div>
+
+                <div class="formLine">
+                    <label class="w-140"></label>
+                    <img src="../../resources/img/ele/loadImg_default_b.jpg" alt=""/>
+                </div>
+
+                <div class="formLine mb20">
+                    <label class="w-140 pos_r_t5">目的地简介绍:</label>
+                    <textarea name="" id="destIntro" cols="70" rows="10"></textarea>
+                    <span class="reqItem">*</span>
+                </div>
+            </div>
+        </div>
+        <!-- } 基本信息 -->
+
+        <!-- 机票预订信息 { -->
+        <div>
+            <h2 class="mt100">目的地机票预订信息-默认到达城市:</h2>
+
+            <div class="filament_solid_ddd ov-au mt30">
+                <div class="formLine mt20 mb20">
+                    <input id="las" type="radio" name="jp" class="ml50 mr10"/>
+                    <label for="las" class="w-auto lbl_check">拉萨贡嘎机场</label>
+                    <input id="linz" type="radio" name="jp" class="ml50 mr10"/>
+                    <label for="linz" class="w-auto lbl_check">林芝米林机场</label>
+                    <input id="changd" type="radio" name="jp" class="ml50 mr10"/>
+                    <label for="changd" class="w-auto lbl_check">昌都邦达机场</label>
+                    <input id="ali" type="radio" name="jp" class="ml50 mr10"/>
+                    <label for="ali" class="w-auto lbl_check">阿里昆莎机场</label>
+                    <input id="rikz" type="radio" name="jp" class="ml50 mr10"/>
+                    <label for="rikz" class="w-auto lbl_check">日喀则和平机场</label>
+
+                </div>
+            </div>
+        </div>
+        <!-- } 机票预订信息 -->
+
+        <!-- SEO信息 { -->
+        <div>
+            <h2 class="mt100">页面SEO信息</h2>
+
+            <div class="filament_solid_ddd ov-au mt30">
+                <div class="formLine mt20 mb20">
+                    <label class="w-160">&lt;Keywords&gt;标签:</label>
+                    <input id="keyWord" type="text" maxlength="20" class="w-320" value="西藏目的地，西藏景点，西藏游记攻略，西藏路线，西藏自驾游攻略，西藏美食攻略，西藏骑行攻略">
+                </div>
+            </div>
+        </div>
+        <!-- } SEO信息 -->
+
+        <div class="txt-ac mt40">
+            <button class="btn-sure" type="button">保存</button>
+        </div>
+    </form>
+    <!-- } 模块管理 -->
+</div>
+<!-- } main -->
+
+<!-- JS引用部分 -->
+<script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+<script src="../../resources/js/base.js" type="text/javascript"></script>
+<script src="../../resources/plugin/jquery.rimi.validation.js" type="text/javascript"></script>
+<script src="../../resources/js/dataValidation.js" type="text/javascript"></script>
+<script type="text/javascript">
+    /* 目的地名称验证 */
+    $("#destName").blur(function () {
+        var $this = $(this),
+                thisVal = $this.val();
+
+        // 执行验证并设置验证结果的状态
+        if (valid_txtBox(this, $.VLDTOR.IsEnCnNum(thisVal) && inputRange(this,2,30), "名称只能为中英文和数字，且长度在2-30", "right")) {
+            VLDRST.NameType = true;
+        } else {
+            VLDRST.NameType = false;
+        }
+    });
+
+    /* 目的地介绍验证 */
+    $("#destIntro").blur(function () {
+        var $this = $(this),
+                thisVal = $this.val();
+
+        // 执行验证并设置验证结果的状态
+        if (valid_txtBox(this, $.VLDTOR.IsEnCnNum(thisVal) && inputRange(this,2,800), "只能为中英文和数字，且长度在2-800", "right")) {
+            VLDRST.NonNull = true;
+        } else {
+            VLDRST.NonNull = false;
+        }
+    });
+    $("#keyWord").blur(function () {
+        var $this = $(this),
+                thisVal = $this.val();
+        if(valid_txtBox_create(this, ($.VLDTOR.IsEnCnNum_comma(thisVal) && inputRange(this,2,20)) || thisVal == "",'只能为空或中英文、数字,且长度在2-20','right')){
+            VLDRST.ShowTitile = true;
+        }else{
+            VLDRST.ShowTitile = false;
+        }
+    });
+
+    /* 保存验证 */
+    $(".btn-sure").click(function () {
+        $("#destName").blur();
+        $("#destIntro").blur();
+        $("#keyWord").blur();
+
+        // 验证通过
+        if (VLDRST.NameType && VLDRST.NonNull && VLDRST.ShowTitile) {
+            msgBox("保存成功！", "pass", 2600);
+            $("#dest-add-form").submit();
+        }
+        // 验证未通过
+        else {
+            msgBox("输入的内容有误，请检查！", "erro", 2600);
+            return false;
+        }
+    });
+</script>
+
+<!-- 利用空闲时间预加载指定页面 -->
+<link rel="prefetch">
+<!-- IE10+ -->
+<link rel="next">
+<!-- Firefox -->
+<link rel="prerender">
+<!-- Chrome -->
+</body>
+
+</html>

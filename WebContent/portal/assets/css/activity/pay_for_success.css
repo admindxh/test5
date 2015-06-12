@@ -1,0 +1,23 @@
+body{font-family: "Microsoft Yahei";}
+.content{
+    width: 100%;
+    height: auto;
+    background-color: #f8f8f8;
+}
+.container{
+    width: 1000px;
+    padding: 0;
+}
+.pay-success{
+    width: 459px;
+    margin: 200px auto 200px;
+    position: relative;
+}
+.return_activity{
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+}
+.footer{
+    margin-top: 0 !important;
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.rimi.ctibet.domain.ServiceSite" table="servicesite">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" length="40" />
+            <generator class="native" />
+        </id>
+        <property name="code">
+            <column name="code"/>
+        </property>
+        
+        <property name="avaliable" column="avaliable" type="java.lang.Integer">
+        </property>
+        
+        <property name="siteName" column="sitename" type="java.lang.String"></property>
+        <property name="sitImg" column="siteimg" type="java.lang.String"></property>
+        <property name="serviceName" column="servicename" type="java.lang.String"></property>
+        <property name="serviceImg" column="sveviceimg" type="java.lang.String"></property>
+        
+        <property name="serviceAdress" column="serviceadress" type="java.lang.String"></property>
+        <property name="ridelineId" column="ridelineId" type="java.lang.String"></property>
+        <property name="orderSite" column="orderSite" type="java.lang.String"></property>
+        
+        <property name="servicePhone" column="servicephone" type="java.lang.String"></property>
+        <property name="createTime">
+            <column name="createtime"/>
+        </property>
+       
+       
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+	<title>游西藏-目的地管理-景点信息管理-景点修改</title>
+	<link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css" />
+	<link rel="stylesheet" href="../../resources/css/base.css" />
+	<link rel="stylesheet" href="../../resources/css/travel/formWeb.css" />
+	<style>
+		/* 闭合浮动 */
+		.floatfix:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	</style>
+	<script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<!-- main { -->
+	<div class="main">
+		<!-- 页面位置-->
+		<div class="location">
+			<label>您当前位置为:</label>
+			<span><a>游西藏</a> -</span>
+			<span><a>目的地管理</a> -</span>
+			<span><a href="scenic-info-manage.html" target="_self">景点信息管理</a> -</span>
+			<span><a href="#" target="_self">景点修改</a></span>
+		</div>
+
+		<!-- 模块管理 { -->
+		<form id="scenic-edit-form">
+			<!-- 基本信息 { -->
+			<div>
+				<h2 class="mt40 title">景点基本信息:</h2>
+
+				<div class="filament_solid_ddd ov-au mt10 pos-rela">
+
+					<div class="formLine mt20">
+						<div>
+							<label>所属目的地:</label>
+							<div id="subDest" class="select-base">
+								<i class="w-140">请选择区域</i>
+								<dl>
+									<dt>拉萨地区</dt>
+									<dt>阿里地区</dt>
+									<dt>林芝地区</dt>
+									<dt>那曲地区</dt>
+									<dt>昌都地区</dt>
+									<dt>山南地区</dt>
+									<dt>日喀则地区</dt>
+								</dl>
+							</div>
+							<span class="reqItem">*</span>
+						</div>
+
+						<div class="posi_t30_r20">
+							<div>
+								<label>想去人数:</label>
+								<input type="text" class="w-100 number" />
+								<button type="button" class="btn-base">恢复默认数</button>
+								<span class="txt-suggest ml10">*此项不填将显示真实人数</span>
+							</div>
+
+							<div class="mt40">
+								<label>去过人数:</label>
+								<input type="text" class="w-100 number" />
+								<button type="button" class="btn-base">恢复默认数</button>
+								<span class="txt-suggest ml10">*此项不填将显示真实人数</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="formLine mt20">
+						<label>景点名称:</label>
+						<input id="scenicName" type="text" class="w-260" />
+						<span class="reqItem">*</span>
+					</div>
+
+					<div class="formLine mt20">
+						<label>景点主图:</label>
+						<button type="button" class="btn-base btn-uploadImg">点击上传图片</button>
+						<span class="txt-suggest ml20">必须是1000*200尺寸的jpg/png格式可同时上传多张图片，最多5张</span>
+					</div>
+
+					<div class="formLine mt20">
+						<label class="pos_r_t5">景点介绍:</label>
+						<textarea name="" id="scenicIntro" cols="70" rows="10" class="mb20" maxlength="800"></textarea>
+						<span class="reqItem">*</span>
+					</div>
+				</div>
+			</div>
+			<!-- } 基本信息 -->
+
+			<!-- 景点其他信息 { -->
+			<div>
+				<h2 class="mt100">景点其他信息:</h2>
+
+				<div class="filament_solid_ddd ov-au mt30">
+					<div class="formLine mt20">
+						<label class="w-160">景点360全景链接:</label>
+						<input type="text" class="w-260 toLink" />
+					</div>
+					<div class="formLine mt20">
+						<label class="w-160">景点高清全景链接:</label>
+						<input type="text" class="w-260 toLink" />
+					</div>
+					<div class="formLine mt20">
+						<label class="w-160">景点实景视频链接:</label>
+						<input type="text" class="w-260 toLink" />
+					</div>
+					<div class="formLine mt20">
+						<label class="w-160">景点地址:</label>
+						<input type="text" class="w-260 secAdress" maxlength="50" />
+					</div>
+					<div class="formLine mt20">
+						<label class="pos_r_t5 w-160">导览:</label>
+						<textarea name="" id="" cols="70" rows="10" class="mb20 secInfo" maxlength="2000"></textarea>
+					</div>
+					<div class="formLine mt20">
+						<label class="pos_r_t5 w-160">交通:</label>
+						<textarea name="" id="" cols="70" rows="5" class="mb20 secInfo" maxlength="2000"></textarea>
+					</div>
+					<div class="formLine mt20">
+						<label class="pos_r_t5 w-160">注意事项:</label>
+						<textarea name="" id="" cols="70" rows="5" class="mb20 secInfo" maxlength="2000"></textarea>
+					</div>
+				</div>
+			</div>
+			<!-- } 景点其他信息 -->
+
+			<!-- SEO信息 { -->
+			<div>
+				<h2 class="mt100">页面SEO信息</h2>
+
+				<div class="filament_solid_ddd ov-au mt30">
+					<div class="formLine mt20 mb20">
+						<label class="w-160">&lt;Keywords&gt;标签:</label>
+						<input type="text" maxlength="20" class="w-320 seoInfo">
+						<span class="txt-suggest ml20">为了确保搜索引擎的亲和力，请输入5个以下的关键词，每个关键词用，隔开</span>
+					</div>
+				</div>
+			</div>
+			<!-- } SEO信息 -->
+
+			<div class="txt-ac mt40">
+				<button class="btn-sure" type="button">保存</button>
+				<button class="btn-sure ml100" type="button">取消</button>
+			</div>
+		</form>
+		<!-- } 模块管理 -->
+	</div>
+	<!-- } main -->
+
+	<!-- JS引用部分 -->
+	<script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+	<script src="../../resources/js/base.js" type="text/javascript"></script>
+	<script src="../../resources/plugin/jquery.rimi.validation.js" type="text/javascript"></script>
+	<script src="../../resources/js/dataValidation.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		/* 所属目的地验证 */
+		$(document).on("click", "#subDest dt", function () {
+			var $this = $(this),
+				errMesg = $this.parents(".select-base").next(".errMesg"),
+				errMesg_len = errMesg.length;
+			// 后面有错误信息
+			if (errMesg_len > 0) {
+				// 移除错误信息
+				errMesg.removeClass("errMesg").text("*");
+			}
+		});
+
+		/* 景点名称验证 */
+		$("#scenicName").blur(function () {
+			var $this = $(this),
+					thisVal = $this.val();
+
+			// 执行验证并设置验证结果的状态
+			valid_txtBox(this, $.VLDTOR.IsEnCnNum(thisVal) && inputRange(this,2,30), "名称只能为中英文和数字，且长度在2-30", "right");
+		});
+
+		/* 景点介绍验证 */
+		$("#scenicIntro").blur(function() {
+			var $this = $(this),
+					thisVal = $this.val();
+			// 执行验证并设置验证结果的状态
+			valid_txtBox(this, $.VLDTOR.IsEnCnNum(thisVal) && inputRange(this,2,800), "只能为中英文和数字，且长度在2-800", "right");
+		});
+
+		/* 人数验证 */
+		$(".number").blur(function () {
+			var $this = $(this),
+					thisVal = $this.val();
+			valid_txtBox_create(this, $.VLDTOR.IsNum(thisVal) || thisVal == "",'只能为空或正整数','top');
+		});
+
+		$(".toLink").blur(function () {
+			var $this = $(this),
+					thisVal = $this.val();
+			valid_txtBox_create(this, $.VLDTOR.IsWebUrl(thisVal),'只能为空或字母、数字及常用符号','right');
+		});
+
+		/* 景点地址验证 */
+		$(".secAdress").blur(function () {
+			var $this = $(this),
+					thisVal = $this.val();
+			valid_txtBox_create(this, ($.VLDTOR.IsEnCnNum(thisVal) && inputRange(this,2,50)) || thisVal == "",'只能为空或字母、数字及中文，且长度在2-50','right');
+		});
+
+		/* 导览，交通，注意事项验证 */
+		$(".secInfo").blur(function () {
+			var $this = $(this),
+					thisVal = $this.val();
+			valid_txtBox_create(this, ($.VLDTOR.IsEnCnNum(thisVal) && inputRange(this,2,2000)) || thisVal == "",'只能为空或字母、数字及中文，且长度在2-2000','right');
+		});
+		/* SEO 验证 */
+		$(".seoInfo").blur(function () {
+			var $this = $(this),
+					thisVal = $this.val();
+			valid_txtBox_create(this, ($.VLDTOR.IsEnCnNum_comma(thisVal) && inputRange(this,2,20)) || thisVal == "",'只能为空或字母、数字及中文，且长度在2-20','top');
+		});
+
+		/* 保存验证 */
+		$(".btn-sure").click(function() {
+			// 所属目的地验证
+			var	subDest_slt = $("#subDest"),
+					subDest = subDest_slt.children("i").text(),
+					subDest_val = subDest.substr(0,3);
+
+			if(subDest_val == "请选择") {
+				errMesg(subDest_slt, "请选择所属目的地", "right");
+			} else {
+				subDest_slt.next(".errMesg").removeClass("errMesg").text("*");
+			}
+
+			// 失焦验证
+			$("#scenicName").blur();
+			$("#scenicIntro").blur();
+			$(".number").blur();
+			$(".toLink").blur();
+			$(".sceAdress").blur();
+			$(".sceInfo").blur();
+
+			// 验证通过
+			var errMesgLen = $('.errMesg').length == 0;
+			if(errMesgLen) {
+				msgBox("添加成功！", "pass", 2600);
+				$("#scenic-add-form").submit();
+			}
+			// 验证未通过
+			else {
+				msgBox("输入的内容有误，请检查！", "erro", 2600);
+				return false;
+			}
+		});
+	</script>
+
+	<!-- 利用空闲时间预加载指定页面 -->
+	<link rel="prefetch">
+	<!-- IE10+ -->
+	<link rel="next">
+	<!-- Firefox -->
+	<link rel="prerender">
+	<!-- Chrome -->
+</body>
+
+</html>

@@ -1,0 +1,599 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+	<title>游西藏-目的地管理-目的地信息管理-目的地修改</title>
+	<link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css" />
+	<link rel="stylesheet" href="../../resources/css/base.css" />
+	<link rel="stylesheet" href="../../resources/css/travel/formWeb.css" />
+	<style>
+		.bgc_r {
+			background-color: #ff6a7b !important;
+		}
+	</style>
+	<script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<!-- main { -->
+	<div class="main">
+		<!-- 页面位置-->
+		<div class="location">
+			<label>您当前位置为:</label>
+			<span><a>游西藏</a> -</span>
+			<span><a>目的地管理</a> -</span>
+			<span><a href="des-info-manage.html" target="_self">目的地信息管理</a> -</span>
+			<span><a href="#" target="_self">目的地修改</a></span>
+		</div>
+
+		<!-- 模块管理 { -->
+		<form id="dest-edit-form">
+			<!-- 基本信息 { -->
+			<div>
+				<h2 class="mt40">目的地基本信息:</h2>
+
+				<div class="filament_solid_ddd ov-au mt30">
+
+					<div class="formLine mt20">
+						<label class="w-140">目的地名称:</label>
+						<input id="destName" type="text" class="w-260" maxlength="30" />
+						<span class="reqItem">*</span>
+					</div>
+
+					<div class="formLine">
+						<label class="w-140">目的地主图:</label>
+						<button type="button" class="btn-base btn-uploadImg">点击上传图片</button>
+						<span class="txt-suggest ml20">必须是1000*200尺寸的jpg/png格式,可同时上传多张图片</span>
+					</div>
+
+					<div class="formLine">
+						<label class="w-140"></label>
+						<img src="../../resources/img/ele/loadImg_default_b.jpg" alt="" />
+					</div>
+
+					<div class="formLine">
+						<label class="w-140 pos_r_t5">目的地简介绍:</label>
+						<textarea name="" id="destIntro" cols="70" rows="10" maxlength="800"></textarea>
+						<span class="reqItem">*</span>
+					</div>
+					<div class="formLine mt10 mb10">
+						<label class="w-140">想去:</label>
+						<input type="text" value=""  class="number"/>
+						<button class="btn-base ml10">保存</button>
+						<button class="btn-base ml20">恢复系统默认值</button>
+						
+						<label class="w-140">去过:</label>
+						<input type="text" value=""  class="number"/>
+						<button class="btn-base ml10">保存</button>
+						<button class="btn-base ml20">恢复系统默认值</button>
+					</div>
+				</div>
+			</div>
+			<!-- } 基本信息 -->
+
+			<!-- 机票预订信息 { -->
+			<div>
+				<h2 class="mt100">目的地机票预订信息-默认到达城市:</h2>
+
+				<div class="filament_solid_ddd ov-au mt30">
+					<div class="formLine mt20 mb20">
+						<input id="las" type="radio" name="jp" class="ml50 mr10" />
+						<label for="las" class="w-auto lbl_check">拉萨贡嘎机场</label>
+						<input id="linz" type="radio" name="jp" class="ml50 mr10" />
+						<label for="linz" class="w-auto lbl_check">林芝米林机场</label>
+						<input id="changd" type="radio" name="jp" class="ml50 mr10" />
+						<label for="changd" class="w-auto lbl_check">昌都邦达机场</label>
+						<input id="ali" type="radio" name="jp" class="ml50 mr10" />
+						<label for="ali" class="w-auto lbl_check">阿里昆莎机场</label>
+						<input id="rikz" type="radio" name="jp" class="ml50 mr10" />
+						<label for="rikz" class="w-auto lbl_check">日喀则和平机场</label>
+
+					</div>
+				</div>
+			</div>
+			<!-- } 机票预订信息 -->
+
+			<!-- SEO信息 { -->
+			<div>
+				<h2 class="mt100">页面SEO信息</h2>
+
+				<div class="filament_solid_ddd ov-au mt30">
+					<div class="formLine mt20 mb20">
+						<label class="w-160">&lt;Keywords&gt;标签:</label>
+						<input type="text" maxlength="20" class="w-320">
+					</div>
+				</div>
+			</div>
+			<!-- } SEO信息 -->
+
+			<!-- 显示热门景点 { -->
+			<div class="contClassify mt100 ov-hide">
+				<h2 class="title float_l mb30">显示热门景点</h2>
+				<div class="float_r mt10 mr150">
+					<button class="btn-base_min">按去过人数显示</button>
+					<button class="btn-base_min">按想去人数显示</button>
+				</div>
+
+				<!-- 景点选择 { -->
+				<div class="clearf">
+					<label class="va_m">景点1:</label>
+					<!-- 包含模块 -->
+					<div class="select-base">
+						<i class="w-110">布达拉宫</i>
+						<dl>
+							<dt>布达拉宫</dt>
+							<dt>拉萨市</dt>
+							<dt>纳木错</dt>
+						</dl>
+					</div>
+
+					<label class="va_m ml50">景点2:</label>
+					<!-- 包含模块 -->
+					<div class="select-base">
+						<i class="w-110">布达拉宫</i>
+						<dl>
+							<dt>布达拉宫</dt>
+							<dt>拉萨市</dt>
+							<dt>纳木错</dt>
+						</dl>
+					</div>
+
+					<label class="va_m ml50">景点3:</label>
+					<!-- 包含模块 -->
+					<div class="select-base">
+						<i class="w-110">布达拉宫</i>
+						<dl>
+							<dt>布达拉宫</dt>
+							<dt>拉萨市</dt>
+							<dt>纳木错</dt>
+						</dl>
+					</div>
+
+					<label class="va_m ml50">景点4:</label>
+					<!-- 包含模块 -->
+					<div class="select-base">
+						<i class="w-110">布达拉宫</i>
+						<dl>
+							<dt>布达拉宫</dt>
+							<dt>拉萨市</dt>
+							<dt>纳木错</dt>
+						</dl>
+					</div>
+
+					<label class="va_m ml50">景点5:</label>
+					<!-- 包含模块 -->
+					<div class="select-base">
+						<i class="w-110">布达拉宫</i>
+						<dl>
+							<dt>布达拉宫</dt>
+							<dt>拉萨市</dt>
+							<dt>纳木错</dt>
+						</dl>
+					</div>
+				</div>
+
+				<div class="mt20">
+					<label class="va_m">景点1:</label>
+					<!-- 包含模块 -->
+					<div class="select-base">
+						<i class="w-110">布达拉宫</i>
+						<dl>
+							<dt>布达拉宫</dt>
+							<dt>拉萨市</dt>
+							<dt>纳木错</dt>
+						</dl>
+					</div>
+
+					<label class="va_m ml50">景点2:</label>
+					<!-- 包含模块 -->
+					<div class="select-base">
+						<i class="w-110">布达拉宫</i>
+						<dl>
+							<dt>布达拉宫</dt>
+							<dt>拉萨市</dt>
+							<dt>纳木错</dt>
+						</dl>
+					</div>
+
+					<label class="va_m ml50">景点3:</label>
+					<!-- 包含模块 -->
+					<div class="select-base">
+						<i class="w-110">布达拉宫</i>
+						<dl>
+							<dt>布达拉宫</dt>
+							<dt>拉萨市</dt>
+							<dt>纳木错</dt>
+						</dl>
+					</div>
+
+					<label class="va_m ml50">景点4:</label>
+					<!-- 包含模块 -->
+					<div class="select-base">
+						<i class="w-110">布达拉宫</i>
+						<dl>
+							<dt>布达拉宫</dt>
+							<dt>拉萨市</dt>
+							<dt>纳木错</dt>
+						</dl>
+					</div>
+
+					<label class="va_m ml50">景点5:</label>
+					<!-- 包含模块 -->
+					<div class="select-base">
+						<i class="w-110">布达拉宫</i>
+						<dl>
+							<dt>布达拉宫</dt>
+							<dt>拉萨市</dt>
+							<dt>纳木错</dt>
+						</dl>
+					</div>
+				</div>
+				<!-- } 景点选择 -->
+			</div>
+			<!-- } 显示热门景点 -->
+
+			<!-- 显示精彩旅程 { -->
+			<div class="contClassify mt20 ov-hide">
+				<h2 class="title float_l mb30">显示精彩旅程</h2>
+				<div class="float_r mt10 mr150">
+					<button class="btn-base_min">按查看数显示</button>
+					<button class="btn-base_min">按收藏数显示</button>
+				</div>
+
+				<!-- 攻略1 { -->
+				<div class="contClassify clearf">
+					<h2 class="title bgc_r">攻略1</h2>
+
+					<div class="formLine mt15">
+						<label class="w-auto ml20">链接:</label>
+						<input type="text" class="w-320 glLink">
+						<label class="w-auto">或编号:</label>
+						<input type="text" class="w-200 glNumber">
+					</div>
+				</div>
+
+				<!-- 攻略2 { -->
+				<div class="contClassify clearf">
+					<h2 class="title bgc_r">攻略2</h2>
+
+					<div class="formLine mt15">
+						<label class="w-auto ml20">链接:</label>
+						<input type="text" class="w-320 glLink">
+						<label class="w-auto">或编号:</label>
+						<input type="text" class="w-200 glNumber">
+					</div>
+				</div>
+
+				<!-- 攻略3 { -->
+				<div class="contClassify clearf">
+					<h2 class="title bgc_r">攻略3</h2>
+
+					<div class="formLine mt15">
+						<label class="w-auto ml20">链接:</label>
+						<input type="text" class="w-320 glLink">
+						<label class="w-auto ">或编号:</label>
+						<input type="text" class="w-200 glNumber">
+					</div>
+				</div>
+
+				<!-- 攻略4 { -->
+				<div class="contClassify clearf">
+					<h2 class="title bgc_r">攻略4</h2>
+
+					<div class="formLine mt15">
+						<label class="w-auto ml20 ">链接:</label>
+						<input type="text" class="w-320 glLink">
+						<label class="w-auto ">或编号:</label>
+						<input type="text" class="w-200 glNumber">
+					</div>
+				</div>
+			</div>
+			<!-- } 显示精彩旅程 -->
+
+			<!-- 显示推荐商户 { -->
+			<div class="contClassify ov-hide">
+				<h2 class="title mb30">显示推荐商户</h2>
+
+				<!-- 商户推荐位1 { -->
+				<div class="contClassify ">
+					<h2 class="title bgc_r mb20">商户推荐位1</h2>
+					<!-- 类型 { -->
+					<label class="va_m ml20">推荐类型:</label>
+					<!-- 包含模块 -->
+					<div class="select-base">
+						<i class="w-140">请选择商户类型</i>
+						<dl>
+							<dt>团游</dt>
+							<dt>住宿</dt>
+							<dt>美食</dt>
+							<dt>娱乐</dt>
+						</dl>
+					</div>
+
+					<div class="formLine mt20">
+						<label class="w-auto ml20">商户1链接:</label>
+						<input type="text" class="w-320 shLink">
+						<label class="w-auto ">或编号:</label>
+						<input type="text" class="w-200 shNumber">
+					</div>
+
+					<div class="formLine mt20">
+						<label class="w-auto ml20">商户2链接:</label>
+						<input type="text" class="w-320 shLink">
+						<label class="w-auto  ">或编号:</label>
+						<input type="text" class="w-200 shNumber">
+					</div>
+
+					<div class="formLine mt20">
+						<label class="w-auto ml20">商户3链接:</label>
+						<input type="text" class="w-320 shLink">
+						<label class="w-auto  ">或编号:</label>
+						<input type="text" class="w-200 shNumber">
+					</div>
+
+					<div class="formLine mt20">
+						<label class="w-auto ml20">商户4链接:</label>
+						<input type="text" class="w-320 shLink">
+						<label class="w-auto">或编号:</label>
+						<input type="text" class="w-200 shNumber">
+					</div>
+				</div>
+
+				<!-- 商户推荐位2 { -->
+				<div class="contClassify ">
+					<h2 class="title bgc_r mb20">商户推荐位2</h2>
+					<!-- 类型 { -->
+					<label class="va_m ml20">推荐类型:</label>
+					<!-- 包含模块 -->
+					<div class="select-base">
+						<i class="w-140">请选择商户类型</i>
+						<dl>
+							<dt>团游</dt>
+							<dt>住宿</dt>
+							<dt>美食</dt>
+							<dt>娱乐</dt>
+						</dl>
+					</div>
+					<a href="#">按查看数显示该类商户</a>
+
+					<div class="formLine mt20">
+						<label class="w-auto ml20">商户1链接:</label>
+						<input type="text" class="w-320 shLink">
+						<label class="w-auto  ">或编号:</label>
+						<input type="text" class="w-200 shNumber">
+					</div>
+
+					<div class="formLine mt20">
+						<label class="w-auto ml20">商户2链接:</label>
+						<input type="text" class="w-320 shLink">
+						<label class="w-auto ">或编号:</label>
+						<input type="text" class="w-200 shNumber">
+					</div>
+
+					<div class="formLine mt20">
+						<label class="w-auto ml20">商户3链接:</label>
+						<input type="text" class="w-320 shLink">
+						<label class="w-auto ">或编号:</label>
+						<input type="text" class="w-200 shNumber">
+					</div>
+
+					<div class="formLine mt20">
+						<label class="w-auto ml20">商户4链接:</label>
+						<input type="text" class="w-320 shLink">
+						<label class="w-auto ">或编号:</label>
+						<input type="text" class="w-200 shNumber">
+					</div>
+				</div>
+
+				<!-- 商户推荐位3 { -->
+				<div class="contClassify ">
+					<h2 class="title bgc_r mb20">商户推荐位3</h2>
+					<!-- 类型 { -->
+					<label class="va_m ml20">推荐类型:</label>
+					<!-- 包含模块 -->
+					<div class="select-base">
+						<i class="w-140">请选择商户类型</i>
+						<dl>
+							<dt>团游</dt>
+							<dt>住宿</dt>
+							<dt>美食</dt>
+							<dt>娱乐</dt>
+						</dl>
+					</div>
+
+					<div class="formLine mt20">
+						<label class="w-auto ml20">商户1链接:</label>
+						<input type="text" class="w-320 shLink">
+						<label class="w-auto ">或编号:</label>
+						<input type="text" class="w-200 shNumber">
+					</div>
+
+					<div class="formLine mt20">
+						<label class="w-auto ml20">商户2链接:</label>
+						<input type="text" class="w-320 shLink">
+						<label class="w-auto ">或编号:</label>
+						<input type="text" class="w-200 shNumber">
+					</div>
+
+					<div class="formLine mt20">
+						<label class="w-auto ml20">商户3链接:</label>
+						<input type="text" class="w-320 shLink">
+						<label class="w-auto ">或编号:</label>
+						<input type="text" class="w-200 shNumber">
+					</div>
+
+					<div class="formLine mt20">
+						<label class="w-auto ml20">商户4链接:</label>
+						<input type="text" class="w-320 shLink">
+						<label class="w-auto ">或编号:</label>
+						<input type="text" class="w-200 shNumber">
+					</div>
+				</div>
+			</div>
+			<!-- } 显示推荐商户 -->
+
+			<div class="txt-ac mt40">
+				<button class="btn-sure" type="button">预览</button>
+				<button class="btn-sure ml100" type="button">保存</button>
+			</div>
+		</form>
+		<!-- } 模块管理 -->
+	</div>
+	<!-- } main -->
+
+	<!-- JS引用部分 -->
+	<script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+	<script src="../../resources/js/base.js" type="text/javascript"></script>
+	<script src="../../resources/plugin/jquery.rimi.validation.js" type="text/javascript"></script>
+	<script src="../../resources/js/dataValidation.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		/* 目的地名称验证 */
+		$("#destName").blur(function () {
+			var $this = $(this),
+					thisVal = $this.val();
+
+			// 执行验证并设置验证结果的状态
+			valid_txtBox(this, $.VLDTOR.IsEnCnNum(thisVal) && inputRange(this,2,30), "名称只能为中英文和数字，且长度在2-30", "right")
+		});
+
+		/* 目的地介绍验证 */
+		$("#destIntro").blur(function () {
+			var $this = $(this),
+					thisVal = $this.val();
+
+			// 执行验证并设置验证结果的状态
+			valid_txtBox(this, $.VLDTOR.IsEnCnNum(thisVal) && inputRange(this,2,800), "只能为中英文和数字，且长度在2-800", "right");
+		});
+
+		/* SEO信息验证 */
+		$("#keyWord").blur(function () {
+			var $this = $(this),
+					thisVal = $this.val();
+			valid_txtBox_create(this, ($.VLDTOR.IsEnCnNum_comma(thisVal) && inputRange(this,2,20)) || thisVal == "",'只能为空或中英文、数字,且长度在2-20','right')
+		});
+
+		/* 想去和去过验证 */
+		$(".number").blur(function () {
+			var $this = $(this),
+					thisVal = $this.val();
+			valid_txtBox_create(this, $.VLDTOR.IsNum(thisVal) || thisVal == "",'只能为空或正整数','top');
+		});
+
+		/* 攻略链接验证 */
+		$(".glLink").blur(function () {
+			var $this = $(this),
+					thisVal = $this.val();
+			valid_txtBox_create(this, $.VLDTOR.IsWebUrl(thisVal) || thisVal == "",'只能为空或字母、数字及常用符号','top');
+		});
+
+		/* 攻略编号验证 */
+		$(".glNumber").blur(function () {
+			var $this = $(this),
+					thisVal = $this.val();
+			valid_txtBox_create(this, $.VLDTOR.IsEnNum(thisVal) || thisVal == "","只能为空或正整数",'top');
+		});
+
+		/* 商户链接验证 */
+		$(".shLink").blur(function () {
+			var thisVal = $(this).val(),
+					nextVal = $(this).siblings('.shNumber').val(),
+					nextValLen = nextVal.length > 0;
+			var regTest = $.VLDTOR.IsWebUrl(thisVal),
+					regNull = $.trim(thisVal) != "";
+			if(nextValLen){
+				valid_txtBox_create(this,regTest,'不能为中文或空格','top');
+			}else{
+				valid_txtBox_create(this,regTest && regNull,'不能为中文或空格,且与编号必填一项','top');
+				if(regTest && regNull){
+					$(this).siblings('.shNumber').next('span.errMesg').remove();
+				}
+			}
+		});
+		/* 商户编号验证 */
+		$(".shNumber").blur(function () {
+			var thisVal = $(this).val(),
+					prevVal = $(this).siblings('.shLink').val(),
+					preValLen = prevVal.length > 0;
+			var regTest = $.VLDTOR.IsEnNum(thisVal),
+					regNull = $.trim(thisVal) != "";
+			if(preValLen){
+				valid_txtBox_create(this,regTest || thisVal == "",'只能为数字、英文或空','top');
+			}else{
+				valid_txtBox_create(this,regTest && regNull,'只能为数字、英文,且与连接必填一项','top');
+				if(regTest && regNull){
+					$(this).siblings('.shLink').next('span.errMesg').remove();
+				}
+			}
+		});
+
+		/* 商户下拉框验证 */
+		$(document).on('click','.contClassify .select-base dl dt', function () {
+			var errMsg = $(this).parents('.select-base').next('span.errMesg');
+			var errMsgLen = $(this).parents('.select-base').next('span.errMesg').length > 0;
+			if(errMsgLen){
+				errMsg.remove();
+			}
+		});
+
+
+
+		/* 保存验证 */
+		$(".btn-sure").click(function () {
+			$("#destName").blur();
+			$("#destIntro").blur();
+			$("#keyWord").blur();
+			$(".number").blur();
+			$(".glLink").blur();
+			$(".glNumber").blur();
+			$(".shLink").blur();
+			$(".shNumber").blur();
+
+			var contClassify = $(".contClassify"),
+					contClassify_len = contClassify.length;
+			// 进行遍历验证
+			for (var i = 0; i < contClassify_len; i++) {
+				var region = contClassify.eq(i).find(".select-base:first"),
+						scenerySpot = contClassify.eq(i).find(".select-base:last"),
+						region_val = region.children("i").text(),
+						region_def = region_val.substr(0, 3);
+
+				// 商户类型未选择（为默认值）
+				if ("请选择" == region_def) {
+					if (region.next(".errMesg").length == 0) {
+						creatErrMesg(region, "请选择商户类型", "top");
+					}
+				}
+				// 商户类型已选择
+				else {
+					region.next(".errMesg").remove();
+				}
+			}
+
+			// 验证通过
+			var errMesg = $('.errMesg').length == 0;
+			if (errMesg) {
+				msgBox("保存成功！", "pass", 2600);
+				$("#dest-add-form").submit();
+			}
+			// 验证未通过
+			else {
+				msgBox("输入的内容有误，请检查！", "erro", 2600);
+				return false;
+			}
+		});
+	</script>
+
+	<!-- 利用空闲时间预加载指定页面 -->
+	<link rel="prefetch">
+	<!-- IE10+ -->
+	<link rel="next">
+	<!-- Firefox -->
+	<link rel="prerender">
+	<!-- Chrome -->
+</body>
+
+</html>

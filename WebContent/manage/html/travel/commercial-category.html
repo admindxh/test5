@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=8,chrome=1">
+	<title>游西藏-商户管理-商户类别管理</title>
+	<link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css" />
+	<link rel="stylesheet" href="../../resources/css/base.css" />
+	<script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<!-- main { -->
+	<div class="main">
+		<!-- 页面位置-->
+		<div class="location">
+			<label>您当前位置为:</label>
+			<span><a>游西藏</a> -</span>
+			<span><a>商户管理</a> -</span>
+			<span><a>商户类别管理</a></span>
+		</div>
+
+		<!-- 数据操作 -->
+		<div class="searchManage">
+			<button id="category-add" type="button" class="btn-sure">新建类别</button>
+			<button type="button" class="btn-sure">批量删除</button>
+		</div>
+
+		<!-- 模块管理 { -->
+		<div class="tableManage pos-rela">
+			<!-- 搜索查询栏 { -->
+			<div class="searchTools">
+
+				<label class="va_m">类别名:</label>
+				<input type="text" placeholder="">
+
+				<button type="button" class="btn-search"><!--查询--></button>
+
+			</div>
+			<!-- } 搜索查询栏 -->
+
+			<!-- 数据列表 -->
+			<table border="0" cellpadding="0" cellspacing="0" class="dataTable">
+				<thead>
+					<tr>
+						<th class="w-120">
+							<input type="checkbox" name="dataCheck" class="allCheck mr5">全选
+						</th>
+						<th>编号</th>
+						<th>类别名</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<input type="checkbox" name="dataCheck" class="dataCheck">
+						</td>
+						<td>1</td>
+						<td>住宿</td>
+						<td>
+							<a class="dele">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" name="dataCheck" class="dataCheck">
+						</td>
+						<td>2</td>
+						<td><a href="">美食</a></td>
+						<td>
+							<a class="dele">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" name="dataCheck" class="dataCheck">
+						</td>
+						<td>3</td>
+						<td>娱乐</td>
+						<td>
+							<a class="dele">删除</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- 表格分页 -->
+			<div class="paging">
+				<button type="button" class="btn-base_min">首页</button>
+				<button type="button" class="btn-base_min">上一页</button>
+				<button type="button" class="btn-base_min">下一页</button>
+				<button type="button" class="btn-base_min">末页</button>
+			</div>
+			
+		</div>
+		<!-- } 模块管理 -->
+	</div>
+	<!-- } main -->
+
+	<!-- JS引用部分 -->
+	<script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+	<script src="../../resources/js/base.js" type="text/javascript"></script>
+	<script src="../../resources/js/base-tabel.js" type="text/javascript"></script>
+	<script src="../../resources/js/dataValidation.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		//======================================
+		//				删除类别
+		//======================================
+		// 弹出准备删除框
+		$(document).on("click", ".dataTable .dele", function() {
+			var $this = $(this);
+			// 设置删除状态
+			$this.parents("tr").addClass("dele-waiting");
+			// 弹出确认删除框
+			popupLayer(
+				'',
+				'<div style="width: 320px; text-align:center; margin: 0 auto;">删除该版块将删除其下面的全部帖子信息<br>是否删除？</div>',
+				'<button type="button" class="btn-sure sureDele mr15">确定</button>' +
+				'<button type="button" class="btn-sure noDele cancel ml15">取消</button>'
+			);
+		});
+		
+		// 确定删除（从视觉界面上删除了这一行）
+		$(document).on("click", ".sureDele", function() {
+			var deleTr = $(".dataTable").find("tr.dele-waiting");
+			// 移除该行
+			deleTr.remove();
+			// 关闭弹出框
+			closePopup();
+		});
+		
+		// 取消删除
+		$(document).on("click", ".noDele", function() {
+			var deleTr = $(".dataTable").find("tr.dele-waiting");
+			// 消除删除状态
+			deleTr.removeClass("dele-waiting");
+		});
+		
+		//======================================
+		//				新建类别
+		//======================================
+		// 弹出新建框（后台可以为元素添加各种标识符，和为元素添加事件触发，以便于功能的实现。）
+		$("#category-add").click(function() {
+			popupLayer(
+				"<h1>新建商户类别</h1>", 
+				'<div class="formLine mt30 mb30" style="text-align:center">' +
+				'<label>商户类别:&nbsp;</label>' +
+				'<div id="category" class="select-base">' +
+				'<input type="hidden">' +
+				'<i class="w-220">请选择类别</i>' +
+				'<dl>' +
+				'<dt name="">住宿<dt>' +
+				'<dt name="">美食<dt>' +
+				'<dt name="">娱乐<dt>' +
+				'</dl></div>&nbsp;' +
+				'<span class="reqItem">*</span>' +
+				'</div>',
+				'<button type="button" class="btn-sure sureAdd mr15">确定</button>' +
+				'<button type="button" class="btn-sure noAdd cancel ml15">取消</button>'
+			);
+		});
+		
+		// 确定创建验证（确定验证通过后的事件需做后台功能的时候添入）
+		$(document).on("click", ".sureAdd", function() {
+			var category = $("#category"),
+				cate_val = category.children("i").text().substr(0,3);
+			if(cate_val == "请选择") {
+				errMesg(category, "请选择一个类别", "top");
+				return false;
+			} else {
+				/**  
+				* 验证成功后的后台事件处理
+				**/
+			}
+		});
+		
+		// 消除验证提示
+		$(document).on("click", "#category dt", function() {
+			var $this = $(this);
+			$this.parents(".select-base").next(".errMesg").text("*").removeClass("errMesg");
+		});
+	</script>
+
+	<!-- 利用空闲时间预加载指定页面 -->
+	<link rel="prefetch">
+	<!-- IE10+ -->
+	<link rel="next">
+	<!-- Firefox -->
+	<link rel="prerender">
+	<!-- Chrome -->
+</body>
+
+</html>

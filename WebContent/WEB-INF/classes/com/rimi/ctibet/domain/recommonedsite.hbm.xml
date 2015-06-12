@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.rimi.ctibet.domain.RecommonedSite" table="recommoned_site">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" length="40" />
+            <generator class="native" />
+        </id>
+        <property name="code">
+            <column name="code"/>
+        </property>
+        
+        <property name="avaliable" column="avaliable" type="java.lang.Integer">
+        </property>
+        
+        <property name="conentCode" column="contentcode" type="java.lang.String"></property>
+        <property name="contentType" column="contenttype" type="java.lang.String"></property>
+        <property name="sitecode" column="sitecode" type="java.lang.String"></property>
+       
+        
+        
+        
+        <property name="createtime">
+            <column name="createtime"/>
+        </property>
+       
+       
+    </class>
+</hibernate-mapping>

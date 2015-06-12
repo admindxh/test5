@@ -1,0 +1,182 @@
+.ml30{
+    margin-left: 30px;
+}
+.ml20{
+    margin-left: 5px;
+}
+/* == overHead == */
+.overhead{
+    margin-top: 20px;
+}
+.overhead .header{
+    background: url("../../icon/line.png") repeat-x center;
+}
+.overhead .header .title-more h2{
+    width: 255px;
+    height: 31px;
+    float: left;
+    background: #fff url("../../icon/overhead.png") no-repeat;
+    margin: 0;
+}
+.overhead .header .more{
+    width: 100px;
+    height: 31px;
+    line-height: 31px;
+    text-align: right;
+    float: right;
+    background-color: #fff;
+}
+.overhead .content{
+    width: 720px;
+    margin-top: 15px;
+    font-size: 12px;
+}
+.overhead .content .media-heading{
+    float: left;
+    width: 520px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.overhead .content .media-heading a{
+    max-width: 100%;
+    display: inline-block;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.overhead .content .media-heading span{
+    vertical-align: middle;
+}
+.overhead .content .user-info{
+    margin-bottom: 5px;
+}
+.overhead .content .user-info li{
+    width: 300px;
+    display: inline-block;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 38px;
+	line-height: 38px
+}
+.user-info li img,
+.user-info li span{
+    vertical-align: middle;
+}
+.user-info li span a{
+    color: inherit;
+}
+.overhead .content .user-info li label{
+    vertical-align: middle;
+}
+.overhead .data{
+    max-width: 34px;
+    display: inline-block;
+    color: #898989;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.overhead .content .user-info li span{
+    color: #068223;
+}
+.overhead .content .media{
+    position: relative;
+    border-bottom: 1px dashed #b3b3b3;
+}
+.overhead .content p, .overhead .content .str50{
+    width: 640px;
+    margin-bottom: 10px;
+    height: 34px;
+    overflow: hidden;
+}
+.zan{
+    width: 40px;
+    height: 33px;
+    cursor: pointer;
+    margin: 30px auto 10px;
+    background: url("../../icon/like.png") no-repeat;
+}
+.zan-lab{
+    width: 40px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+.overhead .content .media-right{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.overhead .media-mt18{
+    margin-top: 18px;
+}
+.us-name{
+    max-width: 72px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.us-name a{
+    text-decoration: none;
+}
+/* == overHead End == */
+
+/* == reply == */
+.reply{
+    margin-top: 30px;
+    font-size: 12px;
+}
+.reply .header {
+    width: 168px;
+    height: 29px;
+    margin-top: 0;
+    background: url("../../icon/reply.png") no-repeat;
+}
+.reply .content{
+    margin-top: 15px;
+}
+.reply .content p {
+    width: 190px;
+    height: 42px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.reply .by{
+    margin-bottom: 2px;
+}
+.reply .from{
+    margin-bottom: 10px;
+}
+.reply .from span{
+    color: #068223;
+}
+.reply .from span a{
+    color: inherit;
+}
+.reply .media{
+    position: relative;
+    border-bottom: 1px dashed #b3b3b3;
+}
+.reply .zan{
+    margin-top: 0;
+}
+.reply .media-right{
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.reply .mt16{
+    margin-top: 16px;
+}
+/* == reply End == */

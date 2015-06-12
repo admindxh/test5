@@ -1,0 +1,223 @@
+.row{
+	margin: 0;
+}
+.xz-box .row{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.col-xs-9{
+	width: 870px!important;
+	padding: 0;
+}
+.col-xs-3{
+	width:310px!important;
+	padding: 0;
+	float: right;
+}
+/* search */
+.search .input-group-addon{
+	position: relative;
+	color: white;
+	background-color: #CF1523;
+	border: none;
+	border-radius: 0;
+	width: 72px!important;
+}
+.search .form-inline .input-group>.form-control{
+	width: 254px;
+}
+.search .input-group-addon.btn-addon{
+	width: 32px!important;
+}
+.search .input-group-addon button{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 32px;
+	height: 34px;
+	background: url(../icon/search.png) center center no-repeat;
+	border:none;
+}
+.hot-search{
+	padding-left: 25px;
+	color: black;
+}
+.hot-search label{
+	font-weight: 500;
+}
+.hot-tags a{
+	color: #000;
+	margin-right: 15px;
+}
+.hot-tags a:hover, .hot-tags a.active{
+	color: #cf1423;
+	text-decoration: none;
+}
+.w-box{
+	border: 1px solid #f1f1f1;
+	height: 32px;
+	line-height: 32px;
+}
+.w-box .city{
+	margin-left: 10px;
+}
+.w-box .today{
+	margin-left: 15px;
+}
+.weather{
+	margin-left: 12px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+.weather img{
+	vertical-align: top;
+}
+
+/* gallery */
+.gallery{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.gallery-lg, .gallery-md, .gallery-sm, .gallery-xs{
+	position: relative;
+	float: left;
+	margin-left: 10px;
+}
+.gallery-lg{
+	margin-left: 0;
+	width: 501px;
+	height: 540px;
+}
+.gallery-md{
+	width: 359px;
+	height: 200px;
+}
+.gallery-sm{
+	width: 236px;
+	height: 160px;
+}
+.gallery-xs{
+	width: 113px;
+	height: 160px;
+	margin-bottom: 10px;
+}
+.gallery-mark{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 60px;
+
+}
+.gallery-mark .mark-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #000;
+	opacity: .5;
+	filter: alpha(opacity=50);
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+.gallery-mark .mark-bd{
+	padding-left: 15px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 60px;
+	color: white;
+}
+.mark-bd .bd-title{
+	margin-top: 10px;
+}
+.gallery-dots{
+	position: absolute;
+	bottom: -45px;
+	list-style: none;
+	display: block;
+	text-align: center;
+	padding: 0;
+	width: 100%;
+}
+.gallery-dots li {
+	position: relative;
+	display: inline-block;
+	height: 13px;
+	width: 13px;
+	margin: 0 5px;
+	padding: 0;
+	cursor: pointer;
+}
+.gallery-dots li button {
+	border: 0;
+	background-image: url(../icon/dots.png);
+	background-repeat: no-repeat;
+	background-position: -45px 0;
+	background-color: transparent;
+	display: block;
+	height: 13px;
+	width: 13px;
+	outline: none;
+	line-height: 0;
+	font-size: 0;
+	color: transparent;
+	padding: 5px;
+	cursor: pointer;
+}
+.gallery-dots li.active button, .gallery-dots li button:hover {
+	background-position: 0 0;
+}
+/* list */
+.list{
+	padding-bottom: 15px;
+	margin-bottom: 40px;
+	border-bottom: 1px #ddd dashed;
+}
+.list-item{
+	position: relative;
+	display: block;
+	margin-bottom: 28px;
+}
+.list-item:hover{
+	text-decoration: none;
+}
+.list-item .list-item-heading{
+	margin-top: 0;
+	margin-bottom: 3px;
+	font-size: 14px;
+	color: #333333;
+	font-weight: 700;
+}
+.list-item .list-item-text{
+	font-size: 12px;
+	color: #898989;
+}
+
+.list-more{
+	padding-top: 15px;
+	text-align: right;
+}
+.list-more a{
+	padding-right: 18px;
+	font-size: 12px;
+	color: #333;
+	background: #fff url(../icon/more.png) center right no-repeat;
+}
+.list-mix a.link-mix{
+	color: #333;
+	font-weight: 700;
+	font-size: 14px;
+	display: block;
+	padding-bottom: 20px;
+	text-decoration: none;
+	padding-left: 16px;
+	background: #fff url(../icon/dot.png) left 7px no-repeat;
+}
+.list-mix .light{
+	color: #cf1423;
+}

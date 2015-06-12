@@ -1,0 +1,121 @@
+.activities{
+    width: 1200px !important;
+}
+.activities-banner{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 60px;
+    background: url("../../../static/images/activities_bg.jpg") no-repeat;
+}
+.activities-list{
+    margin-bottom: 30px;
+}
+.list-btn{
+    float: left;
+    width: 260px;
+    height: 40px;
+}
+.list-btn span{
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+}
+.activity-inactive{
+    background: url("../../icon/activities_lbtn_inactive.png");
+}
+.activity-active{
+    background: url("../../icon/activities_lbtn_active.png");
+}
+.subject-active{
+    background: url("../../icon/activities_rbtn_active.png");
+}
+.subject-inactive{
+    background: url("../../icon/activities_rbtn_inactive.png");
+}
+.sort{
+    float: right;
+    font-size: 18px;
+    line-height: 40px;
+    width: 306px\9;
+}
+.sort label{
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.sort span{
+    margin-left: 40px;
+    cursor: pointer;
+}
+.sort .active{
+    color: #cf1423;
+}
+.sort .inactive{
+    color: #333;
+}
+/* ==============
+    专题列表
+================= */
+.act-content{
+    margin-top: 24px;
+    margin-left:-24px;
+}
+.act-content>div{
+    width: 384px;
+    float: left;
+    margin-left: 24px;
+    background-color: #f1f1f1;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow:hidden;
+}
+.act-content>div:first-child,.act-content>div.one{
+    /* margin-left: 0; */
+}
+.act-content .info{
+    height: 70px;
+    position: relative;
+}
+.act-content .info p{
+    margin: 16px 0 0 20px;
+    color: #cf1423;
+}
+.act-content .info div{
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 20px;
+    font-size: 12px;
+    background: url("../../icon/eye_ac.png") no-repeat 0 center;
+    position: absolute;
+    bottom: 19px;
+    right: 15px;
+}
+.activities .page {
+    height: 40px;
+    margin-top: 110px;
+    background-color: #ffffff;
+}
+.activity-none{
+    display: none;
+}
+.activity-block{
+    display: block;
+}
+/* ==============
+    专题列表 End
+================= */
+/* ==============
+    活动列表
+================= */
+.act-content .info p .activity-time{
+    font-size: 12px;
+    color: #888;
+}
+.act-content .info .active-state{
+    position: absolute;
+    top: -38px;
+    right: 10px;
+}

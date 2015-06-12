@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="quansenx">
+    <meta name="keywords" content="西藏图片，西藏视频，西藏旅游图片，西藏旅游景点图片，西藏旅游视频，西藏景点视频，天上西藏" />
+    <meta name="description" content="看西藏：汇集海量西藏旅游景点图片,由驴友摄影师摄影包括西藏图片，西藏视频，西藏旅游图片，西藏旅游景点图片，西藏旅游视频，西藏景点视频等图片视频，记录了在西藏旅游行程中的名胜景点、风土人情。" />
+    <title>西藏图片视频_看西藏-天上西藏官网</title>
+    <link rel="stylesheet" href="../../modules/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/discover/my_tracks.css"/>
+    <!--[if lt IE 9]>
+    <script src="../../modules/fix/html5shiv.min.js"></script>
+    <script src="../../modules/fix/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body ms-controller="indexView">
+<!-- header -->
+<div id="header" ms-include-src="'../header/index.html'"></div>
+<div class="container main">
+    <!-- banner -->
+    <div class="banner">
+        <img src="../../static/images/location.jpg" alt=""/>
+    </div><!-- banner End -->
+
+    <ul class="listing clearfix">
+        <li class="down">想去的景点</li>
+        <li>去过的景点</li>
+    </ul>
+    <!-- content -->
+    <div class="content clearfix">
+        <div ms-repeat="avalon.range(18)" class="con-info clearfix">
+            <div class="sce-img">
+                <img src="../../static/images/img3.png" alt=""/>
+            </div>
+            <div class="particular">
+                <h5><a href="#">布达拉宫</a></h5>
+                <p>
+                    <span class="span-color">想去</span>
+                    <span>1245224</span>
+                </p>
+                <p>
+                    <span class="span-color">去过</span>
+                    <span>245236</span>
+                </p>
+                <p class="presentation">
+                    布达拉宫位于中国西藏自治区首府拉萨市区西北的玛布日山上，是一座宫堡式建筑群，最初是吐蕃王朝赞普松赞干布为迎娶尺尊布达拉宫的主...
+                </p>
+            </div>
+        </div>
+    </div><!-- content End -->
+
+    <!-- page -->
+    <div class="paging paging-center paging-lg page">
+        <ul>
+            <li><a href="#" class="first">first</a></li>
+            <li><a href="#" class="prev">prev</a></li>
+            <li><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#" class="next">next</a></li>
+            <li><a href="#" class="end">end</a></li>
+        </ul>
+    </div><!-- page End -->
+</div>
+<!-- footer -->
+<div id="footer" ms-include-src="'../footer/index.html'"></div>
+<script id="seajsnode" src="../../modules/seajs/seajs/2.2.1/sea.js"></script>
+<script>
+    // Set configuration
+    seajs.config({
+        alias: {
+            "jquery": "jquery/jquery/1.11.1/jquery.js",
+            "avalon": "avalon/1.3.7/avalon.js",
+            "header/css": "../../assets/css/common.css",
+            "footer/css": "../../assets/css/footer.css"
+        }
+    });
+    seajs.use([ 'header/css', 'footer/css']);
+    seajs.use('avalon', function(avalon) {
+        avalon.define({
+            $id: "indexView"
+        })
+    });
+</script>
+</body>
+</html>

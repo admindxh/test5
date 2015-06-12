@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.rimi.ctibet.domain.Order" table="T_ORDER">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="code" column="code" type="java.lang.String"/>
+
+		<property name="activityCode"     column="activityCode"     type="java.lang.String"/>
+	    <property name="memberCode"       column="memberCode"       type="java.lang.String"/>
+	    <property name="orderChannelCode" column="orderChannelCode" type="java.lang.String"/>
+	    <property name="orderChannelSourceCode" column="orderChannelSourceCode" type="java.lang.String"/>
+	    <property name="payState"         column="payState"/>
+	    <property name="money"            column="money"/>
+	    <property name="alipayOrderCode"  column="alipayOrderCode"  type="java.lang.String"/>
+        <property name="dealTime"         column="dealTime"         type="java.util.Date"/>
+	    <property name="alipayEmail"      column="alipayEmail"      type="java.lang.String"/>
+        
+        <property name="createTime" column="createTime" type="java.util.Date" update="false"/>
+        <property name="lastEditTime" column="lastEditTime" type="java.util.Date"/>
+        <property name="avaliable" column="avaliable" update="false"/>
+	</class>
+</hibernate-mapping>

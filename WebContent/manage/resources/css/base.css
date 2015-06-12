@@ -1,0 +1,474 @@
+/**
+* 功能：管理后台索引页样式设置
+* 日期：2014年11月21日
+* 作者：weiye
+**/
+/******************************************************* 
+					 集体声明样式 
+*******************************************************/
+body,html { font: normal 14px "宋体"; color: #666;}
+
+/* sprites */
+.btn-search, .datepicker .prev i, .datepicker .next i, .btn-add, .btn-delete, .close-tras_black, .msgBox .icon-info, .msgBox .icon-pass, .msgBox .icon-erro, .popupImg .closeImgBox, .custom_ckb { background: url(../img/ele/sprites.png) no-repeat; }
+
+/* 居中满屏布局 */
+.mud-upload, .mud-thumbnail, .posidSet {/* width: 100%;*/ max-width: 1440px; margin: 0 auto;}
+
+/* 清除下划线 */
+.location a, .muduleIndex a, .btn-base, .btn-sure, .tableManage table a, .btn-anchor, .btn-base_min, .paging ul li a { text-decoration: none }
+
+/* 清除外边框 */
+.btn-base, .btn-sure, .btn-base_min, .searchTools input[type='text'], .btn-search, .btn-add, .btn-delete, .formLine textarea, input[type='checkbox'], input[type='radio'], .dataTable input[type='text'], .base-inputTxt { outline: none;}
+
+/* 表单元素焦点效果 */
+.formLine input:focus, .searchTools input[type='text']:focus, .formLine textarea:focus, .dataTable input[type='text']:focus, .base-inputTxt:focus { background-color: #f6f8fc; border:1px solid #615353; outline: none; color: #615353;}
+
+/* 文本框基本样式 */
+input[type='text'] , .base-inputTxt { border: 1px solid #bcbcbc; font-size: 14px; color: #888;}
+
+/* 不显示（none）*/
+.posidSet > div, .select-base dl { display: none }
+
+/* inline-block */
+.btn-uploadImg, .lbl-base, .btn-sure, .txt-suggest, .posidTab label, .posidSet-unit .left i, .formLine label, .formLine input, .select-base, .select-base i, .reqItem, .posidSet-unit .right label, .posidSet-unit .right img, .tableManage table a > span, .tableManage table a, .searchTools input, .btn-base, .btn-anchor, .btn-add, .btn-base_min, .paging ul li, .paging ul li a, .dataDetail, .tableManage table span.ellipsis, .dataTable input, .base-inputTxt, .custom_ckb { display: inline-block; }
+
+/* block*/
+.mud-thumbnail img, .tableManage table img.thumbnail { display: block;}
+
+/* 垂直水平居中 */
+.btn-uploadImg, .lbl-base, .txt-suggest, .formLine label, .formLine input, .select-base, .select-base i, .reqItem, .btn-base, .btn-base_min, .posidSet-unit .right label, .posidSet-unit .right img, .searchTools input, .btn-add, .dataDetail, .dataTable input, .base-inputTxt, .custom_ckb { vertical-align: middle;}
+
+/* 相对定位 */
+.mud-upload, .posidTab, .posidSet, .posidSet-unit, .select-base, .ueEditor_lbl { position: relative }
+
+/* 绝对定位 */
+.posidSet-unit > i, .select-base dl, .popupImg .imgDiv, .popupImg .closeImgBox { position: absolute }
+
+/* 不换行省略号裁切 */
+.select-base dt, .tableManage table th, .tableManage table td, .tableManage table a > span, .tableManage table span.ellipsis, .select-base i, .errMesg, .formLine .dataVal, .group_inBlock .dataDetail { overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+/* 按钮手型 */
+.btn-base, .btn-sure, .posidTab label, .select-base i, .select-base dt, .tableManage table a, .btn-base_min, .btn-search, .btn-add, .close-tras_black, .paging ul li,  input[type='radio'], input[type='checkbox'], label.pointer, .tableManage table img.thumbnail, .popupImg .closeImgBox, .custom_ckb { cursor: pointer }
+
+/* 22像素白色字体 */
+.mbgc_0, .mbgc_1, .mbgc_2, .mbgc_3, .mbgc_4, .mbgc_5, .mbgc_6, .mbgc_7, .mbgc_8, .mbgc_9, .muduleIndex a { font-size: 22px; font-family: "微软雅黑"; color: #fff; text-shadow: 0 1px 1px rgba(118, 122, 128, 0.6); }
+.mbgc_0:hover, .mbgc_1:hover, .mbgc_2:hover, .mbgc_3:hover, .mbgc_4:hover, .mbgc_5:hover, .mbgc_6:hover, .mbgc_7:hover, .mbgc_8:hover, .mbgc_9:hover, .muduleIndex a:hover { font-size: 24px; font-family: "微软雅黑"; color: #fff; text-shadow: 0 2px 2px rgba(78, 82, 88, 0.6); }
+
+/* 禁止选中 */
+/*.location,*/ .btn-search, .posidTab label, .formEleGroup-squad, .paging, .role-authority-set { -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
+
+/**** 动画效果 ****/
+
+/* 0.3秒的动画过渡效果 */
+.mbgc_0, .mbgc_1, .mbgc_2, .mbgc_3, .mbgc_4, .mbgc_5, .mbgc_6, .mbgc_7, .mbgc_8, .mbgc_9, .muduleIndex a, .formLine input, .searchTools input[type='text'], .formLine textarea, .dataTable input[type='text'], .base-inputTxt { -webkit-transition: all 0.3s ease 0s; -moz-transition: all 0.3s ease 0s; -o-transition: all 0.3s ease 0s; transition: all 0.3s ease 0s;}
+
+/* 0.15秒的动画过渡效果 */
+.btn-base, .btn-sure, .select-base, .btn-base_min, .select-base dt, .saveOper .btn-base, .paging ul li a { -webkit-transition: all 0.3s ease 0s; -moz-transition: all 0.3s ease 0s; -o-transition: all 0.3s ease 0s; transition: all 0.15s ease 0s;}
+
+/******************************************************* 
+					 页面元素设置
+*******************************************************/
+.main { width: auto; height: auto; padding: 16px 20px;}
+
+/**** 页面位置 ****/
+.location { color: #888;}
+.location a { color: #888; cursor: default;}
+.location a[href] { color: #888; cursor: pointer;}
+.location a[href]:hover { color: #666; text-decoration: underline;}
+.location a[href]:active { color: #333 }
+
+/**** 主要容器 ****/
+/* 模块管理类 */
+.muduleManage { width: auto; height: auto; padding: 20px 20px 30px 20px; margin-top:30px; margin-bottom: 30px;}
+/* 列表管理类 */
+.tableManage { width: auto; height: auto; padding-bottom: 30px; margin-top:0; margin-bottom: 30px;}
+.tableManage.mb-0 { margin-bottom: 0;}
+.tableManage.mt-25 { margin-top: 25px;}
+.tableManage.mt-60 { margin-top: 60px;}
+/* 特殊宽度 */
+.tableManage.w-1024 { width: 1024px;}
+.tableManage th.w-24 { width: 24px;}
+.tableManage th.w-80 { width: 80px;}
+.tableManage th.w-120 { width: 120px;}
+.tableManage th.w-140 { width: 140px;}
+.tableManage th.w-180 { width: 180px;}
+.tableManage th.w-220 { width: 220px;}
+.tableManage th.w-50p { width: 50%;}
+
+/**** 搜索栏 ****/
+.searchTools { width: 100%; height: 36px; margin-top: 26px; margin-bottom: 20px; white-space: nowrap;}
+/* 文本框 */
+.searchTools input[type='text']{ width: 180px; padding: 9px 6px;}
+.searchTools input[type='text'].ml-10 { margin-left: 10px;}
+.searchTools input[type='text'].w-80 { width: 80px;}
+.searchTools input[type='text'].w-120 { width: 120px;}
+/* 快捷查询 */
+.shortcutSearch { position: absolute; top: 2px; right: 2px;}
+/* 搜索查询按钮 */
+.searchTools .btn-search { vertical-align: middle; margin-left: 10px;}
+
+/**** 页面标题 ****/
+/* 二级标题 */
+h2.lev2 { width: 148px; background-color: #900; text-align: center; font: normal 16px/36px "微软雅黑"; color: #fff; position: absolute; left: 0; top: 0;}
+
+/**** 数据表 ****/
+.tableManage table { width: 100%; border-collapse: collapse; border-left: none; border-right: none;}
+.tableManage table tr { border-bottom: 1px solid #dfdad8;}
+/* 数据表——隔行变色 */
+.tableManage table tbody tr:nth-child(even) { background: #faf9f3;}
+.tableManage table tbody tr:nth-child(odd) { background: #fff;}
+/* 数据表——单元格基本样式 */
+.tableManage table th { height: 34px; background-color: #514545; padding: 0 6px; font: bold 16px/34px "宋体"; color: #fff;}
+.tableManage table th:first-child, .tableManage table tr td:first-child  { padding-left: 20px;}
+.tableManage table td { padding: 8px 6px; overflow: visible;}
+/* 数据表——超链接内容设置 */
+.tableManage table a, .tableManage table a span { color: #ae4f4f; padding-right: 10px; vertical-align: middle;}
+/*.tableManage table a:visited { color: #067123;}*/
+.tableManage table a:hover { color: #c66666; text-decoration: underline;}
+.tableManage table a:active { color: #903838;}
+/* 数据表——缩略图显示 */
+.tableManage table img.thumbnail { width: 360px; height: auto;}
+/* 数据表--表格内的推荐 */
+.tuijian{display: inline; padding: 4px 5px; background-color: #b61515; color: #fff; vertical-align: middle; font-size: 12px; margin-right: 4px;}
+/* 数据表——内容长度限制 */
+.tableManage table a:hover, .tableManage table a > span:hover { text-decoration: underline;}
+.tableManage table a > span.maxW300 { max-width: 300px;}
+.tableManage table a > span.maxW340 { max-width: 340px;}
+.tableManage table a > span.maxW420 { max-width: 420px;}
+.tableManage table a > span.maxW460 { max-width: 460px;}
+.tableManage table a > span.maxW600 { max-width: 600px;}
+.tableManage table a > span.maxW800 { max-width: 800px;}
+.tableManage table span.ellipsis.maxW120 { max-width: 120px; }
+.tableManage table span.ellipsis.maxW120 a{display: block;overflow: hidden;-ms-text-overflow: ellipsis;text-overflow: ellipsis;white-space: nowrap;}
+.tableManage table span.ellipsis.maxW180 { max-width: 180px; }
+.tableManage table span.ellipsis.maxW600 { max-width: 600px; }
+.tableManage table span.ellipsis.maxW1100 { max-width: 1100px; }
+/* 数据表——文本框基本样式 */
+.dataTable input[type='text'] { height: 30px; padding: 0 6px;}
+/* 数据表——文本框基本样式-数值型 */
+.dataTable input[type='text'].number { width: 160px;}
+/* 数据表——按钮禁用 */
+.tableManage table a.disable, .tableManage table a.disable:hover, .tableManage table a.disable:active { text-decoration: none; color: #acacac; cursor: not-allowed;}
+/* 数据表——文本状态 */
+.tableManage table td.pass { color:#138e13; }
+/* 内容居中 */
+.tableManage table th.center, .tableManage table td.center { text-align: center;}
+/* 数据表——分页 */
+#pageInfo { height: 32px;}
+.tableManage .paging { text-align: right; margin-top: 16px;}
+.tableManage .paging a { margin-left: 4px;}
+/* 数据表——分页信息 */
+.paging-info { width: auto; text-align: left; display: inline-block; position: relative; top: 6px;}
+.paging-info span { margin-right: 20px; font-size: 16px; color: #6f5959}
+
+
+/**** 数据表——列表操作按钮区 ****/
+/* 行块型 */
+.manageBtn { text-align: right; margin-bottom: 12px;}
+/* 定位型 */
+.searchManage, .operManage { position: absolute; top: 12px; right: 20px; white-space: nowrap;}
+
+/**** 自定义下拉选择菜单 ****/
+.select-base.ml-3 { margin-left: 3px;}
+/* 选择结果框 */
+.select-base i { width: 160px; height: 34px; background: url(../img/ele/select-icon.png) no-repeat 168px -34px #fff; border: 1px solid #bcbcbc; padding-left: 6px; padding-right: 24px; text-align: left; font: normal 15px/34px "微软雅黑"; color: #615353;}
+/* 选择框 */
+.select-base dl { width: auto; height: auto; border: 1px solid #bcbcbc; z-index: 9999999; text-align: left;}
+.select-base dt { width: 92%; background-color: #fff; border-bottom: 2px solid #fff; padding-left: 4%; padding-right: 4%; text-indent: 10px; font: normal 14px/26px "微软雅黑"; color: #7c7c7c;}
+/* 选择结果框——宽度选择 */
+.select-base i.w-100 { width: 68px; background-position: 76px -34px;}
+.select-base i.w-110 { width: 78px; background-position: 86px -34px;}
+.select-base i.w-120 { width: 88px; background-position: 96px -34px;}
+.select-base i.w-140 { width: 108px; background-position: 116px -34px;}
+.select-base i.w-160 { width: 128px; background-position: 136px -34px;}
+.select-base i.w-200 { width: 168px; background-position: 176px -34px;}
+.select-base i.w-260 { width: 242px; background-position: 248px -34px;}
+.select-base i.w-320 { width: 288px; background-position: 296px -34px;}
+/* 视觉交互 */
+.select-base:hover i {background-color: #f6f8fc;border-color: #615353;}
+.select-base:hover i.w-100 { background-position: 76px -68px;}
+.select-base:hover i.w-110 { background-position: 86px -68px;}
+.select-base:hover i.w-120 { background-position: 96px -68px;}
+.select-base:hover i.w-140 { background-position: 116px -68px;}
+.select-base:hover i.w-160 { background-position: 136px -68px;}
+.select-base:hover i.w-200 { background-position: 176px -68px;}
+.select-base:hover i.w-260 { background-position: 248px -68px;}
+.select-base:hover i.w-320 { background-position: 296px -68px;}
+.select-base dl:hover { border:1px solid #acacac;}
+.select-base dt:hover { background-color: #615353; border-bottom: 2px solid #a94444; color: #fff; }
+/* 边距设置 */
+.select-base.ml-10 { margin-left: 10px;}
+.select-base.ml-20 { margin-left: 20px;}
+
+/**** 后台引用翻页插件 ****/
+/* 基本设置 */
+.paging { text-align: right; margin-top: 16px;}
+.paging ul li { border-radius: 3px; text-align: center; margin-left: 4px; vertical-align: middle; /* overflow: hidden; */}
+.paging ul li a { width: auto; height: 28px; background-color: #fbfbfb; padding: 0 12px;
+border: 1px solid #9c9c9c; border-radius: 3px; font: normal 14px/28px "微软雅黑"; color: #5d5d5d; vertical-align: middle;}
+.paging ul li a:hover { background: #c91212; border: 1px solid #9d5555; color: #fff;}
+.paging ul li a:active { background: #615353; border: 1px solid #9d5555;}
+/* 选中状态 */
+.paging ul li.active a { background: #990000; border: 1px solid #9d5555; color: #fff;}
+/* 禁用的翻页按钮 */
+.paging ul li.active a.first, .paging ul li.active a.prev, .paging ul li.active a.next, .paging ul li.active a.last, .paging ul li.active a.first:hover, .paging ul li.active a.prev:hover, .paging ul li.active a.next:hover, .paging ul li.active a.last:hover,  .paging ul li.active a.first:active, .paging ul li.active a.prev:active, .paging ul li.active a.next:active, .paging ul li.active a.last:active, .paging ul li.disable button, .paging ul li.disable button:hover, .paging ul li.disable a, .paging ul li.disable a:hover { padding: 0 12px; background-color: #f3f3f3; border: 1px solid #dcdcdc; color: #dcdcdc; cursor: not-allowed;}
+
+
+/**** ueEditor样式控制 ****/
+.ueEditor_lbl { top:5px; }
+.ueEditor_cont { width: 1024px; height: auto; min-height: 500px; display:inline-block; vertical-align:top;}
+
+/******************************************************* 
+					  弹出层样式
+*******************************************************/
+/* 主容器 */
+.popupLayer {}
+/* 遮罩层 */
+.maskLayer { width: auto; height: auto; background-color: #333; opacity: 0.8; filter: alpha(opacity=80); position: fixed; bottom: 0; left: 0; right: 0; top: 0; z-index: 1000;}
+/* 公共设置 */
+.popupBox-top, .popupBox-content, .popupBox-bottom { max-width: 640px; min-width: 360px;}
+/* 弹出框 */
+.popupBox { width: auto; height: auto; background-color: #f3f3f3; padding: 20px 20px; border: 1px solid #fff; border-radius: 3px; line-height: 160%; position: absolute; left: 0; top: 0; z-index: 1001}/* 弹出框——标题 */
+.popupBox-top { width: 100%; text-align: center; font: normal 20px/30px "微软雅黑"; margin-bottom: 20px;}
+/* 弹出框——内容 */
+.popupBox-content { text-align: left;}
+/* 弹出框——底部 */
+.popupBox-bottom { text-align: center; margin-top: 20px;} 
+/* 弹出框——特殊字体 */
+.popupBox-content .fontStyle_1 { padding: 10px 40px 20px; text-align: center; font: normal 16px/160% "微软雅黑"; color: #644f4f}
+/* 弹出框表单行 */
+.popupBox-content .formLine {text-align: center;}
+
+/**** 消息盒子 ****/
+/* 盒子容器 */
+.msgBox { width: auto; height: auto; min-width: 320px; max-width: 640px; background-color: #f9faf2; border: 2px solid #fff; border-radius: 3px; box-shadow: 0 10px 20px rgba(85, 86, 93, .5); padding: 50px 30px; text-align: center; font: normal 18px/32px "微软雅黑"; color: #798A96; position: absolute; left: 40%; top: 100px; z-index: 99999; opacity: 0.96; filter: alpha(opacity=96); }
+/* 消息盒子——无图标 */
+.msgBox .icon-none { display: none;}
+/* 消息盒子——图标基本样式 */
+.msgBox .icon-info, .msgBox .icon-pass, .msgBox .icon-erro { width: 32px; height: 32px; line-height: 32px; vertical-align: middle; margin-right: 6px; position: relative; top: -2px; display: inline-block;}
+/* 消息盒子——信息图标 */
+.msgBox .icon-info { background-position: -120px -70px;}
+/* 消息盒子——通过图标 */
+.msgBox .icon-pass { background-position: -160px -70px;}
+/* 消息盒子——错误图标 */
+.msgBox .icon-erro { background-position: -200px -70px;}
+
+/**** 数据加载等待效果 ****/
+.dataLoading {position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: #333; opacity: 0.8; filter: alpha(opacity=80);}
+.loaddingIcon {width: 64px; height: 64px; background: url("../img/ele/loading.gif") no-repeat; position: fixed; left: 50%; top:50%; margin-left: -32px; margin-top: -32px; z-index: 99999}
+
+/**** 缩略图显示大图 ****/
+/* 关闭缩略图 */
+.popupImg .closeImgBox { width: 32px; height: 32px; background-position: -84px -70px; top: -18px; right: -18px; z-index: 102;}
+.popupImg .closeImgBox:hover { background-position: -52px -70px; }
+/* 缩略图容器 */
+.popupImg .imgDiv { max-width: 1024px; max-height: 720px; left: 0; top: 0; z-index: 1001;}
+.popupImg .imgBox { border-radius: 5px; overflow: hidden;}
+.popupImg img { width: 100%; height: auto; display: block;}
+
+/******************************************************* 
+					  原子样式
+*******************************************************/
+/**** 按钮样式 ****/
+
+/* 基本样式 */
+.btn-base, .btn-base_min { background-color: #fbfbfb; border: 1px solid #9c9c9c; border-radius: 3px; padding: 5px 20px; text-align: center; font:normal 14px "微软雅黑"; color: #8c8c8c; border-collapse: separate;}
+.btn-base:hover, .btn-base_min:hover {  background: #c91212; color: #fff;}
+.btn-base:active, .btn-base_min:active { background: #990000; border-color: #9d5555; color: #fff;}
+.btn-base_min { line-height: 26px; padding: 0 12px; color: #5d5d5d;}
+/*webuploader-container {width: 84px;}*/
+
+/* 确认和超链接按钮样式 */
+.btn-sure, .btn-anchor { width: 126px; height: 38px; background-color: #990000; border: none; border-bottom: 4px ridge #5f0000; text-align: center; font:normal 16px "微软雅黑";  line-height: 36px; color: #fff; border-collapse: separate;}
+.btn-anchor { height: 34px;}
+.btn-sure:hover, .btn-anchor:hover { background-color: #c91212;}
+.btn-sure:active, .btn-anchor:active { height: 38px; background-color: #860303; border-bottom: 2px ridge #4a0202; color: #999;}
+.btn-anchor:active { height: 36px;}
+/* 该类按钮的特殊宽度 */
+.btn-anchor.w-146 { width: 146px;}
+.searchManage .btn-anchor, .searchManage .btn-sure {vertical-align: middle; margin-left: 10px;}
+
+/**** 图形按钮样式 ****/
+/* 添加 */
+.btn-add { width: 24px; height: 24px; background-position: -454px 0; border: none;}
+.btn-add:hover { background-position: -454px -24px;}
+
+/* 删除 */
+.btn-delete { width: 24px; height: 24px; background-position: 0 -76px; border:none;}
+.btn-delete:hover { background-position: -24px -76px;}
+
+/* 搜索按钮样式 */
+.btn-search { width: 90px; height: 36px; background-position: 0 -32px; background-color: transparent !important; border: none; margin: 0;}
+.btn-search:hover { background-position: -92px -32px;}
+.btn-search:active { background-position: -184px -32px;}
+
+/* 深黑色半透关闭按钮 */
+.close-tras_black { width: 32px; height: 32px; background-position: -84px -70px;}
+.close-tras_black:hover { background-position: -52px -70px;}
+
+/* 按钮布局设置 */
+button.mt_-35 { margin-top: -35px;}
+
+/* 自定义复选框 */
+.custom_ckb { width: 16px; height: 16px;}
+
+/**** 描述、详情文本 ****/
+/* 建议提示 */
+.txt-suggest { font-size: 14px; font-family: "宋体"; line-height: 140%; color: #9c9c9c; line-height: 30px;}
+/* 详情数据 */
+.dataDetail { font-size: 15px; color: #990000; }
+.dataDetail.number { font-size: 16px; font-weight: bold;}
+
+/**** 容器边框样式 ****/
+/* 1px浅灰色实线 */
+.filament_solid_ddd { border: 1px solid #ddd;}
+.filament_solid_ccc { border: 1px solid #ccc;}
+
+/* 必填项 && 错误提示 */
+.reqItem, .errMesg { width: 0; font-size: 14px; color: #ef2c2b; white-space: nowrap;}
+.errMesg { height: 20px; text-align: right; position: relative; z-index: auto; overflow: visible;}
+
+/**** 模块背景色 ****/
+/* 随机颜色 */
+.mbgc_0 { background-color: #d69681;}
+.mbgc_0:hover { background-color: #e3b2a2;}
+.mbgc_1 { background-color: #e77a81;}
+.mbgc_1:hover { background-color: #ed999f;}
+.mbgc_2 { background-color: #93885a;}
+.mbgc_2:hover { background-color: #9f9671;}
+.mbgc_3 { background-color: #b39267;}
+.mbgc_3:hover { background-color: #bca17e;}
+.mbgc_4 { background-color: #efc07f;}
+.mbgc_4:hover { background-color: #f5d1a0;}
+.mbgc_5 { background-color: #6e92ac;}
+.mbgc_5:hover { background-color: #8ba6ba;}
+.mbgc_6 { background-color: #77a85e;}
+.mbgc_6:hover { background-color: #95bc81;}
+.mbgc_7 { background-color: #b4c2b1;}
+.mbgc_7:hover { background-color: #d1d8cf;}
+.mbgc_8 { background-color: #7384b8;}
+.mbgc_8:hover { background-color: #8c9ac6;}
+.mbgc_9 { background-color: #4456c4;}
+.mbgc_9:hover { background-color: #5768d0;}
+
+/*******************************************************
+					  响应式设计
+*******************************************************/
+
+/* 页面水平像素小于839(iframe带滚动条，屏幕像素1024) */
+@media screen and (max-width: 839px) {
+	body,html { font: normal 12px "宋体"; color: #555;}
+	/* 搜索/操作栏*/
+	.searchManage { top: 46px; white-space: nowrap;}
+	.searchTools { margin-top: 60px;}
+	.searchTools input[type='text'] { width: 160px; padding: 7px 4px;}
+	/* 模块管理容器 */
+	.muduleManage { margin-top: 60px;}
+	/* 文本框设置 */
+	.formLine input[type='text'], .formLine input[type='password'], .base-inputTxt { padding: 7px 4px; font-size: 14px;}
+	input[type='text'], .base-inputTxt { font-size: 13px;}
+	/* 搜索栏 */
+	.searchTools input.w-160 { width: 100px;}
+	.searchTools .select-base.float_r {top: 2px;}
+	.searchManage .btn-anchor, .searchManage .btn-sure {margin-left: 2px;}
+	.searchManage button.btn-sure {position: relative; top: -1px;}
+
+	/* 表格样式 */
+	.tableManage table th {font: bold 14px/30px "宋体";}
+	.tableManage tbody td {font-size: 12px;}
+	.tableManage table a > span.maxW600 { max-width: 380px;}
+
+	/* 下拉框设置 */
+	.select-base i {height: 30px; font: normal 12px/30px "微软雅黑";}
+	.select-base dt {font: normal 12px/26px "宋体";}
+	.select-base i.w-110 {width: 60px; background-position: 68px -34px;}
+	.select-base:hover i.w-110 { background-position: 68px -68px;}
+	.select-base i.w-140 {width: 88px; background-position: 96px -34px;}
+	.select-base:hover i.w-140 {background-position: 96px -68px;}
+	.select-base i.w-260 {width: 162px; background-position: 170px -34px;}
+	.select-base:hover i.w-260 {background-position: 170px -68px;}
+	.select-base i.w-320 {width: 222px; background-position: 230px -34px;}
+	.select-base:hover i.w-320 {background-position: 230px -68px;}
+	/* 按钮设置 */
+	.btn-base, .btn-base_min {padding: 0 12px; font: normal 12px/30px "宋体";  line-height: 30px;}
+	.btn-sure, .btn-anchor {width: 106px; height: 32px; font: normal 14px/28px "微软雅黑";  line-height: 28px; border-bottom: 3px ridge #5f0000;}
+	.btn-sure:active {height: 30px;}
+	.btn-anchor {height: 29px; position: relative; top: -1px;}
+	.btn-anchor:active {height: 30px;}
+	.btn-base_min {padding: 0 9px; font: normal 12px/24px "宋体";  line-height: 24px;}
+	/* 图片上传控件 */
+	.webuploader-pick {height: 26px !important; line-height: 26px !important;}
+	/* 自定义布局单位 */
+	.select-base.ml-10 {margin-left: 6px;}
+	.select-base.ml-20 {margin-left: 10px;}
+	/* 分页按钮 */
+	#pageInfo {position: relative;}
+	.paging-info {position: absolute; left: 0;}
+	/* 富文本编辑器 */
+	.ueEditor_cont {width: 600px; min-height: 320px;}
+	/* 分页信息 */
+	.paging-info span {font-size: 12px;}
+	.paging ul li a {height: 24px; padding: 0 9px; font: normal 14px/24px "宋体";}
+	/* 大分类标题 */
+	h2.lev2 {width: 128px; font: normal 14px/32px "微软雅黑";}
+
+	/**** 特殊页面设置 ****/
+	/* 景点信息添加 */
+	#preDiv img {width: 640px;}
+	/* 新建活动（报名表单添加） */
+	.tableManage.w-1024 { width: 600px;}
+	/* 已审核的帖子回复 */
+	.disp-ib.w96p.ml15 a.w210 {width: 120px; white-space: nowrap; overflow: auto; text-overflow: ellipsis;}
+    /* 图说西藏弹出层 */
+    #tanchu{top: 5% !important;left: 8% !important;}
+    /* 已审核 & 待审核 */
+    .passName{max-width: 100px !important;}
+    .passInfo{max-width: 150px !important;}
+}
+/* 页面水平像素840-1095(iframe带滚动条，屏幕像素1025-1280) */
+@media screen and (min-width: 840px) and (max-width: 1095px) {
+	.ueEditor_cont { width: 820px; min-height: 360px;}
+	/* 搜索栏 */
+	.searchManage .btn-anchor, .searchManage .btn-sure {margin-left: 4px;}
+	.searchManage button.btn-sure {position: relative; top: -1px;}
+	/* 按钮设置 */
+	.btn-base, .btn-base_min {padding: 0 14px; font: normal 12px/30px "宋体";  line-height: 30px;}
+	.btn-sure, .btn-anchor {width: 106px; height: 32px; font: normal 14px/28px "微软雅黑";  line-height: 28px; border-bottom: 3px ridge #5f0000;}
+	button.btn-sure:active {height: 32px;}
+	.btn-anchor {height: 29px; position: relative; top: -1px;}
+	.btn-anchor:active {height: 30px;}
+	.btn-base_min {padding: 0 10px; font: normal 12px/24px "宋体";  line-height: 24px;}
+	.paging ul li a {height: 24px; padding: 0 9px; font: normal 14px/24px "宋体";}
+    /* 图说西藏弹出层 */
+    #tanchu{top: 5% !important;left: 20% !important;}
+    /* 已审核 & 待审核 */
+    .passName{max-width: 120px !important;}
+    .passInfo{max-width: 120px !important;}
+	.tableManage table {font: normal 12px "宋体";}
+	.tableManage table span.ellipsis.maxW120 {max-width: 75px;}
+    .tableManage table span.ellipsis.maxW120 a{display: block;overflow: hidden;-ms-text-overflow: ellipsis;text-overflow: ellipsis;white-space: nowrap;}
+}
+/* 1096-1219(iframe带滚动条，屏幕像素1281-1440) */
+@media screen and (min-width: 1096px) and (max-width: 1219px) {
+	.ueEditor_cont { width: 880px; min-height: 360px;}
+	/* 搜索栏 */
+	.searchManage .btn-anchor, .searchManage .btn-sure {margin-left: 6px;}
+	/* 表格 */
+	.tableManage table a > span.maxW460 { max-width: 380px;}
+	.tableManage table span.ellipsis.maxW1100 { max-width: 660px;}
+	.w210 { width: 120px;}
+    /* 图说西藏弹出层 */
+    #tanchu{top: 7% !important;left: 22% !important;}
+    /* 已审核 & 待审核 */
+    .passName{max-width: 100px !important;}
+    .passInfo{max-width: 120px !important;}
+	.tableManage table {font: normal 12px "宋体";}
+	.tableManage table span.ellipsis.maxW120 {max-width: 100px;}
+    .tableManage table span.ellipsis.maxW120 a{display: block;overflow: hidden;-ms-text-overflow: ellipsis;text-overflow: ellipsis;white-space: nowrap;}
+}
+
+
+/* 使用avalon.js避免未经处理的原始模板内容在页面载入时在页面中一闪而过 */
+.ms-controller,.ms-important,[ms-controller],[ms-important]{
+     visibility: hidden;
+ }

@@ -1,0 +1,123 @@
+#tags{
+    display: none;
+}
+.cb-index-nav .navbar-left a.active, .cb-index-nav .navbar-left a:hover{
+    background: none;
+}
+#culture-banner{
+    height: 500px;
+    margin-bottom: 60px;
+}
+#culture-banner .banner-item{
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    /*background-position: 50% 50%;*/
+}
+#culture-banner .banner-content{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 500px;
+}
+#culture-banner .banner-left{
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+}
+#culture-banner .banner-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#culture-banner .banner-right .culture-menu{
+    width: 310px;
+    height: 500px;
+    background: url("../../icon/culture_menu_bg.png");
+}
+#culture-banner .culture-menu ul{
+    height: 500px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+#culture-banner .culture-menu ul li div{
+    float: left;
+}
+#culture-banner .culture-menu ul li a{
+    float: left;
+}
+#culture-banner .culture-menu .menu-news{
+    width: 55px;
+    height: 71px;
+    line-height: 71px;
+    text-align: center;
+    background: url("../../icon/culture_menu_bg1.png");
+}
+#culture-banner .culture-menu .menu-calendar{
+    background: url("../../icon/culture_menu_bg2.png");
+}
+#culture-banner .culture-menu .menu-literature{
+    background: url("../../icon/culture_menu_bg3.png");
+}
+#culture-banner .culture-menu .menu-custom{
+    background: url("../../icon/culture_menu_bg4.png");
+}
+#culture-banner .culture-menu .menu-religion{
+    background: url("../../icon/culture_menu_bg5.png");
+}
+#culture-banner .culture-menu .menu-food{
+    background: url("../../icon/culture_menu_bg6.png");
+}
+#culture-banner .culture-menu .menu-plant{
+    height: 74px;
+    line-height: 74px;
+    background: url("../../icon/culture_menu_bg7.png");
+}
+#culture-banner .culture-menu .menu-celebrity{
+    background: url("../../icon/culture_menu_bg8.png");
+}
+#culture-banner .culture-menu .menu-shirt{
+    background: url("../../icon/culture_menu_bg9.png");
+}
+#culture-banner .culture-menu .menu-art{
+    background: url("../../icon/culture_menu_bg10.png");
+}
+#culture-banner .culture-menu .menu-honey{
+    background: url("../../icon/culture_menu_bg11.png");
+}
+#culture-banner .culture-menu .menu-timer{
+    background: url("../../icon/culture_menu_bg12.png");
+}
+#culture-banner .culture-menu .menu-diss{
+    height: 145px;
+    line-height: 145px;
+    background: url("../../icon/culture_menu_bg13.png");
+}
+#culture-banner .culture-menu ul li a{
+    width: 100px;
+    height: 71px;
+    line-height: 71px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+}
+#culture-banner .culture-menu ul li:hover a{
+    background: url("../../icon/culture_menu_hover.png");
+}
+#culture-banner .culture-menu .a-active{
+    background: url("../../icon/culture_menu_hover.png");
+}
+#culture-banner .culture-menu li .menu-plant-hover{
+    height: 74px;
+    line-height: 74px;
+}
+#culture-banner .culture-menu li .menu-diss-hover{
+    height: 145px;
+    line-height: 22px;
+    padding: 40px 0;
+}

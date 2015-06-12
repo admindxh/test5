@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.rimi.ctibet.domain.DesAndViewStatis" table="DesAndViewStatis">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" length="40" />
+            <generator class="native" />
+        </id>
+        <property name="desCode">
+            <column name="descode"/>
+        </property>
+        <property name="viewCode">
+            <column name="viewcode"/>
+        </property>
+        
+         <property name="cuserCode">
+            <column name="cusercode"/>
+        </property>
+        
+         <property name="type">
+            <column name="type"/>
+        </property>
+        
+        <property name="ctime" column="ctime" type="java.util.Date"></property> 
+        
+    </class>
+</hibernate-mapping>

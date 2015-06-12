@@ -1,0 +1,370 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+	<title>天上社区-帖子&回复管理-已审核的帖子&回复</title>
+	<link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css" />
+	<link rel="stylesheet" href="../../resources/css/base.css" />
+	<link rel="stylesheet" href="../../resources/css/travel/formWeb.css" />
+	<style>
+		/* 闭合浮动 */
+		.floatfix:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.bor_t {
+			border-top: 1px solid #ccc;
+		}
+		.w98p {
+			width: 98%;
+		}
+		.bgc_red {
+			background-color: red;
+		}
+		.cu_p {
+			cursor: pointer;
+			;
+		}
+	</style>
+	<script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<!-- main { -->
+	<div class="main">
+		<!-- 页面位置-->
+		<div class="location">
+			<label>您当前位置为:</label>
+			<span><a>天上社区</a> -</span>
+			<span><a>帖子&回复管理</a> -</span>
+			<span><a href="#" target="_self">已审核的帖子&回复</a></span>
+		</div>
+
+		<!-- 数据操作 -->
+		<div class="searchManage">
+			<a href="issue-invitation.html" class="btn-anchor" target="_self">新建帖子</a>
+			<a href="#" class="btn-anchor" target="_self">批量删除</a>
+		</div>
+
+		<!-- 模块管理 { -->
+		<div class="tableManage pos-rela">
+			<!-- 搜索查询栏 { -->
+			<div class="searchTools formLine">
+
+				<!-- 关键字 -->
+				<label class="w-auto">关键字:</label>
+				<input type="text" placeholder="">
+				<div class="select-base ml-20">
+					<i class="w-140">按版块搜索</i>
+					<dl>
+						<dt>按版块搜索</dt>
+						<dt>全站置顶区</dt>
+						<dt>骑行公告</dt>
+						<dt>骑行故事</dt>
+						<dt>骑友征集</dt>
+						<dt>装备讨论</dt>
+						<dt>攻略游记</dt>
+						<dt>出行搭伴</dt>
+						<dt>公益活动</dt>
+						<dt>意见与建议</dt>
+					</dl>
+				</div>
+
+				<div class="shortcutSearch">
+
+					<!-- 快捷筛选 -->
+					<div class="select-base mt5">
+						<input type="hidden" value="">
+						<i class="w-140">快捷筛选</i>
+						<dl>
+							<dt>按发布时间</dt>
+							<dt>按最新回复时间</dt>
+							<dt>按浏览量</dt>
+							<dt>按赞数</dt>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!-- } 搜索查询栏 -->
+
+			<!-- 数据列表 -->
+			<div class="formLine">
+				<input type="checkbox" name="dataCheck" class="allCheck">
+				<label class="w-auto">全选</label>
+			</div>
+
+			<ul class="mt10">
+				<li class="pt10 bor_t">
+					<input type="checkbox" name="dataCheck" class="dataCheck float_l mt5">
+					<div class=" disp-ib w98p ml15 ">
+						<div class="save1">
+							<label>公益活动</label>
+							<span> > </span>
+							<a href="#" target="_self" class="ml10 disp-ib w210 str-clip">给藏区的小朋友写张明信片吧</a>
+
+							<label class="ft-c_green ml20">全站置顶</label>
+							<a class="ml10 ft-c_white filament_solid_ddd p2 bgc_red cu_p">取消全站置顶</a>
+
+							<label>浏览量:</label>
+							<input type="text" class="w80 pl5" maxlength="7" />
+							<a href="#" target="_self">恢复系统默认值</a>
+
+							<label class="ml10">赞:</label>
+							<input type="text" class="w80 pl5" maxlength="7" />
+							<a href="#" target="_self">恢复系统默认值</a>
+
+							<div class="float_r">
+								<button type="button" class="btn-base_min">保存</button>
+								<button type="button" class="btn-base_min">删除</button>
+								<button type="button" class="btn-base_min" onclick="javascript:location.href='reply_manage.html'">管理回复</button>
+								<button type="button" class="btn-base_min" onclick="javascript:location.href='edit_invitation.html'">修改</button>
+							</div>
+						</div>
+						<p class="mt15 ft-c_gray f15">
+							<span>会飞的猪</span>
+							<span>发表于</span>
+							<span>2014-12-6 15:11</span>
+						</p>
+						<p class="mt15">我不知道多少人记得这些事情，也不知道多少人在乎走在路上我不知道多少人记得这些事情，也不知道多少人在乎走在路上我不知道多少人记得这些事情...</p>
+						<a href="#" target="_self" class="float_r mt10 mb5">打开</a>
+					</div>
+				</li>
+
+				<li class="pt10 bor_t">
+					<input type="checkbox" name="dataCheck" class="dataCheck float_l mt5">
+					<div class=" disp-ib w98p ml15 ">
+						<div class="save2">
+							<label>公益活动</label>
+							<span> > </span>
+							<a href="#" target="_self" class="ml10 disp-ib w210 str-clip">给藏区的小朋友写张明信片吧</a>
+
+							<label class="ft-c_green ml20">全站置顶</label>
+							<a class="ml10 ft-c_white filament_solid_ddd p2 bgc_red cu_p">取消全站置顶</a>
+
+							<label>浏览量:</label>
+							<input type="text" class="w80 pl5" />
+							<a href="#" target="_self">恢复系统默认值</a>
+
+							<label class="ml10">赞:</label>
+							<input type="text" class="w80 pl5" />
+							<a href="#" target="_self">恢复系统默认值</a>
+
+							<div class="float_r">
+								<button type="button" class="btn-base_min">保存</button>
+								<button type="button" class="btn-base_min">删除</button>
+								<button type="button" class="btn-base_min">管理回复</button>
+								<button type="button" class="btn-base_min">修改</button>
+							</div>
+						</div>
+						<p class="mt15 ft-c_gray f15">
+							<span>会飞的猪</span>
+							<span>发表于</span>
+							<span>2014-12-6 15:11</span>
+						</p>
+						<p class="mt15">我不知道多少人记得这些事情，也不知道多少人在乎走在路上我不知道多少人记得这些事情，也不知道多少人在乎走在路上我不知道多少人记得这些事情...</p>
+						<a href="#" target="_self" class="float_r mt10 mb5">打开</a>
+					</div>
+				</li>
+
+				<li class="pt10 bor_t">
+					<input type="checkbox" name="dataCheck" class="dataCheck float_l mt5">
+					<div class=" disp-ib w98p ml15 ">
+						<div class="save3">
+							<label>公益活动</label>
+							<span> > </span>
+							<a href="#" target="_self" class="ml10 disp-ib w210 str-clip">给藏区的小朋友写张明信片吧</a>
+
+							<label class="ft-c_green ml20">全站置顶</label>
+							<a class="ml10 ft-c_white filament_solid_ddd p2 bgc_red cu_p">取消全站置顶</a>
+
+							<label>浏览量:</label>
+							<input type="text" class="w80 pl5" />
+							<a href="#" target="_self">恢复系统默认值</a>
+
+							<label class="ml10">赞:</label>
+							<input type="text" class="w80 pl5" />
+							<a href="#" target="_self">恢复系统默认值</a>
+
+							<div class="float_r">
+								<button type="button" class="btn-base_min">保存</button>
+								<button type="button" class="btn-base_min">删除</button>
+								<button type="button" class="btn-base_min">管理回复</button>
+								<button type="button" class="btn-base_min">修改</button>
+							</div>
+						</div>
+						<p class="mt15 ft-c_gray f15">
+							<span>会飞的猪</span>
+							<span>发表于</span>
+							<span>2014-12-6 15:11</span>
+						</p>
+						<p class="mt15">我不知道多少人记得这些事情，也不知道多少人在乎走在路上我不知道多少人记得这些事情，也不知道多少人在乎走在路上我不知道多少人记得这些事情...</p>
+						<a href="#" target="_self" class="float_r mt10 mb5">打开</a>
+					</div>
+				</li>
+
+				<li class="pt10 bor_t">
+					<input type="checkbox" name="dataCheck" class="dataCheck float_l mt5">
+					<div class=" disp-ib w98p ml15 ">
+						<div class="save4">
+							<label>公益活动</label>
+							<span> > </span>
+							<a href="#" target="_self" class="ml10 disp-ib w210 str-clip">给藏区的小朋友写张明信片吧</a>
+
+							<label class="ft-c_green ml20">全站置顶</label>
+							<a class="ml10 ft-c_white filament_solid_ddd p2 bgc_red cu_p">取消全站置顶</a>
+
+							<label>浏览量:</label>
+							<input type="text" class="w80 pl5" maxlength="7" />
+							<a href="#" target="_self">恢复系统默认值</a>
+
+							<label class="ml10">赞:</label>
+							<input type="text" class="w80 pl5" />
+							<a href="#" target="_self">恢复系统默认值</a>
+
+							<div class="float_r">
+								<button type="button" class="btn-base_min">保存</button>
+								<button type="button" class="btn-base_min">删除</button>
+								<button type="button" class="btn-base_min">管理回复</button>
+								<button type="button" class="btn-base_min">修改</button>
+							</div>
+						</div>
+						<p class="mt15 ft-c_gray f15">
+							<span>会飞的猪</span>
+							<span>发表于</span>
+							<span>2014-12-6 15:11</span>
+						</p>
+						<p class="mt15">我不知道多少人记得这些事情，也不知道多少人在乎走在路上我不知道多少人记得这些事情，也不知道多少人在乎走在路上我不知道多少人记得这些事情...</p>
+						<a href="#" target="_self" class="float_r mt10 mb5">打开</a>
+					</div>
+				</li>
+
+				<li class="pt10 bor_t">
+					<input type="checkbox" name="dataCheck" class="dataCheck float_l mt5">
+					<div class=" disp-ib w98p ml15 ">
+						<div  class="save5">
+							<label>公益活动</label>
+							<span> > </span>
+							<a href="#" target="_self" class="ml10 disp-ib w210 str-clip">给藏区的小朋友写张明信片吧</a>
+
+							<label class="ft-c_green ml20">全站置顶</label>
+							<a class="ml10 ft-c_white filament_solid_ddd p2 bgc_red cu_p">取消全站置顶</a>
+
+							<label>浏览量:</label>
+							<input type="text" class="w80 pl5" />
+							<a href="#" target="_self">恢复系统默认值</a>
+
+							<label class="ml10">赞:</label>
+							<input type="text" class="w80 pl5" />
+							<a href="#" target="_self">恢复系统默认值</a>
+
+							<div class="float_r">
+								<button type="button" class="btn-base_min">保存</button>
+								<button type="button" class="btn-base_min">删除</button>
+								<button type="button" class="btn-base_min">管理回复</button>
+								<button type="button" class="btn-base_min">修改</button>
+							</div>
+						</div>
+						<p class="mt15 ft-c_gray f15">
+							<span>会飞的猪</span>
+							<span>发表于</span>
+							<span>2014-12-6 15:11</span>
+						</p>
+						<p class="mt15">我不知道多少人记得这些事情，也不知道多少人在乎走在路上我不知道多少人记得这些事情，也不知道多少人在乎走在路上我不知道多少人记得这些事情...</p>
+						<a href="#" target="_self" class="float_r mt10 mb5">打开</a>
+					</div>
+				</li>
+
+
+			</ul>
+
+			<!-- 表格分页 -->
+			<div class="paging">
+				<div class="paging-info">
+					<span class="disp-ib">当前共&nbsp;34534&nbsp;页</span><span class="disp-ib">第&nbsp;43145&nbsp;页</span><span class="disp-ib">共&nbsp;435345&nbsp;条</span>
+				</div>
+				<div class="disp-ib">
+					<button type="button" class="btn-base_min">首页</button>
+					<button type="button" class="btn-base_min">上一页</button>
+					<button type="button" class="btn-base_min">下一页</button>
+					<button type="button" class="btn-base_min">末页</button>
+				</div>
+			</div>
+
+		</div>
+		<!-- } 模块管理 -->
+	</div>
+	<!-- } main -->
+
+	<!-- JS引用部分 -->
+	<script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+	<script src="../../resources/js/base.js" type="text/javascript"></script>
+	<script src="../../resources/js/bbs/audit-wait.js" type="text/javascript"></script>
+	<script src="../../resources/plugin/jquery.rimi.validation.js" type="text/javascript"></script>
+	<script src="../../resources/js/dataValidation.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		/* 为文本框遍历添加ID */
+		inputAddId();
+		
+		/* 浏览量验证 */
+		$(document).on("blur", "input[id^='browsNum']", function() {
+			var this_val = $(this).val();
+			valid_txtBox_create(this, $.VLDTOR.IsNum(this_val), "浏览量只能为数字", "bottom");
+		});
+		
+		/* 赞(被赞数)验证 */
+		$(document).on("blur", "input[id^='praiseNum']", function() {
+			var this_val = $(this).val();
+			valid_txtBox_create(this, $.VLDTOR.IsNum(this_val), "被赞数只能为数字", "bottom");
+		});
+		
+		/* 保存验证 */
+		$(document).on("click", "button[id^='save_btn']", function() {
+			var thisParent = $(this).parents("div[class^='save']"),
+				browNum = thisParent.find("input[id^='browsNum']"),
+				pariNum = thisParent.find("input[id^='praiseNum']");
+			// 失焦验证
+			browNum.blur();
+			pariNum.blur();
+
+			var regSpan = $('span.errMesg').length > 0;
+			// 验证通过
+			if(regSpan) {
+				msgBox("输入的内容有误，请检查！", "erro");
+			}
+			// 验证未通过
+			else {
+				msgBox("保存成功！", "pass");
+			}
+		});
+		
+		/* 为文本框和按钮添加ID */
+		function inputAddId() {
+			var saveDiv = $("div[class^='save']"),
+				save_len = saveDiv.length;
+			for(var i = 0; i < save_len; i++) {
+				// 浏览量添加ID
+				saveDiv.eq(i).find("input[type='text']:first").attr("id", "browsNum" + parseInt(i + 1));
+				// 被赞数添加ID
+				saveDiv.eq(i).find("input[type='text']:last").attr("id", "praiseNum" + parseInt(i + 1));
+				// 保存添加ID
+				saveDiv.eq(i).find(".btn-base_min:eq(0)").attr("id", "save_btn"  + parseInt(i + 1));
+			}
+			
+		}
+	</script>
+
+	<!-- 利用空闲时间预加载指定页面 -->
+	<link rel="prefetch">
+	<!-- IE10+ -->
+	<link rel="next">
+	<!-- Firefox -->
+	<link rel="prerender">
+	<!-- Chrome -->
+</body>
+
+</html>

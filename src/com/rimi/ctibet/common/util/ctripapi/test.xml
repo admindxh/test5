@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Response>
+	<Header ShouldRecordPerformanceTime="False" Timestamp="2014-12-19 10:41:00:05764"
+		ReferenceID="fcdccfed-1bae-4eeb-943a-b47005de4a6c" RecentlyTime="2014-12-19 10:41:00"
+		AccessCount="30" CurrentCount="30" ResetTime="2014-12-19 10:42:00"
+		ResultCode="Fail" ResultNo="1000006" ResultMsg="RateLimit" />
+</Response>

@@ -1,0 +1,16 @@
+/**
+* 功能：“读西藏Banner管理”样式设置
+* 日期：2014年12月5日
+* 作者：weiye
+**/
+
+/* 上传按钮 */
+.btn-uploadImg { width: 160px; }
+
+/* 缩略图 */
+.mud-thumbnail { margin-top: 20px;}
+.mud-thumbnail h3 { line-height: 50px;}
+.mud-thumbnail img { width: 100%; max-width: 1433px; height: auto; margin: 0 auto;}
+
+/* 按钮 */
+.mud-button { width: 100%; margin: 0 auto; text-align: center; margin-top: 40px;}

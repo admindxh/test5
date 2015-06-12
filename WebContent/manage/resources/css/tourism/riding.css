@@ -1,0 +1,151 @@
+.riding{
+    width: 1200px;
+    font-family: "Microsoft Yahei";
+    margin-top: 60px;
+    padding: 0;
+}
+.riding .row{
+    margin: 0;
+}
+.riding-left{
+    width: 870px;
+    padding: 0;
+}
+.riding-right{
+    width: 310px;
+    padding: 0;
+    margin-left: 20px;
+}
+.riding .header{
+    margin-bottom: 15px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #fff url("../../icon/line.png") repeat-x 0 15px;
+}
+.riding .header .left{
+    width: 255px;
+    height: 29px;
+    background: #fff url("../../icon/riding.png") no-repeat;
+}
+.riding .header .right{
+    width: 90px;
+    height: 29px;
+    line-height: 29px;
+    text-align: right;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.right a{
+    color: #333;
+}
+.riding-left-img-top .img-top-left{
+    width: 518px;
+    height: 233px;
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.img-top-left .info{
+    width: 518px;
+    height: 60px;
+    color: #fff;
+    background: url("../../icon/mc1_yxz.png") no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.info p{
+    margin: 10px 0 5px 15px;
+}
+.info div{
+    font-size: 12px;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+}
+.info div span{
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.riding-left-img-top .img-top-right{
+    width: 342px;
+    height: 233px;
+    float: right;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.img-top-right .info{
+    width: 342px;
+    height: 60px;
+    color: #fff;
+    background: url("../../icon/mc2_yxz.png") no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.riding .riding-left-img-footer{
+    margin-top: 10px;
+}
+.riding-left-img-footer .img-footer-left{
+    float: left;
+}
+.riding-left-img-footer .img-footer-right{
+    float: right;
+}
+.riding .header-right .left{
+    width: 215px;
+    height: 29px;
+    background: #fff url("../../icon/entertainment.png") no-repeat;
+}
+.riding .header-right .right{
+    width: 75px;
+}
+.riding .content a{
+    padding-right: 20px;
+    outline: none;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.riding .content p{
+    width: 156px;
+    font-size: 12px;
+    color: #898989;
+    margin-bottom: 0;
+}
+.riding .line{
+    width: 100%;
+    height: 10px;
+    background: #fff url("../../icon/line.png") repeat-x 0 9px;
+}
+.riding .content .message{
+    margin-top: 11px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.riding .content .loving{
+    width: 55px;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.riding .content .loving label{
+    display: block;
+    margin: 5px 0 0 0;
+}
+.content-mart{
+    margin-top: 18px;
+}
+.content .ctibet{
+    position: absolute;
+    top: -7px;
+    left: -6px;
+}

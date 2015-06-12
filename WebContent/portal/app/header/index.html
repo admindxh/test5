@@ -1,0 +1,95 @@
+<header class="navbar cb-index-nav navbar-static-top" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="index.html" class="navbar-brand">
+        <img ms-attr-src="{{showTag?'':'../'}}../static/images/logo.png" alt="logo" width="167" height="60"></a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" ms-class="no-hover:!showTag" role="navigation">
+      <ul class="nav navbar-nav navbar-left">
+        <li>
+          <a href="index.html">
+            首页
+            <br>
+            <span>HOME</span>
+          </a>
+        </li>
+        <li>
+          <a href="tourism.html" class="active">
+            游西藏
+            <br>
+            <span>TOURISM</span>
+          </a>
+        </li>
+        <li>
+          <a href="culture.html">
+            读西藏
+            <br>
+            <span>CULTURE</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            看西藏
+            <br>
+            <span>DISCOVER</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            骑行专区
+            <br>
+            <span>RIDE ZONE</span>
+          </a> <i class="icon-rz"></i>
+        </li>
+        <li>
+          <a href="activity/index.html">
+            活动&专题
+            <br>
+            <span>ACTIVITY&EVENT</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            天上社区
+            <br>
+            <span>COMMUNITY</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right hide">
+        <li>
+          <a href="register.html">注册</a>
+        </li>
+        <li>
+          <a href="#" data-toggle="login">登录</a>
+        </li>
+        <li>
+          <a href="#" class="fav">收藏本页</a>
+        </li>
+      </ul>
+      <!-- 登录后显示 -->
+      <ul class="nav navbar-nav navbar-right logged-on">
+        <li><span class="badge">5</span><i class="umark"></i><img src="../../static/images/head_big.jpg" width="40" height="40" alt=""></li>
+        <li>
+          <a href="#">奔跑中的猪</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div id="tags" ms-if="showTag">
+    <div class="tags-mark"></div>
+    <div class="container">
+      <ul class="list-unstyled">
+        <li>
+          <a href="#">拉萨 Lhasa</a>
+          <a href="#">阿里 Ali</a>
+          <a href="#">林芝 Nyingchi</a>
+          <a href="#">那曲 Naqu</a>
+          <a href="#">昌都 Qamdo</a>
+          <a href="#">山南 Lhoka Prefecture</a>
+          <a href="#">日喀则 Shigaze</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

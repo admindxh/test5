@@ -1,0 +1,88 @@
+.main{
+    font-family: Microsoft Yahei,微软雅黑;
+    width: 1000px !important;
+}
+.main .header {
+    width: 311px;
+    height: 31px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    background: url("../../icon/comment_reply.png") no-repeat;
+}
+.main a{
+    color: #333;
+}
+.main .active{
+    color: #cf1423;
+    border-left-color: #cf1423;
+}
+.navigation{
+    font-size: 16px;
+    position: relative;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #c9c9c9;
+}
+.navigation ul{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.navigation ul li{
+    float: left;
+    border-left: 1px solid #333;
+    line-height: normal;
+    padding-left: 10px;
+    margin-right: 65px;
+    cursor: pointer;
+}
+.navigation div{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.navigation a{
+    vertical-align: middle;
+    text-decoration: none;
+    margin-left: 8px;
+}
+.info-body{
+    margin-bottom: 30px;
+    position: relative;
+    border-bottom: 1px dashed #959595;
+}
+.info-body h5{
+    margin-top: 0;
+}
+.info-body h5 span{
+    color: #068223;
+}
+.info-body h5 span a{
+    color: inherit;
+    text-decoration: underline;
+}
+.info-body p{
+    font-size: 12px;
+    line-height: 100%;
+}
+.info-body .info-mesg{
+    width: 930px;
+    color: #aaa;
+    line-height: inherit;
+    word-wrap: break-word;
+}
+.info-body button{
+    padding: 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    bottom: 14px;
+    right: 12px;
+}
+.page{
+    margin-top: 50px !important;
+    margin-bottom: 0 !important;
+    background-color: transparent !important;
+}
+.footer{
+    margin-top: 81px !important;
+}

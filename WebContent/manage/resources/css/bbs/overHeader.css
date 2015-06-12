@@ -1,0 +1,117 @@
+.ml30{
+    margin-left: 30px;
+}
+.ml20{
+    margin-left: 20px;
+}
+/* == overHead == */
+.overhead{
+    margin-top: 60px;
+}
+.overhead .header{
+    background: url("../../icon/line.png") repeat-x center;
+}
+.overhead .header div{
+    width: 255px;
+    height: 31px;
+    float: left;
+    background: #fff url("../../icon/overhead.png") no-repeat;
+}
+.overhead .header a{
+    width: 100px;
+    height: 31px;
+    line-height: 31px;
+    text-align: right;
+    float: right;
+    background-color: #fff;
+}
+.overhead .content{
+    width: 840px;
+    margin-top: 15px;
+    font-size: 12px;
+}
+.overhead .content .media-heading{
+    margin-bottom: 15px;
+}
+.overhead .content .user-info{
+    margin-bottom: 24px;
+}
+.overhead .content .user-info li{
+    display: inline-block;
+}
+.overhead .content .user-info li img,
+.overhead .content .user-info li span{
+    vertical-align: middle;
+}
+.overhead .content .user-info li label{
+    vertical-align: middle;
+}
+.overhead .data{
+    color: #898989;
+}
+.overhead .content .user-info li span{
+    color: #068223;
+}
+.overhead .content .media{
+    border-bottom: 1px dashed #b3b3b3;
+}
+.overhead .content p{
+    width: 680px;
+    margin-bottom: 20px;
+}
+.zan{
+    width: 40px;
+    height: 33px;
+    cursor: pointer;
+    margin: 30px auto 10px;
+    background: url("../../icon/like.png") no-repeat;
+}
+.overhead .content .media-right{
+    position: relative;
+    left: 70px;
+}
+.overhead .media-mt18{
+    margin-top: 18px;
+}
+/* == overHead End == */
+
+/* == reply == */
+.reply{
+    margin-top: 60px;
+    font-size: 12px;
+}
+.reply .header {
+    width: 168px;
+    height: 29px;
+    background: url("../../icon/reply.png") no-repeat;
+}
+.reply .content{
+    margin-top: 15px;
+}
+.reply .content p {
+    width: 230px;
+    font-size: 14px;
+}
+.reply .by{
+    margin: 22px 0 7px 0;
+}
+.reply .from{
+    margin-bottom: 10px;
+}
+.reply .from span{
+    color: #068223;
+}
+.reply .media{
+    border-bottom: 1px dashed #b3b3b3;
+}
+.reply .zan{
+    margin-top: 15px;
+}
+.reply .media-right{
+    position: relative;
+    left: 15px;
+}
+.reply .mt16{
+    margin-top: 16px;
+}
+/* == reply End == */

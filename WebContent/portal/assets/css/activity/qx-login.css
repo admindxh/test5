@@ -1,0 +1,54 @@
+html{font-size: 62.5%;} /*10 ÷ 16 × 100% = 62.5%*/
+body{margin: 0;font-family: "Microsoft Yahei";font-size: 1.6rem;} /*1.4 × 10px = 14px */
+h1,h2,h3,h4,h5,h6{margin: 0;}
+ul{margin: 0;padding: 0;}
+p{margin: 0;}
+span{vertical-align: middle;}
+label{margin-bottom: 0;font-size: 1.6rem;font-weight: normal;vertical-align: middle;}
+input:focus{
+    border-color: #cf1423 !important;
+    outline: none;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(207,20,35,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(207,20,35,.6);
+}
+.sl-header{
+    background: #cf1423 url(../../icon/dw-icon.png) 0 center repeat;
+    text-align: center;
+    padding: 5px 0;
+}
+.sl-body{
+    padding: 30px 35px;
+    background-color: #fff;
+}
+.sl-field{
+    margin-bottom: 20px;
+}
+.sl-field input{
+    width: 100%;
+    padding: 3px 7px;
+    display: block;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+.sl-opt{
+    position: relative;
+    color: #7d7d7d;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.sl-opt a{
+    color: #cf1423;
+}
+.sl-btn{
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: #cf1423;
+    display: block;
+    border:none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.sl-btn:active{
+    background-color: #b00c19;
+}

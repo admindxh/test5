@@ -1,0 +1,34 @@
+/**
+* 功能：“Banner管理”样式设置
+* 日期：2014年11月25日
+* 作者：weiye
+**/
+
+/* 上传按钮 */
+.btn-uploadImg { width: 160px; }
+
+/* 缩略图 */
+.mud-thumbnail { margin-top: 20px;}
+.mud-thumbnail h3 { line-height: 50px;}
+.mud-thumbnail img { width: 100%; max-width: 1440px; height: auto; margin: 0 auto;}
+
+/* 按钮 */
+.mud-button { width: 100%; margin: 0 auto; text-align: center; margin-top: 40px;}
+
+/*******************************************************
+					  响应式设计
+*******************************************************/
+
+
+/* 页面水平像素小于829(iframe带滚动条，屏幕像素1024) */
+@media screen and (max-width: 829px) {
+    .mud-thumbnail img { max-width: 740px;}
+}
+/* 页面水平像素830-1068(iframe带滚动条，屏幕像素1025-1280) */
+@media screen and (min-width: 830px) and (max-width: 1068px) {
+
+}
+/* 页面水平像素830-1145(屏幕像素1281-1440) */
+@media screen and (min-width: 830px) and (max-width: 1219px)  {
+    .mud-thumbnail img { max-width: 960px;}
+}

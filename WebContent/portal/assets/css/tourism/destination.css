@@ -1,0 +1,389 @@
+/* == Content == */
+#content .container {
+	width: 1000px;
+	padding: 0;
+}
+#content .row {
+	margin: 0;
+}
+#content .col-xs-9 {
+	width: 730px;
+	padding: 0;
+}
+#content .col-xs-3 {
+	width: 250px;
+	padding: 0;
+	margin-left: 20px;
+}
+/* == introduction == */
+.introduction .header{
+	margin-bottom: 15px;
+	position: relative;
+}
+.introduction .header .title{
+	width: 238px;
+	height: 29px;
+	float: left;
+	background: url("../../icon/introduction.png") no-repeat;
+}
+.introduction .header .shar{
+	height: 29px;
+	float: right;
+}
+.introduction .header .shar a{
+	margin-left: 15px;
+}
+.introduction .header .shar a:first-child{
+	margin-left: 0;
+}
+.introduction .header .shar .weibo{
+	display: inline-block;
+	width: 29px;
+	height: 29px;
+	background: url("../../icon/share2.png") 0 0;
+}
+.introduction .header .shar .sina{
+	display: inline-block;
+	width: 29px;
+	height: 29px;
+	background: url("../../icon/share2.png") -46px 0;
+}
+.introduction .header .shar .qzone{
+	display: inline-block;
+	width: 29px;
+	height: 29px;
+	background: url("../../icon/share2.png") -91px 0;
+}
+.introduction .content{
+	padding-bottom: 40px;
+	line-height: 23px;
+}
+.introduction .content p{
+	margin-bottom: 0;
+}	/* == introduction End == */
+.introduction .content * {
+	word-wrap: break-word;
+	word-break: break-all;
+}
+/* == ticket-search == */
+.air-ticket {
+	width: 250px;
+	height: 330px;
+	background-color: #f1f1f1;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+.air-ticket div.colour-bar {
+	width: 100%;
+	height: 5px;
+	background: url("../../icon/colour_bar.png") repeat-x -5px 0;
+}
+.air-header {
+	width: inherit;
+	height: 60px;
+	line-height: 60px;
+	background-color: #cf1423;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+}
+.air-header>img {
+	margin-left: 10px;
+}
+.air-header h5 {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 13px;
+	color: #fff;
+}
+.air-ticket .air-header a {
+	float: right;
+	font-size: 12px;
+	color: #ffffff;
+	margin-right: 10px;
+}
+.air-header a span {
+	vertical-align: middle;
+}
+.air-header a img {
+	margin-left: 5px;
+}
+.air-content {
+	margin-top: 25px;
+}
+.air-content>div {
+	margin: 30px 0 0 20px;
+}
+.air-content label {
+	font-weight: 100;
+	margin-bottom: 0;
+}
+.air-content input {
+	width: 130px;
+	height: 25px;
+	line-height: 25px;
+	border: 0;
+	outline: none;
+	margin-left: 20px;
+	padding: 0 5px 0 20px;
+}
+.air-content .bargain-price {
+	margin-left: 20px;
+	font-size: 20px;
+	color: #cf1423;
+}
+.air-content .price-unit {
+	margin-left: 5px;
+	color: #d11622;
+	font-size: 12px;
+}
+.air-content button {
+	width: 190px;
+	height: 40px;
+	border: 0;
+	outline: none;
+	padding: 0;
+	background: url("../../icon/reservation.png") -38px 0 no-repeat;
+	display: block;
+	margin: 25px auto 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}	/* == ticket-search End == */
+.air-content button:active{
+	background:  url(../../icon/reservation_active.png) -38px 0 no-repeat;
+}
+
+/* == journey == */
+.journey{
+	margin-top: 60px;
+}
+.journey .header{
+	margin-bottom: 15px;
+	position: relative;
+	top: 0;
+	left: 0;
+	background: #fff url("../../icon/line.png") repeat-x 0 15px;
+}
+.journey .header .left{
+	width: 241px;
+	height: 29px;
+	background: #fff url("../../icon/journey.png") no-repeat;
+}
+.journey .header .right{
+	width: 90px;
+	height: 29px;
+	line-height: 29px;
+	text-align: right;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.journey a{
+	color: #333;
+}
+.journey a:hover{
+	color: #333;
+}
+.journey-img .img-left{
+	width: 420px;
+	height: 256px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.journey-img .img-left a,
+.journey-img .img-left a img{
+	width: inherit;
+	height: inherit;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+.img-left .info{
+	width: inherit;
+	height: 25px;
+	color: #fff;
+	font-size: 12px;
+	background: url("../../icon/mc.png") 0 0 repeat;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.info p{
+	max-width: 320px;
+	margin-left: 15px;
+	margin-bottom: 0;
+	line-height: 25px;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.info div{
+	font-size: 12px;
+	position: absolute;
+	bottom: 3px;
+	right: 20px;
+}
+.info div span{
+	margin-left: 5px;
+	vertical-align: middle;
+}
+.journey-img .img-right{
+	width: 300px;
+	height: 256px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.journey-img .img-right>a,
+.journey-img .img-right>a img{
+	width: inherit;
+	height: inherit;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+.img-right .info{
+	width: inherit;
+	height: 25px;
+	color: #fff;
+	font-size: 12px;
+	background: url("../../icon/mc.png") 0 0 repeat;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.mt10{
+	margin-top: 10px;
+}
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}	/* == journey End == */
+
+/* == hotel ==  */
+.hotel{
+	margin-top: 60px;
+}
+.hotel .header{
+	position: relative;
+	background: url("../../icon/line.png") repeat-x 0 center;
+}
+.hotel .header .left{
+	width: 160px;
+	height: 29px;
+	line-height: 29px;
+	font-size: 18px;
+	padding-left: 35px;
+	background: #fff url("../../icon/hotel_bg.png") no-repeat;
+}
+.hotel .header .right{
+	width: 80px;
+	height: 29px;
+	line-height: 29px;
+	text-align: right;
+	background-color: #fff;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.hotel .hotel-info .media-left{
+	width: 68px;
+	height: 68px;
+	outline: none;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	position: relative;
+}
+.hotel .hotel-info .media-left img:first-child{
+	width: inherit;
+	height: inherit;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+.hotel .line{
+	width: 100%;
+	height: 10px;
+	background: #fff url("../../icon/line.png") repeat-x 0 9px;
+}
+.hotel .hotel-info .message{
+	margin-top: 11px;
+	position: relative;
+}
+.hotel .hotel-info .loving{
+	width: 50px;
+	text-align: center;
+	font-size: 12px;
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+.hotel .hotel-info .loving label{
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.mt18{
+	margin-top: 18px;
+}
+.hotel .ctibet{
+	position: absolute;
+	right: 6px;
+	bottom: 0;
+}	/* == hotel End ==  */
+
+/* == food ==  */
+.food{
+	margin-top: 60px;
+}
+.food .header .left{
+	width: 150px;
+	height: 29px;
+	background: #fff url("../../icon/food_bg.png") no-repeat;
+}	/* == food End ==  */
+
+/* == Content End == */
+
+
+
+/* added by quansenx */
+.air-addr{
+	width: 310px;
+	height: 95px;
+	padding-left: 80px;
+	padding-top: 8px;
+	margin-bottom: 30px;
+	background: url(../../icon/d_addr.png) 0 0 no-repeat;
+}
+.air-addr p{
+	line-height: 26px;
+}
+.mer-info{
+	width: 115px;
+	height: 50px;
+	font-size: 12px;
+	color: #898989;
+	margin-top: 8px;
+	margin-bottom: 0;
+	overflow: hidden;
+}

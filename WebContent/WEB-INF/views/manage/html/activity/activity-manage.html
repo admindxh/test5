@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+	<title>活动&专题-活动&专题信息管理-活动管理</title>
+	<link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css" />
+	<link rel="stylesheet" href="../../resources/css/base.css" />
+	<link rel="stylesheet" href="../../resources/css/travel/formWeb.css" />
+	<link rel="stylesheet" href="../../resources/css/activity/activity-manage.css" />
+    <script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<!-- main { -->
+	<div class="main">
+		<form id="" name="">
+			<!-- 页面位置-->
+			<div class="location">
+				<label>您当前位置为:</label>
+				<span><a>活动&专题</a> -</span>
+				<span><a>活动&专题信息管理</a> -</span>
+				<span><a href="activ-info.html" target="_self">活动信息管理</a> -</span>
+				<span><a href="#" target="_self">活动管理</a></span>
+			</div>
+
+			<!-- 数据操作 -->
+			<div class="searchManage">
+				<button type="button" class="btn-sure">保存修改</button>
+			</div>
+
+			<!-- 活动简述 { -->
+			<div class="muduleManage details filament_solid_ddd">
+				<!-- 活动类型 { -->
+				<div class="contClassify bt-n">
+					<!--<h2 class="title">活动类型</h2>-->
+
+					<div class="formLine">
+						<label class="w-auto">活动名称:</label>
+						<span class="dataVal">
+							<a href="" target="_self">“东游西藏”将开始举行</a>
+						</span>
+						
+						<label>发布时间:</label>
+						<span class="dataVal">2014-12-02</span>
+						
+					</div>
+
+					<div class="formLine">
+						<label class="w-auto">开始时间:</label>
+						<span class="dataVal">2014-12-05</span>
+						
+						<label>结束时间:</label>
+						<span class="dataVal">2014-12-07</span>
+						
+						<label>查看量:</label>
+						<input id="" name="" type="text" value="5328">
+						<button type="button" class="btn-base">恢复默认</button>
+					</div>
+				</div>
+				<!-- } 活动简述 -->
+
+				<!-- 上传 { -->
+				<div class="contClassify">
+					<h2 class="title mb20">上传</h2>
+					
+					<div class="tableManage mb-0">
+						<!-- 数据列表 -->
+						<table border="0" cellpadding="0" cellspacing="0">
+							<thead>
+								<tr>
+									<th>序号</th>
+									<th>上传时间</th>
+									<th>名称</th>
+									<th>用户</th>
+									<th>状态</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>2014-12-02</td>
+									<td>我的西藏之旅</td>
+									<td>一只流浪的猪</td>
+									<td>待审核</td>
+									<td>
+										<a class="upload-lookup">查看</a>
+										<a class="delThisTr" code="1">删除</a>
+										<a>置顶</a>
+										<a>审核通过</a>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>2014-12-03</td>
+									<td>我以为的东游路</td>
+									<td>你好时间</td>
+									<td>已审核</td>
+									<td>
+										<a class="upload-edit">编辑</a>
+										<a class="delThisTr">删除</a>
+										<a>置顶</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<!-- 表格分页 -->
+						<div class="paging">
+							<button type="button" class="btn-base_min">首页</button>
+							<button type="button" class="btn-base_min">上一页</button>
+							<button type="button" class="btn-base_min">下一页</button>
+							<button type="button" class="btn-base_min">末页</button>
+						</div>
+					</div>
+				</div><!-- } 上传 -->
+				
+				<!-- 报名 { -->
+				<div class="contClassify">
+					<h2 class="title mb20">报名</h2>
+					
+					<div class="tableManage mb-0">
+						<!-- 数据列表 -->
+						<table border="0" cellpadding="0" cellspacing="0">
+							<thead>
+								<tr>
+									<th>序号</th>
+									<th>报名时间</th>
+									<th>用户</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>2014-12-02</td>
+									<td>一只流浪的猪</td>
+									<td>
+										<a class="lookupApplyInfo">查看报名资料</a>
+										<a class="delThisTr">删除</a>
+										<a>置顶</a>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>2014-12-03</td>
+									<td>你好时间</td>
+									<td>
+										<a class="lookupApplyInfo">查看报名资料</a>
+										<a class="delThisTr">删除</a>
+										<a>置顶</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<!-- 表格分页 -->
+						<div class="paging">
+							<button type="button" class="btn-base_min">首页</button>
+							<button type="button" class="btn-base_min">上一页</button>
+							<button type="button" class="btn-base_min">下一页</button>
+							<button type="button" class="btn-base_min">末页</button>
+						</div>
+					</div>
+				</div><!-- } 报名 -->
+
+				<!-- 投票 { -->
+				<div class="contClassify">
+					<h2 class="title">投票相关</h2>
+					
+					<div class="formLine">
+						<label class="w-auto">投票名称:</label>
+						<span class="dataVal large">您对最新的门户改版，满意度如何？</span>
+
+						<label class="ml15">共</label>
+						<input id="vote_total" name="" type="text" value="0">
+						<span class="dataVal">人参与</span>
+						<button id="vote_default" type="button" class="btn-base ml30">恢复系统数据</button>
+					</div>
+					
+					<!-- 非常满意 { -->
+					<div class="formLine vote">
+						<!-- 投票左容器 -->
+						<div class="vote-left">
+							<!-- 投票 -->
+							<span class="dataVal">非常满意，惊喜的惊天地泣鬼神</span>
+							<!-- 投票容器 -->
+							<div class="vote-box">
+								<!-- 投票色条 -->
+								<div class="vote-box-bar mbgc_0"></div>
+							</div>
+							<!-- 投票百分比结果 -->
+							<span class="vote-perc">0%</span>
+						</div>
+						
+						<!-- 投票右容器 -->
+						<div class="vote-right">
+							<input id="" name="" type="text" value="16584" class="w-100">
+							<label class="w-auto">票</label>
+						</div>
+					</div><!-- } 非常满意 -->
+					
+					<!-- 比较满意 { -->
+					<div class="formLine vote">
+						<!-- 投票左容器 -->
+						<div class="vote-left">
+							<!-- 投票 -->
+							<span class="dataVal">比较满意，还是有很大进步空间的</span>
+							<!-- 投票容器 -->
+							<div class="vote-box">
+								<!-- 投票色条 -->
+								<div class="vote-box-bar mbgc_2"></div>
+							</div>
+							<!-- 投票百分比结果 -->
+							<span class="vote-perc">0%</span>
+						</div>
+						
+						<!-- 投票右容器 -->
+						<div class="vote-right">
+							<input id="" name="" type="text" value="3101" class="w-100">
+							<label class="w-auto">票</label>
+						</div>
+					</div><!-- } 比较满意 -->
+					
+					<!-- 一般 { -->
+					<div class="formLine vote">
+						<!-- 投票左容器 -->
+						<div class="vote-left">
+							<!-- 投票 -->
+							<span class="dataVal">一般，感觉和过去比还是那样</span>
+							<!-- 投票容器 -->
+							<div class="vote-box">
+								<!-- 投票色条 -->
+								<div class="vote-box-bar mbgc_4"></div>
+							</div>
+							<!-- 投票百分比结果 -->
+							<span class="vote-perc">0%</span>
+						</div>
+						
+						<!-- 投票右容器 -->
+						<div class="vote-right">
+							<input id="" name="" type="text" value="1101" class="w-100">
+							<label class="w-auto">票</label>
+						</div>
+					</div><!-- } 一般 -->
+					
+					<!-- 差 { -->
+					<div class="formLine vote">
+						<!-- 投票左容器 -->
+						<div class="vote-left">
+							<!-- 投票 -->
+							<span class="dataVal">那个啥，我就不吐槽了，你懂的</span>
+							<!-- 投票容器 -->
+							<div class="vote-box">
+								<!-- 投票色条 -->
+								<div class="vote-box-bar mbgc_6"></div>
+							</div>
+							<!-- 投票百分比结果 -->
+							<span class="vote-perc">0%</span>
+						</div>
+						
+						<!-- 投票右容器 -->
+						<div class="vote-right">
+							<input id="" name="" type="text" value="372" class="w-100">
+							<label class="w-auto">票</label>
+						</div>
+					</div><!-- } 差 -->
+				</div><!-- } 投票 -->
+			</div>
+			<!-- } 模块管理 -->
+			
+			<!-- ------------------------------------------
+							弹出层部分内容
+			------------------------------------------- -->
+			<!-- 查看上传内容 { -->
+			<div class="lookupUploadCont popupLayer">
+				<!-- 关闭 -->
+				<div class="close-tras_black"></div>
+				
+				<!-- 图片 -->
+				<div class="imgBox">
+					<img src="../../resources/img/other/example_0.jpg" title="缩略图名称" alt="上传的图片">
+				</div>
+				
+				<!-- 操作区 -->
+				<div class="operInfoBar">
+				
+					<!-- 作品名称 -->
+					<div class="activName">我的西藏之旅</div>
+					
+					<!-- 用户名 -->
+					<div class="activAccount">
+						<label>by:</label>
+						<span>一只流浪的猪</span>
+					</div>
+					
+					<!-- 操作按钮 -->
+					<div class="activOperBtn">
+						<button type="button" class="btn-base">删除</button>
+						<button type="button" class="btn-base">审核通过</button>
+					</div>
+				</div>
+			</div><!-- } 查看上传内容 -->
+			
+			<!-- 编辑上传内容 { -->
+			<div class="popupLayer editUploadCont">
+				<!-- 关闭 -->
+				<div class="close-tras_black"></div>
+				
+				<!-- 图片 -->
+				<div class="imgBox">
+					<img src="../../resources/img/other/example_0.jpg" title="缩略图名称" alt="上传的图片">
+				</div>
+				
+				<!-- 操作区 -->
+				<div class="operInfoBar">
+				
+					<!-- 作品名称 -->
+					<div class="activName">我的西藏之旅</div>
+					
+					<!-- 用户名 -->
+					<div class="activAccount">
+						<label>by:</label>
+						<span>一只流浪的猪</span>
+					</div>
+					
+					<!-- 操作按钮 -->
+					<div class="activOperBtn">
+						<label>赞:</label>
+						<input id="" name="" type="text" value="166">
+						<button type="button" class="btn-base">恢复系统值</button>
+						<button type="button" class="btn-base">保存</button>
+						<button type="button" class="btn-base">删除此作品</button>
+					</div>
+				</div>
+			</div><!-- } 编辑上传内容 -->
+			
+			<!-- 报名资料 { -->
+			<div class="popupLayer applyInfo">
+				<!-- 关闭 -->
+				<div class="close-tras_black"></div>
+				
+				<!-- 内容 -->
+				<div class="infoCont">
+					
+					<!-- 报名资料 -->
+					<h1 class="title">报名资料</h1>
+
+					<div class="formLine mt10">
+						<label>用户名:</label>
+						<span class="dataVal">一只流浪的猪</span>
+					</div>
+
+					<div class="formLine">
+						<label>报名时间:</label>
+						<span class="dataVal">2014-12-2</span>
+					</div>
+
+					<div class="formLine">
+						<label>真实姓名:</label>
+						<span class="dataVal">张山</span>
+					</div>
+
+					<div class="formLine">
+						<label>身份证正面照:</label>
+						<span class="dataVal">123.jpg</span>
+						<a href="#">下载</a>
+					</div>
+
+					<div class="formLine">
+						<label>资产证明:</label>
+						<span class="dataVal">我的资产证明.docx</span>
+						<a href="#">下载</a>
+					</div>
+					
+					<!-- 关闭按钮 -->
+					<div class="formLine txt-ac mt10">
+						<button type="button" class="btn-sure close-layer">关闭</button>
+					</div>
+				</div>
+			</div><!-- } 报名资料 -->
+		</form>
+	</div>
+	<!-- } main -->
+	
+	<!-- JS引用部分 -->
+	<script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+	<script src="../../resources/js/base.js" type="text/javascript"></script>
+	<script src="../../resources/js/activity/activity-manage.js" type="text/javascript"></script>
+	<!-- 投票控制 -->
+	<script src="../../resources/js/activity/vote-ctrl.js" type="text/javascript"></script>
+
+	<!-- 利用空闲时间预加载指定页面 -->
+	<link rel="prefetch">
+	<!-- IE10+ -->
+	<link rel="next">
+	<!-- Firefox -->
+	<link rel="prerender">
+	<!-- Chrome -->
+</body>
+
+</html>

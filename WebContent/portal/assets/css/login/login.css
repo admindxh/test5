@@ -1,0 +1,106 @@
+body{
+	font-family: 'Microsoft Yahei';
+	min-width: 1350px;
+}
+.container {
+	position: relative;
+  width: 1200px;
+  max-width: none !important;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.full-bg{
+	position: relative;
+	width: 100%;
+	height: 800px;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.single-login{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-top: -190px;
+	margin-left: -175px;
+	width: 380px;
+	height: 350px;
+	border-radius: 10px;
+}
+.sl-body{
+	padding: 30px 35px;
+	background-color: #fff;
+}
+.sl-header{
+	height: 50px;
+	background: url(../../icon/login_header.png) 0 0 no-repeat;
+}
+.sl-field{
+	margin-bottom: 20px;
+}
+.sl-field input{
+	width: 100%;
+	padding: 3px 7px;
+	display: block;
+	border: 1px solid #aaaaaa;
+	border-radius: 5px;
+}
+.sl-field .v-input{
+	width: 210px;
+	float: left;
+}
+.v-img{
+	width: 80px;
+	height: 28px;
+	border: 1px solid #ededed;
+	float: right;
+}
+
+.sl-opt{
+	position: relative;
+	color: #7d7d7d;
+	font-size: 12px;
+	margin-bottom: 38px;
+}
+.sl-opt label{
+	font-weight: 500;
+	cursor: pointer;
+	margin-right: 10px;
+}
+.sl-opt input{
+	margin-top: -1px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.sl-opt a{
+	color: #cf1423;
+}
+.now-reg{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.sl-btn{
+	width: 100%;
+	height: 40px;
+	color: white;
+	background-color: #cf1423;
+	display: block;
+	border:none;
+	font-size: 18px;
+	cursor: pointer;
+}
+.sl-btn:active{
+	background-color: #b00c19;
+}
+
+.footer{
+	margin-top: 0!important;
+}
+.footer-head{
+	background: url(../../icon/footer_line.png) 0 0 repeat;
+}

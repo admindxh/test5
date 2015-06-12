@@ -1,0 +1,104 @@
+/* == banner == */
+#banner {
+    height: 360px !important;
+}
+
+#banner .banner {
+    height: inherit;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#banner .container{
+    height: inherit;
+}
+.banner-left {
+    position: absolute;
+    left: 30px !important;
+    bottom: 30px !important;
+}
+
+.banner-left .title h1, .banner-left .title h3 {
+    width: 300px;
+    color: #fff;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.banner-left .title p {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.banner-left button {
+    min-width: 40px;
+    margin-right: 15px;
+    border: 2px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    padding: 5px 15px;
+}
+/* 按钮已点击 */
+.banner-left .but-active{
+    border: none;
+    background-color: #b00c19;
+}
+.ml20 {
+    margin-left: 20px;
+}
+
+/* banner-right */
+.banner-right {
+    position: absolute;
+    top: 40px !important;
+    right: 0 !important;
+}
+
+.banner-right .secondary-menu {
+    width: 92px;
+    height: 320px;
+}
+
+.secondary-menu ul {
+    list-style-type: none;
+}
+
+.secondary-menu ul li{
+    width: inherit;
+    height: 80px;
+    cursor: pointer;
+    background-image: url(../../icon/des_zonghe.png);
+}
+/* 景点 */
+.location-hover{
+    background-position: -188px 0;
+}
+.location-hover:hover{
+    background-position: -282px 0;
+}
+/* 图片集 */
+.bookmark-hover{
+    background-position: -376px 0;
+}
+.bookmark-hover:hover{
+    background-position: -470px 0;
+}
+/* 攻略游记 */
+.car-hover{
+    background-position: -564px 0;
+}
+.car-hover:hover{
+    background-position: -658px 0;
+}
+/* 商户 */
+.bicyle-hover:hover{
+    background-position: -94px 0;
+}
+/* == banner End == */

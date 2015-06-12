@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.rimi.ctibet.domain.Equipment" table="equipment">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" length="40" />
+            <generator class="native" />
+        </id>
+        <property name="code">
+            <column name="code"/>
+        </property>
+        
+        <property name="avaliable" column="avaliable" type="java.lang.Integer">
+        </property>
+        
+        <property name="name" column="name" type="java.lang.String"></property>
+        <property name="summary" column="summary" type="java.lang.String"></property>
+        <property name="price" column="price" type="java.lang.String"></property>
+        <property name="count" column="count" type="java.lang.Integer"></property>
+        
+        <property name="content" column="content" type="java.lang.String"></property>
+        
+        <property name="remark" column="remark" type="java.lang.String"></property>
+        <property name="proType" column="proType" type="java.lang.String"></property>
+        <property name="recommoned" column="recommend" type="java.lang.String"></property>
+        <property name="payType" column="payType" type="java.lang.String"></property>
+        <property name="payurl" column="payurl" type="java.lang.String"></property>
+        <property name="imgmuticode" column="imgmuticode" type="java.lang.String"></property>
+        <property name="sumaryimg" column="sumaryimg" type="java.lang.String"></property>
+        <property name="smallimg" column="smallimg" type="java.lang.String"></property>
+        <property name="url" column="url" type="java.lang.String"></property>
+        <property name="createtime">
+            <column name="createtime"/>
+        </property>
+       
+       
+    </class>
+</hibernate-mapping>

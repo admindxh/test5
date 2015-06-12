@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.rimi.ctibet.domain.GroupTravel" table="GroupTravel">
+		<id name="id" type="java.lang.Integer">
+			<column name="id" length="40" />
+			<generator class="native" />
+		</id>
+		<property name="code">
+			<column name="code" />
+		</property>
+		<property name="name">
+			<column name="name" />
+		</property>
+		<property name="isRecommend">
+			<column name="isRecommend" />
+		</property>
+		<property name="img">
+			<column name="img" />
+		</property>
+		<property name="detail">
+			<column name="detail" />
+		</property>
+		<property name="createTime">
+			<column name="createTime" />
+		</property>
+		<property name="avaliable">
+			<column name="avaliable" />
+		</property>
+		<property name="ctripUrl">
+			<column name="ctripUrl" />
+		</property>
+		<property name="url">
+			<column name="url" />
+		</property>
+		<property name="keyWord">
+			<column name="keyWord" />
+		</property>
+		<property name="price">
+			<column name="price" />
+		</property>
+		<property name="praiseNum">
+			<column name="praiseNum" />
+		</property>
+		<property name="viewNum">
+			<column name="viewNum" />
+		</property>
+		<property name="collectNum">
+			<column name="collectNum" />
+		</property>
+		<property name="tdkTitle"       column="tdkTitle"/>
+      	<property name="tdkDescription" column="tdkDescription"/>
+        <property name="tdkKeywords"    column="tdkKeywords"/>
+	</class>
+</hibernate-mapping>

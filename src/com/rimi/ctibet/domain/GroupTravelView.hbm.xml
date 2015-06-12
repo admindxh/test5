@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.rimi.ctibet.domain.GroupTravelView" table="GroupTravelView">
+		<id name="id" type="java.lang.Integer">
+			<column name="id" length="40" />
+			<generator class="native" />
+		</id>
+		
+		<property name="viewCode">
+			<column name="viewCode" />
+		</property>
+		<property name="groupTravelCode">
+			<column name="groupTravelCode" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

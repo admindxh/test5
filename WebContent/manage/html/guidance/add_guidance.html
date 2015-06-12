@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../../resources/css/guidance/add_guidance.css"/>
+    <script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="newDredge">
+    <div class="header">
+        <p class="currentLocation">您当前的位置为：<span>游客疏导</span></p>
+    </div>
+    <div class="content">
+        <div class="groomingType">
+            <label>请选择疏导类型：</label>
+            <select>
+                <option value="">请选择</option>
+                <option value="message">推送消息</option>
+                <option value="task">任务</option>
+            </select>
+        </div>
+        <div class="basicInfo">
+            <p>请选择疏导对象</p>
+            <div>
+                <label>对象类型：</label>
+                <select>
+                    <option value="">全部</option>
+                    <option value="">游客</option>
+                    <option value="">司机</option>
+                    <option value="">导游</option>
+                    <option value="">重点追踪对象</option>
+                </select>
+                <label class="regional">所属区域：</label>
+                <select>
+                    <option value="">所有区域</option>
+                    <option value="">拉萨地区</option>
+                    <option value="">山南地区</option>
+                    <option value="">日喀则地区</option>
+                    <option value="">林芝地区</option>
+                    <option value="">昌都地区</option>
+                    <option value="">阿里地区</option>
+                    <option value="">那曲地区</option>
+                </select>
+                <select>
+                    <option value="">全部景点</option>
+                    <option value="">噶尔县</option>
+                    <option value="">扎达县</option>
+                    <option value="">普兰县</option>
+                    <option value="">日土县</option>
+                    <option value="">革吉县</option>
+                    <option value="">改则县</option>
+                    <option value="">措勤县</option>
+                </select>
+            </div>
+        </div>
+        <div class="basicInfo listInfo">
+            <p>请填写疏导内容</p>
+            <div class="filter">
+                <div class="menu">
+                    <div id="js_meg" class="meg">推送消息</div>
+                    <div id="js_tag" class="tag">任务</div>
+                </div>
+                <div class="cont">
+                    <div id="meg">
+                        <label>消息详情：</label>
+                        <textarea cols="70" rows="5"></textarea>
+                        <button>保存</button>
+                    </div>
+                    <div id="tag">
+                        <div class="time">
+                            <label>任务截止时间：</label>
+                            <input type="text" value="2014-11-12"/>
+                            <input type="text" value="19:00"/>
+                        </div>
+                        <div class="destination">
+                            <label>任务目的地：</label>
+                            <select>
+                                <option value="">所有区域</option>
+                                <option value="">拉萨地区</option>
+                                <option value="">山南地区</option>
+                                <option value="">日喀则地区</option>
+                                <option value="">林芝地区</option>
+                                <option value="">昌都地区</option>
+                                <option value="">阿里地区</option>
+                                <option value="">那曲地区</option>
+                            </select>
+                            <select>
+                                <option value="">全部景点</option>
+                                <option value="">噶尔县</option>
+                                <option value="">扎达县</option>
+                                <option value="">普兰县</option>
+                                <option value="">日土县</option>
+                                <option value="">革吉县</option>
+                                <option value="">改则县</option>
+                                <option value="">措勤县</option>
+                            </select>
+                        </div>
+                        <div class="integral">
+                            <label>积分奖励：</label>
+                            <input type="text" value="20"/>
+                        </div>
+                        <button>保存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../resources/js/guidance/add_guidance.js"></script>
+</body>
+</html>

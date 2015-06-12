@@ -1,0 +1,56 @@
+/**
+* 功能：角色权限添加与修改样式设置
+* 日期：2014年12月28日
+* 作者：weiye
+**/
+
+/******** 通用设置 ********/
+
+/* inline-block */
+.auth_item, .auth_item label { display: inline-block; }
+
+/* 垂直居中 */
+.auth_item label { vertical-align: middle; }
+
+/******** 元素设置 ********/
+
+/* 角色权限设置表格 */
+.role-authority-set { width: 100%; border-collapse: collapse; border-color: #eaeaea;}
+.role-authority-set td { min-width: 160px; padding: 6px;}
+
+/* 自定义复选框 */
+.custom_ckb.none { background-position: -240px -78px; }
+.custom_ckb.part { background-position: -265px  -78px; }
+.custom_ckb.checked { background-position: -290px  -78px; }
+.role-authority-set td input[type='checkbox'] { display: none; }
+
+/* 复选项按钮组容器按钮 */
+.auth_item { width: 200px; height: auto; padding: 6px; white-space: nowrap; cursor: pointer; }
+.auth_item.w-auto { width: auto;}
+
+/* 复选项标签设置 */
+.auth_item label { width: 174px; line-height: 140%; font-size: 16px; color: #666; white-space: normal; cursor: pointer; }
+.auth_item label:hover { color: #412e2e;}
+.auth_item label.w-auto { width: auto;}
+
+/* 模块分割线 */
+.split-line { border-bottom-color: #888; }
+
+/****  响应式设计 ****/
+
+/* 页面水平像素小于839(iframe带滚动条，屏幕像素1024) */
+@media screen and (max-width: 839px) {
+    .role-authority-set td {width: 96px;}
+    .auth_item {width: 168px;}
+    .auth_item label {width: 138px; font-size: 12px;}
+}
+/* 页面水平像素840-1095(iframe带滚动条，屏幕像素1025-1280) */
+@media screen and (min-width: 840px) and (max-width: 1095px) {
+    .role-authority-set td {width: 96px;}
+    .auth_item {width: 178px;}
+    .auth_item label {width: 148px; font-size: 14px;}
+}
+/* 页面水平像素1096-1219(屏幕像素1281-1440) */
+@media screen and (min-width: 1096px) and (max-width: 1219px) {
+    .auth_item label {font-size: 14px;}
+}

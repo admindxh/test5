@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.rimi.ctibet.domain.Role" table="role">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" length="40" />
+            <generator class="native" />
+        </id>
+         <property name="code">
+            <column name="code"/>
+        </property>
+        <property name="name">
+            <column name="rolename"/>
+        </property>
+        <property name="summary">
+            <column name="summary"/>
+        </property>
+        <property name="remark">
+            <column name="remark"/>
+        </property>
+        <property name="access">
+            <column name="access"/>
+        </property>
+        <property name="accessCode">
+            <column name="accessCode"/>
+        </property>
+        <property name="createUserCode">
+            <column name="createUserCode"/>
+        </property>
+        <property name="createTime">
+            <column name="createTime"/>
+        </property>
+        <property name="lastEditTime">
+            <column name="lastEditTime"/>
+        </property>
+        <property name="available">
+            <column name="avaliable"/>
+        </property>
+    </class>
+</hibernate-mapping>

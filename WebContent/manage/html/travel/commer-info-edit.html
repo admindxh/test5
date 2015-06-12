@@ -1,0 +1,422 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <title>游西藏-商户管理-商户信息管理-商户修改</title>
+    <link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css"/>
+    <link rel="stylesheet" href="../../resources/css/base.css"/>
+    <link rel="stylesheet" href="../../resources/css/travel/formWeb.css"/>
+    <script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+    <script src="../../resources/plugin/ckeditor/ckeditor.js" type="text/javascript"></script>
+    <style>
+        /* 闭合浮动 */
+        .floatfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+<!-- main { -->
+<div class="main">
+    <!-- 页面位置-->
+    <div class="location">
+        <label>您当前位置为:</label>
+        <span><a>游西藏</a> -</span>
+        <span><a>商户管理</a> -</span>
+        <span><a href="commercial-info-manage.html" target="_self">商户信息管理</a> -</span>
+        <span><a href="#" target="_self">商户修改</a></span>
+    </div>
+
+    <!-- 模块管理 { -->
+    <form>
+        <!-- 基本信息 { -->
+        <div>
+            <h2 class="mt40">商户基本信息:</h2>
+
+            <div class="filament_solid_ddd ov-au mt20">
+
+                <div class="formLine mt10 ">
+                    <label>所属目的地:</label>
+
+                    <div id="dest" class="select-base">
+                        <input id="" name="" type="hidden">
+                        <i class="w-200">请选择区域</i>
+                        <dl>
+                            <dt>拉萨地区</dt>
+                            <dt>阿里地区</dt>
+                            <dt>灵芝地区</dt>
+                            <dt>那曲地区</dt>
+                            <dt>昌都地区</dt>
+                            <dt>山南地区</dt>
+                            <dt>日喀则地区</dt>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="formLine f15 floatfix">
+                    <label class="va_m">相关景点:</label>
+
+                    <div class="scenic filament_solid_ddd disp-ib floatfix p10 va_m">
+                        <div class="float_l">
+                            <label class="w-auto">拉萨地区</label>
+                        </div>
+                        <div class="float_l ml20">
+                            <input id="lasa" type="checkbox"/><label class="w-auto" for="lasa">拉萨市</label>
+                        </div>
+                        <div class="ml20 float_l">
+                            <input type="checkbox" id="bdla"/><label for="bdla" class="w-auto">布达拉宫</label>
+                        </div>
+                        <div class="ml20 float_l">
+                            <input type="checkbox" id="nmc"/><label for="nmc" class="w-auto">纳木错</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formLine mt10 ">
+                    <label>是否官方推荐:</label>
+
+                    <div id="isOfficial" class="select-base">
+                        <input id="" name="" type="hidden">
+                        <i class="w-200">非官方推荐</i>
+                        <dl>
+                            <dt>官方推荐</dt>
+                            <dt>非官方推荐</dt>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="formLine mt10 ">
+                    <label>商户类型:</label>
+
+                    <div id="commercialType" class="select-base">
+                        <input id="" name="" type="hidden">
+                        <i class="w-200">酒店</i>
+                        <dl>
+                            <dt>酒店</dt>
+                            <dt>美食</dt>
+                            <dt>娱乐</dt>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="formLine mt10">
+                    <label>商户名称:</label>
+                    <input id="commercialName" type="text" class="w-260" maxlength="30" />
+                </div>
+
+                <div class="formLine mt10">
+                    <label>商户地址:</label>
+
+                    <div id="province" class="select-base">
+                        <input id="" name="" type="hidden">
+                        <i class="w-140">请选择省</i>
+                        <dl>
+                            <dt>西藏自治区</dt>
+                        </dl>
+                    </div>
+                    <div id="district" class="select-base">
+                        <input id="" name="" type="hidden">
+                        <i class="w-140">请选择区域</i>
+                        <dl>
+                            <dt>拉萨地区</dt>
+                            <dt>阿里地区</dt>
+                            <dt>灵芝地区</dt>
+                            <dt>那曲地区</dt>
+                            <dt>昌都地区</dt>
+                            <dt>山南地区</dt>
+                            <dt>日喀则地区</dt>
+                        </dl>
+                    </div>
+                    <input id="detailAddr" type="text" class="w-260" placeholder="请输入详细地址" maxlength="50" />
+                </div>
+                <div class="formLine mt10">
+                    <label>参考价格:</label>
+                    <input id="price" type="text" class="w-260" />
+                    <span class="f13">提示：如果您选择关联携程，系统将自动获取携程的参考价格</span>
+                </div>
+
+                <div class="formLine">
+                    <label class="pos_r_t5">商户介绍:</label>
+						<span class="dataVal va_t">
+							<textarea id="editor1" name="editor1" cols="80" rows="10" class="ckeditor"
+                                      style="display:inline-block">
+                                趣闻 1947 年，时装设计师 Elsa Schiaparelli 将“艳粉色”引入西方时尚圈。 桃色可以营造亲密氛围，减少攻击性和敌意。 由于听说粉色有一种镇定效果，有些球队会把客队的休息室漆成粉色。 对于粉色的研究发现，男性举重运动员在粉色房间内似乎感到力不从心，而女性举重运动员面对这种颜色反而会有变强的倾向。 糕点从粉色盒子里取出或盛在粉色盘子里时，尝起来会更美味（这种情况仅适用于甜点），因为粉色令我们渴望糖份。
+                            </textarea>
+						</span>
+                </div>
+                <div class="formLine mt10">
+                    <label>收藏数:</label>
+                    <input type="text" class="w-100 number"/>
+                    <button class="btn-base">恢复默认</button>
+                    <label class="ml100 w-auto">查看数:</label>
+                    <input type="text" class="w-100 number"/>
+                    <button class="btn-base">恢复默认</button>
+                </div>
+
+                <div class="formLine mt20">
+                    <div>
+                        <label>商户图片1:</label>
+                        <button type="button" class="btn-base btn-uploadImg">点击上传图片</button>
+                        <span class="txt-suggest">推荐尺寸——1000*200，支持jpg/png格式</span>
+                    </div>
+                    <div class="mt20 mb20">
+                        <label class="va_t">缩略图:</label>
+                        <img class="va_t" src="../../resources/img/ele/loadImg_default_c.jpg" alt="" />
+                    </div>
+                    <div style="border-bottom: 1px solid #ddd" class="ml30 mr30"></div>
+                </div>
+
+                <div class="formLine mt20">
+                    <div>
+                        <label>商户图片2:</label>
+                        <button type="button" class="btn-base btn-uploadImg">点击上传图片</button>
+                        <span class="txt-suggest">推荐尺寸——1000*200，支持jpg/png格式</span>
+                    </div>
+                    <div class="mt20 mb20">
+                        <label class="va_t">缩略图:</label>
+                        <img class="va_t" src="../../resources/img/ele/loadImg_default_c.jpg" alt="" />
+                    </div>
+                    <div style="border-bottom: 1px solid #ddd" class="ml30 mr30"></div>
+                </div>
+
+                <div class="formLine mt20">
+                    <div>
+                        <label>商户图片3:</label>
+                        <button type="button" class="btn-base btn-uploadImg">点击上传图片</button>
+                        <span class="txt-suggest">推荐尺寸——1000*200，支持jpg/png格式</span>
+                    </div>
+                    <div class="mt20 mb20">
+                        <label class="va_t">缩略图:</label>
+                        <img class="va_t" src="../../resources/img/ele/loadImg_default_c.jpg" alt="" />
+                    </div>
+                    <div style="border-bottom: 1px solid #ddd" class="ml30 mr30"></div>
+                </div>
+
+                <div class="formLine mt20">
+                    <div>
+                        <label>商户图片4:</label>
+                        <button type="button" class="btn-base btn-uploadImg">点击上传图片</button>
+                        <span class="txt-suggest">推荐尺寸——1000*200，支持jpg/png格式</span>
+                    </div>
+                    <div class="mt20 mb20">
+                        <label class="va_t">缩略图:</label>
+                        <img class="va_t" src="../../resources/img/ele/loadImg_default_c.jpg" alt="" />
+                    </div>
+                    <div style="border-bottom: 1px solid #ddd" class="ml30 mr30"></div>
+                </div>
+
+                <div class="formLine mt20">
+                    <div>
+                        <label>商户图片5:</label>
+                        <button type="button" class="btn-base btn-uploadImg">点击上传图片</button>
+                        <span class="txt-suggest">推荐尺寸——1000*200，支持jpg/png格式</span>
+                    </div>
+                    <div class="mt20 mb20">
+                        <label class="va_t">缩略图:</label>
+                        <img class="va_t" src="../../resources/img/ele/loadImg_default_c.jpg" alt="" />
+                    </div>
+                    <div style="border-bottom: 1px solid #ddd" class="ml30 mr30"></div>
+                </div>
+
+                <div class="formLine mt20">
+                    <div>
+                        <label>商户图片6:</label>
+                        <button type="button" class="btn-base btn-uploadImg">点击上传图片</button>
+                        <span class="txt-suggest">推荐尺寸——1000*200，支持jpg/png格式</span>
+                    </div>
+                    <div class="mt20 mb20">
+                        <label class="va_t">缩略图:</label>
+                        <img class="va_t" src="../../resources/img/ele/loadImg_default_c.jpg" alt="" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- } 基本信息 -->
+
+        <!-- 商户预订信息 { -->
+        <div>
+            <h2 class="mt100">商户预订信息:</h2>
+
+            <div class="filament_solid_ddd ov-au mt20">
+                <div class="formLine">
+                    <input class="ml50" id="xcjd" type="radio"/>
+                    <label for="xcjd" class="w-auto">关联携程对应酒店信息</label>
+                </div>
+
+                <div class="formLine">
+                    <label>相关链接:</label>
+                    <input id="relLink" type="text" class="w-260"/>
+                </div>
+            </div>
+        </div>
+        <!-- } 商户预订信息 -->
+
+        <!-- SEO信息 { -->
+        <div>
+            <h2 class="mt100">页面SEO信息:</h2>
+
+            <div class="filament_solid_ddd ov-au mt20">
+                <div class="formLine mt20 mb20">
+                    <label class="w-160">&lt;Keywords&gt;标签:</label>
+                    <input type="text" maxlength="20" class="w-320 seoInfo">
+                </div>
+            </div>
+        </div>
+        <!-- } SEO信息 -->
+
+        <div class="txt-ac mt40">
+            <button id="addCommerInfo" class="btn-sure" type="button">添加</button>
+            <button class="btn-sure ml100" type="button">重置</button>
+        </div>
+    </form>
+    <!-- } 模块管理 -->
+</div>
+<!-- } main -->
+
+<!-- JS引用部分 -->
+<script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+<script src="../../resources/js/base.js" type="text/javascript"></script>
+<script src="../../resources/plugin/jquery.rimi.validation.js"></script>
+<script src="../../resources/js/dataValidation.js"></script>
+<script type="text/javascript">
+    //=============================================
+    // 				 数据有效性验证
+    //=============================================
+
+    /* 自定义下拉菜单消除验证 */
+    $("#dest dt, #province dt, #district dt").click(function() {
+        var $this = $(this),
+                thisParent = $this.parents(".select-base");
+        thisParent.next(".errMesg").remove();
+    });
+
+    /* 商户名称 */
+    $("#commercialName").blur(function() {
+        var this_val = $(this).val();
+        valid_txtBox_create(this, $.VLDTOR.IsEnCnNum(this_val) && inputRange(this,2,30), "商户名称只能为中英文和数字，且长度在2-30", "right")
+    });
+
+    /* 参考价格 */
+    $("#price").blur(function() {
+        var this_val = $(this).val();
+        valid_txtBox_create(this, $.VLDTOR.IsCnNum(this_val) || this_val == "", "参考价格只能为空或正整数、中文", "top");
+    });
+
+    /* 相关链接 */
+    $("#relLink").blur(function() {
+        var this_val = $(this).val();
+        valid_txtBox_create(this, $.VLDTOR.IsWebUrl(this_val) || this_val == "", "只能为空或字母、数字及常用符号", "right");
+    });
+
+    /* 详细地址 */
+    $("#detailAddr").blur(function() {
+        var this_val = $(this).val();
+        valid_txtBox_create(this, ($.VLDTOR.IsEnCnNum(this_val) && inputRange(this,2,50)) || this_val == "", "只能为空或中英文、数字，且长度在2-50", "right");
+    });
+
+    /* 相关景点点击验证 */
+    $(document).on("click", ".scenic input[type='checkbox']", function() {
+        // 相关景点遍历设置值
+        var inputChecked_len = $(".scenic input[type='checkbox']:checked").length > 0;
+        if(inputChecked_len){
+            $(".scenic:last").next(".errMesg").remove();
+        }else{
+            creatErrMesg(".scenic:last", "请选择一个或多个相关景点", "right");
+        }
+    });
+
+    /* SEO验证 */
+    $(".seoInfo").blur(function () {
+        var $this = $(this),
+                thisVal = $this.val();
+        valid_txtBox_create(this, ($.VLDTOR.IsEnCnNum_comma(thisVal) && inputRange(this,2,20)) || thisVal == "",'只能为空或中英文、数字，且长度在2-20','right');
+    });
+
+    /* 数字验证 */
+    $(".number").blur(function () {
+        var $this = $(this),
+                thisVal = $this.val();
+        valid_txtBox_create(this, $.VLDTOR.IsNum(thisVal) || thisVal == "","只能为空或者正整数","top");
+    });
+    /* 添加按钮验证 */
+    $("#addCommerInfo").click(function() {
+        // 失焦验证
+        $("#commercialName").blur();
+        $("#price").blur();
+        $("#relLink").blur();
+        $("#detailAddr").blur();
+        $(".seoInfo").blur();
+        $(".number").blur();
+
+        // 自定义下拉框验证
+        var dest = $("#dest"),
+                dest_substr = dest.find("i").text().substr(0,3),
+                provi = $("#province"),
+                provi_substr = provi.find("i").text().substr(0,3),
+                distr = $("#district"),
+                distr_substr = distr.find("i").text().substr(0,3);
+
+        // 所属目的地
+        if(dest_substr == "请选择") {
+            creatErrMesg(dest, "请选择目的地区域", "right");
+        } else {
+            dest.next('span.errMesg').remove();
+        }
+
+        // 省选择
+        if($("#detailAddr").val()){
+            if(provi_substr == "请选择") {
+                creatErrMesg(provi, "请选择省", "top");
+            } else {
+                provi.next('span.errMesg').remove();
+            }
+
+            // 区域选择
+            if(distr_substr == "请选择") {
+                creatErrMesg(distr, "请选择区域", "top");
+            } else {
+                distr.next('span.errMesg').remove();
+            }
+        }else{
+            provi.next('span.errMesg').remove();
+            distr.next('span.errMesg').remove();
+
+        }
+
+
+        // 相关景点遍历设置值
+        var inputChecked_len = $(".scenic input[type='checkbox']:checked").length > 0;
+        if(inputChecked_len){
+            $(".scenic:last").next(".errMesg").remove();
+        }else{
+            creatErrMesg(".scenic:last", "请选择一个或多个相关景点", "right");
+        }
+        var regSpan_len = $("span.errMesg").length > 0;
+        // 验证结果操作
+        if(regSpan_len) {
+            msgBox("输入的内容有误，请检查！", "erro");
+        } else {
+            // Do Something
+            msgBox("添加成功！", "pass");
+        }
+    });
+
+</script>
+<!-- 利用空闲时间预加载指定页面 -->
+<link rel="prefetch">
+<!-- IE10+ -->
+<link rel="next">
+<!-- Firefox -->
+<link rel="prerender">
+<!-- Chrome -->
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <title>系统设置-会员管理</title>
+    <link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css" />
+    <link rel="stylesheet" href="../../resources/css/base.css" />
+	<script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- main { -->
+    <div class="main">
+		<!-- 页面位置-->
+		<div class="location">
+			<label>您当前位置为:</label>
+    		<span><a>系统设置</a> -</span>
+    		<span><a>会员管理</a></span>
+		</div>
+		
+		<!-- 数据操作 -->
+		<div class="searchManage">
+			<button type="button" class="btn-sure">批量导出</button>
+			<a href="member-add.html" target="_self" class="btn-anchor">新建会员</a>
+		</div>
+
+		<!-- 模块管理 { -->
+		<div class="tableManage pos-rela">
+			<!-- 搜索查询栏 { -->
+			<div class="searchTools">
+				
+				<!-- 邮箱/手机/用户名 -->
+				<input type="text" placeholder="邮箱/手机/用户名">
+				
+				<!-- 查询 -->
+				<button type="button" class="btn-search"><!--查询--></button>
+				
+				<!-- 快捷查询 { -->
+				<div class="shortcutSearch">
+					<!-- 攻略类型 -->
+					<div class="select-base ml-20">
+						<input type="hidden" value="" />
+						<i class="w-110">账号状态</i>
+						<dl>
+							<dt name="">全部状态</dt>
+							<dt name="">已停用</dt>
+							<dt name="">已启用</dt>
+						</dl>
+					</div>
+
+					<div class="select-base ml-10">
+						<input type="hidden" value="" />
+						<i class="w-110">账号类型</i>
+						<dl>
+							<dt name="">全部类型</dt>
+							<dt name="">用户注册</dt>
+							<dt name="">管理员创建</dt>
+						</dl>
+					</div>
+					
+					<button type="button" class="btn-base ml10">删除</button>
+
+				</div><!-- } 快捷查询 -->
+			</div><!-- } 搜索查询栏 -->
+			
+			<!-- 数据列表 -->
+			<table border="0" cellpadding="0" cellspacing="0" class="dataTable">
+				<thead>
+					<tr>
+						<th class="w80">
+							<input type="checkbox" name="dataCheck" class="allCheck">
+							全选
+						</th>
+						<th>注册时间</th>
+						<th>昵称</th>
+						<th>账号类型</th>
+						<th>邮箱</th>
+						<th>手机号</th>
+						<th>状态</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<input type="checkbox" name="dataCheck" class="dataCheck">
+						</td>
+						<td>2014-12-24</td>
+						<td><a href="#">李四</a></td>
+						<td>管理员创建</td>
+						<td><a href="#">rimi123@rimionline.com</a></td>
+						<td><a href="#">18628109681</a></td>
+						<td>
+							<a class="disable">已启用</a>
+							<a>停用</a>
+						</td>
+						<td>
+							<a href="member-edit.html" class="modi">修改</a>
+							<a class="dele">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" name="dataCheck" class="dataCheck">
+						</td>
+						<td>2014-12-24</td>
+						<td><a href="#">刘三毛</a></td>
+						<td>用户注册</td>
+						<td><a href="#">rimi456@rimionline.com</a></td>
+						<td><a href="#">18628109682</a></td>
+						<td>
+							<a>启用</a>
+							<a class="disable">已停用</a>
+						</td>
+						<td>
+							<a href="member-edit.html" class="modi">修改</a>
+							<a class="dele">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" name="dataCheck" class="dataCheck">
+						</td>
+						<td>2014-12-24</td>
+						<td><a href="#">刘三毛</a></td>
+						<td>用户注册</td>
+						<td><a href="#">rimi456@rimionline.com</a></td>
+						<td><a href="#">18628109682</a></td>
+						<td>
+							<a>启用</a>
+							<a class="disable">已停用</a>
+						</td>
+						<td>
+							<a href="member-edit.html" class="modi">修改</a>
+							<a class="dele">删除</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- 表格分页 -->
+			<div class="paging">
+				<button type="button" class="btn-base_min">首页</button>
+				<button type="button" class="btn-base_min">上一页</button>
+				<button type="button" class="btn-base_min">下一页</button>
+				<button type="button" class="btn-base_min">末页</button>
+			</div>
+				
+		</div><!-- } 模块管理 -->
+    </div><!-- } main -->
+
+    <!-- JS引用部分 -->
+    <script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+    <script src="../../resources/js/base.js" type="text/javascript"></script>
+    <script src="../../resources/js/base-tabel.js" type="text/javascript"></script>
+	
+    <!-- 利用空闲时间预加载指定页面 -->
+    <link rel="prefetch"> <!-- IE10+ -->
+    <link rel="next"> <!-- Firefox -->
+	<link rel="prerender"> <!-- Chrome -->
+</body>
+</html>

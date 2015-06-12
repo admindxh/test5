@@ -1,0 +1,175 @@
+.driving{
+    width: 1000px !important;
+    font-family: "Microsoft Yahei";
+    margin-top: 30px;
+    padding: 0;
+}
+.driving .row{
+    margin: 0;
+}
+.driving-left{
+    width: 730px !important;
+    padding: 0;
+}
+.driving-right{
+    width: 250px !important;
+    padding: 0;
+    margin-left: 20px;
+}
+.driving .header{
+    margin-bottom: 15px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #fff url("../../icon/line.png") repeat-x 0 15px;
+}
+.driving .header .left{
+    width: 350px;
+    height: 29px;
+    background: #fff url("../../icon/self_driving.png") no-repeat;
+}
+.driving .header .right{
+    width: 90px;
+    height: 29px;
+    line-height: 29px;
+    text-align: right;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.right a{
+    color: #333;
+}
+.driving-left-img-top .img-top-left{
+    width: 420px;
+    height: 230px;
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+.driving-left-img-top .img-top-left>a,
+.driving-left-img-top .img-top-left>a img{
+    width: inherit;
+    height: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    border-radius: inherit;
+}
+.driving-left-img-top .img-top-right{
+    width: 300px;
+    height: 230px;
+    float: right;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+.driving-left-img-top .img-top-right>a,
+.driving-left-img-top .img-top-right>a img{
+    width: inherit;
+    height: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    border-radius: inherit;
+}
+.driving .driving-left-img-footer{
+    margin-top: 10px;
+}
+.driving-left-img-footer .img-footer-left{
+    float: left;
+}
+.driving-left-img-footer .img-footer-right{
+    float: right;
+}
+.driving .header-right .left{
+    width: 155px;
+    height: 29px;
+    font-size: 18px;
+    line-height: 29px;
+    padding-left: 35px;
+    background: #fff url("../../icon/food_tm.png") no-repeat;
+}
+.driving .header-right .left p{
+    width: 100px;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.driving .header-right .right{
+    width: 80px;
+}
+.driving .content .media-left{
+    padding-right: 10px;
+    outline: none;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.driving .content .media-left div{
+	width: 68px;
+	height: 68px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+.driving .content .media-left div img{
+    width: inherit;
+    height: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    border-radius: inherit;
+}
+.driving .content .mer-info{
+    width: 115px;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #898989;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.driving .line{
+    width: 100%;
+    height: 10px;
+    background: #fff url("../../icon/line.png") repeat-x 0 9px;
+}
+.driving .content .message{
+    margin-top: 11px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.driving .content .loving{
+    width: 50px;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.driving .content .loving label{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.content-mart{
+    margin-top: 18px;
+}
+.content .ctibet{
+	width: 35px !important;
+	height: 37px !important;
+    position: absolute;
+    right: 6px;
+    bottom: 0;
+}

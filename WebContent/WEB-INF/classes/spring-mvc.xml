@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="     
+           http://www.springframework.org/schema/beans     
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd     
+           http://www.springframework.org/schema/context     
+           http://www.springframework.org/schema/context/spring-context-3.1.xsd    
+           http://www.springframework.org/schema/mvc     
+           http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
+
+	<!-- 启动扫描所有的controller -->
+	<context:component-scan base-package="com.rimi.ctibet">
+	</context:component-scan>
+
+	<context:property-placeholder location="classpath:rimi_alipay.properties"/>
+
+	<!-- 主要作用于@Controller，激活该模式 下面是一种简写形式，完全可以手动配置替代这种简写形式； 它会自动注册DefaultAnnotationHandlerMapping与AnnotationMethodHandlerAdapter 
+		两个bean, 是spring MVC为@Controllers分发请求所必须的 -->
+	<mvc:annotation-driven>
+		<mvc:message-converters>
+			<bean
+				class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+				<property name="objectMapper">
+					<bean class="com.rimi.ctibet.common.util.CutNull"></bean>
+				</property>
+				<property name="supportedMediaTypes">
+					<list>
+						<!--返回字符串格式json -->
+						<value>application/json;charset=UTF-8</value>
+					</list>
+				</property>
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+	<!-- @ResponseBody之后返回字符串中中文可能会出现乱码 因为sping mvc默认是text/plain;charset=ISO-8859-1，要支持中需做如下配置指定编码格式 -->
+	<!-- 这里拦截器还有一种配置方法【针对路径进行配置】 推荐使用这个，方便直观 -->
+		<mvc:interceptors>
+				
+				<mvc:interceptor>
+					<mvc:mapping path="/manage/html/**" />
+					<mvc:mapping path="/web/**" />
+					<bean class="com.rimi.ctibet.web.interceptor.UserInterceptor" />
+				</mvc:interceptor>
+			     <mvc:interceptor>  
+			              <mvc:mapping path="/**"/>
+			             <bean class="com.rimi.ctibet.portal.interceptor.LoginInterceptor"/> 
+		       </mvc:interceptor>
+				<!--   入侵拦截器 -->
+		       <mvc:interceptor>  
+		           <mvc:mapping path="/**"/>
+		           <bean class="com.rimi.ctibet.web.interceptor.InjectInterceptor"/> 
+		       </mvc:interceptor>    
+		</mvc:interceptors>
+	<!-- 配置js，css等静态文件直接映射到对应的文件夹，不被DispatcherServlet处理 mapping WebRoot里面的静态文件位置目录 
+		location 访问地址 -->
+	<mvc:resources location="/common-images/" mapping="/common-images/**" />
+	<mvc:resources location="/javascripts/" mapping="/javascripts/**" />
+	<mvc:resources location="/filecompress/" mapping="/filecompress/**" />
+	<mvc:resources location="/css/" mapping="/css/**" />
+	<mvc:resources location="/common-html/" mapping="/common-html/**" />
+	<mvc:resources location="/wsds/" mapping="/wsds/**" />
+	<mvc:resources location="/common-js/" mapping="/common-js/**" />
+	<mvc:resources location="/upload/" mapping="/upload/**" />
+	<mvc:resources location="/manage/resources/" mapping="/manage/resources/**" />
+	<mvc:resources location="/manage/webuploader/" mapping="/manage/webuploader/**" />
+	<mvc:resources location="/manage/webuploaderbase/" mapping="/manage/webuploaderbase/**" />
+	<mvc:resources location="/manage/uploadify/" mapping="/manage/uploadify/**" />
+	<mvc:resources location="/portal/" mapping="/portal/**" />
+	<mvc:resources location="/baidu-verify-69EEB93EDE.txt" mapping="/baidu-verify-69EEB93EDE.txt" />
+	<mvc:resources location="/baidu_verify_3THhra7bdp.html" mapping="/baidu_verify_3THhra7bdp.html" />
+	<mvc:resources location="/baidu_verify_VurYG6CWYM.html" mapping="/baidu_verify_VurYG6CWYM.html" />
+	<mvc:resources location="/robots.txt" mapping="/robots.txt" />
+	<mvc:resources location="/webscan_360_cn.html" mapping="/webscan_360_cn.html" />
+	<mvc:resources location="/sitemap.xml" mapping="/sitemap.xml" />
+	<mvc:resources location="/index.html" mapping="/index.html" />
+	
+	
+	<mvc:resources location="/favicon.ico" mapping="/favicon.ico" />
+	<!-- 配置/WEB-INF/views/目录里面的jsp文件不被DispatcherServlet处理，可以直接通过浏览器访问。 view-name 
+		/WEB-INF/views/里面的jsp文件名(不许后缀即可) path 访问地址 -->
+	<!-- jsp页面解析器，当Controller返回XXX字符串时，先通过拦截器，然后该类就会在/WEB-INF/views/目录下，查找XXX.jsp文件 -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		 <property name="prefix" value="/WEB-INF/views/"></property>
+		<!--<property name="prefix" value="/"></property>
+		--><property name="suffix" value=".jsp"></property>
+	</bean>
+<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">  
+     <property name="urlMap">  
+         <map>  
+              <entry key="/manage/html/read/**" value="myResourceHandler" />  
+         </map>  
+     </property>  
+     <property name="order" value="100000" />         
+</bean>  
+<bean id="myResourceHandler" name="myResourceHandler"  
+      class="org.springframework.web.servlet.resource.ResourceHttpRequestHandler">  
+      <property name="locations" value="/manage/html/read/" />  
+      <property name="supportedMethods">  
+         <list>  
+            <value>GET</value>  
+            <value>HEAD</value>  
+            <value>POST</value>  
+         </list>  
+     </property>  
+</bean>  
+<bean id="multipartResolver"
+	class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+	<property name="defaultEncoding" value="utf-8" />
+	<property name="maxUploadSize" value="10485760000" />
+	<property name="maxInMemorySize" value="40960" />
+</bean>	
+	 <bean id="SpringApplicationContext" class="com.rimi.ctibet.common.util.SpringUtil"></bean> 
+	 <import resource="applicationContext-quartz.xml"/>
+</beans>

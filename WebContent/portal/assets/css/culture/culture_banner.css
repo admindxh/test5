@@ -1,0 +1,421 @@
+#tags{
+    display: none;
+}
+#banner{
+    height: 360px !important;
+}
+.cb-index-nav .navbar-left a.active, .cb-index-nav .navbar-left a:hover{
+    background: none;
+}
+#culture-banner{
+    height: 360px;
+    margin-bottom: 30px;
+}
+#culture-banner .banner-item{
+    width: 100%;
+    height: inherit;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#culture-banner .banner-content{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: inherit;
+}
+#culture-banner .banner-left{
+    position: absolute;
+    left: 0;
+    bottom: 35px;
+}
+#culture-banner .banner-right{
+    height: inherit;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#culture-banner .banner-right .culture-menu{
+    width: 310px;
+    height: inherit;
+}
+#culture-banner .culture-menu ul{
+    height: inherit;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+#culture-banner ul li{
+    width: 155px;
+    height: 52px;
+    cursor: pointer;
+}
+#culture-banner .culture-menu ul li>div{
+    float: left;
+    height: inherit;
+}
+/* 左边图标DIV */
+.culture-menu .menu-icon{
+    width: 55px;
+    position: relative;
+}
+/* 图标DIV>DIV 高度 */
+.culture-menu .menu-icon div{
+    height: inherit;
+}
+/* 图标偏移50% */
+.culture-menu .menu-icon img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+/* 右边文字DIV */
+.culture-menu .menu-info{
+    width: 100px;
+    font-size: 15px;
+    line-height: 52px;
+    text-align: center;
+    position: relative;
+}
+/* 文字DIV>DIV */
+.culture-menu .menu-info div{
+    height: inherit;
+    background-color: #ffffff;
+    opacity: .6;
+    -ms-filter: alpha(opacity=60);
+    filter: alpha(opacity=60);
+}
+/* 文字对齐 .menu-info 左上角 */
+.culture-menu .menu-info span{
+    width: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 西藏动态 */
+#culture-banner .menu-news{
+    /*background-image: url(../../icon/d1.png);*/
+}
+#culture-banner .menu-news .menu-icon div{
+    background-color: #b61600;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-news .menu-icon img{
+    margin-top: -9px;
+    margin-left: -9px;
+}
+#culture-banner .menu-news:hover .menu-info div {
+    /*background-image: url(../../icon/d1_hover.png);*/
+    background-color: #b61600;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-news:hover .menu-info {
+    color: #ffffff;
+}
+/* 节日 */
+#culture-banner .menu-calendar{
+    /*background-image: url(../../icon/d2.png);*/
+}
+#culture-banner .menu-calendar .menu-icon div{
+    background-color: #c71800;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-calendar .menu-icon img{
+    margin-top: -9px;
+    margin-left: -9px;
+}
+#culture-banner .menu-calendar:hover .menu-info div {
+    /*background-image: url(../../icon/d2_hover.png);*/
+    background-color: #c71800;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-calendar:hover .menu-info {
+    color: #ffffff;
+}
+/* 历史 */
+#culture-banner .menu-literature{
+    height: 51px;
+    /*background-image: url(../../icon/d3.png);*/
+}
+#culture-banner .menu-literature .menu-icon div{
+    background-color: #da1800;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-literature .menu-icon img{
+    margin-top: -9px;
+    margin-left: -9px;
+}
+#culture-banner .menu-literature:hover .menu-info div {
+    /*background-image: url(../../icon/d3_hover.png);*/
+    background-color: #da1800;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-literature:hover .menu-info {
+    color: #ffffff;
+}
+/* 风俗 */
+#culture-banner .menu-custom{
+    /*background-image: url(../../icon/d4.png);*/
+}
+#culture-banner .menu-custom .menu-icon div{
+    background-color: #f51900;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-custom .menu-icon img{
+    margin-top: -10px;
+    margin-left: -8px;
+}
+#culture-banner .menu-custom:hover .menu-info div {
+    /*background-image: url(../../icon/d4_hover.png);*/
+    background-color: #f51900;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-custom:hover .menu-info {
+    color: #ffffff;
+}
+/* 宗教 */
+#culture-banner .menu-religion{
+    /*background-image: url(../../icon/d5.png);*/
+    height: 51px;
+}
+#culture-banner .menu-religion .menu-icon div{
+    background-color: #f53400;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-religion .menu-icon img{
+    margin-top: -9px;
+    margin-left: -7px;
+}
+#culture-banner .menu-religion:hover .menu-info div {
+    /*background-image: url(../../icon/d5_hover.png);*/
+    background-color: #f53400;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-religion:hover .menu-info {
+    color: #ffffff;
+}
+/* 美食 */
+#culture-banner .menu-food{
+    height: 50px;
+    /*background-image: url(../../icon/d6.png);*/
+    /*background-position: 0 -1px;*/
+}
+#culture-banner .menu-food .menu-icon div{
+    background-color: #f54500;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-food .menu-icon img{
+    margin-top: -9px;
+    margin-left: -5px;
+}
+#culture-banner .menu-food:hover .menu-info div {
+    /*background-image: url(../../icon/d6_hover.png);*/
+    background-color: #f54500;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-food:hover .menu-info {
+    color: #ffffff;
+}
+/* 动植物 */
+#culture-banner .menu-plant{
+    height: 50px;
+    /*background-image: url(../../icon/d7.png);*/
+    /*background-position: 0 -1px;*/
+}
+#culture-banner .menu-plant .menu-icon div{
+    background-color: #f56200;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-plant .menu-icon img{
+    margin-top: -6px;
+    margin-left: -8px;
+}
+#culture-banner .menu-plant:hover .menu-info div {
+    /*background-image: url(../../icon/d7_hover.png);*/
+    background-color: #f56200;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-plant:hover .menu-info {
+    color: #ffffff;
+}
+/* 名人 */
+#culture-banner .menu-celebrity{
+    /*background-image: url(../../icon/d8.png);*/
+}
+#culture-banner .menu-celebrity .menu-icon div{
+    background-color: #ff5b00;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-celebrity .menu-icon img{
+    margin-top: -9px;
+    margin-left: -7px;
+}
+#culture-banner .menu-celebrity:hover .menu-info div {
+    /*background-image: url(../../icon/d8_hover.png);*/
+    background-color: #ff5b00;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-celebrity:hover .menu-info {
+    color: #ffffff;
+}
+/* 服饰 */
+#culture-banner .menu-shirt{
+    /*background-image: url(../../icon/d9.png);*/
+}
+#culture-banner .menu-shirt .menu-icon div{
+    background-color: #ff7000;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-shirt .menu-icon img{
+    margin-top: -9px;
+    margin-left: -9px;
+}
+#culture-banner .menu-shirt:hover .menu-info div {
+    /*background-image: url(../../icon/d9_hover.png);*/
+    background-color: #ff7000;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-shirt:hover .menu-info {
+    color: #ffffff;
+}
+/* 艺术 */
+#culture-banner .menu-art{
+    height: 51px;
+    /*background-image: url(../../icon/d10.png);*/
+}
+#culture-banner .menu-art .menu-icon div{
+    background-color: #ff8900;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-art .menu-icon img{
+    margin-top: -7px;
+    margin-left: -9px;
+}
+#culture-banner .menu-art:hover .menu-info div {
+    /*background-image: url(../../icon/d10_hover.png);*/
+    background-color: #ff8900;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-art:hover .menu-info {
+    color: #ffffff;
+}
+/* 特产 */
+#culture-banner .menu-honey{
+    /*background-image: url(../../icon/d11.png);*/
+}
+#culture-banner .menu-honey .menu-icon div{
+    background-color: #ffa200;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-honey .menu-icon img{
+    margin-top: -9px;
+    margin-left: -9px;
+}
+#culture-banner .menu-honey:hover .menu-info div {
+    /*background-image: url(../../icon/d11_hover.png);*/
+    background-color: #ffa200;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-honey:hover .menu-info {
+    color: #ffffff;
+}
+/* 地理 */
+#culture-banner .menu-timer{
+    height: 51px;
+    /*background-image: url(../../icon/d12.png);*/
+}
+#culture-banner .menu-timer .menu-icon div{
+    background-color: #ffba00;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-timer .menu-icon img{
+    margin-top: -9px;
+    margin-left: -9px;
+}
+#culture-banner .menu-timer:hover .menu-info div {
+    /*background-image: url(../../icon/d12_hover.png);*/
+    background-color: #ffba00;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-timer:hover .menu-info {
+    color: #ffffff;
+}
+/* 西藏文化传播 */
+#culture-banner .menu-diss{
+    height: 100px;
+    /*background-image: url(../../icon/d13.png);*/
+}
+#culture-banner .menu-diss .menu-icon div{
+    background-color: #eac600;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-diss .menu-icon img{
+    margin-top: -9px;
+    margin-left: -9px;
+}
+#culture-banner .menu-diss .menu-info span{
+    line-height: 20px;
+    top: 50%;
+    margin-top: -30px;
+}
+#culture-banner .menu-diss:hover .menu-info div {
+    /*background-image: url(../../icon/d13_hover.png);*/
+    background-color: #eac600;
+    opacity: .7;
+    -ms-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+}
+#culture-banner .menu-diss:hover .menu-info {
+    color: #ffffff;
+}

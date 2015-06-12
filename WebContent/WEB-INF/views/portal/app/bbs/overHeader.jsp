@@ -1,0 +1,252 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<div class="row">
+    <div class="col-xs-9">
+        <!-- overHead -->
+        <div class="overhead">
+            <div class="header clearfix">
+                <div></div>
+                <a href="#" target="_blank">更多MORE</a>
+            </div>
+            <!-- overHead content -->
+            <div class="content">
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">我眼中西藏旅游的真相——作为妹子聊聊自己一路的“艳遇”和感受</h4>
+                        <ul class="user-info">
+                            <li><img src="../assets/icon/tx.png" alt=""/>
+                                <label>作者:</label>
+                                <span>扎西尼玛</span>
+                            </li>
+                            <li class="ml30"><img src="../assets/icon/tx2.png" alt=""/>
+                                <label>回复:</label>
+                                <span>雪公主</span><label>2014-11-10 15:23</label>
+                            </li>
+                            <li class="ml20">
+                                <img src="../assets/icon/eye_ac.png" alt=""/>
+                                <label class="data">19874</label>
+                                <img class="ml20" src="../assets/icon/chat.png" alt=""/>
+                                <label class="data">8214497</label>
+                            </li>
+                        </ul>
+                        <p>我是张小珏 可能有人看见我的名字并不陌生 2011年6月12日 我在微博以及豆瓣的组里发过 一个帖子 “请给我一个希望” 可能因为它你还记得我。
+                            谢谢你 我回来了， 2011年7月7日出发历时10天从成都出发徒步加搭车抵达拉萨 途径雅安--天泉--...</p>
+                    </div>
+                    <div class="media-right">
+                        <div class="zan"></div>
+                        <label>7254687</label>
+                    </div>
+                </div>
+
+                <div class="media media-mt18">
+                    <div class="media-body">
+                        <h4 class="media-heading">在西藏的遇见初冬,寻找最美的马路</h4>
+                        <ul class="user-info">
+                            <li><img src="../assets/icon/tx.png" alt=""/>
+                                <label>作者:</label>
+                                <span>扎西尼玛</span>
+                            </li>
+                            <li class="ml30"><img src="../assets/icon/tx2.png" alt=""/>
+                                <label>回复:</label>
+                                <span>雪公主</span><label>2014-11-10 15:23</label>
+                            </li>
+                            <li class="ml20">
+                                <img src="../assets/icon/eye_ac.png" alt=""/>
+                                <label class="data">19874</label>
+                                <img class="ml20" src="../assets/icon/chat.png" alt=""/>
+                                <label class="data">8214497</label>
+                            </li>
+                        </ul>
+                        <p>我是张小珏 可能有人看见我的名字并不陌生 2011年6月12日 我在微博以及豆瓣的组里发过 一个帖子 “请给我一个希望” 可能因为它你还记得我。
+                            谢谢你 我回来了， 2011年7月7日出发历时10天从成都出发徒步加搭车抵达拉萨 途径雅安--天泉--...</p>
+                    </div>
+                    <div class="media-right">
+                        <div class="zan"></div>
+                        <label>7254687</label>
+                    </div>
+                </div>
+
+                <div class="media media-mt18">
+                    <div class="media-body">
+                        <h4 class="media-heading">28天白富美变女汉子，有图有真相</h4>
+                        <ul class="user-info">
+                            <li><img src="../assets/icon/tx.png" alt=""/>
+                                <label>作者:</label>
+                                <span>扎西尼玛</span>
+                            </li>
+                            <li class="ml30"><img src="../assets/icon/tx2.png" alt=""/>
+                                <label>回复:</label>
+                                <span>雪公主</span><label>2014-11-10 15:23</label>
+                            </li>
+                            <li class="ml20">
+                                <img src="../assets/icon/eye_ac.png" alt=""/>
+                                <label class="data">19874</label>
+                                <img class="ml20" src="../assets/icon/chat.png" alt=""/>
+                                <label class="data">8214497</label>
+                            </li>
+                        </ul>
+                        <p>我是张小珏 可能有人看见我的名字并不陌生 2011年6月12日 我在微博以及豆瓣的组里发过 一个帖子 “请给我一个希望” 可能因为它你还记得我。
+                            谢谢你 我回来了， 2011年7月7日出发历时10天从成都出发徒步加搭车抵达拉萨 途径雅安--天泉--...</p>
+                    </div>
+                    <div class="media-right">
+                        <div class="zan"></div>
+                        <label>7254687</label>
+                    </div>
+                </div>
+
+                <div class="media media-mt18">
+                    <div class="media-body">
+                        <h4 class="media-heading">告别大四的旅行——110天甘肃-新疆-西藏-尼泊尔-西藏-四川环游</h4>
+                        <ul class="user-info">
+                            <li><img src="../assets/icon/tx.png" alt=""/>
+                                <label>作者:</label>
+                                <span>扎西尼玛</span>
+                            </li>
+                            <li class="ml30"><img src="../assets/icon/tx2.png" alt=""/>
+                                <label>回复:</label>
+                                <span>雪公主</span><label>2014-11-10 15:23</label>
+                            </li>
+                            <li class="ml20">
+                                <img src="../assets/icon/eye_ac.png" alt=""/>
+                                <label class="data">19874</label>
+                                <img class="ml20" src="../assets/icon/chat.png" alt=""/>
+                                <label class="data">8214497</label>
+                            </li>
+                        </ul>
+                        <p>我是张小珏 可能有人看见我的名字并不陌生 2011年6月12日 我在微博以及豆瓣的组里发过 一个帖子 “请给我一个希望” 可能因为它你还记得我。
+                            谢谢你 我回来了， 2011年7月7日出发历时10天从成都出发徒步加搭车抵达拉萨 途径雅安--天泉--...</p>
+                    </div>
+                    <div class="media-right">
+                        <div class="zan"></div>
+                        <label>7254687</label>
+                    </div>
+                </div>
+
+                <div class="media media-mt18">
+                    <div class="media-body">
+                        <h4 class="media-heading">九月徒步西藏哪条线路风景好</h4>
+                        <ul class="user-info">
+                            <li><img src="../assets/icon/tx.png" alt=""/>
+                                <label>作者:</label>
+                                <span>扎西尼玛</span>
+                            </li>
+                            <li class="ml30"><img src="../assets/icon/tx2.png" alt=""/>
+                                <label>回复:</label>
+                                <span>雪公主</span><label>2014-11-10 15:23</label>
+                            </li>
+                            <li class="ml20">
+                                <img src="../assets/icon/eye_ac.png" alt=""/>
+                                <label class="data">19874</label>
+                                <img class="ml20" src="../assets/icon/chat.png" alt=""/>
+                                <label class="data">8214497</label>
+                            </li>
+                        </ul>
+                        <p>我是张小珏 可能有人看见我的名字并不陌生 2011年6月12日 我在微博以及豆瓣的组里发过 一个帖子 “请给我一个希望” 可能因为它你还记得我。
+                            谢谢你 我回来了， 2011年7月7日出发历时10天从成都出发徒步加搭车抵达拉萨 途径雅安--天泉--...</p>
+                    </div>
+                    <div class="media-right">
+                        <div class="zan"></div>
+                        <label>7254687</label>
+                    </div>
+                </div>
+            </div><!-- overHead content End -->
+        </div><!-- overHead End -->
+    </div>
+    <div class="col-xs-3">
+        <!-- reply -->
+        <div class="reply">
+            <div class="header"></div>
+            <!-- reply content -->
+            <div class="content">
+                <div class="media">
+                    <div class="media-body">
+                        <p>繁琐、无味的工作，经此篇文章之后再次激情了我的欲望经此篇文章之后再次激情了我的欲望...</p>
+
+                        <div class="by">
+                            <label>BY:</label><label>走在路途上的羽毛</label>
+                        </div>
+                        <div class="from">
+                            <label>FROM:</label><span>在西藏的遇见初冬,寻找最美的马路</span>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <div class="zan"></div>
+                        <label>7254687</label>
+                    </div>
+                </div>
+
+                <div class="media mt16">
+                    <div class="media-body">
+                        <p>繁琐、无味的工作，经此篇文章之后再次激情了我的欲望经此篇文章之后再次激情了我的欲望...</p>
+
+                        <div class="by">
+                            <label>BY:</label><label>走在路途上的羽毛</label>
+                        </div>
+                        <div class="from">
+                            <label>FROM:</label><span>在西藏的遇见初冬,寻找最美的马路</span>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <div class="zan"></div>
+                        <label>7254687</label>
+                    </div>
+                </div>
+
+                <div class="media mt16">
+                    <div class="media-body">
+                        <p>繁琐、无味的工作，经此篇文章之后再次激情了我的欲望经此篇文章之后再次激情了我的欲望...</p>
+
+                        <div class="by">
+                            <label>BY:</label><label>走在路途上的羽毛</label>
+                        </div>
+                        <div class="from">
+                            <label>FROM:</label><span>在西藏的遇见初冬,寻找最美的马路</span>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <div class="zan"></div>
+                        <label>7254687</label>
+                    </div>
+                </div>
+
+                <div class="media mt16">
+                    <div class="media-body">
+                        <p>繁琐、无味的工作，经此篇文章之后再次激情了我的欲望经此篇文章之后再次激情了我的欲望...</p>
+
+                        <div class="by">
+                            <label>BY:</label><label>走在路途上的羽毛</label>
+                        </div>
+                        <div class="from">
+                            <label>FROM:</label><span>在西藏的遇见初冬,寻找最美的马路</span>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <div class="zan"></div>
+                        <label>7254687</label>
+                    </div>
+                </div>
+
+                <div class="media mt16">
+                    <div class="media-body">
+                        <p>繁琐、无味的工作，经此篇文章之后再次激情了我的欲望经此篇文章之后再次激情了我的欲望...</p>
+
+                        <div class="by">
+                            <label>BY:</label><label>走在路途上的羽毛</label>
+                        </div>
+                        <div class="from">
+                            <label>FROM:</label><span>在西藏的遇见初冬,寻找最美的马路</span>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <div class="zan"></div>
+                        <label>7254687</label>
+                    </div>
+                </div>
+            </div><!-- reply content End -->
+        </div><!-- reply End -->
+    </div>
+</div>
+
+
+<script>
+    seajs.use('../assets/css/community/overHeader.css');
+</script>

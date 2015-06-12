@@ -1,0 +1,587 @@
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #333;
+}
+
+.taste {
+    width: 1000px !important;
+    padding: 0;
+    margin-top: 30px;
+    font-family: "Microsoft Yahei";
+}
+
+.taste .row {
+    margin: 0;
+}
+
+.taste-info {
+    width: 730px !important;
+    padding: 0;
+}
+
+.news {
+    width: 250px !important;
+    padding: 0;
+}
+
+.taste-title {
+    width: 176px;
+    height: 31px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    background: #fff url("../../icon/taste.png") no-repeat;
+}
+
+.taste-info-header {
+    width: 100%;
+    height: 333px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.taste-info-header button {
+    display: none;
+}
+
+.taste-info-header .info-img img {
+    width: 510px;
+    height: 333px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    float: left;
+}
+
+.written-message {
+    float: left;
+    margin-left: 20px;
+    width: 191px;
+}
+
+.written-message h5 {
+    margin: 20px 0 15px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.written-message h5 a {
+    color: #333;
+}
+
+.written-message p {
+    height: 222px;
+    font-size: 12px;
+    color: #898989;
+    overflow: hidden;
+}
+
+.taste-info-header ul {
+    width: auto;
+    height: 12px;
+    line-height: 0;
+    position: absolute;
+    right: 60px;
+    bottom: 14px;
+    list-style: none;
+    text-align: center;
+}
+
+.taste-info-header li {
+    width: 13px;
+    height: 12px;
+    vertical-align: middle;
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.taste-info-header li:hover {
+    background: url("../../icon/dots.png") no-repeat 0 0;
+}
+
+.taste-info-header .dot-active {
+    background: url("../../icon/dots.png") no-repeat 0 0;
+}
+
+.taste-info-header li:first-child {
+    margin-left: 0;
+}
+
+.taste-info-footer > div {
+    float: left;
+    margin-left: 10px;
+}
+
+.taste-info-footer > div:first-child {
+    margin-left: 0;
+}
+
+.taste-info-footer h3 {
+    margin: 0 0 21px 10px;
+    font-size: 14px;
+}
+.tt{
+    font-size: 14px;
+    padding-left: 20px;
+    background: url(../../icon/min-icon.png) 0 center no-repeat;
+}
+.taste-festiva {
+    width: 240px;
+    height: 238px;
+    background-color: #eeeeee;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.taste-festiva .w283,
+.taste-festiva .w283 a,
+.taste-festiva .w283 a img {
+    width: inherit;
+    height: 157px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.festiva-info {
+    width: 100%;
+    height: 81px;
+    padding: 0 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.taste-info-footer .taste-footer-h5 {
+    margin: 5px 0;
+    white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+
+.festiva-info p {
+    height: 34px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.festiva-info .info-more {
+    width: 40px;
+    height: 20px;
+    background: url("../../icon/lmore.png") no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-decoration: none;
+}
+
+.festiva-info a {
+    color: #333;
+}
+
+/* =================
+    精读西藏 End
+================ */
+/* =================
+    西藏动态
+============ background: url("../../icon/line.png") repeat-x center;==== */
+.news-title {
+    width: 100%;
+    
+    margin-bottom: 15px;
+}
+
+.news-title h2 {
+    width: 175px;
+    height: 31px;
+    margin: 0;
+    background: #fff url("../../icon/news.png") no-repeat;
+    float: left;
+}
+.news-title h2 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.news-title>a {
+    width: 62px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 12px;
+    text-align: right;
+    color: #333;
+    float: right;
+    background-color: #ffffff;
+}
+
+.news-info dl {
+    width: inherit;
+    height: 82px;
+    border-bottom: 1px dashed #959595;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.news-info dl dt {
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.news-info dl dd {
+    height: 35px;
+    font-size: 12px;
+    color: #898989;
+    overflow: hidden;
+}
+
+.news-info .news-time {
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+
+.news-info .last-dl {
+    margin-bottom: 0;
+}
+
+/* =================
+    西藏动态 End
+================ */
+
+/* =======================
+    名人 —— 艺术
+======================== */
+.feature-mode {
+    width: 1000px;
+    margin-top: 30px;
+}
+
+.feature-mode > div {
+    float: left;
+    margin-left: 10px;
+}
+
+.feature-mode > div:first-child {
+    margin-left: 0;
+}
+
+.celebrity h3 {
+    margin: 0 0 21px 10px
+}
+
+.celebrity > div {
+    width: 495px;
+    height: 167px;
+    background: #eeeeee;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.celebrity > div .fl-w309 {
+    width: 257px;
+    height: inherit;
+    float: left;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.celebrity > div .fl-w309 a,
+.celebrity > div .fl-w309 a img {
+    width: inherit;
+    height: inherit;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.celebrity-info {
+    width: 238px;
+    height: inherit;
+    float: right;
+    padding-left: 20px;
+    padding-right: 50px;
+    position: relative;
+}
+
+.celebrity-info dl {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.celebrity-info dl dt {
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: normal;
+}
+
+.celebrity-info dd {
+    height: 35px;
+    font-size: 12px;
+    overflow: hidden;
+    color:#898989;
+}
+
+.celebrity-info ul {
+    list-style: none;
+}
+
+.celebrity-info li {
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.celebrity-info li:first-child {
+    margin-top: 0;
+}
+
+.celebrity-info li a {
+    color: #333;
+}
+
+.celebrity-info > a {
+    width: 40px;
+    height: 20px;
+    background: url("../../icon/lmore.png") no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.food-art > div .fl-w309 {
+    float: right;
+    -webkit-border-radius: 0 7px 7px 0;
+    -moz-border-radius: 0 7px 7px 0;
+    border-radius: 0 7px 7px 0;
+}
+.food-art > div .fl-w309 a,
+.food-art > div .fl-w309 a img {
+    -webkit-border-radius: 0 7px 7px 0;
+    -moz-border-radius: 0 7px 7px 0;
+    border-radius: 0 7px 7px 0;
+}
+
+.food-art .celebrity-info > a {
+    left: 0;
+    bottom: 0;
+    width: 42px;
+    background: url("../../icon/rmore.png");
+}
+
+/* =======================
+    名人 —— 艺术 End
+======================== */
+.spec-anipla {
+    width: 730px !important;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.spec-anipla > div {
+    float: left;
+}
+
+.anipla {
+    margin-left: 20px;
+}
+
+.dress-geo {
+    width: 250px !important;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.spec-info {
+    width: 355px;
+    height: 285px;
+    background: #f1f1f1;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    position: relative;
+}
+
+.spec h3 {
+    margin: 0 0 20px 10px
+}
+
+.spec-top {
+    width: inherit;
+    height: 146px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.spec-top .fl-w267 {
+    width: 224px;
+    height: inherit;
+    float: left;
+    border-top-left-radius: 7px;
+}
+
+.spec-top .fl-w267 a,
+.spec-top .fl-w267 a img {
+    width: inherit;
+    height: inherit;
+    border-top-left-radius: 7px;
+}
+
+.spec-top dl {
+    width: 130px;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding: 0 10px;
+}
+
+.spec-top dt {
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.spec-top dd {
+    height: 100px;
+    overflow: hidden;
+    font-size: 12px;
+    color:#898989;
+}
+
+.spec-bottom ul {
+    float: left;
+    margin-top: 20px;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.spec-bottom ul li {
+    width: 150px;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.spec-bottom ul li:first-child {
+    margin-top: 0;
+}
+
+.spec-bottom li a {
+    color: #333;
+}
+
+.spec-left,
+.spec-right {
+    width: 170px;
+}
+
+.spec-bottom > a {
+    width: 40px;
+    height: 20px;
+    background: url("../../icon/lmore.png") no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.dress h5 {
+    margin: 0 0 16px 10px
+}
+
+.dress-info {
+    width: inherit;
+    height: 125px;
+    background: #eee;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    position: relative;
+}
+
+.dress-top .fl-w154 {
+    float: left;
+    width: 126px;
+    height: 82px;
+    border-top-left-radius: 7px;
+}
+
+.dress-top .fl-w154 a,
+.dress-top .fl-w154 a img {
+    width: inherit;
+    height: inherit;
+    border-top-left-radius: 7px;
+}
+
+.dress-top dl {
+    width: 120px;
+    float: left;
+    margin-top: 8px;
+    margin-bottom: 0;
+    padding: 0 12px;
+}
+
+.dress-top dt {
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 2px;
+    font-weight: normal;
+}
+
+.dress-top dd {
+    height: 52px;
+    overflow: hidden;
+    color:#898989;
+    font-size: 12px;
+}
+
+.dress-info ul {
+    padding-left: 10px;
+    list-style: none;
+}
+
+.dress-info li {
+    width: 180px;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.dress-info li a {
+    color: #333;
+}
+
+.dress-info > a {
+    width: 40px;
+    height: 20px;
+    background: url("../../icon/lmore.png") no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.geo {
+    margin-top: 7px;
+}

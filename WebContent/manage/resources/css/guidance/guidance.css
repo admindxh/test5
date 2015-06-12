@@ -1,0 +1,85 @@
+body,div,p{
+    margin: 0;
+    padding: 0;
+}
+body{    font-family: 'microsoft yahei';font-size: 13px;}
+.touristDredge{
+    width: 1000px;
+    border: 1px solid #aaa;
+}
+.touristDredge .header{
+    border-bottom: 1px solid #aaa;
+    padding: 2px 5px;
+}
+.header .currentLocation{
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.content{
+    height: 400px;
+    padding: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.content .filter{
+    width: 900px;
+    margin: 0 auto;
+}
+.content .filter input{
+    width: 130px;
+    padding-left: 5px;
+    color: #aaa;
+    outline: none;
+    margin: 0 15px 0 10px;
+}
+.content .filter button{
+    width: 80px;
+}
+.addDredge{
+    float: right;
+    margin-left: 35px;
+}
+.content .filter select{
+    float: right;
+    margin: 0 15px;
+}
+.content table{
+    border-collapse: collapse;
+    width: 900px;
+    margin: 10px auto;
+    text-align: center;
+}
+.content table th,td{
+    border: 1px solid #aaa;
+}
+.content table th{
+    width: 100px;
+    height: 30px;
+    font-weight: 100;
+    background-color: #e8e8e6;
+}
+.content .tcontent{
+    width: 400px;
+}
+.content table td{
+    height: 25px;
+}
+.page{
+    width: 900px;
+    margin: 0 auto;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.page button{
+    outline: none;
+}
+.page .homePage{
+    margin-left: 120px;
+}
+.page input{
+    width: 27px;
+    padding-left: 3px;
+    outline: none;
+}

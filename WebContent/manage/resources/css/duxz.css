@@ -1,0 +1,77 @@
+.xz-heading h2.duxz{
+	width: 280px;
+	background: #fff url(../icon/icon_duxz.png) 0 0 no-repeat;
+}
+.xb-one{
+	background: #eeeeee;
+	border-radius: 6px;
+	width: 480px;
+	overflow: hidden;
+}
+.xbo-img{
+	width: 220px;
+	height: 400px;
+	float: left;
+}
+.xbo-bd{
+	width: 250px;
+	height: 400px;
+	float: right;
+	padding: 30px 10px 0 10px;
+}
+.xbo-bd h2{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 700;
+}
+.xbo-bd p{
+	margin-top: 30px;
+	color: #898989;
+	font-size: 12px;
+	line-height: 20px;
+}
+.read-box{
+	width: 330px;
+}
+.read-bd{
+	position: relative;
+	margin-top: 25px;
+	border-radius: 6px;
+	overflow: hidden;
+	background: #eeeeee;
+}
+.read-box .read-hd{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 14px;
+	color: #333;
+}
+.read-adjust{
+	margin-top: 45px;
+}
+.read-bd-img{
+	width: 132px;
+	height: 137px;
+	float: left;
+}
+.read-bd-list{
+	padding-left: 20px;
+	width: 188px;
+	height: 137px;
+	float: right;
+}
+.read-bd-list a{
+	margin-top: 15px;
+	font-size: 14px;
+	color: #333;
+	display: block;
+}
+.read-more{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 40px;
+	height: 20px;
+	background: url(../icon/lmore.png) 0 0 no-repeat;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="quansenx">
+	<meta name="keywords" content="西藏旅游，西藏自驾游，藏民，西藏线路，西藏自助游路线，西藏景点，西藏天气，西藏交通，西藏，西藏旅游攻略，西藏旅游最佳时间，西藏旅游最好季节，去西藏" />
+	<meta name="description" content=" 天上西藏网站为您提供全面了解屹立在雪山之巅西藏的信息资讯，包括天上西藏景区景点推荐，最佳的西藏观光时间，最地道的西藏特色叙述，最淳朴的西藏人民，天上西藏最全面的信息介绍，欢迎您前来体验雪域西藏的风采！" />
+	<title>商户首页_天上西藏</title>
+	<link rel="stylesheet" href="../../modules/bootstrap/3.3.1/css/bootstrap.min.css">
+	<!--[if lt IE 9]>
+	<script src="../../modules/fix/html5shiv.min.js"></script>
+	<script src="../../modules/fix/respond.min.js"></script>
+	<![endif]-->
+	<script id="seajsnode" src="../../modules/seajs/seajs/2.2.1/sea.js"></script>
+</head>
+<body ms-controller="view">
+	<div id="header" ms-include-src="'../header/index.html'"></div>
+	<div class="container">
+		<div class="bd">
+			<div class="xzbox clearfix">
+				<div class="bd-left">
+					<div class="bdh clearfix">
+						<div class="menu pull-left">
+							<a href="#" class="all active"><span class="arrow"></span>全部分类</a>
+							<a href="#" class="hotel"><span class="arrow"></span>住宿</a>
+							<a href="#" class="food"><span class="arrow"></span>美食</a>
+							<a href="#" class="amuse"><span class="arrow"></span>娱乐</a>
+							<a href="#" class="group"><span class="arrow"></span>团游</a>
+						</div>
+						<div class="slides-wrap pull-right">
+							<div class="search">
+								<form action="" class="form-inline">
+									<div class="form-group">
+										<div class="input-group">
+											<input type="text" class="form-control" name="query" placeholder="拉萨寺庙">
+											<div class="input-group-addon btn-addon">
+												<button>
+													<span class="sr-only">go</span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="form-group hot-search">
+										<label for="hotSearch">热门搜索：</label>
+										<p class="form-control-static hot-tags">
+											<a href="#" class="active">纳木错</a>
+											<a href="#">布达拉宫</a>
+											<a href="#">大昭寺</a>
+											<a href="#">酒店</a>
+											<a href="#">美食</a>
+										</p>
+									</div>
+								</form>
+							</div>
+							<div class="slides">
+								<div id="slide">
+									<div class="slide-item">
+										<a href="#"><img src="../../static/images/m11.png" alt="" width="705" height="255"></a>
+									</div>
+									<div class="slide-item">
+										<a href="#"><img src="../../static/images/m11.png" alt="" width="705" height="255"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 模块 -->
+					<div class="xz-box" ms-repeat="avalon.range(4)">
+						<div class="xz-heading">
+							<h2 ms-attr-class="cls[$index]">
+								<span class="sr-only">酒店住宿</span>
+							</h2>
+							<div class="index-more">
+								<a href="#">更多 MORE</a>
+							</div>
+						</div>
+						<div class="xz-bd-wrap">
+							<div class="xz-bd clearfix">
+								<div class="bd-item" ms-repeat="avalon.range(6)">
+									<a href="#"><img src="../../static/images/m22.jpg" width="270" height="205" alt=""></a>
+									<div class="mark"></div>
+									<div class="bd-content">
+										<p>西藏岷山饭店（拉萨）</p>
+										<p class="text">西藏岷山饭店>西藏岷山饭店>西藏岷山饭店>西藏岷山饭店>西藏岷山饭店（拉萨）</p>
+										<p class="types"><span class="wfav">123</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 结束 -->
+				</div>
+				<div class="bd-right">
+					<div class="xz-heading">
+						<h2 class="spot">
+							<span class="sr-only">官方推荐</span>
+						</h2>
+						<div class="index-more">
+							<a href="#">更多 MORE</a>
+						</div>
+					</div>
+					<div class="item" ms-repeat="avalon.range(3)">
+						<a href="#"><img src="../../static/images/m33.jpg" width="310" height="230" alt=""></a>
+						<span class="ctibet"></span>
+						<div class="mark"></div>
+						<div class="bd-content">
+							<p class="title">西藏岷山饭店（拉萨）西藏岷山饭店（拉萨）西藏岷山饭店（拉萨）</p>
+							<p class="types"><span class="wfav">123</span></p>
+						</div>
+					</div>
+					<div class="bd-ad-wrap">
+						<div class="bd-ad">
+							<a href="#"><img src="../../static/images/ad02.png" width="310" height="425" alt=""></a>
+						</div>
+						<div class="bd-ad">
+							<a href="#"><img src="../../static/images/ad01.png" width="310" height="195" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer" ms-include-src="'../footer/index.html'"></div>
+	<script>
+		// Set configuration
+		seajs.config({
+			alias: {
+				"jquery": "jquery/jquery/1.11.1/jquery.js",
+				"avalon": "avalon/1.3.7/avalon.js",
+				"common/css": "../../assets/css/common.css",
+				"merchant/css": "../../assets/css/merchant.css",
+				"footer/css": "../../assets/css/footer.css"
+			}
+		});
+		seajs.use(['common/css', 'merchant/css', 'footer/css', 'slick/slick.css']);
+
+		seajs.use(['avalon', 'slick/slick.js'], function(avalon) {
+			avalon.define({
+				$id: "view",
+				showTag: true,
+				cls:['hotel', 'food', 'shyl', 'cxty']
+			})
+
+			$('#slide').slick({
+				autoplay: true,
+				arrows:false,
+				dots: true
+			});
+		})
+	</script>
+</body>
+</html>

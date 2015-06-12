@@ -1,0 +1,48 @@
+<div id="loginModal">
+	<div class="login-header">
+		<a href="#" class="login-close">关闭</a>
+	</div>
+	<div class="login-body clearfix">
+		<div class="login-form">
+			<div class="login-field">
+				<input type="text" class="login-control" placeholder="邮箱/手机号"></div>
+			<div class="login-field">
+				<input type="password" class="login-control" placeholder="请输入密码"></div>
+			<div class="login-field">
+				<label for="remember" class="login-label">
+					<input type="checkbox" name="remember" id="remember">记住我</label>
+				<a href="#" class="forget">忘记密码？</a>
+			</div>
+			<button class="login-btn">登录</button>
+		</div>
+		<div class="login-text">
+			<p>在天上西藏，你可以<strong class="high">结识朋友</strong></p>
+			<p>分享<strong class="green">游记&攻略</strong></p>
+			<p>获得权威的<strong class="blue">官方指南</strong></p>
+			<p>略最全面的<strong class="yellow">西藏文化</strong></p>
+			<div class="login-reg">
+				还没有注册？<a href="#" class="high">立即注册&gt;</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+seajs.use('artDialog/6.0.0/dialog', function(dialog){
+	var elem = document.getElementById('loginModal')
+	var d = dialog({
+		fixed: true,
+		content: elem,
+		padding:0
+	})
+	// 关闭 登录框
+	$('.login-close').on('click', function(event) {
+		event.preventDefault()
+		d.close()
+	})
+	// 打开 登录框
+	$('[data-toggle="login"]').on('click',function(event) {
+		event.preventDefault()
+		d.showModal()
+	})
+})
+</script>

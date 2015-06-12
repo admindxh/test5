@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN"
+       "http://tuckey.org/res/dtds/urlrewrite3.2.dtd">
+  <urlrewrite>
+  
+  <!--看西藏  图说西藏详情页面 表达式   一个参数 url  重写 -->
+   <rule>
+     <from>^/discover/picture/(\w+).html$</from>
+      <to type="forward">/portal/app/discover/picture?code=$1</to>
+  </rule>
+   <!--看西藏  视频西藏详情页面 表达式   一个参数 url  重写 -->
+   <rule>
+   
+     <from>^/discover/video/(\w+).html$</from>
+      <to type="forward">/discover/video?code=$1</to>
+  </rule>
+  <rule>
+      <from>manage/html/$</from>
+      <to type="forward">manage/html/login.action</to>
+  </rule>
+  <rule>
+      <from>manage/$</from>
+      <to type="forward">manage/html/login.html</to>
+  </rule>
+   <rule>
+      <from>^/$</from>
+      <to type="forward">/home</to>
+  </rule>
+   <rule>
+      <from>discover/toList.html</from>
+      <to type="forward">portal/frontMutiController/toList.html</to>
+  </rule>
+    <rule>
+      <from>discover/picturelist</from>
+      <to type="forward">portal/frontMutiController/toList.html</to>
+  </rule>
+   <rule>
+      <from>discover/toList</from>
+      <to type="forward">portal/frontMutiController/toList.html</to>
+  </rule>
+  <rule>
+      <from>^/discover/video_list.html</from>
+      <to type="forward">/portal/app/discover/video_list.html</to>
+  </rule>
+   <rule>
+      <from>^/discover/videolist</from>
+      <to type="forward">/portal/app/discover/video_list.html</to>
+  </rule>
+    <rule>
+      <from>^/discover/video_list</from>
+      <to type="forward">/portal/app/discover/video_list.html</to>
+  </rule>
+  <rule>
+      <from>^/discover/video.html.*</from>
+      <to type="forward">/portal/app/discover/video.html$1</to>
+  </rule>
+   <rule>
+      <from>^/discover/picture.html.*</from>
+      <to type="forward">/portal/app/discover/picture.html$1</to>
+  </rule>
+   <rule>
+      <from>^/discover/picture.*</from>
+      <to type="forward">/portal/app/discover/picture.html$1</to>
+  </rule>
+  <rule>
+      <from>^/discover/video</from>
+      <to type="forward">/portal/app/discover/video.html$1</to>
+  </rule>
+ 
+  <rule>
+      <from>^/(\w((?!webscan_360_cn|baidu_verify_3THhra7bdp))+)\.html$</from>
+    <to type="forward">/$1.action</to>
+  </rule>
+  <rule>
+      <from>^/(\w+)/(\w+)\.html$</from>
+      <to>/$1/$2.action</to>
+  </rule>
+  <!-- 游西藏攻略 表达式   一个参数 url  重写 -->
+   <rule>
+     <from>^/tourism/strage/detail/(\w+).html$</from>
+      <to type="forward">/tourism/strage/detail?code=$1</to>
+  </rule>
+  <!-- 多个参数 url 重写  -->
+  <!-- 目的地 表达式   一个参数 url  重写 -->
+   <rule>
+     <from>^/tourism/des/detail/(\w+).html$</from>
+      <to type="forward">/tourism/des/detail?destinationCode=$1</to>
+  </rule>
+  <!-- 天上社区出了置顶板块外 url 重写 -->
+  
+  <rule>
+  	<from>^/community/list/(\w+)/(\w+)/notice.html$</from>
+  	<to>/community/list?orderBy=$1&amp;currentPage=$2&amp;plateCode=409fb234-8639-452a-a440-88c210f5ce6f</to>
+  </rule>
+  <rule>
+  	<from>^/community/list/(\w+)/(\w+)/stroty.html$</from>
+  	<to>/community/list?orderBy=$1&amp;currentPage=$2&amp;plateCode=1e7e7437-5858-42a7-bd15-1d29f93326f0</to>
+  </rule>
+  <rule>
+  	<from>^/community/list/(\w+)/(\w+)/collect.html$</from>
+  	<to>/community/list?orderBy=$1&amp;currentPage=$2&amp;plateCode=2a13c8e4-e657-44e9-a29c-c7d13b9f1085</to>
+  </rule>
+  <rule>
+  	<from>^/community/list/(\w+)/(\w+)/discuss.html$</from>
+  	<to>/community/list?orderBy=$1&amp;currentPage=$2&amp;plateCode=d8e55a99-146b-43f1-be0c-9381b03f862f</to>
+  </rule>
+  
+  
+  
+  
+  <rule>
+  	<from>^/community/list/(\w+)/(\w+)/(.+).html$</from>
+  	<to>/community/list?orderBy=$1&amp;currentPage=$2&amp;plateCode=$3</to>
+  </rule>
+  
+  
+  
+  
+  <rule>
+  	<from>^/community/listzb/(\w+)/(.+).html$</from>
+  	<to>/community/list?orderBy=$1&amp;plateCode=$2</to>
+  </rule>
+  <!-- 天上社区出了置顶板块外 url 重写 -->
+  <rule>
+  	<from>^/community/more/orderBy\_(\w+)/isTop\_(\w+).html$</from>
+  	<to>/community/more?orderBy=$1&amp;isTop=$2</to>
+  </rule>
+  <!-- 帖子详情页面 表达式   一个参数 url  重写 -->
+   <rule>
+     <from>^/community/detail/(\w+).html$</from>
+      <to type="forward">/community/detail?code=$1</to>
+  </rule>
+   <!-- 景点详情页面 表达式   一个参数 url  重写 -->
+   <rule>
+     <from>^/tourism/view/detail/(\w+).html$</from>
+      <to type="forward">/tourism/view/detail?code=$1</to>
+  </rule>
+  <rule>
+     <from>^/tourism/view/forView/(\w+).html$</from>
+      <to type="forward">/tourism/view/forView?destinationCode=$1</to>
+  </rule>
+   <rule>
+     <from>^/tourism/view/forPhotoGalleryView/(\w+).html$</from>
+      <to type="forward">/tourism/view/forPhotoGalleryView?viewCode=$1</to>
+  </rule>
+   <rule>
+     <from>^/tourism/atlas/forPhotoGallery/(\w+).html$</from>
+      <to type="forward">//tourism/atlas/forPhotoGallery?destinationCode=$1</to>
+  </rule>
+  
+  <!--活动详情页面 表达式   一个参数 url  重写 -->
+   <rule>
+     <from>^/activity/detail/(\w+).html$</from>
+      <to type="forward">/activity/detail?code=$1</to>
+  </rule>
+  <!--专题详情页面 表达式   一个参数 url  重写 -->
+   <rule>
+     <from>^/special/detail/(\w+).html$</from>
+      <to type="forward">/special/detail?code=$1</to>
+  </rule>
+  <!--商户详情页面 表达式   一个参数 url  重写 -->
+   <rule>
+     <from>^/tourism/merchant/detail/(\w+).html$</from>
+      <to type="forward">/tourism/merchant/detail?code=$1</to>
+  </rule>
+  <!--团游详情页面 表达式   一个参数 url  重写 -->
+   <rule>
+     <from>^/tourism/group/detail/(\w+).html$</from>
+      <to type="forward">/tourism/group/detail?code=$1</to>
+  </rule>
+    <!--读西藏 西藏动态详情页面 表达式   一个参数 url  重写 -->
+   <!--读西藏 西藏文化传播详情页面 表达式   一个参数 url  重写 -->
+   <rule>
+     <from>^/culture/culture_detail/(\w+).html$</from>
+      <to type="forward">/culture/culture_detail?code=$1</to>
+  </rule>
+   <!--装备详情页面 表达式   一个参数 url  重写 -->
+   <rule>
+     <from>^/ride/eqindex/detail/(\w+).html$</from>
+      <to type="forward">/ride/eqindex/detail?code=$1</to>
+  </rule>
+   <!--天上社区版块页面 一个 platecode参数 表达式   一个参数 url  重写 -->
+   <rule>
+     <from>^/community/list/(.+).html$</from>
+      <to type="forward">/community/list?plateCode=$1</to>
+  </rule>
+   <!--进入 攻略页面   列表一个 platecode参数 表达式   一个参数 url  重写 -->
+   <rule>
+     <from>^/tourism/strage/intoTraval/(.+).html$</from>
+      <to type="forward">/tourism/strage/intoTraval?programCode=$1</to>
+  </rule>
+   <rule>
+     <from>^/tourism/strage/intoTravaldes/(.+).html$</from>
+      <to type="forward">/tourism/strage/intoTraval?des=$1</to>
+  </rule>
+  <rule>
+     <from>^/tourism/strage/intoTravalviews/(.+).html$</from>
+      <to type="forward">/tourism/strage/intoTraval?view=$1</to>
+  </rule>
+   <!--进入商户全部页面   列表一个 type =  0参数 表达式   一个参数 url  重写 -->
+  <rule>
+      <from>^/tourism/merchant/list/(.+).html$</from>
+      <to type="forward">/tourism/merchant/list?type=$1</to>
+  </rule>
+  <rule>
+      <from>^/tourism/merchant/list/office/iof/office.html$</from>
+      <to type="forward">/tourism/merchant/list?isOffice=office</to>
+  </rule>
+  <rule>
+     <from>^/tourism/merchant/merchantList/1(.*)/1(.*)/1(.*)/1(.*).html$</from>
+      <to type="forward" encode="true">/tourism/merchant/merchantList?viewCode=$1&amp;destinationCode=$2&amp;keyWord=$3&amp;type=$4</to>
+  </rule>
+  <rule>
+     <from>^/tourism/merchant/list/1(.*)/1(.*)/1(.*)/1(.*).html$</from>
+      <to type="forward">/tourism/merchant/list?viewCode=$1&amp;destinationCode=$2&amp;keyWord=$3&amp;type=$4</to>
+  </rule>
+  <rule>
+      <from>^/tourism/merchant/merchantList/(.+).html$</from>
+      <to type="forward">/tourism/merchant/merchantList?viewCode=$1</to>
+  </rule>
+  
+  <rule>
+      <from>^/tourism/merchant/merchantList/(.+).html$</from>
+      <to type="forward">/tourism/merchant/merchantList?viewCode=$1</to>
+  </rule>
+  
+  <rule>
+      <from>^/tourism/merchant/merchantListdes/(.+).html$</from>
+      <to type="forward">/tourism/merchant/merchantList?destinationCode=$1</to>
+  </rule>
+  <!-- 读西藏 -->
+  <rule>
+      <from>^/culture/list/(.+).html$</from>
+      <to type="forward">/culture/list?type=$1</to>
+  </rule>
+  
+  <rule>
+     <from>^/culture/list/1(.*)/1(.*)/1(.*)/1(.*).html$</from>
+      <to type="forward">/culture/list?keywords=$1&amp;type=$2&amp;orderType=$3&amp;currentPage=$4</to>
+  </rule>
+  <!-- 骑行  -->
+  <rule>
+      <from>^/ride/line/list/(.+).html$</from>
+      <to type="forward">/ride/line/list?code=$1</to>
+  </rule>
+   <rule>
+      <from>^/ride/eqindex/more/(.+).html$</from>
+      <to type="forward">/ride/eqindex/more?type=$1</to>
+  </rule>
+   <rule>
+      <from>^/member/show/(.+).html$</from>
+      <to type="forward">/member/othershow/othersStra?memberCode=$1</to>
+  </rule>
+  <rule>
+      <from>^/culture/detail/(.+).html$</from>
+      <to type="forward">/culture/detail?code=$1</to>
+  </rule>
+  <rule>
+      <from>^/tourism/mlist/2(.*)/2(.*)/2(.*)/2(.*)/2(.*).html$</from>
+      <to type="forward">/tourism/merchant/merchantList?viewCode=$1&amp;destinationCode=$2&amp;keyWord=$3&amp;type=$4&amp;rule=$5</to>
+  </rule>
+  
+  
+   <rule>
+      <from>^/portal/app/setting/other.html/(.+)$</from>
+      <to type="forward">/portal/app/setting/other.html?code=$1</to>
+  </rule>
+ </urlrewrite>

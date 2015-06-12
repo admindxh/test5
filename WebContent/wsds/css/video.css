@@ -1,0 +1,100 @@
+.video-cont, .video-info, .video-info-intr {
+    width: 1000px;
+    margin: 0 auto;
+    color: #7a7a7a;
+    font-family: microsoft yahei;
+}
+
+.video-h1 {
+    background: url("../img/film-ico.png") no-repeat;
+    border-bottom: 1px solid #e8e8e8;
+    height: 40px;
+    line-height: 30px;
+    padding-left: 70px;
+    margin: 30px 0;
+    font-size: 22px;
+}
+
+.mainer {
+    margin: 0 -22px;
+}
+
+.unit {
+    float: left;
+    width: 300px;
+    margin: 0 16px 30px 16px;
+    font-size: 12px;
+    border-bottom: 1px solid #ebebeb;
+    padding: 8px 8px 25px 8px;
+}
+.unit a{
+    color: #7a7a7a;
+}
+.unit h2 {
+    padding: 15px 0;
+    color: #464646;
+}
+
+.unit:hover {
+    +background: #E8E8E8;
+    background: #E8E8E8 \0;
+    -moz-box-shadow: 0px 0px 20px #777777;
+    -webkit-box-shadow: 0px 0px 20px #777777;
+    box-shadow: 0px 0px 20px #777777;
+    behavior: url(../ie-css3.htc);
+}
+
+.video-info {
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+.video-info-img {
+    float: left;
+}
+
+.video-Introduction {
+    padding: 15px 0 0 154px;
+    font-family: microsoft yahei;
+}
+
+.video-Introduction i {
+    font-size: 14px;
+    color: #797979;
+}
+
+.video-Introduction h1 {
+    color: #34495e;
+    line-height: 50px;
+}
+
+.video-Introduction li {
+    margin: 5px 0;
+}
+.video-Introduction ol {
+    margin-left: -15px;
+}
+.video-Introduction li strong{
+    padding-left: 15px;
+    color: #797979;
+}
+
+.letv,.Tencent {
+    padding: 38px 0 70px 0;
+    border: 1px solid #cccccc;
+    text-align: center;
+    background: #f4f4f4;
+}
+.yuan{
+    padding: 10px 0;
+}
+.yuan ul li{
+    float: left;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.curr{
+    background: #7a7a7a;
+    color: #ffffff;
+}

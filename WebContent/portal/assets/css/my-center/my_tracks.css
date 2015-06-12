@@ -1,0 +1,205 @@
+.main{
+    width: 1200px;
+    padding: 0;
+    font-family: Microsoft Yahei, "微软雅黑";
+}
+.main .banner{
+    margin-top: 60px;
+}
+.banner .box-right{
+    width: 730px;
+    float: left;
+    margin-bottom: 60px;
+}
+.banner .site{
+    width: 250px;
+    float: right;
+}
+.site .been{
+    width: 122px;
+    height: 138px;
+    float: left;
+    background: url("../../icon/des_bg.png") no-repeat;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.site .want-go{
+	float: right;
+}
+.been .title{
+    width: 100%;
+    height: 28px;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    background-color: #068223;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.colour-bar{
+    width: 100%;
+    height: 2px;
+    background: url("../../icon/user-top.png") repeat-x;
+}
+.des-display div{
+	width: 54px;
+    font-size: 12px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 1px 2px;
+    border: 1px solid #dcdcdc;
+    background-color: #ffffff;
+    cursor: pointer;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.want-go{
+    margin-left: 6px;
+}
+.want-go .title{
+    background-color: #cf1423;
+}
+.place-list{
+    margin-top: 18px;
+}
+.place-list div{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    margin-top: 3px;
+}
+.been-num{
+    background-color: #932720;
+}
+.been-num img{
+    margin-left: 20px;
+}
+.name-str{
+    margin-left: 15px;
+}
+.been-num .amount{
+    float: right;
+    margin-right: 40px;
+}
+.want-to{
+    background-color: #af401f;
+}
+.share-info{
+    background-color: #c7561f;
+}
+
+.main label{
+    margin-bottom: 0;
+    font-weight: normal;
+}
+.main a{
+    color: #333;
+}
+.place-list a:hover{
+    text-decoration: none;
+}
+.gogoing{
+	margin-top: 60px;
+}
+.gogoing div a{
+	vertical-align: middle;
+	margin-left: 5px;
+}
+.listing{
+    list-style: none;
+}
+.listing li{
+    float: left;
+    margin-left: 20px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.listing li:first-child{
+    margin-left: 0;
+}
+.listing .down{
+    color: #cf1423;
+    background: url("../../icon/down.png") no-repeat 0 center;
+}
+.content{
+    margin-left: -30px;
+}
+.content .con-info{
+    float: left;
+}
+.con-info{
+    width: 313px;
+    height: 198px;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: #f1f1f1;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.con-info>div{
+    float: left;
+}
+.sce-img{
+    width: 163px;
+    height: 198px;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+.sce-img img{
+    width: inherit;
+    height: inherit;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+.particular{
+    width: 150px;
+    height: 255px;
+    padding: 0 20px;
+}
+.particular h5 {
+    height: 16px;
+    line-height: 16px;
+    margin-top: 30px;
+    padding-left: 15px;
+    color: #cf1423;
+    background: url("../../icon/location_red.png") no-repeat 0 center;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.particular h5 a{
+    color: #cf1423;
+}
+.abc{
+    width: 1200px;
+    overflow: hidden;
+}
+.particular p{
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.particular .span-color{
+    color: #898989;
+}
+.presentation{
+    height: 125px;
+    line-height: 25px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.main .paging{
+    margin-top: 50px;
+    margin-bottom: 0;
+    background-color: transparent;
+}
+.box-right .go-wrap span{
+    padding: 3px 20px;
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.rimi.ctibet.domain.MutiImage" table="mutiimage">
+		<id name="id" type="int">
+			<column name="id" length="40" />
+			<generator class="native"></generator>
+		</id>
+		<property name="code" type="string">
+			<column name="code" />
+		</property>
+		<property name="programaCode" type="string">
+			<column name="programaCode" />
+		</property>
+		<property name="name" type="string">
+			<column name="name" />
+		</property>
+		<property name="summary" type="string">
+			<column name="summary" />
+		</property>
+		<property name="coverUrl" type="string">
+			<column name="coverUrl" />
+		</property>
+		<property name="detail" type="string">
+			<column name="detail" />
+		</property>
+		<property name="directory" type="string">
+			<column name="directory" />
+		</property>
+		<property name="createTime" type="timestamp">
+			<column name="createTime" />
+		</property>
+		<property name="lastEditTime" type="timestamp">
+			<column name="lastEditTime" />
+		</property>
+		<property name="avaliable" type="integer">
+			<column name="avaliable" />
+		</property>
+		<property name="editUserCode" type="string">
+			<column name="editUserCode" />
+		</property>
+		<property name="createUserCode" type="string">
+			<column name="createUserCode" />
+		</property>
+		<property name="keywords" type="string">
+			<column name="keywords" />
+		</property>
+		<property name="title" type="string">
+			<column name="title" />
+		</property>
+		<property name="description" type="string">
+			<column name="description" />
+		</property>
+		<property name="isOfficial" type="string">
+			<column name="isOfficial" />
+		</property>
+		 <property name="seeCount" type="integer">
+            <column name="seeCount"/>
+        </property>
+        <property name="hyperlink" type="string">
+			<column name="hyperlink" />
+		</property> 
+        
+        <property name="tdkTitle"       column="tdkTitle"/>
+      	<property name="tdkDescription" column="tdkDescription"/>
+        <property name="tdkKeywords"    column="tdkKeywords"/>
+        
+
+	</class>
+</hibernate-mapping>

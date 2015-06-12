@@ -1,0 +1,17 @@
+body{font-family: "Microsoft Yahei";}
+.main{
+    width: 100%;
+    height: auto;
+    background-color: #f8f8f8;
+}
+.container{
+    width: 1000px;
+    padding: 0;
+}
+.lose404{
+    width: 525px;
+    margin: 200px auto 400px;
+}
+.footer{
+    margin-top: 0 !important;
+}

@@ -1,0 +1,55 @@
+/**
+* 功能：管理员登陆样式设置
+* 日期：2014年12月12日
+* 作者：weiye
+**/ 
+
+/* 背景 */
+.login-bg { width: 100%; height: auto; position: absolute; left: 0; top: 0; z-index: 0; overflow: hidden;}
+.login-bg img { width: 100%; height: auto; display: block;}
+
+/* header */
+.header { width: 100%; height: 63px; background: url(../img/ele/header-bg.png) repeat-x; position: absolute; left: 0; top: 0; z-index: 1;}
+
+.logo { width: 260px; height: 29px; background: url(../img/ele/login-logo.png) no-repeat; margin-left: 40px; margin-top: 17px;}
+
+/* 登陆框 */
+.loginBox { width: 380px; height: 330px; background:url(../img/ele/login-box.png) no-repeat; position: absolute; left: 50%; top: 50%; margin-left: -190px; margin-top: -165px; z-index: 10;}
+
+/* 登陆框表单元素——表单行 */
+.formLine { padding: 0; position: absolute;}
+
+/* 登录信息 */
+.login-info { width: auto; height: auto; margin-left: 94px; margin-top: 80px; position: relative;}
+.formLine .mt20 { margin-top: 20px;}
+
+/* 文本框 */
+.formLine input { width: 240px; height: 26px; background-color: transparent !important; box-sizing: border-box;  border: none; outline: none; padding: 0 4px; font: normal 14px "宋体"; color: #6a5e5e; vertical-align: middle; margin-top: 2px; display: inline-block;}
+.formLine input.txtSecuCode { width: 140px;}
+.formLine input:focus { background-color: transparent !important; border: none; outline: none; }
+
+/* 清除IE较新版本的文本框内的辅助按钮 */
+.formLine input::-ms-clear, .formLine input::-ms-reveal { display:none;}
+
+/* 验证码 */
+.secuCode {width: 82px; height: 28px; float: right; position: absolute; top: 1px; left: 162px;}
+.secuCode img {width: 82px; height: 28px;; cursor: pointer;}
+
+/* 按钮基本样式 */
+.btn-base {background-color: transparent; border: none; outline: none; cursor: pointer;}
+/* 登录按钮 */
+.btn-login {width: 310px; height: 42px; background: url(../img/ele/login-btn.png) 0 0 no-repeat; }
+.btn-login:hover {background-position: 0 -42px;}
+.btn-login:active {background-position: 0 -84px;}
+
+/* 定位设置 */
+.account {left: 0; top: 0;}
+.passwd {left: 0; top: 50px;}
+.validCode {left: 0; top: 100px;}
+.loginButton {width: 100%; left: 0; top: 252px;}
+
+/* 信息提示框 */
+.mesgBox { width: 100%; height: 20px; line-height: 20px; text-align: center; font-size: 14px; color: #ee2323; position: absolute; top: 220px;}
+
+/* 输入提示 */
+.placeholder { width: 0; height: auto;font-size: 14px; color: #bcbcbc; white-space: nowrap; overflow: visible; position: absolute; z-index: 99999; margin-left: 4px; margin-top: 2px;}

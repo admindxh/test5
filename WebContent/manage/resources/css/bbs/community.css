@@ -1,0 +1,28 @@
+.community{
+    width: 1200px;
+    padding: 0;
+    font-family: 'Microsoft Yahei';
+}
+.community label{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+.community a{
+    color: #333;
+}
+.community .row{
+    margin: 0;
+}
+.community .col-xs-9{
+    width: 870px;
+    padding: 0;
+}
+.community .col-xs-3{
+    width: 310px;
+    padding: 0;
+    margin-left: 20px;
+}
+.community ul{
+    list-style: none;
+}

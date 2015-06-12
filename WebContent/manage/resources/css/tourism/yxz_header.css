@@ -1,0 +1,238 @@
+body{
+    font-family: 'Microsoft Yahei';
+    min-width: 1350px;
+}
+
+/* Reset the container */
+.container {
+    position: relative;
+    width: 1200px;
+    max-width: none !important;
+    padding: 0;
+}
+
+.cb-index-nav{
+    position: relative;
+    margin-bottom: 0;
+    border-bottom: 0 !important;
+    background-color: #fff;
+    min-height: 60px;
+}
+.cb-index-nav .navbar-brand{
+    padding: 0;
+    height: 60px;
+}
+.cb-index-nav .navbar-nav>li>a{
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #000000;
+}
+.cb-index-nav .navbar-nav>li>a span{
+    display: inline-block;
+}
+.cb-index-nav .navbar-nav>li>a:hover, .cb-index-nav .navbar-nav>li>a:focus{
+    background-color: inherit;
+}
+.cb-index-nav .navbar-left{
+    position: relative;
+    margin-left: 100px;
+}
+/*.cb-index-nav .navbar-left a.active, .cb-index-nav .navbar-left a:hover{
+    background: url(../../icon/arrow_top.png) 20px bottom no-repeat;
+}*/
+.cb-index-nav .navbar-right{
+    margin-top: 10px;
+}
+.cb-index-nav .container{
+    width: 1350px !important;
+}
+
+#tags {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 40px;
+    line-height: 40px;
+}
+.tags-mark{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #cf1423;
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+#tags .list-unstyled{
+    margin-bottom: 0;
+    margin-left: 30px;
+}
+#tags a{
+    margin-left: 55px;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.icon-rz{
+    position: absolute;
+    top: 8px;
+    right: 22px;
+    width: 14px;
+    height: 14px;
+    background: url(../../icon/icon_zr.png) no-repeat;
+}
+.fav{
+    margin-left: 10px;
+    background: #fff url(../../icon/fav.png) left 12px no-repeat
+}
+/* banner */
+#banner{
+    height: 300px;
+    margin-bottom: 60px;
+}
+#banner .banner-item{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.banner-content{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1350px;
+    height: 300px;
+}
+.banner-left{
+    position: absolute;
+    left: 150px;
+    bottom: 50px;
+}
+.banner-right{
+    position: absolute;
+    top: 40px;
+    right: 75px;
+}
+.banner-right .secondary-menu{
+    width: 310px;
+    height: 260px;
+    background: url("../../icon/list_bg.png");
+}
+.secondary-menu ul{
+    list-style-type: none;
+}
+.secondary-menu ul li div{
+    float: left;
+}
+.secondary-menu .location-pin{
+    width: 92px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    background: url("../../icon/location_bg.png");
+}
+.secondary-menu .bookmark-bg{
+    background: url("../../icon/book_bg.png");
+}
+.secondary-menu .car-bg{
+    background: url("../../icon/car_bg.png");
+}
+.secondary-menu .bicyle-bg{
+    background: url("../../icon/bicycle_bg.png");
+}
+.secondary-menu .store-bg{
+    background: url("../../icon/store_bg.png");
+}
+.secondary-menu .location-pin-write{
+    width: 218px;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* 热门景点hover */
+.secondary-menu .location-click{
+    background: url("../../icon/location_bg.png");
+    color: #fff;
+}
+.secondary-menu .location-hover:hover .location-pin-write{
+    color: #fff;
+    background: url("../../icon/location_bg.png");
+}
+/* 综合攻略hover */
+.secondary-menu .bookmark-click{
+    color: #fff;
+    background: url("../../icon/book_bg.png");
+}
+.secondary-menu .bookmark-hover:hover .location-pin-write{
+    color: #fff;
+    background: url("../../icon/book_bg.png");
+}
+/* 自驾游攻略hover */
+.secondary-menu .car-click{
+    color: #fff;
+    background: url("../../icon/car_bg.png");
+}
+.secondary-menu .car-hover:hover .location-pin-write{
+    color: #fff;
+    background: url("../../icon/car_bg.png");
+}
+/* 骑行攻略hover */
+.secondary-menu .bicyle-click{
+    color: #fff;
+    background: url("../../icon/bicycle_bg.png");
+}
+.secondary-menu .bicyle-hover:hover .location-pin-write{
+    color: #fff;
+    background: url("../../icon/bicycle_bg.png");
+}
+/* 商户hover */
+.secondary-menu .store-click{
+    color: #fff;
+    background: url("../../icon/store_bg.png");
+}
+.secondary-menu .store-hover:hover .location-pin-write{
+    color: #fff;
+    background: url("../../icon/store_bg.png");
+}
+/* end banner */
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.index-more{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 29px;
+    line-height: 29px;
+    background: #fff;
+    text-align: right;
+}
+.index-more a{
+    font-size: 14px;
+    color: #333;
+}
+
+.xz-box{
+    margin-top: 60px;
+}
+.xz-heading{
+    position: relative;
+    margin-bottom: 15px;
+    height: 29px;
+    background: #fff url(../../icon/line.png) left center repeat-x;
+}
+.xz-heading h2{
+    position: relative;
+    margin: 0;
+    height: 29px;
+}

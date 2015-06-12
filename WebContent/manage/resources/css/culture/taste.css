@@ -1,0 +1,378 @@
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+.taste{
+    width: 1200px !important;
+    padding: 0;
+    margin-top: 30px;
+    font-family: "Microsoft Yahei";
+}
+.taste .row{
+    margin: 0;
+}
+.taste-info{
+    width: 870px;
+    padding: 0;
+}
+.news{
+    width: 310px;
+    margin-left: 20px;
+    padding: 0;
+}
+.taste-title{
+    width: 176px;
+    height: 31px;
+    background: #fff url("../../icon/taste.png") no-repeat;
+    margin-bottom: 15px;
+}
+.taste-info-header{
+    width: 100%;
+    height: 400px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.taste-info-header button{
+    display: none;
+}
+.taste-info-header .info-img img{
+    float: left;
+}
+.written-message{
+    float: left;
+    margin-left: 24px;
+    width: 255px;
+    height: 335px;
+    overflow: hidden;
+}
+.written-message h5{
+    margin: 40px 0 20px 0;
+}
+.written-message p{
+    margin-bottom: 25px;
+    font-size: 12px;
+    color: #898989;
+}
+
+.taste-info-header ul{
+    width: auto;
+    height: 12px;
+    line-height: 0;
+    position: absolute;
+    right: 80px;
+    bottom: 14px;
+    list-style: none;
+    text-align: center;
+}
+.taste-info-header li{
+    width: 13px;
+    height: 12px;
+    vertical-align: middle;
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 0;
+    cursor: pointer;
+}
+.taste-info-header li:hover{
+    background: url("../../icon/dots.png") no-repeat 0 0;
+}
+.taste-info-header .dot-active{
+    background: url("../../icon/dots.png") no-repeat 0 0;
+}
+.taste-info-header li:first-child{
+    margin-left: 0;
+}
+.taste-info-footer>div{
+    float: left;
+    margin-left: 10px;
+}
+.taste-info-footer>div:first-child{
+    margin-left: 0;
+}
+.taste-info-footer h5{
+    margin: 0 0 21px 10px;
+}
+.taste-footer-left{}
+.taste-festiva{
+    width: 283px;
+    height: 280px;
+    background: #eee;
+    border-radius: 10px;
+}
+.festiva-info{
+    width: 100%;
+    height: 96px;
+    padding: 0 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.taste-info-footer .taste-footer-h5{
+    margin: 10px 0
+}
+.festiva-info p{
+    font-size: 12px;
+}
+.festiva-info a{
+    width: 40px;
+    height: 20px;
+    background: url("../../icon/lmore.png") no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-decoration: none;
+}
+/* =================
+    精读西藏 End
+================ */
+/* =================
+    西藏动态
+================ */
+.news-title{
+    width: 100%;
+    background: url("../../icon/line.png") repeat-x center;
+    margin-bottom: 15px;
+}
+.news-title div{
+    width: 182px;
+    height: 31px;
+    background: #fff url("../../icon/news.png") no-repeat;
+    float: left;
+}
+.news-title a{
+    width: 70px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 12px;
+    text-align: right;
+    color: #333;
+    float: right;
+    background-color: #ffffff;
+}
+.news-info dl{
+    width: 310px;
+    height: 89px;
+    border-bottom: 1px dashed #959595;
+}
+.news-info dl dd{
+    font-size: 12px;
+    color: #898989;
+}
+.news-info .news-time{
+    text-align: right;
+    margin-top: 10px;
+}
+.news-info .last-dl{
+    margin-bottom: 0;
+}
+/* =================
+    西藏动态 End
+================ */
+
+/* =======================
+    名人 —— 艺术
+======================== */
+.feature-mode{
+ width: 1200px;
+    margin-top: 30px;
+}
+.feature-mode>div{
+    float: left;
+    margin-left: 10px;
+}
+.feature-mode>div:first-child{
+    margin-left: 0;
+}
+.celebrity h5{
+    margin: 0 0 21px 10px
+}
+.celebrity>div{
+    width: 595px;
+    height: 200px;
+    background: #eeeeee;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.celebrity>div img{
+    float: left;
+}
+.celebrity-info{
+    width: 286px;
+    height: inherit;
+    float: right;
+    padding-left: 23px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.celebrity-info dl{
+    margin-top: 20px;
+}
+.celebrity-info dd{
+    font-size: 12px;
+}
+.celebrity-info ul{
+    list-style: none;
+}
+.celebrity-info li{
+    margin-top: 10px;
+}
+.celebrity-info li:first-child{
+    margin-top: 0;
+}
+.celebrity-info li a{
+    color: #333;
+}
+.celebrity-info>a{
+    width: 40px;
+    height: 20px;
+    background: url("../../icon/lmore.png") no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.food-art>div img{
+    float: right;
+}
+.food-art .celebrity-info{
+    width: 284px;
+}
+.food-art .celebrity-info li{
+    margin-top: 5px;
+}
+.food-art .celebrity-info>a{
+    left: 0;
+    bottom: 0;
+    width: 42px;
+    background: url("../../icon/rmore.png");
+}
+/* =======================
+    名人 —— 艺术 End
+======================== */
+.spec-anipla{
+    width: 870px;
+    padding: 0;
+    margin-top: 30px;
+}
+.spec-anipla>div{
+    float: left;
+}
+.anipla{
+    margin-left: 20px;
+}
+.dress-geo{
+    width: 310px;
+    margin-left: 20px;
+    margin-top: 30px;
+    padding: 0;
+}
+.spec-info{
+    width: 425px;
+    height: 342px;
+    background: #f1f1f1;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.spec h5{
+    margin: 0 0 20px 10px
+}
+.spec-top img{
+    float: left;
+}
+.spec-top dl{
+    width: 158px;
+    float: left;
+    margin-top: 22px;
+    margin-bottom: 0;
+    padding: 0 13px;
+}
+.spec-top dt{
+    margin-bottom: 15px;
+}
+.spec-top dd{
+    font-size: 12px;
+}
+.spec-bottom ul{
+    float: left;
+    margin-top: 30px;
+    padding-left: 20px;
+    list-style: none;
+}
+.spec-bottom ul li{
+    margin-top: 25px;
+}
+.spec-bottom ul li:first-child{
+    margin-top: 0;
+}
+.spec-bottom li a{
+    color: #333;
+}
+.spec-left{
+    width: 235px;
+}
+.spec-bottom>a{
+    width: 40px;
+    height: 20px;
+    background: url("../../icon/lmore.png") no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.dress{
+
+}
+
+.dress h5{
+    margin: 0 0 20px 10px
+}
+.dress-info{
+    width: 310px;
+    height: 150px;
+    background: #eee;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.dress-top img{
+    float: left;
+}
+.dress-top dl{
+    width: 156px;
+    float: left;
+    margin-top: 8px;
+    margin-bottom: 0;
+    padding: 0 12px;
+}
+.dress-top dt{
+    margin-bottom: 2px;
+}
+.dress-top dd{
+    font-size: 12px;
+}
+.dress-info ul{
+    margin-top: 7px;
+    padding-left: 10px;
+    list-style: none;
+}
+.dress-info li a{
+    color: #333;
+}
+.dress-info>a{
+    width: 40px;
+    height: 20px;
+    background: url("../../icon/lmore.png") no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.geo{
+    margin-top: 7px;
+}

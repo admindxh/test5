@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <title>活动&专题-活动&专题信息管理-活动信息管理</title>
+    <link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css" />
+    <link rel="stylesheet" href="../../resources/css/base.css" />
+    <script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- main { -->
+    <div class="main">
+		<!-- 页面位置-->
+		<div class="location">
+			<label>您当前位置为:</label>
+			<span><a>活动&专题</a> -</span>
+			<span><a>活动&专题信息管理</a> -</span>
+			<span><a href="#" target="_self">活动信息管理</a></span>
+		</div>
+		
+		<!-- 数据操作 -->
+		<div class="searchManage">
+			<a href="activity-creat.html" target="_self" class="btn-anchor">新建活动</a>
+			<button type="button" class="btn-sure">批量删除</button>
+		</div>
+
+		<!-- 模块管理 { -->
+		<div class="tableManage pos-rela">
+			<!-- 搜索查询栏 { -->
+			<div class="searchTools">
+				
+				<!-- 按标题 -->
+				<label>按标题:</label>
+				<input type="text" placeholder="">
+				
+				<!-- 查询 -->
+				<button type="button" class="btn-search"><!--查询--></button>
+				
+				<!-- 快捷查询 { -->
+				<div class="shortcutSearch">
+					<!-- 包含模块 -->
+					<div class="select-base ml-20">
+						<i class="w-110">包含模块</i>
+						<dl>
+							<dt>全部模块</dt>
+							<dt>投票</dt>
+							<dt>上传</dt>
+							<dt>报名</dt>
+							<dt>报名付费</dt>
+						</dl>
+					</div>
+
+					<!-- 所属版块 -->
+					<!--<div class="select-base ml-10">
+						<i class="w-110">所属版块</i>
+						<dl>
+							<dt>全部版块</dt>
+							<dt>自驾游</dt>
+							<dt>骑行</dt>
+							<dt>综合</dt>
+						</dl>
+					</div>-->
+
+					<!-- 进行状态 -->
+					<div class="select-base ml-10">
+						<i class="w-110">进行状态</i>
+						<dl>
+							<dt>全部状态</dt>
+							<dt>进行中</dt>
+							<dt>已结束</dt>
+						</dl>
+					</div>
+
+					<!-- 快捷筛选 -->
+					<div class="select-base ml-10">
+						<i class="w-140">快捷筛选</i>
+						<dl>
+							<dt>按时间</dt>
+							<dt>按报名人数</dt>
+							<dt>按上传作品数</dt>
+						</dl>
+					</div>
+				</div><!-- } 快捷查询 -->
+			</div><!-- } 搜索查询栏 -->
+			
+			<!-- 数据列表 -->
+			<table border="0" cellpadding="0" cellspacing="0" class="dataTable">
+				<thead>
+					<tr>
+						<th>
+							<input type="checkbox" name="dataCheck" class="allCheck">
+							全选
+						</th>
+						<th>排序</th>
+						<th>创建日期</th>
+						<th>名称</th>
+						<th>进行状态</th>
+						<th>模块功能</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<input type="checkbox" name="dataCheck" class="dataCheck">
+						</td>
+						<td>1</td>
+						<td>2014-12-02</td>
+						<td>
+							<a href="#">
+								<span class="maxW460">西藏拉萨自驾五日游、西藏纳木错综合三日游</span>
+							</a>
+						</td>
+						<td>进行中</td>
+						<td>投票、上传、报名、报名付费</td>
+						<td>
+							<a href="activity-manage.html" target="_self">活动管理</a>
+							<a>前台查看</a>
+							<a href="activity-manage.html">编辑</a>
+							<a>删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" name="dataCheck" class="dataCheck">
+						</td>
+						<td>2</td>
+						<td>2014-12-01</td>
+						<td>
+							<a href="#">
+								<span class="maxW460">雅鲁藏布大峡谷一日游</span>
+							</a>
+						</td>
+						<td>已结束</td>
+						<td>报名、报名付费</td>
+						<td>
+							<a href="activity-manage.html">活动管理</a>
+							<a>前台查看</a>
+							<a href="activity-manage.html">编辑</a>
+							<a>删除</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- 表格分页 -->
+			<div class="paging">
+				<button type="button" class="btn-base_min">首页</button>
+				<button type="button" class="btn-base_min">上一页</button>
+				<button type="button" class="btn-base_min">下一页</button>
+				<button type="button" class="btn-base_min">末页</button>
+			</div>
+				
+		</div><!-- } 模块管理 -->
+    </div><!-- } main -->
+
+    <!-- JS引用部分 -->
+    <script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+    <script src="../../resources/js/base.js" type="text/javascript"></script>
+    <script src="../../resources/js/base-tabel.js" type="text/javascript"></script>
+	
+    <!-- 利用空闲时间预加载指定页面 -->
+    <link rel="prefetch"> <!-- IE10+ -->
+    <link rel="next"> <!-- Firefox -->
+	<link rel="prerender"> <!-- Chrome -->
+</body>
+</html>

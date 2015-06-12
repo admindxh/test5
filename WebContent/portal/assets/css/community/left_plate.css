@@ -1,0 +1,165 @@
+/* == 自驾骑行 == */
+.driving{
+    margin-top: 30px;
+}
+.driving .header{
+    width: 147px;
+    height: 29px;
+    background: url("../../icon/driving.png") no-repeat;
+    margin: 0 0 15px 0;
+}
+.driving .driving-info{
+    border-bottom: 1px dashed #b3b3b3;
+}
+.driving .driving-info img{
+    float: left;
+    margin-bottom: 18px;
+    width: 250px;
+    height: 100px;
+}
+.driving .driving-info ul{
+    float: left;
+    width: 420px;
+    margin-left: 50px;
+    height: 100px;
+    overflow: hidden;
+}
+.driving .driving-info ul li{
+    margin-top: 7px;
+}
+.driving .driving-info ul li:first-child{
+    margin-top: 0;
+}
+.driving-left{
+    max-width: 270px;
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	overflow: hidden;
+}
+.driving-right{
+    float: right;
+    color: #898989;
+}
+.mt20{
+    margin-top: 20px;
+}
+/* == 自驾骑行 End == */
+
+/* == 攻略&游记 == */
+.blogs{
+    margin-top: 30px;
+}
+.blogs .header{   
+    width: auto;
+    height: auto;
+    background: url("../../icon/line.png") repeat-x center;
+    position: relative;
+}
+.blogs .header .blogs-title{
+    float: left;
+    padding-right: 10px;
+    background-color: #ffffff;
+}
+.blogs .header .blogs-title img, .blogs .header .blogs-title h2 {
+    float: left;
+}
+.blogs .header .blogs-title h2{
+    line-height: 26px;
+    font-size: 18px;
+    border: 1px solid #2c9a42;
+    padding: 0 10px;
+    border-left: none;
+    margin: 0 0 0 -2px;
+}
+.blogs .header .mor{
+    width: 80px;
+    height: 29px;
+    line-height: 29px;
+    text-align: right;
+    float: right;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.blogs .content{
+    width: 720px;
+    margin-top: 15px;
+    font-size: 12px;
+}
+.blogs .content .media-heading{
+    float: left;
+    width: 520px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.blogs .content .media-heading a{
+    max-width: 100%;
+    display: inline-block;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.blogs .content .user-info{
+    margin-bottom: 5px;
+}
+.blogs .content .user-info li{
+    display: inline-block;
+    width: 300px;
+}
+.blogs .content .user-info li img,
+.blogs .content .user-info li span{
+    vertical-align: middle;
+}
+.blogs .content .user-info li label{
+    vertical-align: middle;
+}
+.blogs .data{
+    max-width: 34px;
+    display: inline-block;
+    color: #898989;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.blogs .content .user-info li span{
+    color: #068223;
+}
+.blogs .content .media{
+    border-bottom: 1px dashed #b3b3b3;
+    position: relative;
+}
+.blogs .content p, .blogs .content .str50{
+    width: 640px!important;
+    margin-bottom: 10px;
+    height: 34px;
+    overflow: hidden;
+    display: block;
+}
+.blogs .content .media-right{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.blogs .content .media-right .zan{
+    margin-top: 0;
+}
+.blogs .content .media-right>div{
+	text-align: center;
+}
+.blogs .media-mt18{
+    margin-top: 18px;
+}
+.blogs .author{
+    text-decoration: none;
+}
+.author:hover,
+.author:focus{
+    color: #068223;
+    text-decoration: none;
+}
+/* == 攻略&游记 End == */

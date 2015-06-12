@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <title>天上社区-论坛版块管理-板块列表页-新建论坛版块</title>
+    <link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css" />
+    <link rel="stylesheet" href="../../resources/css/base.css" />
+    <link rel="stylesheet" href="../../resources/css/travel/formWeb.css" />
+    <style>
+        .mt-40{
+            margin-top: -40px;
+        }
+        .floatfix:after{
+            content:"";
+            display:table;
+            clear:both;
+        }
+    </style>
+    <script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!-- main { -->
+<div class="main">
+    <form id="creatRead" name="">
+        <!-- 页面位置-->
+        <div class="location">
+            <label>您当前位置为:</label>
+            <span><a>天上社区</a> -</span>
+            <span><a>论坛版块管理</a> -</span>
+            <span><a href="forum-list.html" target="_self">版块列表页</a> -</span>
+            <span><a href="#" target="_self">新建论坛版块</a></span>
+        </div>
+
+        <!-- 数据操作 -->
+        <div class="searchManage">
+            <button id="preview" type="submit" class="btn-sure">预览</button>
+            <button id="saveForm" type="submit" class="btn-sure">保存</button>
+        </div>
+
+        <!-- 模块管理 { -->
+        <div class="muduleManage details filament_solid_ddd">
+           
+            <!-- 版块名称  { -->
+            <div class="formLine">
+                <label>版块名称:</label>
+                <input id="js_name" type="text" maxlength="30" class="w-260">
+                <span class="reqItem">*</span>
+			</div>
+			
+			<!-- 图片上传 { -->
+			<div class="formLine">
+				<label>背景图:</label>
+				<button class="btn-base uploadImg" type="button">点击上传图片</button>
+				<span class="txt-suggest ml20">推荐上传大小452 * 292</span>
+			</div>
+
+			<!-- 图片缩略图 { -->
+			<div class="formLine">
+				<label></label>
+				<img src="../../resources/img/ele/loadImg_default_b.jpg" title="缩略图名称" alt="请上传图片" class="style-b">
+			</div>
+
+			<!-- 正文内容 { -->
+			<div class="formLine">
+				<label class="pos_r_t5">版块介绍:</label>
+				<textarea id="editor1" name="editor1" cols="80" rows="10" class="ckeditor pl5" style="display:inline-block"></textarea>
+			</div>
+
+		</div><!-- } 模块管理 -->
+
+        <!-- SEO信息 { -->
+        <div class="contClassify">
+            <h2 class="title">SEO信息</h2>
+
+            <div class="formLine">
+                <label class="w-160">&lt;Keywords&gt;标签:</label>
+                <input id="keywords" type="text" maxlength="20" class="w-320" value="天上社区，西藏旅游社交，西藏旅游攻略">
+                <span class="txt-suggest ml20">为了确保搜索引擎的亲和力，请输入5个以下的关键词，每个关键词用，隔开</span>
+            </div>
+        </div>
+        <!-- } SEO信息 -->
+    </form>
+</div>
+<!-- } main -->
+
+<!-- JS引用部分 -->
+<script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+<script src="../../resources/js/base.js" type="text/javascript"></script>
+<script src="../../resources/js/base-form.js"></script>
+
+
+<script src="../../resources/plugin/jquery.rimi.validation.js" type="text/javascript"></script>
+<script src="../../resources/js/dataValidation.js" type="text/javascript"></script>
+<script>
+    /* 版块名称验证 */
+    $("#js_name").blur(function(){
+        var $this = $(this);
+        var thisVal = $this.val();
+        valid_txtBox(this, $.VLDTOR.IsEnCnNum(thisVal) && inputRange(this,2,30), "只能为中英文及数字，且长度在2-30", "right");
+    });
+
+    /* 版块介绍验证 */
+    $("#editor1").blur(function(){
+        var $this = $(this);
+        var thisVal = $this.val(),
+                regTest = $.VLDTOR.IsEnCnNum(thisVal);
+        valid_txtBox_create(this,regTest && inputRange(this,2,300),"只能为中英文及数字，且长度在2-30，且长度在2-300","right");
+    });
+
+    /* SEO验证 */
+    $("#keywords").blur(function(){
+        var $this = $(this),
+                thisVal = $this.val();
+        valid_txtBox_create(this, ($.VLDTOR.IsEnCnNum_comma(thisVal) && inputRange(this,2,20)) || thisVal == "", "只能为空或中英文及数字，且长度在2-20", "bottom");
+    });
+    $("#saveForm").click(function(){
+        $("#js_name").blur();
+        $("#editor1").blur();
+        $("#keywords").blur();
+        var errInfo = $(".errMesg").length == 0;
+        if(errInfo){
+            $("#creatRead").submit();
+        }else{
+            msgBox("输入信息有误，请检查", "erro", 1000);
+            return false;
+        }
+    });
+</script>
+<!-- 利用空闲时间预加载指定页面 -->
+<link rel="prefetch">
+<!-- IE10+ -->
+<link rel="next">
+<!-- Firefox -->
+<link rel="prerender">
+<!-- Chrome -->
+
+</body>
+</html>

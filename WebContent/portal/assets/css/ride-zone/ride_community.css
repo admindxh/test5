@@ -1,0 +1,62 @@
+.location{
+    margin-top: 60px;
+}
+.ride-header{
+    width: 277px;
+    height: 31px;
+    margin: 50px 0 30px;
+    padding-left: 25px;
+    line-height: 31px;
+    font-size: 18px;
+    background: url(../../icon/qx_title.png) no-repeat;
+}
+.ride-info .media{
+    border-bottom: 1px dashed #c3c3c3;
+    padding-bottom: 10px;
+    position: relative;
+}
+.ride-info .media-body p{
+    width: 400px;
+    height: 35px;
+    margin-top: 15px;
+    font-size: 12px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.ride-info .media-body>span{
+    display: inline-block;
+    padding-left: 18px;
+    font-size: 12px;
+}
+.view-count{
+    min-width: 15px;
+    min-height: 9px;
+    background:  url(../../icon/eye_ac.png) 0 center no-repeat;
+}
+.reviews{
+    min-width: 14px;
+    min-height: 13px;
+    margin-left: 15px;
+    background:  url(../../icon/chat.png) 0 center no-repeat;
+}
+.recent-comments{
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    text-align: right;
+}
+.recent-comments p{
+    width: 250px;
+    margin-bottom: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.comment-time{
+    font-size: 12px;
+}
+.comment-time span{
+    margin-left: 10px;
+    vertical-align: middle;
+}

@@ -1,0 +1,124 @@
+body,div,p{
+    margin: 0;
+    padding: 0;
+}
+body{font-family: 'microsoft yahei';font-size: 13px;}
+.userDatails{
+    width: 1000px;
+    border: 1px solid #aaa;
+}
+.userDatails .header{
+    border-bottom: 1px solid #aaa;
+    padding: 2px 5px;
+}
+.header .currentLocation{
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.userDatails .content{
+    width: 900px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.content .information{
+    margin: 0 auto;
+}
+.information>div{
+    border: 1px solid #aaa;
+}
+.basicInfo>p{
+    width: 100px;
+    color:#fff;
+    text-align: center;
+    padding: 3px 0;
+    background-color: #990000;
+}
+.basicInfo .info{
+    overflow: hidden;
+    padding: 20px 0;
+}
+.basicInfo .info>div{
+    float: left;
+    margin-left: 150px;
+}
+.basicInfo .info>div p{
+    height: 30px;
+    line-height: 30px;
+}
+.basicInfo .info .left{
+    margin-left: 25px;
+}
+.information .listInfo{
+    height: 500px;
+    margin: 10px 0 20px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.listInfo>p{
+    width: 100px;
+    color:#fff;
+    text-align: center;
+    padding: 3px 0;
+    background-color: #990000;
+}
+.listInfo .filter{
+    width: 800px;
+    margin: 15px auto 10px;
+}
+.filter .timeSel{
+    display: inline;
+}
+.filter button{
+    padding: 2px 20px;
+    margin-left: 15px;
+    outline: none;
+}
+.filter select{
+    margin-left: 15px;;
+}
+.filter .timeSel input{
+    width: 120px;
+    outline: none;
+    padding-left: 3px;
+    color: #aaa;
+}
+.filter select{
+    height: 24px;
+    outline: none;
+}
+.listInfo table{
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+.listInfo table th,td{
+    border: 1px solid #aaa;
+}
+.listInfo table thead th{
+    width: 180px;
+    height: 30px;
+    background-color: #e8e8e6;
+    font-weight: 100;
+}
+.listInfo table tbody td{
+    height: 25px;
+}
+.listInfo .page{
+    width: 800px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.page button{
+    outline: none;
+}
+.listInfo .page .homePage{
+    margin-left: 120px;
+}
+.listInfo .page input{
+    width: 27px;
+    padding-left: 3px;
+    outline: none;
+}

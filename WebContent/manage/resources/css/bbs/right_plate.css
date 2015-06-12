@@ -1,0 +1,92 @@
+/* == 回复&被赞 == */
+.praised{
+    margin-top: 60px;
+}
+.praised .header{
+    margin-bottom: 15px;
+}
+.praised .header div{
+    cursor: pointer;
+    float: left;
+}
+.praised .header .huif{
+    width: 155px;
+    height: 29px;
+    background: url("../../icon/reply_most.png") no-repeat;
+}
+.praised .header .beiz{
+    width: 155px;
+    height: 29px;
+    background: url("../../icon/zan.png") no-repeat;
+}
+.praised .content .media {
+    border-bottom: 1px dashed #b3b3b3;
+}
+.praised .content p{
+    width: 192px;
+    margin-bottom: 20px;
+}
+.praised .content .media-right{
+    padding-top: 10px;
+    padding-left: 12px;
+}
+.praised .content .media-right label{
+    margin-left: 3px;
+    font-size: 12px;
+    color: #898989;
+}
+/* == 回复&被赞 End == */
+
+/* == 积分榜&排行榜 == */
+.integral{
+    margin-top: 60px;
+}
+.integral .header{
+    margin-bottom: 15px;
+}
+.integral .header div{
+    float: left;
+    cursor: pointer;
+}
+.integral .header .lunt{
+    width: 155px;
+    height: 29px;
+    background: url("../../icon/bbs_scoreboard.png") no-repeat;
+}
+.integral .header .post-rank{
+    width: 155px;
+    height: 29px;
+    background: url("../../icon/post_rank.png") no-repeat;
+}
+.integral .content .media{
+    margin-top: 21px;
+    border-bottom: 1px dashed #b3b3b3;
+}
+.integral .content .media:first-child{
+    margin-top: 0;
+}
+.integral .content .media-left{
+    padding-top: 10px;
+    padding-right: 28px;
+}
+.integral .content .media-heading label{
+    vertical-align: middle;
+}
+.integral .content .media-heading img{
+    margin-left: 10px;
+}
+.integral .content .media-body{
+    width: 150px;
+}
+.integral .content .media-body p{
+    font-size: 12px;
+    color: #898989;
+    margin-bottom: 22px;
+}
+.integral .content .media-right{
+    padding-left: 15px;
+}
+/* == 积分榜&排行榜 End == */
+.adv-img,.adv-img .adv-img-two{
+    margin-top: 60px;
+}

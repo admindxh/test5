@@ -1,0 +1,116 @@
+/**
+* 功能：管理后台索引页样式设置
+* 日期：2014年11月21日
+* 作者：weiye
+**/
+/******************************************************* 
+					 集体声明样式 
+*******************************************************/
+body,html { font: normal 16px "微软雅黑"; color: #666;}
+
+/* sprites*/
+.audit_icon_1, .audit_icon_2, .audit_icon_3, .audit_icon_4, .btn_fff, .btn_0a8, .waitAudit_1, .waitAudit_2, .detail_infoBlock { background:url(../img/ele/admin_sprites.png) no-repeat;}
+
+/* 清除下划线 */
+.main a, .btn_fff, .btn_0a8 { text-decoration: none }
+
+/* 绝对定位 */
+#echart, #numStatus, #waitAudit, .waitAudit_1 .waitAudit_info .btn_fff, .detail_infoBlock .btn_0a8, .audit_intro,.detail_infoBlock .info_num2 { position: absolute; }
+
+/* 相对定位 */
+#waitAudit_1, .detail_infoBlock { position: relative;}
+
+/* 文本居中 */
+#numStatus li p, #numStatus li span, .waitAudit_title, .btn_fff, .btn_0a8 { text-align: center;}
+
+/* 行块显示 */
+#numStatus li，.waitAudit_info .info_num, .info_num2, .btn_fff, .btn_0a8 { display: inline-block;}
+
+/* 块显示 */
+#numStatus li p,#numStatus li span { display: block; }
+
+/* 垂直居中 */
+.btn_fff { vertical-align: middle;}
+
+/*******************************************************
+					 元素样式设置
+*******************************************************/
+/* 主容器 */
+.admin-main { width: 1024px; margin: 50px auto; margin-top: 100px; position: relative; }
+
+/* 当前位置 */
+.location { color: #888; margin-left: 20px; margin-top: 16px;}
+.location a { color: #888; cursor: default;}
+
+/**** 图表容器 ****/
+#echart { width: 480px; height: 280px; left: 0; top: 0;}
+
+/**** 数量统计信息 ****/
+#numStatus { width: 460px; height: 50px; left: 0; top: 300px;}
+#numStatus li { width: 32%; height: 46px; display: inline-block;}
+#numStatus li.boder_r { border-right: 1px solid #dcdcdc;}
+#numStatus li p { height: 16px; line-height: 16px; font-family: "微软雅黑"; font-size: 16px; color: #333; margin: 0; padding: 0; position: relative; top: -6px; }
+#numStatus li span { height: 36px; line-height: 36px; font-family: arial; font-size: 32px; color: #333;}
+
+/**** 待处理信息 ****/
+#waitAudit { width: 386px; height: auto; top: 18px; right: 40px;}
+
+/* 带处理数值 */
+.waitAudit_info .info_num { margin-left: 70px;}
+
+/* 全部待处理 评价/回复数——图标 */
+.audit_icon_1, .audit_icon_2, .audit_icon_3, .audit_icon_4 { width: 68px; margin-left: 14px; margin-top: 16px;}
+
+/* 全部待处理 帖子/回复数 */
+.waitAudit_1 { width:386px; height:40px; background-position: 0px -196px;}
+.waitAudit_1 .waitAudit_title { width: 193px; line-height: 40px; font-family: "微软雅黑"; font-size: 16px; color: #fff; float: left; }
+.waitAudit_1 .waitAudit_info { width: 193px; line-height: 40px; font-family: Arial; font-weight: bold; font-size: 26px; color: #fff; float: left; }
+
+/* 审核按钮（白色） */
+.btn_fff { width: 60px;height: 27px; background-position: 0px -88px; line-height: 27px; font-weight: normal; font-size: 14px; color: #fff;}
+.btn_fff:hover{ background-position: 0px -115px; color: #f3f3f3;}
+.waitAudit_1 .waitAudit_info .btn_fff { top: 7px; right: 7px; }
+
+/* 全部待处理 评价/回复数 */
+.waitAudit_2 { width:386px; height:46px; background-position: 0px -236px; margin-top: 25px;}
+.waitAudit_2 .waitAudit_title { width: 193px; line-height: 40px; font-family: "微软雅黑"; font-size: 16px; color: #fff; float: left; }
+.waitAudit_2 .waitAudit_info { width: 193px; line-height: 40px; font-family: Arial; font-weight: bold; font-size: 26px; color: #fff; float: left; }
+
+/* 全部待处理 评价/回复数——详细数据 */
+.waitAudit_2_detail { width: 386px; height: auto; margin-top: 14px;}
+.detail_infoBlock { width: 185px; height:95px; background-position: 0px -282px; float: left;}
+.detail_infoBlock.ml-15 { margin-left: 15px;}
+.detail_infoBlock.mt-18 { margin-top: 18px;}
+.audit_intro { font-family: "微软雅黑"; font-size: 14px;  color: #fff; left: 10px; bottom: 8px;}
+
+/* 全部待处理 评价/回复数——详细数据——图标详细设置 */
+.audit_icon_1 { height: 27px; background-position: 0px -142px; margin-top: 10px;}
+.audit_icon_2 { height: 19px; background-position: 0px 0px;}
+.audit_icon_3 { height: 22px; background-position: 0px -39px;}
+.audit_icon_4 { height: 20px; background-position: 0px -19px;}
+/* 审核按钮（绿色） */
+.btn_0a8{ width: 60px; height: 27px; background-position: 0px -169px; line-height: 27px; font-size: 14px; color: #00ac82; top:10px; right: 10px;}
+.btn_0a8:hover{ background-position: 0px -61px;  color: #008c72;}
+/* 全部待处理 评价/回复数——待处理数量 */
+.detail_infoBlock .info_num2 { width: 60px; line-height: 40px; font-family: Arial; font-weight: bold; font-size: 22px; color: #333; top: 50px; left: 114px; }
+
+/*******************************************************
+					  响应式设计
+*******************************************************/
+
+
+/* 页面水平像素小于839(iframe带滚动条，屏幕像素1024) */
+@media screen and (max-width: 839px) {
+	.admin-main { width: 740px !important; margin-top: 30px; margin-bottom: 30px; }
+	#echart { width: 360px; height: 260px; left: -20px; top: 0;}
+	#numStatus { width: 360px; left: -20px; top: 300px;}
+	#waitAudit { right: 0; top: 0;}
+
+}
+/* 页面水平像素840-1095(iframe带滚动条，屏幕像素1025-1280) */
+@media screen and (min-width: 840px) and (max-width: 1095px) {
+	.admin-main { width: 960px; margin-top: 50px; }
+}
+/* 页面水平像素1096-1219(屏幕像素1281-1440) */
+@media screen and (min-width: 1096px) and (max-width: 1219px) {
+}

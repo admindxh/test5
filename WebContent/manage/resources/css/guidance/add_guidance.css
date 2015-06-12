@@ -1,0 +1,128 @@
+body,div,p{
+    margin: 0;
+    padding: 0;
+}
+body{font-family: 'microsoft yahei';font-size: 13px;}
+.newDredge{
+    width: 1000px;
+    border: 1px solid #aaa;
+}
+.newDredge .header{
+    border-bottom: 1px solid #aaa;
+    padding: 2px 5px;
+}
+.header .currentLocation{
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.newDredge .content{
+    width: 900px;
+    padding: 0 20px;
+    margin: 10px auto 30px;
+    border: 1px solid #aaa;
+}
+.groomingType{
+    margin: 15px 0;
+}
+.groomingType select{
+    width: 100px;
+    margin-left: 10px;
+}
+.basicInfo{
+    border-top: 1px solid #aaa;
+}
+.basicInfo p{
+    width: 100px;
+    color:#fff;
+    text-align: center;
+    padding: 3px 5px;
+    background-color: #009dd9;
+}
+.basicInfo>div{
+    margin-top: 20px;
+}
+.basicInfo div select{
+    margin-left: 15px;
+}
+.basicInfo div .regional{
+    margin-left: 150px;
+}
+.listInfo{
+    margin-top: 30px;
+}
+.listInfo .filter{
+    margin-top: 10px;
+}
+.filter .menu{
+    width: 240px;
+    overflow: hidden;
+    background-color: #ffcc99;
+}
+.menu div{
+    width: 120px;
+    text-align: center;
+    float: left;
+    line-height: 50px;
+}
+.menu .meg{
+    color: #fff;
+    background-color: #ff6600;
+    cursor: pointer;
+}
+.menu .tag{
+    color: #000;
+    background-color: #ffcc99;
+    cursor: pointer;
+}
+.filter .cont{
+    height: 250px;
+    border: 1px solid #000000;
+    margin-bottom: 40px;
+}
+#meg{
+    margin: 20px auto;
+}
+#meg label{
+    float: left;
+    margin-left: 50px;
+}
+#meg textarea{
+    clear: both;
+    margin-left: 50px;
+}
+#meg button{
+    display: block;
+    width: 100px;
+    margin: 50px auto 0;
+    padding: 3px 10px;
+}
+#tag{
+    margin: 20px auto;
+    display: none;
+}
+#tag>div{
+    margin-left: 50px;
+}
+#tag .time input{
+    width: 100px;
+    margin-left: 10px;
+}
+#tag .destination{
+    margin-top: 20px;
+}
+#tag .destination select{
+    margin-left: 24px;
+}
+#tag .integral{
+    margin-top: 20px;
+}
+#tag .integral input{
+    width: 50px;
+    margin-left: 37px;
+}
+#tag button{
+    display: block;
+    width: 100px;
+    margin: 50px auto 0;
+    padding: 3px 10px;
+}

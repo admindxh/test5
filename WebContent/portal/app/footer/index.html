@@ -1,0 +1,76 @@
+<div class="footer">
+    <div class="footer-head">
+        <div class="container">
+            <div class="footer-caitiao"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="web-link">
+                <ul>
+                    <li class="footer-title">2015年2月19日</li>
+                    <li class="footer-title new-year">藏历新年</li>
+                </ul>
+                <ul>
+                    <li class="footer-title">关于我们</li>
+                    <li><a href="#">天上西藏介绍</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">合作伙伴</a></li>
+                </ul>
+                <ul>
+                    <li class="footer-title">网站条款</li>
+                    <li><a href="#">会员条款</a></li>
+                    <li><a href="#">社区指南</a></li>
+                    <li><a href="#">免责声明</a></li>
+                </ul>
+                <ul>
+                    <li class="footer-title">帮助中心</li>
+                    <li><a href="#">新手上路</a></li>
+                    <li><a href="#">使用帮助</a></li>
+                    <li><a href="#">网站地图</a></li>
+                    <li><a id="sug" style="cursor: pointer">意见与建议</a></li>
+                </ul>
+                <ul>
+                    <li class="footer-title">进藏须知</li>
+                    <li><a href="#">身体健康准备</a></li>
+                    <li><a href="#">如何缓解高原反应</a></li>
+                    <li><a href="#">证件准备</a></li>
+                    <li><a href="#">出行的防护与安全</a></li>
+                    <li><a href="#">风俗与禁忌</a></li>
+                    <li><a href="#">骑行注意事项</a></li>
+                    <li><a href="#">自驾准备事项</a></li>
+                </ul>
+                <ul>
+                    <li class="footer-title">关注我们</li>
+                    <li class="footer-gz"><a href="#"><img src="../assets/icon/weixin.png" alt=""/></a></li>
+                    <li class="footer-gz"><a href="#"><img src="../assets/icon/xinlang.png" alt=""/></a></li>
+                </ul>
+                <ul class="web-link-ul-last">
+                    <li class="footer-title">移动应用</li>
+                    <li><a href="#">IPHONE</a></li>
+                    <li><a href="#">ANDROID</a></li>
+                    <li><a href="#">IPAD</a></li>
+                </ul>
+        </div>
+            <p class="state">Copyright &copy; 2011 RIMI <span>成都睿峰科技有限公司</span> 保留所有权 蜀ICP备12030008号-1</p>
+    </div>
+    <div id="ground-floor" class="ground-floor"></div>
+    <div id="suggestions" class="suggestions">
+        <h3>意见反馈</h3>
+        <p>我们倾听你的声音</p>
+        <textarea name="" id="" cols="62" rows="7" placeholder="欢迎提出宝贵的意见和建议。抱歉我们无法逐一回复，但我们会认真阅读，你的支持是对我们最大的鼓励和帮助"></textarea>
+        <button class="sug-sub">提交</button>
+        <button id="colse-sug" class="sug-close"></button>
+    </div>
+</div>
+<script>
+    seajs.use('jquery',function(){
+        $("#sug").on('click',function(){
+            $("#ground-floor").addClass('dis-show');
+            $("#suggestions").addClass('dis-show');
+        });
+        $("#colse-sug").on('click',function(){
+            $("#ground-floor").removeClass('dis-show');
+            $("#suggestions").removeClass('dis-show');
+        });
+    })
+</script>

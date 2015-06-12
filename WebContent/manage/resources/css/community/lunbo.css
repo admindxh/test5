@@ -1,0 +1,52 @@
+/* == 轮播 == */
+.lunb{
+    margin-top: 15px;
+}
+.watch{
+    width: 1030px;
+    height: 500px;
+    float: left;
+    position: relative;
+}
+.watch  .img-info{
+    width: 356px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 110px;
+    background: url("../../icon/bbs_optia.png") no-repeat;
+    color: #fff;
+}
+.watch .img-info h4{
+    margin: 15px 0 30px 20px;
+}
+.watch .img-info div{
+    margin-left: 20px;
+    font-size: 12px;
+}
+.watch .img-info div label,.watch .img-info div label span{
+    vertical-align: middle;
+}
+.watch .img-info div .ml40{
+    margin-left: 40px;
+}
+.watch .img-info div .ml5{
+    margin-left: 5px;
+}
+.lunb-control{
+    float: right;
+}
+.lunb-control li{
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.lunb-control li:first-child{
+    margin-top: 0;
+}
+.lunb-control li:hover{
+    background: url("../../icon/left_arrow.png") no-repeat 8px center ;
+}
+.lunb-control .active{
+    background: url("../../icon/left_arrow.png") no-repeat 8px center;
+}
+/* == 轮播 End == */

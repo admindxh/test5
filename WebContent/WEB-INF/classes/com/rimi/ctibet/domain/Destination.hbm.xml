@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.rimi.ctibet.domain.Destination" table="destination">
+        <id name="id" type="int">
+            <column name="id" length="40" />
+            <generator class="native"></generator>
+        </id>
+        <property name="code" type="string">
+            <column name="code"/>
+        </property>
+        <property name="destinationName" type="string">
+            <column name="destinationName"/>
+        </property>
+        
+        <property name="destinationImage" type="string">
+            <column name="destinationImage"/>
+        </property>
+        <property name="destinationSummary" type="string">
+            <column name="destinationSummary"/>
+        </property>
+        <property name="destinationIntroduce" type="string">
+            <column name="destinationIntroduce" />
+        </property>
+        <property name="isHaveAirTicket" type="integer">
+            <column name="isHaveAirTicket"/>
+        </property>
+        <property name="createTime" type="timestamp">
+            <column name="createTime"/>
+        </property>
+        <property name="lastEditTime" type="timestamp">
+            <column name="lastEditTime"/>
+        </property>
+        <property name="avaliable" type="integer">
+            <column name="avaliable"/>
+        </property>
+        <property name="jp" type="string">
+            <column name="jp" />
+        </property>
+        <property name="keyword" type="string">
+            <column name="keyword" />
+        </property>
+        <property name="hyberlink" type="string">
+            <column name="hyberlink" />
+        </property>     
+        <property name="enName" type="string">
+            <column name="enName" />
+        </property>        
+        <property name="tibetName" type="string">
+            <column name="tibetName" />
+        </property>
+        <property name="wantCount" type="integer">
+            <column name="wantCount" />
+        </property>
+        <property name="goneCount" type="integer">
+            <column name="goneCount" />
+        </property>
+        <property name="falseWantCount" type="integer">
+            <column name="falseWantCount" />
+        </property>
+        <property name="falseGoneCount" type="integer">
+            <column name="falseGoneCount" />
+        </property>
+        <property name="linkUrl" type="string">
+           <column name="linkUrl"></column>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.rimi.ctibet.domain.Image" table="image">
+        <id name="id" type="int">
+            <column name="id" length="40" />
+            <generator class="native"></generator>
+        </id>
+        <property name="code" type="string">
+            <column name="code"/>
+        </property>
+        <property name="mutiCode" type="string">
+            <column name="mutiCode"/>
+        </property>
+        
+        <property name="name" type="string">
+            <column name="name"/>
+        </property>
+        
+         <property name="isshow" type="string">
+            <column name="isshow"/>
+        </property>
+        
+        
+        
+        <property name="summary" type="string">
+            <column name="summary"/>
+        </property>
+        <property name="url" type="string">
+            <column name="url" />
+        </property>
+        <property name="createTime" type="timestamp">
+            <column name="createTime"/>
+        </property>
+        <property name="lastEditTime" type="timestamp">
+            <column name="lastEditTime"/>
+        </property>
+        <property name="avaliable" type="integer">
+            <column name="avaliable"/>
+        </property>
+        <property name="editUserCode" type="string">
+            <column name="editUserCode"/>
+        </property>
+        <property name="createUserCode" type="string">
+            <column name="createUserCode"/>
+        </property>
+        <property name="hyperlink" type="string">
+            <column name="hyperlink"/>
+        </property>
+        <property name="isPreview" type="integer">
+            <column name="isPreview"/>
+        </property>
+        <property name="goCount" type="integer">
+            <column name="goCount"/>
+        </property>
+         <property name="wantCount" type="integer">
+            <column name="wantCount"/>
+        </property>
+         <property name="destinationCode" type="string">
+            <column name="destinationCode"/>
+        </property>
+         <property name="viewCode" type="string">
+            <column name="viewCode"/>
+        </property>
+        <property name="smimg" type="string">
+            <column name="smimg"/>
+        </property>
+
+        
+    </class>
+</hibernate-mapping>

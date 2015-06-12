@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>太阳升起的地方</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/video.css"/>
+    <script type="text/javascript" src="js/jquery-1.9.0.js"></script>
+</head>
+<body>
+<div class="video-info">
+    <div class="video-info-img"><img src="img/tysqddf.jpg"></div>
+    <div class="video-Introduction">
+        <h1>太阳升起的地方<i>（剧情/记录）</i></h1>
+        <ol>
+            <li><strong>主演：</strong>王联杨 韩秉铎 </li>
+            <li><strong>出品人：</strong>朱航 <strong>导演：</strong>张力升<strong>副导演/编剧：</strong>张改
+            </li>
+            <li><strong>制片人：</strong>费雁鹏<strong>统筹：</strong>刘诗琪<strong>摄影：</strong>芦洪涛<strong>摄像助理：</strong>王联杨<strong>剪辑：</strong>陈雷<strong>剪辑助理：</strong>韩秉铎
+
+            </li>
+            <li><strong>出品方：</strong>北京博瑞藏越文化传媒有限公司</li>
+        </ol>
+    </div>
+    <div class="yuan">
+        <ul>
+            <li class="curr">乐视源</li>
+            <li>腾讯源</li>
+        </ul>
+    </div>
+
+</div>
+<!--乐视云-->
+<div class="letv vy">
+    <iframe marginheight="0"
+            src="http://yuntv.letv.com/bcloud.html?uu=135a01dcc5&amp;vu=ca69d88dbe&amp;width=750&amp;height=422&amp;auto_play=0"
+            marginwidth="0" frameborder="0" height="422" width="750"></iframe>
+</div>
+<!--腾讯源-->
+<div class="Tencent vy" style="display:none;">
+    <iframe marginheight="0"
+            src="http://static.video.qq.com/TPout.swf?vid=u0155feisec&attstart=0&attend=865&exid=k0&showend=1&title=太阳升起的地方&"
+            marginwidth="0" frameborder="0" height="422" width="750"></iframe>
+</div>
+<div class="video-info">
+    剧情简介：无
+</div>
+</body>
+<script>
+    $(function () {
+        $(".yuan ul li").on("click", function () {
+            $(this).addClass("curr").siblings().removeClass("curr");
+            $(".vy").css('display','none');
+            $(".vy").eq($(this).index()).css('display','block');
+        })
+    })
+</script>
+</html>

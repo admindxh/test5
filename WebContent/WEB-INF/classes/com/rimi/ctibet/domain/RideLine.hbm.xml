@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.rimi.ctibet.domain.RideLine" table="ride_line">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="avaliable" column="avaliable" update="false"/>
+        <property name="code" column="code" type="java.lang.String"/>
+        <property name="createTime" column="createTime" type="java.util.Date" update="false"/>
+        <property name="lastEditTime" column="lastEditTime" type="java.util.Date"/>
+        
+        
+        <property name="name"      column="name"      type="java.lang.String"/>
+        <property name="subTitle"  column="subTitle"  type="java.lang.String"/>
+	    <property name="bannerImg" column="bannerImg" type="java.lang.String"/>
+	    <property name="introduce" column="introduce" type="java.lang.String"/>
+	    <property name="notice"    column="notice"    type="java.lang.String"/>
+	    <property name="summary"   column="summary"   type="java.lang.String"/>
+	    <property name="link"      column="link"      type="java.lang.String"/>
+	    <property name="achref"      column="achref"      type="java.lang.String"/>
+        
+        
+    </class>
+</hibernate-mapping>

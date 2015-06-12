@@ -1,0 +1,9 @@
+"WebRoot/portal/modules/ueditor/1.4.3/jsp"
+"WebRoot/manage/resources/plugin/ueditor/jsp"
+"WebRoot/upload"
+"WebRoot/data"
+"WebRoot/lucene"
+"WebRoot/WEB-INF/web.xml"
+"WebRoot/WEB-INF/classes/log4j.properties"
+"WebRoot/WEB-INF/classes/jdbc.propertie"
+//lib 如果没有新增jar  ，就删除此目录

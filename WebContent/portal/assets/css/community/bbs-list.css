@@ -1,0 +1,224 @@
+.main{
+    width: 1000px;
+    padding: 0;
+}
+.main ul{
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.main label{
+    margin-bottom: 0;
+    font-weight: normal;
+}
+.mt60{
+    margin-top: 60px;
+}
+.mb30{
+    margin-bottom: 30px;
+}
+.banner, .banner img{
+    width: 1000px;
+    height: 200px;
+    position: relative;
+}
+.banner-info{
+    width: 279px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    background: url("../../icon/bbs-list-mc.png") no-repeat;
+}
+.banner-info h3{
+    line-height: 50px;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+/* == banner End == */
+.location{
+    height: 18px;
+    line-height: 18px;
+    padding-left: 22px;
+    background: url("../../icon/place.png") no-repeat 0 center;
+}
+.location img{
+    vertical-align: middle;
+}
+.location span{
+    vertical-align: middle;
+}
+.c-red{
+    color: #cf1243;
+}
+/* == location End == */
+.adv{
+    width: 100%;
+    height: 100px;
+}
+.adv div{
+    float: left;
+    width: 400px;
+    height: 100px;
+    background: url("../../../static/images/bbs_list_bg.jpg") no-repeat;
+}
+.adv p{
+    width: inherit;
+    height: inherit;
+    padding: 19px 21px 19px 14px;
+    margin-bottom: 0;
+}
+.adv img{
+    width: 600px;
+    height: 100px;
+    float: right;
+}
+/* == advertisement End == */
+.sort div{
+    float: left;
+    margin-left: 30px;
+    padding-left: 16px;
+    font-size: 16px;
+}
+.sort div:first-child{
+    margin-left: 0;
+}
+.down{
+    color: #cf1423;
+    background: url("../../icon/down.png") no-repeat 0 center;
+}
+.bbs-list .header{
+    width: 100%;
+    height: 30px;
+    background-color: #f1f1f1;
+}
+.bbs-list .header ul li{
+    float: left;
+    color: #333;
+    line-height: 30px;
+}
+.bbs-list li.w-theme{
+    width: 490px;
+}
+.bbs-list li.w-theme a{
+    max-width: 435px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.bbs-list li.w-author{
+    width: 190px;
+    margin-left: 35px;
+}
+.bbs-list li.w-examine{
+    width: 100px;
+}
+.bbs-list li.w-reply{
+    width: 180px;
+}
+.bbs-list li.theme{
+    padding-left: 110px;
+    /*background-color: #99ccff;*/
+}
+.bbs-list li.author{
+    padding-left: 58px;
+    /*background-color: #99ffcc;*/
+}
+.bbs-list li.examine{
+    padding-left: 7px;
+    /*background-color: #ccff99;*/
+}
+.bbs-list li.list-reply{
+    padding-left: 55px;
+    /*background-color: #ff99cc;*/
+}
+.bbs-list .content ul{
+    height: 57px;
+    line-height: 55px;
+    border-bottom: 1px dashed #b3b3b3;
+}
+.bbs-list .content ul li{
+    float: left;
+}
+.theme-info{
+    padding-left: 10px;
+    height: 57px;
+}
+.theme-info img{
+    vertical-align: middle;
+}
+.theme-info div {
+    width: 20px;
+    height: 17px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../../icon/zan_min.png") no-repeat;
+}
+.w-author div p{
+    width: 128px;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.author-info{
+    margin-top: 9px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.author-info div p{
+    margin-bottom: 0;
+}
+.author-info>img{
+    float: left;
+}
+.author-info div{
+    float: left;
+    margin-left: 10px;
+}
+.author-info div .nickname span{
+    vertical-align: middle;
+}
+.author-info .nickname img{
+    margin-left: 5px;
+}
+.time-info{
+    color: #898989;
+}
+.examine-info{
+    margin-top: 9px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.content p{
+    margin-bottom: 0;
+}
+.reply-num{
+    margin-left: 5px;
+}
+.w-reply div p{
+    width: 118px;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* == page == */
+.main .paging{
+    margin-top: 50px;
+    background-color: transparent;
+}
+.sort .post-btn{
+    float: right;
+}
+.sort .post-btn a{
+    display: block;
+    width: 111px;
+    height: 26px;
+    background: url(../../icon/post_invitation.png) 0 0 no-repeat;
+}

@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <title>读西藏首页-西藏动态显示管理</title>
+    <link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css" />
+    <link rel="stylesheet" href="../../resources/css/base.css" />
+    <link rel="stylesheet" href="../../resources/css/travel/formWeb.css" />
+    <script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- main { -->
+    <div class="main">
+		<!-- 页面位置-->
+		<div class="location">
+			<label>您当前位置为:</label>
+			<span><a>读西藏</a> -</span>
+			<span><a href="../read/read.html" target="_self">读西藏首页显示</a> -</span>
+			<span><a href="#" target="_self">西藏动态显示管理</a></span>
+		</div>
+
+		<!-- 模块管理 { -->
+		<div class="muduleManage filament_solid_ddd">
+
+			<!-- 管理按钮 -->
+			<div class="searchManage">
+				<button type="button" class="btn-sure">预览</button>
+				<button type="button" class="btn-sure">显示最新</button>
+				<button id="save" type="button" class="btn-sure">保存</button>
+				<button type="button" class="btn-sure">查看</button>
+			</div>
+
+			<!-- 新闻一 { -->
+			<div class="contClassify">
+				<h2 class="title">新闻一</h2>
+
+				<div class="formLine mt15">
+					<label class="w_auto">链接:</label>
+					<input type="text" class="w-320 toLink">
+					<label class="w-auto">或编号:</label>
+					<input type="text" class="w-200 number">
+				</div>
+			</div>
+
+			<!-- 新闻二 { -->
+			<div class="contClassify">
+				<h2 class="title">新闻二</h2>
+
+				<div class="formLine mt15">
+					<label class="w_auto">链接:</label>
+					<input type="text" class="w-320 toLink">
+					<label class="w-auto">或编号:</label>
+					<input type="text" class="w-200 number">
+				</div>
+			</div>
+
+			<!-- 新闻三 { -->
+			<div class="contClassify">
+				<h2 class="title">新闻三</h2>
+
+				<div class="formLine mt15">
+					<label class="w_auto">链接:</label>
+					<input type="text" class="w-320 toLink">
+					<label class="w-auto">或编号:</label>
+					<input type="text" class="w-200 number">
+				</div>
+			</div>
+
+			<!-- 新闻四 { -->
+			<div class="contClassify">
+				<h2 class="title">新闻四</h2>
+
+				<div class="formLine mt15">
+					<label class="w_auto">链接:</label>
+					<input type="text" class="w-320 toLink">
+					<label class="w-auto">或编号:</label>
+					<input type="text" class="w-200 number">
+				</div>
+			</div>
+
+			<!-- 新闻五 { -->
+			<div class="contClassify">
+				<h2 class="title">新闻五</h2>
+
+				<div class="formLine mt15">
+					<label class="w_auto">链接:</label>
+					<input type="text" class="w-320 toLink">
+					<label class="w-auto">或编号:</label>
+					<input type="text" class="w-200 number">
+				</div>
+			</div>
+
+			<!-- 新闻六 { -->
+			<div class="contClassify">
+				<h2 class="title">新闻六</h2>
+
+				<div class="formLine mt15">
+					<label class="w_auto">链接:</label>
+					<input type="text" class="w-320 toLink">
+					<label class="w-auto">或编号:</label>
+					<input type="text" class="w-200 number">
+				</div>
+			</div>
+
+			<!-- 新闻七 { -->
+			<div class="contClassify">
+				<h2 class="title">新闻七</h2>
+
+				<div class="formLine mt15">
+					<label class="w_auto">链接:</label>
+					<input type="text" class="w-320 toLink">
+					<label class="w-auto">或编号:</label>
+					<input type="text" class="w-200 number">
+				</div>
+			</div>
+		</div><!-- } 模块管理 -->
+    </div><!-- } main -->
+
+    <!-- JS引用部分 -->
+    <script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+    <script src="../../resources/js/base.js" type="text/javascript"></script>
+	<script src="../../resources/js/dataValidation.js"></script>
+	<script src="../../resources/plugin/jquery.rimi.validation.js"></script>
+	<script>
+		$(".toLink").blur(function () {
+			var thisVal = $(this).val(),
+					nextVal = $(this).siblings('.number').val(),
+					nextValLen = nextVal.length > 0;
+			var regTest = $.VLDTOR.IsWebUrl(thisVal),
+					regNull = $.trim(thisVal) != "";
+			if(nextValLen){
+				valid_txtBox_create(this,regTest,'不能为中文或空格','top');
+			}else{
+				valid_txtBox_create(this,regTest && regNull,'不能为中文或空格,且与编号必填一项','top');
+				if(regTest && regNull){
+					$(this).siblings('.number').next('span.errMesg').remove();
+				}
+			}
+		});
+		$(".number").blur(function () {
+			var thisVal = $(this).val(),
+					prevVal = $(this).siblings('.toLink').val(),
+					preValLen = prevVal.length > 0;
+			var regTest = $.VLDTOR.IsEnNum(thisVal),
+					regNull = $.trim(thisVal) != "";
+			if(preValLen){
+				valid_txtBox_create(this,regTest || thisVal == "",'只能为数字、英文或空','top');
+			}else{
+				valid_txtBox_create(this,regTest && regNull,'只能为数字、英文,且与链接必填一项','top');
+				if(regTest && regNull){
+					$(this).siblings('.toLink').next('span.errMesg').remove();
+				}
+			}
+		});
+		$("#save").click(function () {
+			$(".toLink").blur();
+			$(".number").blur();
+			var regSpan = $("span.errMesg").length > 0;
+			if(regSpan){
+				msgBox("填写的信息有误，请检查","erro",1000);
+			}else{
+				// Do Something
+				msgBox("保存成功","pass",1500);
+			}
+		})
+	</script>
+    <!-- 利用空闲时间预加载指定页面 -->
+    <link rel="prefetch"> <!-- IE10+ -->
+    <link rel="next"> <!-- Firefox -->
+	<link rel="prerender"> <!-- Chrome -->
+</body>
+</html>

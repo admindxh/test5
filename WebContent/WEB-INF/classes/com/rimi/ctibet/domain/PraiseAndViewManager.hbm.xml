@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.rimi.ctibet.domain.PraiseAndViewManager" table="praiseandviewmanager">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" length="40" />
+            <generator class="native" />
+        </id>
+        <property name="code">
+            <column name="code"/>
+        </property>
+        
+        <property name="ip" column="ip" type="java.lang.String">
+        </property>
+        <property name="type" column="type" type="java.lang.String">
+        </property>
+        <property name="contentCode" column="contentCode" type="java.lang.String">
+        </property>
+        
+        
+        <property name="createTime">
+            <column name="createTime"/>
+        </property>
+        <property name="lastEditTime">
+            <column name="lastEditTime"/>
+        </property>
+        <property name="avaliable">
+            <column name="available"/>
+        </property>
+       
+    </class>
+</hibernate-mapping>

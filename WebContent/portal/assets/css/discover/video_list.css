@@ -1,0 +1,117 @@
+.main{
+    width: 1000px !important;
+    padding: 0;
+}
+.main a{
+    color: #333;
+}
+.main .banner, .main .banner img{
+    width: 1000px;
+    height: 200px;
+}
+
+.main label{
+    margin-bottom: 0;
+    font-weight: normal;
+}
+.header{
+    width: 201px;
+    height: 31px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    background: url("../../icon/ihv.png") no-repeat;
+    float: left;
+}
+.listing{
+    list-style: none;
+    font-size: 16px;
+}
+.listing li{
+    width: 80px;
+    float: right;
+    margin-left: 30px;
+    padding-left: 15px;
+    cursor: pointer;
+    margin-top: 60px;
+}
+.listing .down{
+    color: #cf1423;
+    background: url("../../icon/down.png") no-repeat 0 center;
+}
+.content-main{
+    width: 1000px;
+}
+.content{
+    margin-left: -16px;
+}
+.content .con-info{
+    float: left;
+    width: 238px;
+    margin-left: 16px;
+    margin-top: 16px;
+    background-color: #f1f1f1;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.sce-img{
+    width: 238px;
+    height: 160px;
+    position: relative;
+}
+.sce-img img{
+    width: 238px;
+    height: 160px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.sce-img a{
+    width: 63px;
+    height: 63px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: url("../../icon/play_hd.png") no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -31px;
+    margin-left: -31px;
+}
+.particular{
+    width: 238px;
+    height: 52px;
+    position: relative;
+}
+.particular h5 {
+    margin: 10px 0 0 10px;
+    padding: 1px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.look-over{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    text-align: right;
+    font-size: 12px;
+}
+.look-over span{
+    vertical-align: middle;
+    margin-left: 20px;
+}
+.look-over .see{
+    padding-left: 20px;
+    background: url("../../icon/eye.png") no-repeat 0 center;
+}
+.look-over .star{
+    padding-left: 15px;
+    background: url("../../icon/star_gray.png") no-repeat 0;
+}
+.main .paging{
+    margin-top: 50px;
+    margin-bottom: 0;
+    background-color: transparent;
+}

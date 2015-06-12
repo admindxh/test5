@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <title>门户首页-景点管理</title>
+    <link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css" />
+    <link rel="stylesheet" href="../../resources/css/base.css" />
+    <link rel="stylesheet" href="../../resources/css/home/imgDescr.css" />
+	<style>
+		.dropdown {
+			margin-top: 6px;
+		}
+		.errMesg{
+			font-size: 12px;
+		}
+	</style>
+    <script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- main { -->
+    <div class="main">
+		<form id="" name="">
+			<!-- 页面位置-->
+			<div class="location">
+				<label>您当前位置为:</label>
+				<span><a>门户首页</a> -</span>
+				<span><a href="#" target="_self">景点管理</a></span>
+			</div>
+			
+			<!-- 模块管理 { -->
+			<div class="muduleManage filament_solid_ddd">
+				<!-- 查看按钮 -->
+				<div class="searchManage">
+					<button type="button" class="lookup btn-sure">查看</button>
+				</div>
+
+				<!-- 景点设置 { -->
+				<div class="show">
+					<div class="posidSet-unit">
+						<i>图片1</i>
+						<div class="left">
+
+							<div class="formLine">
+								<label>图片1:</label>
+								<button type="button" class="btn-base uploadImg">点击上传图片</button>
+								<span class="txt-suggest ml20">推荐尺寸：285 * 330</span>
+							</div>
+							<div class="formLine dropdown">
+								<label>显示景点:</label>
+								<div class="select-base">
+									<i class="w-140">请选择地区</i>
+									<dl>
+										<dt>拉萨地区</dt>
+										<dt>那曲地区</dt>
+										<dt>阿里地区</dt>
+										<dt>日喀则地区</dt>
+										<dt>山南地区</dt>
+										<dt>林芝地区</dt>
+										<dt>昌都地区</dt>
+									</dl>
+								</div>
+								<div class="select-base ml-10">
+									<i class="w-140">请选择景点</i>
+									<dl>
+										<dt>拉萨市</dt>
+										<dt>布达拉宫</dt>
+										<dt>纳木错</dt>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<div class="right">
+							<label>缩略图:</label>
+							<img src="../../resources/img/ele/loadImg_default_c.jpg" title="缩略图名称" alt="请上传图片">
+						</div>
+					</div>
+
+					<div class="posidSet-unit">
+						<i>图片2</i>
+						<div class="left">
+
+							<div class="formLine">
+								<label>图片2:</label>
+								<button type="button" class="btn-base uploadImg">点击上传图片</button>
+								<span class="txt-suggest ml20">推荐尺寸：285 * 330</span>
+							</div>
+							<div class="formLine dropdown">
+								<label>显示景点:</label>
+								<div class="select-base">
+									<i class="w-140">请选择地区</i>
+									<dl>
+										<dt>拉萨地区</dt>
+										<dt>那曲地区</dt>
+										<dt>阿里地区</dt>
+										<dt>日喀则地区</dt>
+										<dt>山南地区</dt>
+										<dt>林芝地区</dt>
+										<dt>昌都地区</dt>
+									</dl>
+								</div>
+								<div class="select-base ml-10">
+									<i class="w-140">请选择景点</i>
+									<dl>
+										<dt>拉萨市</dt>
+										<dt>布达拉宫</dt>
+										<dt>纳木错</dt>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<div class="right">
+							<label>缩略图:</label>
+							<img src="../../resources/img/ele/loadImg_default_c.jpg" title="缩略图名称" alt="请上传图片">
+						</div>
+					</div>
+
+					<div class="posidSet-unit">
+						<i>图片3</i>
+						<div class="left">
+
+							<div class="formLine">
+								<label>图片3:</label>
+								<button type="button" class="btn-base uploadImg">点击上传图片</button>
+								<span class="txt-suggest ml20">推荐尺寸：285 * 330</span>
+							</div>
+							<div class="formLine dropdown">
+								<label>显示景点:</label>
+								<div class="select-base">
+									<i class="w-140">请选择地区</i>
+									<dl>
+										<dt>拉萨地区</dt>
+										<dt>那曲地区</dt>
+										<dt>阿里地区</dt>
+										<dt>日喀则地区</dt>
+										<dt>山南地区</dt>
+										<dt>林芝地区</dt>
+										<dt>昌都地区</dt>
+									</dl>
+								</div>
+								<div class="select-base ml-10">
+									<i class="w-140">请选择景点</i>
+									<dl>
+										<dt>拉萨市</dt>
+										<dt>布达拉宫</dt>
+										<dt>纳木错</dt>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<div class="right">
+							<label>缩略图:</label>
+							<img src="../../resources/img/ele/loadImg_default_c.jpg" title="缩略图名称" alt="请上传图片">
+						</div>
+					</div>
+
+					<!-- 保存 -->
+					<div class="saveOper">
+						<button id="save" type="button" class="save btn-sure">保存</button>
+					</div>
+				</div><!-- } 景点设置 -->
+					
+			</div><!-- } 模块管理 -->
+    	</form>
+    </div><!-- } main -->
+
+    <!-- JS引用部分 -->
+    <script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+    <script src="../../resources/js/base.js" type="text/javascript"></script>
+	<script src="../../resources/js/dataValidation.js"></script>
+	<script src="../../resources/plugin/jquery.rimi.validation.js"></script>
+	<script>
+		// 如果有错误提示，则下拉菜单选择后将其消除
+		$(document).on('click','.select-base dl dt', function () {
+			var errMsg = $(this).parents('.select-base').next('span.errMesg');
+			var errMsgLen = $(this).parents('.select-base').next('span.errMesg').length > 0;
+			if(errMsgLen){
+				errMsg.remove();
+			}
+		});
+		$("#save").click(function () {
+			var dropDown = $(".dropdown"),
+					dropDown_len = dropDown.length;
+
+			// 进行遍历验证
+			for (var i = 0; i < dropDown_len; i++) {
+				var region = dropDown.eq(i).find(".select-base:first"),
+						scenerySpot = dropDown.eq(i).find(".select-base:last"),
+						region_val = region.children("i").text(),
+						region_def = region_val.substr(0, 3),
+						scenerySpot_val = scenerySpot.children("i").text(),
+						scenerySpot_def = scenerySpot_val.substr(0, 3);
+
+				// 地区未选择（为默认值）
+				if ("请选择" == region_def) {
+					if (region.next(".errMesg").length == 0) {
+						creatErrMesg(region, "请选择地区", "top");
+					}
+				}
+				// 地区已选择
+				else {
+					region.next(".errMesg").remove();
+				}
+
+				// 景点未选择
+				if ("请选择" == scenerySpot_def) {
+					if (scenerySpot.next(".errMesg").length == 0) {
+						creatErrMesg(scenerySpot, "请选择景点", "top");
+					}
+				}
+				// 景点已选择
+				else {
+					scenerySpot.next(".errMesg").remove();
+				}
+			}
+
+			var regSpan = $("span.errMesg").length > 0;
+			if(regSpan){
+				msgBox("还有未选择的选项，请检查!","erro",1000);
+			}else{
+				// Do Something
+				msgBox("保存成功！", "pass", 2600);
+			}
+		})
+	</script>
+    <!-- 利用空闲时间预加载指定页面 -->
+    <link rel="prefetch"> <!-- IE10+ -->
+    <link rel="next"> <!-- Firefox -->
+	<link rel="prerender"> <!-- Chrome -->
+</body>
+</html>

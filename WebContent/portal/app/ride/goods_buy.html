@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="quansenx">
+	<meta name="keywords" content="西藏旅游，西藏自驾游，藏民，西藏线路，西藏自助游路线，西藏景点，西藏天气，西藏交通，西藏，西藏旅游攻略，西藏旅游最佳时间，西藏旅游最好季节，去西藏" />
+	<meta name="description" content=" 天上西藏网站为您提供全面了解屹立在雪山之巅西藏的信息资讯，包括天上西藏景区景点推荐，最佳的西藏观光时间，最地道的西藏特色叙述，最淳朴的西藏人民，天上西藏最全面的信息介绍，欢迎您前来体验雪域西藏的风采！" />
+	<title>推荐详情_天上西藏</title>
+	<link rel="stylesheet" href="../../modules/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../assets/css/common.css" />
+	<link rel="stylesheet" href="../../assets/css/goods.css" />
+	<script id="seajsnode" src="../../modules/seajs/seajs/2.2.1/sea.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1 class="gd-h">购买清单</h1>
+		<div class="goods-detail goods-buy clearfix">
+			<div class="gd-pic">
+				<a href="#">
+					<img src="../../static/images/gd1.jpg" alt="gd1.jpg" width="220" height="160"></a>
+			</div>
+			<div class="gd-desc">
+				<h1 class="gd-heading">Rockbros 自行车配件装备山地车男款偏光运动防风沙骑行眼镜女款 带近视框 亮黑</h1>
+				<div class="gd-text clearfix"> <em>数量：</em>
+					<span class="range">
+						<a href="javascript:;" class="J_Minus disable">-</a>
+						<input type="text" class="range-text J_Value" value="1">
+						<a href="javascript:;" class="J_Plus">+</a>
+					</span>
+				</div>
+				<div class="gd-text clearfix"> <em>单价：&yen;56</em> </div>
+				<div class="gd-text clearfix"> <em>总价：</em>
+					<span>&yen;<strong class="J_Price">56</strong></span>
+				</div>
+			</div>
+		</div>
+		<div class="goods-form">
+			<form>
+				<div class="form-group">
+					<label for="contact ">收货人</label>
+					<input type="email" class="form-control" id="contact " placeholder="收货人"></div>
+				<div class="form-group">
+					<label for="phone">联系电话</label>
+					<input type="text" class="form-control" id="phone" placeholder="联系电话"></div>
+				<div class="form-group">
+					<label for="address">送货地址</label>
+					<input type="text" class="form-control" id="address" style="width: 600px;" placeholder="送货地址"></div>
+				<div class="form-group">
+					<label for="postcode">邮编</label>
+					<input type="text" class="form-control" id="postcode" placeholder="邮编"></div>
+				<div class="form-group">
+					<label for="mode ">支付方式</label>
+					<div class="ui-radio">
+						<i class="radio"></i>
+						<span class="mode-alipay"></span>
+					</div>
+				</div>
+				<div class="total clearfix">
+					<div class="gd-text pull-left"> <em>应付总额：</em>
+						<span>&yen;<strong class="J_Price">56</strong></span>
+					</div>
+					<button class="btn-order">提交订单</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script>
+		seajs.use('jquery/jquery/1.11.1/jquery', function($){
+
+			$(function(){
+				var $value = $('.J_Value'),
+				$plus = $('.J_Plus'),
+				$minus = $('.J_Minus'),
+				$price = $('.J_Price'),
+				_price = parseInt($price.eq(0).text());
+				console.log(_price)
+				$plus.on('click', function(event) {
+					event.preventDefault();
+					var number = parseInt($value.val());
+					$value.val(++number);
+					$minus.removeClass('disable')
+					_count(number);
+				});
+				$minus.on('click', function(event) {
+					event.preventDefault();
+					var number = parseInt($value.val());
+					--number;
+					if (number <= 1) {
+						$value.val(1)
+						number = 1
+						$minus.addClass('disable')
+					} else {
+						$value.val(number)
+					}
+					_count(number);
+				});
+				$value.on('keyup', function(event) {
+					event.preventDefault();
+					var number = parseInt($value.val()||1);
+					if (number <= 1) {
+						$value.val(1)
+						$minus.addClass('disable')
+					} else {
+						$value.val(number)
+						$minus.removeClass('disable')
+					}
+					_count(number);
+				});
+				function _count(number){
+					$price.text(number*_price)
+				}
+			})
+		})
+	</script>
+</body>
+</html>

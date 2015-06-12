@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <title>天上社区-帖子&回复管理-已审核的帖子&回复-修改帖子页</title>
+    <link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css" />
+    <link rel="stylesheet" href="../../resources/css/base.css" />
+    <link rel="stylesheet" href="../../resources/css/travel/formWeb.css" />
+    <link rel="stylesheet" href="../../resources/plugin/datepicker.css" />
+    <script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+    <style>
+        .mt-40{
+            margin-top: -40px;
+        }
+        .floatfix:after{
+            content:"";
+            display:table;
+            clear:both;
+        }
+    </style>
+    <!-- 网页文本编辑器插件 -->
+    <script src="../../resources/plugin/ckeditor/ckeditor.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!-- main { -->
+<div class="main">
+    <form id="creatRead" name="">
+        <!-- 页面位置-->
+        <div class="location">
+            <label>您当前位置为:</label>
+            <span><a>天上社区</a> -</span>
+            <span><a>帖子&回复管理</a> -</span>
+            <span><a href="invitation-audit-already.html" target="_self">已审核的帖子&回复</a> -</span>
+            <span><a href="#" target="_self">修改帖子</a></span>
+        </div>
+
+        <!-- 数据操作 -->
+        <div class="searchManage">
+            <button id="preview" type="submit" class="btn-sure">预览</button>
+            <button id="saveForm" type="button" class="btn-sure">保存</button>
+        </div>
+
+        <!-- 模块管理 { -->
+        <div class="muduleManage details filament_solid_ddd">
+            <div>
+                <!-- 文章标题 { -->
+                <div class="formLine floatfix">
+                    <label>帖子标题:</label>
+                    <input name="contentTitle" type="text" maxlength="30" class="w-260">
+                    <label>发布人:</label>
+                    <input name="authorCode" type="text" maxlength="30" class="w-260">
+
+                    <!-- 是否置顶 { -->
+                    <label>是否置顶:</label>
+                    <input id="yes" type="radio" name="radio" class="ml50"><label for="yes" class="lbl_check">是</label>
+                    <input id="no" type="radio" name="radio" class="ml50" checked="true"><label for="no" class="lbl_check">否</label>
+                </div>
+
+                <!-- 所属类型 { -->
+                <div class="formLine mt20">
+                    <label>所属板块:</label>
+                    <div id="culType" class="select-base">
+                        <i id="selectValue" class="w-140">骑行公告</i>
+                        <dl>
+                            <dt>骑行公告</dt>
+                            <dt>骑行故事</dt>
+                            <dt>骑友征集</dt>
+                            <dt>装备讨论</dt>
+                            <dt>攻略游记</dt>
+                            <dt>出行搭伴</dt>
+                            <dt>公益活动</dt>
+                            <dt>意见与建议</dt>
+                        </dl>
+                    </div>
+
+                    <!-- 序号 -->
+                    <label>序号:</label>
+                    <input type="text" name="number" class="w-100" />
+
+                    <label class="ml140">浏览量:</label>
+                    <input name="number" type="text" class="w-100"/>
+                    <a href="#">恢复系统值</a>
+
+                    <label class="ml20">赞:</label>
+                    <input name="number" type="text" class="w-100"/>
+                    <a href="#">恢复系统值</a>
+                </div>
+
+                <!-- 正文内容 { -->
+                <div class="formLine ">
+                    <label class="pos_r_t5">内容:</label>
+                    <span class="dataVal va_t">
+                        <textarea id="editor1" name="editor1" cols="80" rows="10" class="ckeditor" style="display:inline-block"></textarea>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <!-- } 模块管理 -->
+    </form>
+</div>
+<!-- } main -->
+
+<!-- JS引用部分 -->
+<script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+<script src="../../resources/js/base.js" type="text/javascript"></script>
+<script src="../../resources/plugin/bootstrap-datepicker.js" type="text/javascript"></script>
+<script src="../../resources/js/base-form.js"></script>
+<script src="../../resources/js/activity/activity-creat.js" type="text/javascript"></script>
+<script src="../../resources/js/dataValidation.js"></script>
+<script src="../../resources/plugin/jquery.rimi.validation.js"></script>
+<script>
+
+    /* 帖子标题 */
+    $("input[name='contentTitle']").blur(function () {
+        var this_val = $(this).val();
+        valid_txtBox_create(this, $.VLDTOR.IsEnCnNum(this_val) && inputRange(this,2,30), "只能为字母、数字及中文，且长度在2-30", "top");
+    });
+
+    /* 发帖人 */
+    $("input[name='authorCode']").blur(function () {
+        var this_val = $(this).val();
+        valid_txtBox_create(this, $.VLDTOR.IsEnCnNum(this_val) && inputRange(this,2,30), "只能为字母、数字及中文，且长度在2-30", "top");
+    });
+
+    /* “所属板块”选择后提示消除 */
+    $("#culType dt").click(function() {
+        var $this = $(this),
+                thisParent = $this.parents("#culType");
+        thisParent.next(".errMesg").remove();
+    });
+
+    /* 序号验证 */
+    $("input[name='number']").blur(function () {
+        var $this = $(this),
+                thisVal = $this.val();
+        valid_txtBox_create(this, $.VLDTOR.IsNum(thisVal) || thisVal == "","只能为空或正整数","top");
+    });
+
+    $("#saveForm").on('click',function(){               //保存按钮
+        $("input[name='contentTitle']").blur();
+        $("input[name='authorCode']").blur();
+        $("input[name='number']").blur();
+        var regSpan = $("span.errMesg").length > 0;
+        if(regSpan){
+            msgBox("输入的内容有误，请检查！", "erro");
+        }else{
+            $("#creatRead").attr('action','#');
+        }
+    });
+
+
+    
+</script>
+<!-- 利用空闲时间预加载指定页面 -->
+<link rel="prefetch">
+<!-- IE10+ -->
+<link rel="next">
+<!-- Firefox -->
+<link rel="prerender">
+<!-- Chrome -->
+
+</body>
+</html>

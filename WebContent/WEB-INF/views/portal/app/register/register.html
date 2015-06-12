@@ -1,0 +1,66 @@
+    <div class="main">
+        <div class="clearfix header">
+            <div id="phone" class="phone">手机注册</div>        <!-- 手机注册 -->
+            <div id="mail" class="mail">邮箱注册</div>         <!-- 邮箱注册 -->
+        </div>
+        <div class="clearfix content">
+            <!-- ============ 手机注册界面 ============== -->
+            <div id="phone-info" class="reg-interface">
+                <div class="clearfix">
+                    <span>手机号</span>
+                    <input class="form-control" placeholder="请输入您的手机号" type="text"/>
+                </div>
+                <div class="clearfix">
+                    <span>手机验证</span>
+                    <span class="validate-btn"></span>
+                    <input class="form-control validate" placeholder="请输入验证码" type="text"/>
+                </div>
+                <div class="clearfix">
+                    <span>昵称</span>
+                    <input class="form-control" placeholder="朝圣者尼玛扎西" type="text"/>
+                </div>
+                <div class="clearfix">
+                    <span>密码</span>
+                    <input class="form-control" placeholder="请输入您的密码" type="password"/>
+                </div>
+                <div class="clearfix">
+                    <span>确认密码</span>
+                    <input class="form-control" placeholder="请再次输入您的密码" type="password"/>
+                </div>
+            </div>
+            <!-- ============ 手机注册界面 End ============== -->
+            <!-- ============ 邮箱注册界面 ============== -->
+            <div id="mail-info" class="reg-interface">
+                <div class="clearfix">
+                    <span>邮箱</span>
+                    <input class="form-control" placeholder="请输入您的邮箱号" type="text"/>
+                </div>
+                <div class="clearfix">
+                    <span>昵称</span>
+                    <input class="form-control" placeholder="请输入您的会员名" type="text"/>
+                </div>
+                <div class="clearfix">
+                    <span>密码</span>
+                    <input class="form-control" placeholder="请输入您的密码" type="password"/>
+                </div>
+                <div class="clearfix">
+                    <span>确认密码</span>
+                    <input class="form-control" placeholder="请再次输入您的密码" type="password"/>
+                </div>
+                <div id="agree-on" class="agree-on">
+                    <input type="checkbox" checked="true"/>
+                    <span>我已阅读并接受<a href="#">《天上西藏用户协议》</a></span>
+                </div>
+            </div>
+            <!-- ============ 邮箱注册界面 End ============== -->
+            <div class="reg-affirm">
+                <div class="immediately">立即注册</div>
+                <a href="#" class="possess">已有账号登陆</a>
+                <span id="user-agreement" class="agreement">注册视为同意<a href="#">《天上西藏用户协议》</a></span>
+            </div>
+        </div>
+    </div>
+    <script>
+        seajs.use('../assets/css/register/register.css');
+        seajs.use('../assets/js/register/register.js');
+    </script>

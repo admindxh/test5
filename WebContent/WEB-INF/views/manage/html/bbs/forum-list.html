@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <title>天上社区-论坛板块管理-板块列表页</title>
+    <link rel="stylesheet" href="../../resources/plugin/baseCSS-1.0.4.min.css" />
+    <link rel="stylesheet" href="../../resources/css/base.css" />
+    <link rel="stylesheet" href="../../resources/css/travel/formWeb.css" />
+    <style>
+        /* 闭合浮动 */
+        .floatfix:after{
+            content:"";
+            display:table;
+            clear:both;
+        }
+    </style>
+    <script src="../../resources/plugin/respond.min.js" type="text/javascript"></script>
+</head>
+<body>
+<!-- main { -->
+<div class="main">
+    <!-- 页面位置-->
+    <div class="location mb40">
+        <label>您当前位置为:</label>
+        <span>
+            <a>天上社区</a> -
+            <a>论坛板块管理</a> -
+            <a href="#" target="_self">板块列表页</a>
+        </span>
+    </div>
+
+    <!-- 数据操作 -->
+    <div class="searchManage">
+        <a href="forum-list-add.html" target="_self" class="btn-anchor">新建版块</a>
+        <button type="button" class="btn-sure">批量删除</button>
+    </div>
+
+    <!-- 模块管理 { -->
+    <div class="tableManage pos-rela">
+
+        <!-- 数据列表 -->
+        <table border="0" cellpadding="0" cellspacing="0" class="dataTable">
+            <thead>
+            <tr>
+                <th class="center">
+                    <input type="checkbox" name="dataCheck" class="allCheck">
+                    全选
+                </th>
+                <th class="center">板块名称</th>
+                <th class="center">帖子数</th>
+                <th class="center">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="center">
+                    <input type="checkbox" name="dataCheck" class="dataCheck">
+                </td>
+                <td class="center">全站置顶</td>
+                <td class="center">9808</td>
+                <td class="center">
+                    <a>前台查看</a>
+                    <a href="forum-list-edit.html" target="_self">编辑</a>
+                    <a>删除</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="center">
+                    <input type="checkbox" name="dataCheck" class="dataCheck">
+                </td>
+                <td class="center">骑行公告</td>
+                <td class="center"></td>
+                <td class="center">
+                    <a>前台查看</a>
+                    <a>编辑</a>
+                    <a>删除</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="center">
+                    <input type="checkbox" name="dataCheck" class="dataCheck">
+                </td>
+                <td class="center">骑行故事</td>
+                <td class="center"></td>
+                <td class="center">
+                    <a>前台查看</a>
+                    <a>编辑</a>
+                    <a>删除</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="center">
+                    <input type="checkbox" name="dataCheck" class="dataCheck">
+                </td>
+                <td class="center">骑友征集</td>
+                <td class="center"></td>
+                <td class="center">
+                    <a>前台查看</a>
+                    <a>编辑</a>
+                    <a>删除</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="center">
+                    <input type="checkbox" name="dataCheck" class="dataCheck">
+                </td>
+                <td class="center">装备讨论</td>
+                <td class="center"></td>
+                <td class="center">
+                    <a>前台查看</a>
+                    <a>编辑</a>
+                    <a>删除</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="center">
+                    <input type="checkbox" name="dataCheck" class="dataCheck">
+                </td>
+                <td class="center">攻略游记</td>
+                <td class="center"></td>
+                <td class="center">
+                    <a>前台查看</a>
+                    <a>编辑</a>
+                    <a>删除</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="center">
+                    <input type="checkbox" name="dataCheck" class="dataCheck">
+                </td>
+                <td class="center">出行搭伴</td>
+                <td class="center"></td>
+                <td class="center">
+                    <a>前台查看</a>
+                    <a>编辑</a>
+                    <a>删除</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="center">
+                    <input type="checkbox" name="dataCheck" class="dataCheck">
+                </td>
+                <td class="center">公益活动</td>
+                <td class="center"></td>
+                <td class="center">
+                    <a>前台查看</a>
+                    <a>编辑</a>
+                    <a>删除</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="center">
+                    <input type="checkbox" name="dataCheck" class="dataCheck">
+                </td>
+                <td class="center">意见与建议</td>
+                <td class="center"></td>
+                <td class="center">
+                    <a>前台查看</a>
+                    <a>编辑</a>
+                    <a>删除</a>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+        <!-- 表格分页 -->
+        <div class="paging">
+            <button type="button" class="btn-base_min">首页</button>
+            <button type="button" class="btn-base_min">上一页</button>
+            <button type="button" class="btn-base_min">下一页</button>
+            <button type="button" class="btn-base_min">末页</button>
+        </div>
+
+    </div><!-- } 模块管理 -->
+</div><!-- } main -->
+
+<!-- JS引用部分 -->
+<script src="../../resources/plugin/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="../../resources/plugin/baseCSS-1.0.4.js" type="text/javascript"></script>
+<script src="../../resources/js/base.js" type="text/javascript"></script>
+<script src="../../resources/js/base-tabel.js" type="text/javascript"></script>
+
+<!-- 利用空闲时间预加载指定页面 -->
+<link rel="prefetch"> <!-- IE10+ -->
+<link rel="next"> <!-- Firefox -->
+<link rel="prerender"> <!-- Chrome -->
+</body>
+</html>

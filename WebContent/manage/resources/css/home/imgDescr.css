@@ -1,0 +1,111 @@
+/**
+* 功能：图文管理类样式设置
+* 日期：2014年11月26日
+* 作者：weiye
+**/
+
+/* 推荐位选择标签 */
+.posidTab {  max-width: 1440px; text-align: center; z-index: 2;}
+.posidTab label { width: 100px; background-color: #f3f3f3; line-height: 36px; border: 1px solid #ccc; border-top-left-radius: 3px; border-top-right-radius: 3px; margin-right: 20px;}
+.posidTab label.checked { background-color: #fff; border-bottom: 1px solid #fff; cursor: default;}
+
+/**** 推荐位图文设置 ****/
+.posidSet { height: auto; padding: 20px; padding-left: 40px; padding-right: 40px; top: -1px; z-index: 1;}
+/* 各推荐位模块 */
+.posidSet div.show { display: block;}
+.posidSet-unit { width: 100%; height: auto; border-top: 1px solid #ddd; padding-top: 20px; padding-bottom: 20px; overflow: visible; /*white-space: nowrap;*/}
+
+/* 信息添加 */
+.posidSet-unit .left, .posidSet-unit .right { display: inline-block;}
+
+/**** 左侧信息添加 ****/
+.posidSet-unit .left { width: 60%; padding-left: 5%; margin-top: 30px;}
+.posidSet-unit .left.perc60 { width: 55%; padding-left: 4%;}
+/* 推荐图名称标签 */
+.posidSet-unit > i  { width: 100px; height: 34px; background-color: #990000; text-align: center; font: normal 14px/34px "微软雅黑"; color: #fff; left: 0px; top: 0px;}
+
+/* 表单内容行 */
+.formLine { padding-top: 8px; padding-bottom: 8px;}
+.formLine label { width: 120px; text-align: right;}
+.formLine label.w_auto { width: auto; cursor: pointer;}
+.formLine input[type='text'] { width: 246px; padding: 8px 6px;  border:1px solid #bcbcbc; font-size: 15px; color: #888;}
+.formLine input.w-200 { width: 200px;}
+.formLine input.w-320 { width: 320px;}
+.formLine input.w-640 { width: 640px;}
+
+/**** 右侧缩略图显示 ****/
+.posidSet-unit .right { width: 34%; vertical-align: top; white-space: nowrap;}
+.posidSet-unit .right.perc40 { width: 40%;}
+/* 旅游景点乱入 */
+.posidSet-unit .right label { margin-right: 10px;}
+/* 缩略图设置 */
+.posidSet-unit .right img/* style-c */ { width: 168px; height: 168px; }
+.posidSet-unit .right img.style-b { width: 240px; height: 176px; }
+.posidSet-unit .right img.style-d { width: 300px; height: 168px; }
+
+/* 查看按钮 */
+.lookup { top: 12px; right: 48px; z-index: 3;}
+
+/**** 其他元素 ****/
+/* 增加按钮 */
+.addImgDescr { text-align: right; position: relative; top: -10px;}
+/* 广告添加 */
+#adverForm .addImgDescr{margin-top: 20px;}
+/* 保存按钮 */
+div.saveOper { text-align: center;}
+.saveOper .save { width: 120px; }
+
+/*******************************************************
+					  响应式设计
+*******************************************************/
+
+/* 页面水平像素小于839(iframe带滚动条，屏幕像素1024) */
+@media screen and (max-width: 839px) {
+    /* 图文设置——标题标签 */
+    .posidSet-unit > i { height: 30px; font: normal 14px/30px "微软雅黑";}
+    /* 图文设置——表单元素 */
+    .posidSet-unit .left { width: auto; padding-left: 0; margin-top: 30px;}
+    .posidSet-unit .left.perc60 {width: 90%; padding-left: 0;}
+    .posidSet-unit .left, .posidSet-unit .right { display: block;}
+    .posidSet-unit .right { width: auto; margin-left: 78px;}
+    .posidSet-unit .right.mt30 {margin-top: 0px;}
+    /* 游西藏-商户汇总页显示 */
+    .commercial .posidSet-unit .right {margin-left: 54px;}
+    .posidSet-unit .right label { margin-right: 0;}
+    .formLine input.w-320 { width: 240px;}
+    .formLine input.w-200 { width: 160px;}
+    .saveOper .save {width:106px;}
+    /* 游西藏推荐位三缩略图显示 */
+    .yxzPosit1{width: 304px !important;height: 128px !important;}
+    /* 活动专题banner */
+    .act-banner{width: 400px !important;height: 144px !important;}
+    /* 天上社区banner */
+    .tsBanner{width: 258px !important;height: 110px !important;}
+}
+/* 页面水平像素840-1095(iframe带滚动条，屏幕像素1025-1280) */
+@media screen and (min-width: 840px) and (max-width: 1095px) {
+    .posidSet-unit .left { width: 90%; padding-left: 0; margin-top: 30px;}
+    .posidSet-unit .left.perc60 {width: 90%; padding-left: 0;}
+    .posidSet-unit .right {width: 50%; margin-left: 60px; margin-top: 10px;}
+    /* 游西藏推荐位三缩略图显示 */
+    .yxzPosit1{width: 304px !important;height: 128px !important;}
+
+}
+/* 页面水平像素1096-1145(屏幕像素1281-1440) */
+@media screen and (min-width: 1096px) and (max-width: 1219px) {
+    .posidSet {padding: 16px;}
+    .posidSet-unit .left { width: 68%; padding-left: 0; margin-top: 30px;}
+    .commercial .posidSet-unit .left { width: 60%;}
+    .posidSet-unit .right { width: 29%;}
+    .posidSet-unit .left.perc60 { width: 60%; padding-left: 0;}
+    .posidSet-unit .right.perc40 { width: 39%;}
+    .posidSet-unit .right img.style-d { width: 240px; height: 148px; }
+    /* 游西藏推荐位三缩略图显示 */
+    .yxzPosit1{width: 228px !important;height: 96px !important;}
+    /* 看西藏banner图 */
+    .see-banner{width: 222px !important; height: 120px !important;}
+    /* 活动专题banner */
+    .act-banner{width: 300px !important;height: 108px !important;}
+    /* 天上社区banner */
+    .tsBanner{width: 215px !important;height: 91px !important;}
+}

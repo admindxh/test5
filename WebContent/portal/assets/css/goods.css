@@ -1,0 +1,158 @@
+.place ul{
+	padding-left: 0;
+}
+.gd-pic{
+	float: left;
+	width: 400px;
+	height: 300px;
+	border: 1px solid #e5e5e5;
+}
+.goods-buy .gd-pic{
+	width: 220px;
+	height: 160px;
+}
+.gd-desc{
+	margin-left: 415px;
+}
+.goods-buy{
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #e5e5e5;
+}
+.goods-buy .gd-desc{
+	margin-left: 235px;
+}
+.gd-heading{
+	font-size: 18px;
+	font-weight: 500;
+	color: #333;
+	margin-top: 0;
+}
+.gd-intro{
+	font-size: 14px;
+	color: #333;
+	height: 64px;
+  overflow: hidden;
+  margin-top: 20px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.gd-text{
+	height: 50px;
+}
+.goods-buy .gd-text{
+	height: 45px;
+}
+.gd-text em{
+	margin-top: 14px;
+	float: left;
+	font-style: normal;
+	margin-left: 5px;
+}
+.gd-text span{
+	float: left;
+	margin-left: 5px;
+	font-size: 30px;
+	font-weight: 500;
+	color: #cf1423;
+}
+.gd-text span strong, .gd-text em strong{
+	font-weight: normal;
+}
+span.range{
+	width: 100px;
+	border: 1px solid #e5e5e5;
+	height: 28px;
+	margin-top: 10px;
+	display: block;
+	overflow: hidden;
+	font-size: 14px;
+	color: #333;
+}
+span.range a{
+	float: left;
+	width: 28px;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	background-color: #ededed;
+	color: #3c3c3c;
+	text-decoration: none;
+	font-size: 16px;
+}
+span.range a.disable{
+	color: #999;
+	cursor: not-allowed;
+}
+span.range .range-text{
+	height: 26px;
+  border: none;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  width: 42px;
+  float: left;
+  outline: none;
+  background: white;
+  padding: 0px 3px;
+  text-align: center;
+}
+.now-buy, .btn-order{
+	margin-top: 15px;
+	width: 180px;
+	height: 52px;
+	background: url(../../static/images/now_buy.jpg) 0 0 no-repeat;
+	text-indent: -9999px;
+	border: none;
+	outline: none;
+}
+.btn-order{
+	background: url(../icon/btn_order.jpg) 0 0 no-repeat;
+}
+.gd-h{
+	padding: 0 15px;
+	font-size: 18px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #f1f1f1;
+	margin-bottom: 20px;
+}
+.goods-content{
+	padding: 10px;
+}
+.goods-content img{
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+.goods-form{
+	margin-top: 30px;
+}
+.goods-form label{
+	font-weight: normal;
+}
+.goods-form .form-control{
+	width: 350px;
+}
+.ui-radio .radio{
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 16px;
+	height: 16px;
+	background: url(../icon/radio.png) 0 0 no-repeat;
+	margin: 5px;
+}
+.ui-radio span{
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 89px;
+	height: 25px;
+	background: url(../icon/alipay.png) 0 0 no-repeat;
+}
+.total {
+	margin-top: 50px;
+}
+.total .gd-text{
+	margin-top: 20px;
+	margin-right: 80px;
+}

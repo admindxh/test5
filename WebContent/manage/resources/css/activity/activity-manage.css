@@ -1,0 +1,63 @@
+/**
+* 功能：活动管理页样式设置
+* 日期：2014年12月21日
+* 作者：weiye
+**/
+
+/**** 投票 ****/
+
+/* 投票主容器 */
+.vote { width: 1024px; overflow: hidden;}
+.formLine.vote { padding-top: 2px; padding-bottom: 2px; margin-bottom: 4px;}
+.vote-left, .vote-right { float: left; /*overflow: hidden;*/ text-overflow: clip;}
+
+/* 投票左侧 */
+.vote-left { width: 840px;}
+.vote-left .dataVal { width: 836px; margin-left: 4px; margin-bottom: 4px;}
+.vote-left .vote-box { width: 720px; height: 24px; background-color: #f3f3f3; border-radius: 16px; padding: 4px; vertical-align: middle; float: left;}
+
+/* 百分比色条 */
+.vote-left .vote-box .vote-box-bar { width: 0; height: 100%; border-radius: 12px;}
+
+/* 百分比数值 */
+.vote-left .vote-perc { width: 80px; height: 24px; line-height: 24px; padding: 4px 8px; color: #2366ad; float: left;}
+
+/* 投票右侧 */
+.vote-right { width: auto; margin-top: 18px; }
+
+/**** 弹出层内容 ****/
+
+/* 弹出框主容器 */
+.poplayer { display: none; border: 1px solid #8e8686; border-radius: 8px; box-shadow: 0 10px 20px rgba(85, 89, 94, .3); position: absolute; z-index: 11;}
+
+/* 关闭按钮 */
+.poplayer .close-tras_black { position: absolute; right: -18px; top: -18px; }
+
+/* 图片容器 & 操作信息区 */
+.imgBox, .operInfoBar { overflow: hidden;}
+.imgBox { max-width: 1280px; min-width: 480px; max-height: 760px; min-height: 320px; background-color: #514545; border-top-left-radius: 5px; border-top-right-radius: 5px;}
+.imgBox img { width: 100%; height: auto; margin: auto; display: block;}
+.operInfoBar { height: 38px; background-color: #514545; padding: 10px 0; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; color: #fff;}
+
+/* 弹出框信息内容 */
+.infoCont { width: 480px; background-color: #fff; border-radius: 8px; padding: 20px;}
+
+/* 弹出框信息内容——标题 */
+.infoCont h1 { font: normal 22px/32px "微软雅黑"; color: #514545; text-align: center; letter-spacing: 0.1em;}
+
+/* 超链接 */
+.poplayer a { text-decoration: none; font-size: 14px; color: #c66666;display: inline-block; vertical-align: middle;}
+.poplayer a:hover { text-decoration: underline;}
+
+/* 操作信息区 */
+.activName, .activAccount, .activOperBtn { line-height: 38px; padding: 0 8px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle; float: left;}
+.activName { width: auto; max-width: 200px; font: bold 16px/38px "微软雅黑"; }
+.activAccount { width: auto; max-width: 180px; color: #bcbcbc;}
+.activOperBtn  { width: auto; text-align: right; float: none;}
+
+/* 表单元素设置 */
+.activOperBtn input[type='text'] { width: 80px; padding: 4px; background-color: #968e8e; border: 1px solid #c9c5c5; font-size: 18px; color: #f3f3f3;}
+.activOperBtn input[type='text']:focus { background-color: #7b6f6f;}
+.operInfoBar .btn-base { background-color: #7b6f6f; color: #f3f3f3;}
+.operInfoBar .btn-base:hover { background-color: #968e8e; color: #e3dfdf;}
+.operInfoBar .btn-base:active { background-color: #716767; color: #b9b1b1;}

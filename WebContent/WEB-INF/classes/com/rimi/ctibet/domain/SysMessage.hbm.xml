@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.rimi.ctibet.domain.SysMessage" table="sysmessage">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" length="40" />
+            <generator class="native" />
+        </id>
+         <property name="title" column="title" type="java.lang.String" />
+         <property name="code" column="code" type="java.lang.String" />
+         <property name="content" column="content" type="java.lang.String" />
+         <property name="msgTo" column="msgTo" type="java.lang.String" />
+         <property name="score" column="score" type="integer" />
+         <property name="createDate" column="createDate" type="timestamp" update="false"/>
+         <property name="type" column="type" type="java.lang.String" />
+         <property name="avaliable" column="avaliable" type="integer"/>
+         <property name="contentCode" column="contentCode" type="java.lang.String" />
+    </class>
+</hibernate-mapping>

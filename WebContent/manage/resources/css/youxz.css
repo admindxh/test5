@@ -1,0 +1,250 @@
+body,div,h3,h4,h5,p{
+    margin: 0;
+    padding: 0;
+}
+body{font-family: 'microsoft yahei';font-size: 12px;color: #333;}
+/*================== header ===================*/
+.header{
+    background: #fff url("../icon/line.png") repeat-x center;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.youxz{
+    width: 1200px;
+    margin-top: 30px;
+}
+.youxz .title{
+    width: 175px;
+    height: 29px;
+    background: #fff url(../icon/travel_bg.png) no-repeat 0 -1px;
+}
+.youxz  .more{
+    width: 90px;
+    text-align: right;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*================== header end ===================*/
+/*================== content ===================*/
+.content{
+    overflow: hidden;
+}
+/*=== content left ===*/
+.content .left{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.content .xiaotitle{
+    font-size: 14px;
+    margin: 10px 0 15px 0;
+}
+.content .left .submit-btn{
+    width: 110px;
+    height: 26px;
+    border: none;
+    outline: none;
+    background: url("../icon/upload.png") no-repeat;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 720px;
+}
+.submit-btn img{
+    vertical-align: middle;
+}
+.submit-btn span{
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.gl-info .gl-img .left-img{
+    width: 201px;
+    height: 121px;
+    padding-right: 22px;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block\9;
+}
+.gl-info .gl-img{
+
+}
+.gl-img .ctibet{
+    width: 33px;
+    height: 37px;
+    position: absolute;
+    right: 23px;
+    bottom: 1px;
+}
+.info{
+    width: 458px;
+    display: inline-block\9;
+}
+.info h4{
+    font-size: 18px;
+}
+.info .zuozhe{
+    padding: 10px 0 16px 0;
+}
+.info .zuozhe img{
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.info .zuozhe span{
+    vertical-align: middle;
+}
+.info .zuozhe .zuozname{
+    color: #cf1423;
+}
+.info div{
+    width: 460px;
+}
+.pinlun{
+    display: inline-block \9;
+}
+.js_info{
+    height: 49px;
+}
+.gl-img .zan{
+    text-align: center;
+    margin: 20px 0 0 35px;
+    margin-top: 12px\9;
+}
+.gl-img .zan p{
+    font-weight: 900;
+    margin-top: 10px;
+}
+.gl-img .zan button{
+    background: url(../icon/like.png) no-repeat -1px -1px;
+    width: 42px;
+    height: 33px;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+.gl-img .souc{
+    margin: 11px 0 0 40px;
+    margin: 5px 0px 0px 80px \9;
+    font-weight: 900;
+}
+.souc div{
+    display: inline-block;
+}
+.souc div img{
+    margin-right: 3px;
+}
+.souc .xiny{
+    margin-left: 20px;
+}
+.gl-info .jiange{
+    border-bottom: 1px dashed #aaa;
+    width: 100%;
+    height: 21px;
+    margin-bottom: 20px;
+}
+.gl-info .jiange-last{
+    margin-bottom: 0;
+}
+.ctibet .disn{
+    display: none;
+}
+/*=== content left end ===*/
+/*=== content right ===*/
+.content .right{
+    overflow: hidden;
+}
+.right .jingd-img-first{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.img-info{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+}
+.dingw{
+    background: url("../icon/location.png") no-repeat 0 ;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding-left: 15px;
+}
+.img-info .dingw{
+    line-height: 25px;
+}
+.jingd-img-first .img-info .dingw{
+    line-height: 53px;
+}
+.jingd-img-first .img-info .gogo{
+    height: 53px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    padding: 10px 0 ;
+}
+.jd-left{
+    color: #fff;
+    float: left;
+    margin-right: 10px;
+}
+.jingd-img-second{
+    width: 113px;
+    margin-top: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.jingd-img-third{
+    width: 113px;
+}
+
+.jd-right{
+    float: left;
+    color: #fff;
+}
+.jd-right-top div{
+    float: left;
+}
+.jd-right-top{
+    margin: 10px 0;
+    overflow: hidden;
+}
+.jd-img-four{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 89px;
+}
+
+.jd-img-four .img-info .dingw{
+    left: 5px;
+}
+.jd-img-five{
+    width: 89px;
+    margin-left: 9px;
+}
+.jd-img-six{
+    width: 187px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.jd-img-six .img-info .dingw{
+    line-height: 26px;
+}
+/*=== content right end ===*/
+/*================== content end ===================*/

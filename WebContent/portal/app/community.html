@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="quansenx">
+    <meta name="keywords" content="西藏旅游，西藏自驾游，藏民，西藏线路，西藏自助游路线，西藏景点，西藏天气，西藏交通，西藏，西藏旅游攻略，西藏旅游最佳时间，西藏旅游最好季节，去西藏" />
+    <meta name="description" content=" 天上西藏网站为您提供全面了解屹立在雪山之巅西藏的信息资讯，包括天上西藏景区景点推荐，最佳的西藏观光时间，最地道的西藏特色叙述，最淳朴的西藏人民，天上西藏最全面的信息介绍，欢迎您前来体验雪域西藏的风采！" />
+    <title>天上社区</title>
+    <link rel="stylesheet" href="../modules/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/community/community.css"/>
+    <!--[if lt IE 9]>
+    <script src="../modules/fix/html5shiv.min.js"></script>
+    <script src="../modules/fix/respond.min.js"></script>
+    <![endif]-->
+    <script id="seajsnode" src="../modules/seajs/seajs/2.2.1/sea.js"></script>
+</head>
+<body ms-controller="view">
+<!-- Header -->
+<div id="header" ms-include-src="'header/index.html'"></div><!-- Header End -->
+
+<!-- Content -->
+    <div class="community container">
+        <div id="lunbo" ms-include-src="'community/lunbo.html'"></div>
+
+        <div id="search" ms-include-src="'index/search.html'"></div>
+
+        <div id="overHeader" ms-include-src="'community/overHeader.html'"></div>
+        <div class="row">
+            <div class="col-xs-9">
+                <div id="left-plate" ms-include-src="'community/left_plate.html'"></div>
+            </div>
+            <div class="col-xs-3">
+                <div id="right-plate" ms-include-src="'community/right_plate.html'"></div>
+            </div>
+        </div>
+    </div><!-- Content End -->
+
+<!-- footer -->
+    <div id="footer" ms-include-src="'footer/index.html'"></div>
+    <script>
+        // Set configuration
+        seajs.config({
+            alias: {
+                "jquery": "jquery/jquery/1.11.1/jquery.js",
+                "avalon": "avalon/1.3.7/avalon.js",
+                "common/css": "../assets/css/common.css",
+                "footer/css": "../assets/css/footer.css",
+                "content/top/css":"../assets/css/content_top.css"
+            }
+        });
+        seajs.use(['common/css','footer/css','content/top/css','slick/slick.css']);
+        seajs.use(['avalon'], function(avalon) {
+            avalon.define({
+                $id: "view",
+                showTag: false
+            })
+        });
+        seajs.use('slick/slick.js',function(){
+            var $slide = $('.lunb');
+            var $thumb = $('.lunb-control').children('li');
+            $slide.slick({
+                autoplay:true,
+                arrows: false,
+                slide:'.watch',
+                vertical:true,
+                onBeforeChange: function(slide){
+                    setTimeout(function(){
+                        $thumb.eq(slide.currentSlide).addClass('active').siblings().removeClass('active');
+                        console.log(slide.currentSlide)
+                    }, 0)
+                }
+            });
+
+            $thumb.on('click', function(event) {
+                event.preventDefault();
+                $slide.slickGoTo($(this).index())
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.rimi.ctibet.domain.MerchantAndView" table="merchant_view">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" length="40" />
+            <generator class="native" />
+        </id>
+        <property name="merchantCode" column="merchantCode" type="java.lang.String">
+        </property>
+        <property name="viewCode" column="viewCode" type="java.lang.String">
+        </property>
+        
+        
+   
+       
+    </class>
+</hibernate-mapping>

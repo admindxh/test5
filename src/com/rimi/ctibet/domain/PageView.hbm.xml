@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.rimi.ctibet.domain.PageView" table="PageView">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" length="40" />
+            <generator class="native" />
+        </id>
+        <property name="page">
+            <column name="page"/>
+        </property>
+        <property name="viewtime" column="viewtime" type="java.util.Date"></property> 
+        <property name="ip" column="ip" type="java.lang.String"></property>
+    </class>
+</hibernate-mapping>

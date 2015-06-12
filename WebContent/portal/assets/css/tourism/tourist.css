@@ -1,0 +1,268 @@
+.tourist{
+    width: 1000px !important;
+    margin-top: 30px;
+    padding: 0;
+    font-family: "Microsoft Yahei";
+}
+.tourist>div{
+    margin: 0;
+}
+.tourist-left{
+    width: 730px !important;
+    margin-top: 60px;
+    padding: 0;
+}
+.tourist-right{
+    width: 250px !important;
+    margin-top: 60px;
+    padding: 0;
+}
+.tourist-left .header{
+    margin-bottom: 15px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #fff url("../../icon/line.png") 0 15px repeat-x;
+}
+.tourist-left .header .left{
+    width: 260px;
+    height: 30px;
+    background: #fff url("../../icon/tourist_sites.png") 0 0 no-repeat;
+}
+.tourist-left .header .right{
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.tourist .right a{
+    color: #333;
+}
+/*=============================
+            left
+ =============================*/
+.content-top>div{
+    width: 138px;
+    height: 228px;
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 7px;
+}
+.content-top>div>a,
+.content-top>div>a img{
+    width: 138px;
+    height: 168px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.content-top>div:first-child{
+    margin-left: 0;
+}
+.img-info{
+    width: inherit;
+    height: 60px;
+    background: url("../../icon/tourist_mc1.png") 0 0 no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.img-info .scene-name{
+    width: 80px;
+    height: 16px;
+    line-height: 16px;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 12px;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    color: #fff;
+    background: url("../../icon/location.png") 0 0 no-repeat;
+    overflow: hidden;
+}
+.img-info .scene-go{
+    margin-left: 5px;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 3px;
+}
+.img-info .scene-go p{
+    height: 16px;
+    line-height: 16px;
+    margin: 0;
+    width: 78px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.content-footer{
+    margin-top: 10px;
+}
+.content-footer .scene-name{
+    color: #333;
+    background-image: url(../../icon/location_black.png);
+}
+.content-footer .scene-go{
+    color: #333;
+}
+.img-info-top-2{
+    background: url("../../icon/tourist_mc2.png") 0 0 no-repeat;
+}
+.img-info-top-3{
+    background: url("../../icon/tourist_mc3.png") 0 0 no-repeat;
+}
+.img-info-top-4{
+    background: url("../../icon/tourist_mc4.png") 0 0 no-repeat;
+}
+.img-info-top-5{
+    background: url("../../icon/tourist_mc5.png") 0 0 no-repeat;
+}
+.img-info-bottom-1{
+    background: url("../../icon/tourist_mc6.png") 0 0 no-repeat;
+}
+.img-info-bottom-2{
+    background: url("../../icon/tourist_mc7.png") 0 0 no-repeat;
+}
+.img-info-bottom-3{
+    background: url("../../icon/tourist_mc8.png") 0 0 no-repeat;
+}
+.img-info-bottom-4{
+    background: url("../../icon/tourist_mc9.png") 0 0 no-repeat;
+}
+.img-info-bottom-5{
+    background: url("../../icon/tourist_mc10.png") 0 0 no-repeat;
+}
+/*===========================
+             right
+===========================*/
+.tourist-right .header{
+	margin-bottom: 15px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #fff url("../../icon/line.png") 0 15px repeat-x;
+}
+.tourist-right .header .left{
+    width: 152px;
+    height: 30px;
+    line-height: 29px;
+    font-size: 18px;
+    padding-left: 25px;
+    background: #fff url("../../icon/group_bg.png") 0 0 no-repeat;
+}
+.tourist-right .header .left p{
+    width: 105px;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.tourist-right .header .right{
+    width: 80px;
+    height: 30px;
+	line-height: 30px;
+	text-align: right;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.tourist-right .content .media-left{
+    width: 68px;
+    height: 68px;
+    padding-right: 10px;
+    outline: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+.tourist-right .content a>div,
+.tourist-right .content a div img:first-child{
+	width: inherit;
+	height: inherit;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+.tourist-right .content .mer-info{
+    width: 115px;
+    height: 50px;
+    font-size: 12px;
+    color: #898989;
+    margin-top: 8px;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.mer-score,
+.gt-score{
+	margin-top: 15px;
+	margin-bottom: 0;
+	position: relative;
+}
+.mer-score span,
+.gt-score span{
+	position: absolute;
+	left: 75px;
+	bottom: 0;
+}
+.mer-score img,
+.gt-score img{
+	vertical-align: baseline;
+}
+.tourist-right .line{
+    width: 100%;
+    height: 10px;
+    background: #fff url("../../icon/line.png") 0 9px repeat-x;
+}
+.tourist-right .content .message{
+    margin-top: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.tourist-right .content .loving{
+    width: 50px;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.loving button{
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: url(../../icon/star.png) 0 0 no-repeat;
+}
+.tourist-right .content .loving label{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.content-mart{
+    margin-top: 18px;
+}
+.content .ctibet{
+	width: 35px !important;
+	height: 37px !important;
+    position: absolute;
+    top: -7px;
+    left: -6px;
+}

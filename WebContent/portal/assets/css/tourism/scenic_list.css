@@ -1,0 +1,207 @@
+#tags .tags-mark{
+    background-color: transparent;
+}
+#tags .container{
+    background-color: #cf1423;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.main{
+    width: 1000px;
+    padding: 0;
+    font-family: "Microsoft Yahei";
+}
+.main .banner{
+    width: 1000px;
+    height: 300px;
+}
+.main .banner img{
+    width: inherit;
+    height: inherit;
+}
+.main label{
+    margin-bottom: 0;
+    font-weight: normal;
+    vertical-align: middle;
+}
+.main .search{
+    margin-top: 60px;
+}
+.search>div{
+    float: left;
+}
+.search .region{
+    width: auto;
+}
+.search .drop-down{
+    margin-left: 7px\9;
+}
+.drop-down>label{
+    display: inline;
+}
+.drop-down .dropdown{
+    display: inline-block;
+}
+.drop-down button{
+    border: 0;
+    padding: 0;
+    outline: none;
+    text-align: left;
+    background-color: transparent;
+   	width: 170px;
+}
+.drop-down button label{
+    width: 138px;
+    border: 1px solid #dcdcdc;
+    padding: 5px 10px;
+    cursor: pointer;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.drop-down span{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    background: #cf1423 url("../../icon/drop-down.png") no-repeat center;
+}
+.search .scen{
+    margin-left: 20px;
+}
+.scen .drop-down{
+    margin-left: 7px\9;
+}
+.fuzzy-search{
+    margin-left: 20px;
+}
+.fuzzy-search input{
+    width: 180px;
+    line-height: normal;
+    padding: 5px 10px;
+    border: 1px solid #dcdcdc;
+    outline: none;
+}
+.fuzzy-search button{
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border: 0;
+    outline: none;
+    padding: 0;
+    background-color: #cf1423;
+}
+.fuzzy-search button img{
+    vertical-align: text-bottom;
+}
+.hot-link{
+    padding: 6px 0;
+    margin-left: 10px;
+    width: 310px \9;
+}
+.hot-link>div{
+    max-width: 70px;
+    margin-left: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.hot-link>div a:hover{
+    color: #cf1423;
+
+}
+.listing{
+    list-style: none;
+    margin-top: 50px;
+    font-size: 16px;
+}
+.listing li{
+    float: left;
+    margin-left: 20px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.listing li:first-child{
+    margin-left: 0;
+}
+.listing .down{
+    color: #cf1423;
+    background: url("../../icon/down.png") no-repeat 0 center;
+}
+.content{
+    margin-left: -30px;
+}
+.content .con-info{
+    float: left;
+}
+.con-info{
+    width: 313px;
+    height: 183px;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: #f1f1f1;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.con-info>div{
+    float: left;
+}
+.sce-img{
+    width: 150px;
+    height: 183px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.sce-img>a,
+.sce-img>a img{
+    width: inherit!important;
+    height: inherit!important;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.particular{
+    width: 163px;
+    height: 180px;
+    padding: 0 20px;
+}
+.particular h5 {
+    height: 16px;
+    line-height: 16px;
+    margin-top: 10px;
+    padding-left: 15px;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #cf1423;
+    background: url("../../icon/location_red.png") no-repeat 0 center;
+    overflow: hidden;
+}
+.particular h5 a{
+    color: inherit !important;
+}
+.particular p{
+    font-size: 12px;
+    margin-bottom: 0;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.particular .span-color{
+    color: #898989;
+}
+.presentation{
+    height: 95px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+.main .paging{
+    margin-top: 50px;
+    margin-bottom: 0;
+    background-color: transparent;
+}
